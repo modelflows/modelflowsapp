@@ -17,11 +17,11 @@ author: ModelFLOWs
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Tutorials: "tutorials"
+    - Downloads: "downloads"
+  ModelFLOWs: "https://modelflowsmf.wixsite.com/modelflows"
 
 ################
 # --- Logo --- #
