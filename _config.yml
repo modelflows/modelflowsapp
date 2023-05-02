@@ -10,11 +10,11 @@
 ############################
 
 # Name of website
-title: My Website
+# title: My Website
 
 # Your name to show in the footer
-author: Some Person
-
+# author: modelflows
+ 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
@@ -32,7 +32,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "https://static.wixstatic.com/media/0a78b5_98e45b09aee742aaa9f8a1b30a2183ec~mv2.png/v1/fill/w_99,h_68,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Simbolo.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -49,16 +49,14 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "modelflows.mf@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+#  facebook: deanattali
+  github: modelflows
+#  twitter: daattali
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+   linkedin: modelflows
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
