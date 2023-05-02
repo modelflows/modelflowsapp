@@ -20,7 +20,7 @@ title: modelFLOWs App
 ###############################################
 
 navbar-links:
-  About: "aboutme"
+  About us: "aboutme"
   Resources:
     - Tutorials: "tutorials"
     - Downloads: "downloads"
