@@ -4,6 +4,14 @@ layout: base
 
 {% include header.html type="page" %}
 
+<style>
+  {
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+</style>
+
 <div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}" role="main">
   <div class="row">
     <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
@@ -29,11 +37,3 @@ layout: base
     </div>
   </div>
 </div>
-
-<style>
-  {
-    width: 50%;
-    margin: 0 auto;
-    text-align: justify;
-  }
-</style>
