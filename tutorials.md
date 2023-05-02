@@ -15,7 +15,7 @@ HODMD is also applicable to other complex dynamical systems such as chemical rea
 
 The following videos explain how this algorithm is applied using a classic and iterative approach:
 
---VIDEO GOES HERE--
+--VIDEOS GO HERE--
 
 #### HOSVD
 HOSVD, or Higher-Order Singular Value Decomposition, is a mathematical technique used in pattern detection and analysis for high-dimensional data. HOSVD can be used to decompose a high-dimensional tensor into a set of orthogonal rank-1 tensors, which represent the underlying patterns in the data. The technique allows for the extraction of features that are relevant for further analysis, such as the spatiotemporal behavior of a system.
@@ -48,7 +48,7 @@ For example, HODMD can be used to identify the spatiotemporal patterns associate
 
 The following videos explain how this algorithm is applied using a classic and iterative approach:
 
---VIDEO GOES HERE--
+--VIDEOS GO HERE--
 
 ## Deep Learning
 ### Pattern detection
@@ -76,6 +76,6 @@ On the other hand, a hybrid deep learning model that utilizes SVD before trainin
 
 Both approaches have their advantages and disadvantages, and the choice of approach depends on the specific problem and available data. A full deep learning model can be more flexible and can potentially capture more complex patterns in the data. However, it requires a large amount of data and computing resources for training. On the other hand, a hybrid deep learning model that utilizes SVD before training can be more efficient and can work well with smaller datasets. However, it may not capture all the complex patterns in the data, as it is limited to the patterns identified by SVD.
 
-The following videos explain how these neural network work:
+The following videos explain how these neural networks work:
 
---VIDEOS GOES HERE--
+--VIDEOS GO HERE--
