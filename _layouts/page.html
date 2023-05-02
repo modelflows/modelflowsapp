@@ -14,8 +14,13 @@ layout: base
           {% endfor %}
         </div>
       {% endif %}
+      
+      .page__content {
+                      text-align: justify;
+                      }
 
       {{ content }}
+      
 
       {% if page.after-content %}
         <div class="after-content">
