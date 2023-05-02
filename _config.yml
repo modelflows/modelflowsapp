@@ -32,7 +32,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "https://static.wixstatic.com/media/0a78b5_98e45b09aee742aaa9f8a1b30a2183ec~mv2.png/v1/fill/w_99,h_68,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Simbolo.png"
+# avatar: "https://avatars.githubusercontent.com/u/129270224?s=96&v=4"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -56,7 +56,7 @@ social-network-links:
 #  twitter: daattali
 #  medium: yourname
 #  reddit: yourname
-   linkedin: modelflows
+#  linkedin: modelflows
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
