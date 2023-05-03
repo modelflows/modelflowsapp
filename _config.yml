@@ -24,7 +24,7 @@ navbar-links:
   Resources:
     - Tutorials: "tutorials"
     - Downloads: "downloads"
-  TEST: "prueba"
+  #TEST: "prueba"
 
 ################
 # --- Logo --- #
