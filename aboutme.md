@@ -14,7 +14,8 @@ The following members have contributed in the development of the ModelFLOWs appl
 - Ashton Ian Hetherington
 - Rodrigo Abadia-Heredia
 - Eva Muñoz Salamanca
-- Paula...
+- Paula Díaz Morales
+- Egoitz Maoira
 
 For more information, please visit the [official ModelFLOWs website]([https://modelflowsmf.wixsite.com/modelflows])
 
