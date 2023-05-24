@@ -3,7 +3,6 @@ layout: page
 title: Tutorials
 subtitle: How does the app work?
 ---
-dir='rtl'
 
 ModelFLOWs-app, an open source Software for data post-processing, patterns identification and development of reduced order models using modal decomposition and deep learning architectures. When using the software, please, reference us as: 
 
