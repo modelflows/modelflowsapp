@@ -19,13 +19,13 @@ HODMD is also applicable to other complex dynamical systems such as chemical rea
 
 ModelFLOWs-app presents two variants of HODMD: standard HODMD and iterative multi-dimensional HODMD (mdHODMD-it). Details about the main algorithms can be found in:
 
-*Le Clainche & Vega, Higher order dynamic mode decomposition, SIAM J. Appl. Dyn. Syst., 16(2), 882-925, 2017.*
+[*Le Clainche & Vega, Higher order dynamic mode decomposition, SIAM J. Appl. Dyn. Syst., 16(2), 882-925, 2017.*]([https://epubs.siam.org/doi/10.1137/15M1054924])
 
-*Le Clainche, Vega & Soria, Higher order dynamic mode decomposition of noisy experimental data: The flow structure of a zero-net-mass-flux jet, Exp. Therm. and Fluid Sci., 88, 336-353, 2017.*
+[*Le Clainche, Vega & Soria, Higher order dynamic mode decomposition of noisy experimental data: The flow structure of a zero-net-mass-flux jet, Exp. Therm. and Fluid Sci., 88, 336-353, 2017.*]([https://www.sciencedirect.com/science/article/abs/pii/S089417771730184X])
 
-The following book details several applications of HODMD for patterns indentification, temporal forecasting, data reconstruction, etc. The book also includes the Matlab codes and some test databases:
+The following book details several applications of HODMD for patterns indentification, temporal forecasting, data reconstruction, etc. The book also includes the [Matlab codes]([https://data.mendeley.com/datasets/z8ks4f5vy5/1]) and some test databases:
 
-*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*
+[*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*]([https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications])
 
 The following videos explain how this algorithm is applied using a classic and iterative approach:
 
@@ -36,7 +36,7 @@ HOSVD, or High Order Singular Value Decomposition, is a mathematical technique u
 
 HOSVD has been used in various fields, including image and signal processing, and has gained attention in fluid mechanics for pattern detection. By applying HOSVD to flow data, researchers can identify patterns related to vortices, turbulence, and other important fluid flow phenomena. HOSVD can also be used in combination with other techniques, such as machine learning algorithms or HODMD, to enhance the accuracy and predictive power of the analysis. More details can be found in the book:
 
-*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*
+[*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*]([https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications])
 
 The following video explains how this algorithm is applied:
 
@@ -62,7 +62,7 @@ In fluid mechanics, predicting the behavior of complex flow systems is crucial f
 
 For example, HODMD can be used to identify the spatiotemporal patterns associated with vortices or turbulence in fluid flow. These patterns can then be used to predict the future behavior of the system, such as the development of vortices or turbulence at different times and locations. This information can be used to optimize system design, reduce energy consumption, and improve safety in a variety of fluid flow applications, such as aircraft design, combustion systems, and weather forecasting. More details can be found in the book:
 
-*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*
+[*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*]([https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications])
 
 The following videos explain how this algorithm is applied using a classic and iterative approach:
 
@@ -76,9 +76,9 @@ Once the autoencoder is trained, it can be used to detect patterns in new fluid 
 
 Details about the application of autoencoders for patterns identification can be found in:
 
-*Muñoz, E., Dave, H., D’Alessio, G., Parente, A., Le Clainche, S., Extraction and analysis of flow features in planar synthetic jets using different machine learning techniques, preprint in ARXIV, 2023.* 
+[*Muñoz, E., Dave, H., D’Alessio, G., Parente, A., Le Clainche, S., Extraction and analysis of flow features in planar synthetic jets using different machine learning techniques, preprint in ARXIV, 2023.*]([https://www.researchgate.net/publication/370277088_Extraction_and_Analysis_of_Flow_Features_in_Planar_Synthetic_Jets_Using_Different_Machine_Learning_Techniques]) 
 
-*Evazi, H. Le Clainche, S., Hoyas, S., Vinuesa, R., ‘Towards extraction of orthogonal and parsimonious non-linear modes from turbulent flows’, Exp. Syst. Appl., 202, 117038, 2022.*
+[*Evazi, H. Le Clainche, S., Hoyas, S., Vinuesa, R., Towards extraction of orthogonal and parsimonious non-linear modes from turbulent flows, Exp. Syst. Appl., 202, 117038, 2022.*]([https://www.sciencedirect.com/science/article/pii/S0957417422004535])
 
 The following video explains how this neural network works:
 
@@ -91,7 +91,7 @@ Singular Value Decomposition (SVD) is a matrix decomposition technique that can 
 
 This application combining SVD + NNs uses data from sensors or under-resolved data and reconstruct the dataset. More details can be found in:
 
-*Díaz, P., Corrochano, A., López-Martín, M., Le Clainche, S., Deep Learning combined with singular value decomposition to reconstruct databases in fluid dynamics, arXiv:2305.08832, 2023.*
+[*Díaz, P., Corrochano, A., López-Martín, M., Le Clainche, S., Deep Learning combined with singular value decomposition to reconstruct databases in fluid dynamics, arXiv:2305.08832, 2023.*]([https://arxiv.org/abs/2305.08832])
 
 The following video explains how this hybrid predictive reduced order models works for data reconstruction:
 
@@ -110,11 +110,11 @@ Both approaches have their advantages and disadvantages, and the choice of appro
 
 More details about the main algorithm and some of their applications can be found in:
 
-*Abadía-Heredia, R., Lopez-Martin, M., Carro, B., Arribas, J.I., Pérez, J.M., Le Clainche, S., A predictive hybrid reduced order model based on proper orthogonal decomposition combined with deep learning architectures, Exp. Syst. Appl., 187, 115910, 2022.*  
+[*Abadía-Heredia, R., Lopez-Martin, M., Carro, B., Arribas, J.I., Pérez, J.M., Le Clainche, S., A predictive hybrid reduced order model based on proper orthogonal decomposition combined with deep learning architectures, Exp. Syst. Appl., 187, 115910, 2022.*]([https://www.sciencedirect.com/science/article/pii/S0957417421012653])  
 
-*Corrochano, A., Freitas, R.S.M., Parente, A., Le Clainche, S., A predictive physics-aware hybrid reduced order model for reacting flows, arXiv:2301.09860, 2023.*
+[*Corrochano, A., Freitas, R.S.M., Parente, A., Le Clainche, S., A predictive physics-aware hybrid reduced order model for reacting flows, arXiv:2301.09860, 2023.*]([https://arxiv.org/abs/2301.09860])
 
-*Mata, L., Abadía-Heredia, R., López-Martín, M., Pérez, J.M., Le Clainche, S., Forecasting through deep learning and modal decomposition in multi-phase concentric jets, arXiv:2212.12731, 2022.*
+[*Mata, L., Abadía-Heredia, R., López-Martín, M., Pérez, J.M., Le Clainche, S., Forecasting through deep learning and modal decomposition in multi-phase concentric jets, arXiv:2212.12731, 2022.*]([https://arxiv.org/abs/2212.12731])
 
 The following videos explain how this hybrid predictive reduced order models works for temporal forecasting:
 
