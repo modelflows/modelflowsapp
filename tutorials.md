@@ -5,6 +5,7 @@ subtitle: How does the app work?
 ---
 
 ModelFLOWs-app, an open source Software for data post-processing, patterns identification and development of reduced order models using modal decomposition and deep learning architectures. When using the software, please, reference us as: 
+
 *A. Hetherington, A. Corrochano, R. Abadía-Heredia, E. Lazpita, E. Muñoz, P. Díaz, E. Maiora, M. López-Martín and S. Le Clainche, ModelFLOWs-app: data-driven post-processing and reduced order modelling tools, arxiv, 2023.*
 
 This data-driven application consists of two modules: **Modal Decomposition** and **Deep Learning**. Both blocks consist of algorithms capable of **detecting patterns**, **reconstructing** and **predicting data** from complex flow databases.
@@ -17,9 +18,13 @@ HODMD, or Higher Order Dynamic Mode Decomposition, is a mathematical technique u
 HODMD is also applicable to other complex dynamical systems such as chemical reactions, biological processes, and weather patterns. Its ability to extract dynamic modes from high-dimensional datasets makes it a valuable tool for analyzing complex systems that are difficult to understand using traditional analysis techniques. The use of HODMD in combination with other methods, such as machine learning algorithms, can enhance the accuracy and predictive power of the analysis. As such, HODMD is an exciting and promising technique for pattern detection and analysis in a variety of fields, including fluid mechanics.
 
 ModelFLOWs-app presents two variants of HODMD: standard HODMD and iterative multi-dimensional HODMD (mdHODMD-it). Details about the main algorithms can be found in:
+
 *Le Clainche & Vega, Higher order dynamic mode decomposition, SIAM J. Appl. Dyn. Syst., 16(2), 882-925, 2017.*
+
 *Le Clainche, Vega & Soria, Higher order dynamic mode decomposition of noisy experimental data: The flow structure of a zero-net-mass-flux jet, Exp. Therm. and Fluid Sci., 88, 336-353, 2017.*
+
 The following book details several applications of HODMD for patterns indentification, temporal forecasting, data reconstruction, etc. The book also includes the Matlab codes and some test databases:
+
 *J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*
 
 The following videos explain how this algorithm is applied using a classic and iterative approach:
@@ -30,6 +35,7 @@ The following videos explain how this algorithm is applied using a classic and i
 HOSVD, or High Order Singular Value Decomposition, is a mathematical technique used in pattern detection and analysis for high-dimensional data. HOSVD can be used to decompose a high-dimensional tensor into a set of orthogonal rank-1 tensors, which represent the underlying patterns in the data. The technique allows for the extraction of features that are relevant for further analysis, such as the spatiotemporal behavior of a system.
 
 HOSVD has been used in various fields, including image and signal processing, and has gained attention in fluid mechanics for pattern detection. By applying HOSVD to flow data, researchers can identify patterns related to vortices, turbulence, and other important fluid flow phenomena. HOSVD can also be used in combination with other techniques, such as machine learning algorithms or HODMD, to enhance the accuracy and predictive power of the analysis. More details can be found in the book:
+
 *J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*
 
 The following video explains how this algorithm is applied:
@@ -55,6 +61,7 @@ The following video explains how this technique is applied:
 In fluid mechanics, predicting the behavior of complex flow systems is crucial for optimizing system performance and improving safety. Higher Order Dynamic Mode Decomposition (HODMD) is a powerful tool that can be used to make predictions about the future behavior of fluid flow systems based on past data. By identifying the most relevant spatiotemporal patterns in the flow data using HODMD, researchers can use these patterns to make accurate predictions about the future behavior of the system.
 
 For example, HODMD can be used to identify the spatiotemporal patterns associated with vortices or turbulence in fluid flow. These patterns can then be used to predict the future behavior of the system, such as the development of vortices or turbulence at different times and locations. This information can be used to optimize system design, reduce energy consumption, and improve safety in a variety of fluid flow applications, such as aircraft design, combustion systems, and weather forecasting. More details can be found in the book:
+
 *J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*
 
 The following videos explain how this algorithm is applied using a classic and iterative approach:
@@ -68,9 +75,10 @@ Autoencoders are a powerful tool for pattern detection in fluid mechanics datase
 Once the autoencoder is trained, it can be used to detect patterns in new fluid mechanics datasets. By feeding new data through the encoder, the network can compress the data into a low-dimensional representation, which can then be analyzed to identify patterns in the data. This approach is particularly useful for detecting patterns in high-dimensional datasets, such as those commonly found in fluid mechanics.
 
 Details about the application of autoencoders for patterns identification can be found in:
-*Muñoz, E., Dave, H., D’Alessio, G., Parente, A., Le Clainche, S., Extraction and analysis of flow features in planar synthetic jets using different machine learning techniques, preprint in ARXIV, 2023.* 
-*Evazi, H. Le Clainche, S., Hoyas, S., Vinuesa, R., ‘Towards extraction of orthogonal and parsimonious non-linear modes from turbulent flows’, Exp. Syst. Appl., 202, 117038, 2022.*
 
+*Muñoz, E., Dave, H., D’Alessio, G., Parente, A., Le Clainche, S., Extraction and analysis of flow features in planar synthetic jets using different machine learning techniques, preprint in ARXIV, 2023.* 
+
+*Evazi, H. Le Clainche, S., Hoyas, S., Vinuesa, R., ‘Towards extraction of orthogonal and parsimonious non-linear modes from turbulent flows’, Exp. Syst. Appl., 202, 117038, 2022.*
 
 The following video explains how this neural network works:
 
@@ -82,6 +90,7 @@ Hybrid predictive reduced order models have been developed combining modal decom
 Singular Value Decomposition (SVD) is a matrix decomposition technique that can be used to identify the most important patterns in a fluid mechanics dataset. When the dataset is downsampled or compressed, some of the important patterns may be lost. To reconstruct the original dataset, SVD can be used to decompose the downsampled data into three matrices: U, S, and V. These matrices contain the left singular vectors, singular values, and right singular vectors, respectively. A neural network (NN) is then trained using these three matrices as inputs to reconstruct the original dataset. The neural network learns to generate predictions of the missing values in the downsampled dataset based on the patterns identified by SVD. By combining the predictions with the known values from the downsampled dataset, the original dataset can be reconstructed.
 
 This application combining SVD + NNs uses data from sensors or under-resolved data and reconstruct the dataset. More details can be found in:
+
 *Díaz, P., Corrochano, A., López-Martín, M., Le Clainche, S., Deep Learning combined with singular value decomposition to reconstruct databases in fluid dynamics, arXiv:2305.08832, 2023.*
 
 The following video explains how this hybrid predictive reduced order models works for data reconstruction:
@@ -100,8 +109,11 @@ In the hybrid reduced order model the preprocessed data is then fed into the SVD
 Both approaches have their advantages and disadvantages, and the choice of approach depends on the specific problem and available data. A full deep learning model can be more flexible and can potentially capture more complex patterns in the data. However, it requires a large amount of data and computing resources for training. On the other hand, a hybrid deep learning model that utilizes SVD before training can be more efficient and can work well with smaller datasets. However, it may not capture all the complex patterns in the data, as it is limited to the patterns identified by SVD.
 
 More details about the main algorithm and some of their applications can be found in:
+
 *Abadía-Heredia, R., Lopez-Martin, M., Carro, B., Arribas, J.I., Pérez, J.M., Le Clainche, S., A predictive hybrid reduced order model based on proper orthogonal decomposition combined with deep learning architectures, Exp. Syst. Appl., 187, 115910, 2022.*  
+
 *Corrochano, A., Freitas, R.S.M., Parente, A., Le Clainche, S., A predictive physics-aware hybrid reduced order model for reacting flows, arXiv:2301.09860, 2023.*
+
 *Mata, L., Abadía-Heredia, R., López-Martín, M., Pérez, J.M., Le Clainche, S., Forecasting through deep learning and modal decomposition in multi-phase concentric jets, arXiv:2212.12731, 2022.*
 
 The following videos explain how this hybrid predictive reduced order models works for temporal forecasting:
