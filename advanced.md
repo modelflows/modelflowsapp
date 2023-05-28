@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Tutorials
-subtitle: How does the app work?
+title: Advanced tutorials
+subtitle: How does each module work?
 ---
 
 ModelFLOWs-app, an open source Software for data post-processing, patterns identification and development of reduced order models using modal decomposition and deep learning architectures. When using the software, please, reference us as: 
@@ -29,7 +29,9 @@ The following book details several applications of HODMD for patterns indentific
 
 The following videos explain how this algorithm is applied using a classic and iterative approach:
 
---VIDEOS GO HERE--
+<video width="640" height="360" controls>
+  <source src="assets/vid/HODMD-video.mp4" type="video/mp4">
+</video>
 
 #### HOSVD
 HOSVD, or High Order Singular Value Decomposition, is a mathematical technique used in pattern detection and analysis for high-dimensional data. HOSVD can be used to decompose a high-dimensional tensor into a set of orthogonal rank-1 tensors, which represent the underlying patterns in the data. The technique allows for the extraction of features that are relevant for further analysis, such as the spatiotemporal behavior of a system.
