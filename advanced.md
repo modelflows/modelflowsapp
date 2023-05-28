@@ -56,10 +56,18 @@ On the other hand, gappy data enhancement is a technique used to improve the qua
 
 Both techniques are useful for dealing with incomplete or noisy data, but they address different aspects of the problem. Gappy data reconstruction aims to fill in missing data points, while gappy data enhancement aims to improve the overall quality of the dataset.
 
-The following video explains how this technique is applied:
+The following videos explain how these techniques are applied:
+
+**Gappy data reconstruction**
 
 <video width="640" height="360" controls>
   <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/GappySVD_Video.mp4?raw=true" type="video/mp4">
+</video>
+
+**Gappy data enhancement**
+
+<video width="640" height="360" controls>
+  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/Enhancement_Video.mp4?raw=true" type="video/mp4">
 </video>
 
 ### Prediction
