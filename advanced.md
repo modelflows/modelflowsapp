@@ -42,7 +42,9 @@ HOSVD has been used in various fields, including image and signal processing, an
 
 The following video explains how this algorithm is applied:
 
---VIDEO GOES HERE--
+<video width="640" height="360" controls>
+  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/HOSVD-video.mp4?raw=true" type="video/mp4">
+</video>
 
 ### Reconstruction
 #### Gappy data reconstruction and gappy data enhancement
@@ -56,7 +58,9 @@ Both techniques are useful for dealing with incomplete or noisy data, but they a
 
 The following video explains how this technique is applied:
 
---VIDEO GOES HERE--
+<video width="640" height="360" controls>
+  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/GappySVD_Video.mp4?raw=true" type="video/mp4">
+</video>
 
 ### Prediction
 #### HODMD
@@ -66,9 +70,9 @@ For example, HODMD can be used to identify the spatiotemporal patterns associate
 
 [*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*]([https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications])
 
-The following videos explain how this algorithm is applied using a classic and iterative approach:
+The following video explains how this algorithm is applied using a classic and iterative approach:
 
---VIDEOS GO HERE--
+**Video coming soon**
 
 ## Deep Learning
 ### Pattern detection
@@ -84,7 +88,7 @@ Details about the application of autoencoders for patterns identification can be
 
 The following video explains how this neural network works:
 
---VIDEO GOES HERE--
+**Video coming soon**
 
 ### Reconstruction
 Hybrid predictive reduced order models have been developed combining modal decomposition techniques and deep learning architectures. Modal decompositions reduc e data dimensionaliy and identifying the main patterns describing the physics of the dynamical system. Then, neural networks are used to predict the evolution in time the dimensionality reduced dataset. ModelFLOWs-app presents an algorithm combining singular value decomposition with convolutional or recurrent neural networks. 
@@ -97,7 +101,7 @@ This application combining SVD + NNs uses data from sensors or under-resolved da
 
 The following video explains how this hybrid predictive reduced order models works for data reconstruction:
 
---VIDEO GOES HERE--
+**Video coming soon**
 
 ### Prediction
 Hybrid predictive reduced order models have been developed combining modal decomposition (singular value decomposition, SVD) and deep learning architectures (neural networks, NNs). Modal decompositions reduce data dimensionaliy and identifying the main patterns describing the physics of the dynamical system. Then, neural networks are used to predict the evolution in time the dimensionality reduced dataset. ModelFLOWs-app presents an algorithm combining singular value decomposition with convolutional or recurrent neural networks (CNN or RNN). Additionally, a full deep learning model for fluid mechanics predictions is presented. This model consist of multiple layers of neural networks, such as RNN and CNN. 
@@ -120,4 +124,14 @@ More details about the main algorithm and some of their applications can be foun
 
 The following videos explain how this hybrid predictive reduced order models works for temporal forecasting:
 
---VIDEOS GO HERE--
+**Full Deep Learning**
+
+<video width="640" height="360" controls>
+  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/Full_DL_RNN_CNN.mp4?raw=true" type="video/mp4">
+</video>
+
+**Hybrid Deep Learning**
+
+<video width="640" height="360" controls>
+  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/HybridDL_Video.mp4?raw=true" type="video/mp4">
+</video>
