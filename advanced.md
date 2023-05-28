@@ -30,7 +30,7 @@ The following book details several applications of HODMD for patterns indentific
 The following videos explain how this algorithm is applied using a classic and iterative approach:
 
 <video width="640" height="360" controls>
-  <source src="assets/vid/HODMD-video.mp4" type="video/mp4">
+  <source src="https://github.com/modelflows/modelflowsapp/blob/9afcee4b4122d5ec1bf92fdb2095f1e21e227a7d/assets/vid/HODMD-video.mp4" type="video/mp4">
 </video>
 
 #### HOSVD
