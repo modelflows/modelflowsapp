@@ -22,7 +22,8 @@ title: ModelFLOWs App
 navbar-links:
   About us: "about"
   Resources:
-    - Tutorials: "tutorials"
+    - Tutorial: "tutorial"
+    - Advanced tutorials: "advanced"
     - Downloads: "downloads"
   #TEST: "prueba"
 
