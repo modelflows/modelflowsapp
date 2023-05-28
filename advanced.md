@@ -27,10 +27,10 @@ The following book details several applications of HODMD for patterns indentific
 
 [*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*]([https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications])
 
-The following videos explain how this algorithm is applied using a classic and iterative approach:
+The following videos explains how this algorithm is applied using a classic and iterative approach:
 
 <video width="640" height="360" controls>
-  <source src="https://github.com/modelflows/modelflowsapp/blob/9afcee4b4122d5ec1bf92fdb2095f1e21e227a7d/assets/vid/HODMD-video.mp4" type="video/mp4">
+  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/HODMD-video.mp4" type="video/mp4">
 </video>
 
 #### HOSVD
