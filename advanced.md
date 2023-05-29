@@ -6,7 +6,7 @@ subtitle: How does each module work?
 
 ModelFLOWs-app, an open source Software for data post-processing, patterns identification and development of reduced order models using modal decomposition and deep learning architectures. When using the software, please, reference us as: 
 
-[*A. Hetherington, A. Corrochano, R. Abadía-Heredia, E. Lazpita, E. Muñoz, P. Díaz, E. Maiora, M. López-Martín and S. Le Clainche, ModelFLOWs-app: data-driven post-processing and reduced order modelling tools, arxiv, 2023.*]([www.LINKARXIV])
+[*A. Hetherington, A. Corrochano, R. Abadía-Heredia, E. Lazpita, E. Muñoz, P. Díaz, E. Maiora, M. López-Martín and S. Le Clainche, ModelFLOWs-app: data-driven post-processing and reduced order modelling tools, arxiv, 2023.*](https://github.com/modelflows/ModelFLOWs-app/blob/main/2023_ModelFLOWsapp_Hetheringtonetal.pdf)
 
 This data-driven application consists of two modules: **Modal Decomposition** and **Deep Learning**. Both blocks consist of algorithms capable of **detecting patterns**, **reconstructing** and **predicting data** from complex flow databases.
 
