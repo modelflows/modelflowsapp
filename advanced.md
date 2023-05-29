@@ -96,7 +96,9 @@ Details about the application of autoencoders for patterns identification can be
 
 The following video explains how this neural network works:
 
-**Video coming soon**
+<video width="640" height="360" controls>
+  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/Autoencoders_Video.mp4?raw=true" type="video/mp4">
+</video>
 
 ### Reconstruction
 Hybrid predictive reduced order models have been developed combining modal decomposition techniques and deep learning architectures. Modal decompositions reduc e data dimensionaliy and identifying the main patterns describing the physics of the dynamical system. Then, neural networks are used to predict the evolution in time the dimensionality reduced dataset. ModelFLOWs-app presents an algorithm combining singular value decomposition with convolutional or recurrent neural networks. 
@@ -109,7 +111,9 @@ This application combining SVD + NNs uses data from sensors or under-resolved da
 
 The following video explains how this hybrid predictive reduced order models works for data reconstruction:
 
-**Video coming soon**
+<video width="640" height="360" controls>
+  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/DL%20superresolution.mp4?raw=true" type="video/mp4">
+</video>
 
 ### Prediction
 Hybrid predictive reduced order models have been developed combining modal decomposition (singular value decomposition, SVD) and deep learning architectures (neural networks, NNs). Modal decompositions reduce data dimensionaliy and identifying the main patterns describing the physics of the dynamical system. Then, neural networks are used to predict the evolution in time the dimensionality reduced dataset. ModelFLOWs-app presents an algorithm combining singular value decomposition with convolutional or recurrent neural networks (CNN or RNN). Additionally, a full deep learning model for fluid mechanics predictions is presented. This model consist of multiple layers of neural networks, such as RNN and CNN. 
