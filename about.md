@@ -14,7 +14,7 @@ The following members have contributed in the development of ModelFLOWs-app, an 
 - Rodrigo Abadia-Heredia
 - Eva Muñoz Salamanca
 - Paula Díaz Morales
-- Egoitz Maoira
+- Egoitz Maiora
 - [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche/)
 
 For more information, please visit the [official ModelFLOWs website](https://modelflowsmf.wixsite.com/modelflows)
