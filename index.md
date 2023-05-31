@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Home
-subtitle: About ModelFLOWs-App
+subtitle: About ModelFLOWs-app
 ---
 
 ModelFLOWs-app, an open source Software for data post-processing, patterns identification and development of reduced order models using modal decomposition and deep learning architectures.
