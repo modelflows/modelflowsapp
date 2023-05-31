@@ -8,7 +8,7 @@ ModelFLOWs-app is a user-friendly application that doesn't require installation,
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/modelflowsappscheme.png?raw=true)
 
-The first part of the following tutorial explains step by step how to "install" and start-up ModelFLOWs-app. The second part of the tutorial is aimed at unexperienced users, since it explains how each module works.
+The first part of the following tutorial explains step by step how to "install" and start-up ModelFLOWs-app.
 
 **Download and set-up guide**
 
