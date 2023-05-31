@@ -12,4 +12,4 @@ The following ModelFLOWs-app versions are available:
 
 Download the installation and set-up tutorial clicking [here](https://github.com/modelflows/ModelFLOWs-app/blob/main/v0.1_Tutorial_ModelFLOWs-app.pdf)
 
-You can also check out the paper by clicking [here](https://github.com/modelflows/ModelFLOWs-app/blob/main/2023_ModelFLOWsapp_Hetheringtonetal.pdf)
+You can also check out the paper by clicking [here](https://arxiv.org/abs/2305.17150)
