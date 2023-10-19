@@ -13,6 +13,10 @@ arXiv:2305.17150, 2023.*](https://arxiv.org/abs/2305.17150)
 
 This data-driven application consists of two modules: **Modal Decomposition** and **Deep Learning**. Both blocks consist of algorithms capable of **detecting patterns**, **reconstructing** and **predicting data** from complex flow databases.
 
+The following video presents a clear overview of ModelFLOWs-app. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZKeShcM8nuI?si=jOUu3mio-dZYFxf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Modal Decomposition
 ### Pattern detection
 #### HODMD
