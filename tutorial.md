@@ -6,9 +6,7 @@ subtitle: How to install and use ModelFLOWs-app
 
 ModelFLOWs-app is a user-friendly application that doesn't require installation, but you may need to install some libraries to your Python environment. 
 
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/watch?v=ZKeShcM8nuI" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZKeShcM8nuI?si=jOUu3mio-dZYFxf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 If you are an unexperienced user, and would like to learn how this software works, we highy recommend you download the web-browser version, which serves as a demo. 
 
