@@ -20,9 +20,16 @@ Introduce own references, i leave this as template.
 The following videos explains ... :
 Introduce own videos, i leave this as template.
 ```
+FOR IMAGES ON GITHUB (upload them on assets/img/ )
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/modelflowsappscheme.png?raw=true)
+
+FOR VIDEOS UPLOADED ON GITHUB (upload them on assets/vid/ )
 <video width="640" height="360" controls>
   <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/HODMD-video.mp4?raw=true" type="video/mp4">
-</video> 
+</video>
+
+FOR VIDEOS IN YOUTUBE
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZKeShcM8nuI?si=jOUu3mio-dZYFxf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ```
 ### Classification (Here we would introduce both Nourel's and Andres's work)
 #### Nourel
@@ -39,6 +46,8 @@ Blablabla
 ## CFD data
 ### Codes and simulations
 Simulation setup, geometries, flow rate charts
+Results showing vortex with isosurfaces and contours
+Link to starccm codes and databases?
 
 ### Pattern detection
 Introduce here the work in progress for pattern detection in CFD cardiac flows with SVD, HODMD, etc.
