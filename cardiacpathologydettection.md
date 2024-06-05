@@ -13,15 +13,17 @@ This data-driven application consists of two modules: **Medical data** and **CFD
 #### HODMD (here we should include Nourel's work)
 Blablabla. Details about the main algorithms can be found in:
 Introduce own references, i leave this as template.
+```
 [*Le Clainche & Vega, Higher order dynamic mode decomposition, SIAM J. Appl. Dyn. Syst., 16(2), 882-925, 2017.*](https://epubs.siam.org/doi/10.1137/15M1054924)
-
+```
 
 The following videos explains ... :
 Introduce own videos, i leave this as template.
+```
 <video width="640" height="360" controls>
   <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/HODMD-video.mp4?raw=true" type="video/mp4">
-</video>
-
+</video> 
+```
 ### Classification (Here we would introduce both Nourel's and Andres's work)
 #### Nourel
 blablabla
