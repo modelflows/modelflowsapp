@@ -12,6 +12,7 @@ This data-driven application consists of two modules: **Medical data** and **CFD
 ### Pattern detection
 #### HODMD
 <!-- Nourel's work -->
+*Work in progress. Coming soon...*
 
 <!-- [*Le Clainche & Vega, Higher order dynamic mode decomposition, SIAM J. Appl. Dyn. Syst., 16(2), 882-925, 2017.*](https://epubs.siam.org/doi/10.1137/15M1054924) -->
 
@@ -22,19 +23,21 @@ This data-driven application consists of two modules: **Medical data** and **CFD
   <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/HODMD-video.mp4?raw=true" type="video/mp4">
 </video>  -->
 
-<!-- FOR VIDEOS IN YOUTUBE
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZKeShcM8nuI?si=jOUu3mio-dZYFxf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+<!-- FOR VIDEOS IN YOUTUBE: <iframe width="560" height="315" src="https://www.youtube.com/embed/ZKeShcM8nuI?si=jOUu3mio-dZYFxf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
 ### Classification
 #### HODMD + NN
 <!-- Nourel's work -->
+*Work in progress. Coming soon...*
 
 #### Vision Transformers
 <!-- Andres's work -->
+*Work in progress. Coming soon...*
 
 ### Prediction
 #### Vision Transformers
 <!-- Andres's work -->
+*Work in progress. Coming soon...*
 
 
 ## CFD data
@@ -60,7 +63,10 @@ The primary objective of this study is to examine the formation and evolution of
 
 This analysis highlights the importance of CFD in advancing our understanding of intracardiac flow dynamics and developing improved diagnostic and therapeutic strategies for cardiovascular diseases.
 
-<!-- Link to starccm codes and databases?-->
+You can also see the explanation of this project in the following video:
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=XHdfQc7LLgA&t=1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- Link to starccm codes and databases? -->
 
 ### Pattern detection
 *Work in progress. Coming soon...*
