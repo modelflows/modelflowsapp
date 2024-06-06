@@ -25,8 +25,8 @@ navbar-links:
     - Tutorial: "tutorial"
     - Advanced tutorials: "advanced"
     - Downloads: "downloads"
-  # Applications:
-  #  - Cardiac pathology dettection: "cardiacpathologydettection"
+  Applications:
+    - Cardiac pathology detection: "cardiacpathologydettection"
   #  - Combustion: "combustion"
   #  - Air pollution: "airpollution"
 
