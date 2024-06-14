@@ -41,7 +41,7 @@ These results have already been published in :
 
 You can also see the explanation of this paper in the following video:
 
-<iframe width="560" height="315" src="https://youtu.be/AOD1t533sd8?si=EWLBeIyM1SJj2mUa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=AOD1t533sd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <!-- FOR VIDEOS UPLOADED ON GITHUB (upload them on assets/vid/ )
 <video width="640" height="360" controls>
@@ -76,7 +76,7 @@ These results have already been published in :
 
 You can also see the explanation of this paper in the following video:
 
-<iframe width="560" height="315" src="https://youtu.be/3oJoGSxvK40?si=T5K0ry4-Mb-GYvw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=3oJoGSxvK40&t=6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Vision Transformers
 <!-- Andres's work -->
