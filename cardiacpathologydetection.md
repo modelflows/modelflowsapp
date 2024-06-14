@@ -26,7 +26,7 @@ starting from a certain point, approaches based on matrix decomposition and data
 
 #### Analysis and findings
 
-The main process for the higher order dynamic mode decomposition (HODMD) analysis pipeline is summarized in the schematic diagram. The first step is data preparation: each frame (snapshot) extracted from the video loop is cropped (removing the parts with the medical information), then  arranged in a tensor, which is then used as the HODMD input. In the following steps, HODMD decomposes the reshaped data into a set of DMD modes, each associated with its own frequency, growth rate and amplitude.
+The main process for the higher order dynamic mode decomposition (HODMD) analysis pipeline is summarized in the schematic diagram. The first step is data preparation: each frame (snapshot) extracted from the video loop is cropped (removing the parts with the medical information), then  arranged in a tensor, which is then used as the HODMD input. In the following steps, HODMD decomposes the data into a set of DMD modes, each associated with its own frequency, growth rate and amplitude.
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/ModelFlows_Cardiac_IMAGE01.jpg?raw=true)
 
@@ -55,9 +55,10 @@ You can also see the explanation of this paper in the following video:
 <!-- Nourel's work -->
 In this application the HODMD algorithm is combined with image-classification model  (CNN) to improve the classification accuracy of five different cardiac conditions. 
 In order to demonstrate this application, two testcases are performed: first, the model (CNN) is trained using a database consists of the original echocardiography images only (testcase 01). Second, the database with the original images is augmented using the DMD modes obtained from the HODMD analysis.
+
 The following sketch summarizes the main steps of the application carried in this work, which can be sectioned into two stages: 
-1-	Feature extraction stage using the HODMD algorithm (as illustrated in the previous application).
-2-	Disease classification using CNNs.
+1.	Feature extraction stage using the HODMD algorithm (as illustrated in the previous application).
+2.	Disease classification using CNNs.
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/ModelFlows_Cardiac_IMAGE03.jpg?raw=true)
 
