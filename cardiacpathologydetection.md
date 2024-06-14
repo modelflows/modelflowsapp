@@ -18,11 +18,30 @@ The medical imaging datasets used for this first application are echocardiograph
 ### Pattern detection
 #### HODMD
 <!-- Nourel's work -->
-*Work in progress. Coming soon...*
+
+Medical imaging field is being profoundly affected by the technological revolution brought forward by increasingly sophisticated electronic devices and the continuous growth of computing power. Therefore, medical imaging has become a data intensive field: optimized tools grounded in the data science discipline are necessary to reap the full potential of the wealth of data available.
+starting from a certain point, approaches based on matrix decomposition and data-driven methods began to gain recognition in medical analysis field. In this research, we focused on the fluid dynamic tool, the higher order dynamic mode decomposition (HODMD). In the following the HODMD was applied to the analysis of echocardiography images as a feature detection technique, with the aim of identifying main patterns related to different cardiac conditions.
 
 <!-- [*Le Clainche & Vega, Higher order dynamic mode decomposition, SIAM J. Appl. Dyn. Syst., 16(2), 882-925, 2017.*](https://epubs.siam.org/doi/10.1137/15M1054924) -->
 
-<!-- FOR IMAGES ON GITHUB (upload them on assets/img/ ): ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/modelflowsappscheme.png?raw=true) -->
+#### Analysis and findings
+
+The main process for the higher order dynamic mode decomposition (HODMD) analysis pipeline is summarized in the schematic diagram. The first step is data preparation: each frame (snapshot) extracted from the video loop is cropped (removing the parts with the medical information), then  arranged in a tensor, which is then used as the HODMD input. In the following steps, HODMD decomposes the reshaped data into a set of DMD modes, each associated with its own frequency, growth rate and amplitude.
+
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/ModelFlows_Cardiac_IMAGE01.jpg?raw=true)
+
+The analysis of the echocardiography datasets using the HODMD algorithm resulted in two main outcomes: (i) identify and segregate two different signals.
+The signals, which are regular and periodic, represent the heart rate and respiratory rate. (ii)  Successfully identifying and extracting sets of DMD modes representing the dominant features and patterns related to the different cardiac conditions. These DMD modes display the shape of the heart in its healthy conditions, as well as its shape when afflicted by different cardiac diseases.
+
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/ModelFlows_Cardiac_page-IMAGE02.jpg?raw=true)
+
+These results have already been published in :
+
+[*Groun, N., Villalba-Orero, M., Lara-Pezzi, E., Valero, E., Garicano-Mena, J. and Le Clainche, S., 2022. Higher order dynamic mode decomposition: From fluid dynamics to heart disease analysis. Computers in Biology and Medicine, 144, p.105384.*](https://doi.org/10.1016/j.compbiomed.2022.105384)
+
+You can also see the explanation of this paper in the following video:
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/watch?v=AOD1t533sd8&t=3s" title="Groun et al. Higher order dynamic mode decomposition from fluid dynamics to heart disease analysis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
 <!-- FOR VIDEOS UPLOADED ON GITHUB (upload them on assets/vid/ )
 <video width="640" height="360" controls>
