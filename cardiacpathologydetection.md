@@ -41,7 +41,7 @@ These results have already been published in :
 
 You can also see the explanation of this paper in the following video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=AOD1t533sd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=AOD1t533sd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <!-- FOR VIDEOS UPLOADED ON GITHUB (upload them on assets/vid/ )
 <video width="640" height="360" controls>
@@ -50,10 +50,33 @@ You can also see the explanation of this paper in the following video:
 
 <!-- FOR VIDEOS IN YOUTUBE: <iframe width="560" height="315" src="https://www.youtube.com/embed/ZKeShcM8nuI?si=jOUu3mio-dZYFxf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
-### Classification
-#### HODMD + NN
+### Cardiac disease classification
+#### Hybrid ROM combining HODMD and CNNs
 <!-- Nourel's work -->
-*Work in progress. Coming soon...*
+In this application the HODMD algorithm is combined with image-classification model  (CNN) to improve the classification accuracy of five different cardiac conditions. 
+In order to demonstrate this application, two testcases are performed: first, the model (CNN) is trained using a database consists of the original echocardiography images only (testcase 01). Second, the database with the original images is augmented using the DMD modes obtained from the HODMD analysis.
+The following sketch summarizes the main steps of the application carried in this work, which can be sectioned into two stages: 
+1-	Feature extraction stage using the HODMD algorithm (as illustrated in the previous application).
+2-	Disease classification using CNNs.
+
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/ModelFlows_Cardiac_IMAGE03.jpg?raw=true)
+
+The results obtained from all testcases, and experiments showed a clear improvement in the performance when augmenting the original images using the DMD modes, as it increased the prediction accuracy by 4% - 22%. These results have proved the efficiency of the proposed hybrid tool, which merges model decomposition tools and machine learning approaches, and its ability to enhance classification models and improve predictions on new unseen data.
+
+This work has been used to produce a journal paper, which has been subbmited and currently under review in the journal of Artificial Intelligence In Medicine.
+
+### HODMD-based reduced order model for cardiac MRI analysis
+
+In this application, the HODMD algorithm is used as a reduced order model (ROM) to generate new MRI databases covering more cardiac cycles, varying for longer periods of time. In particular, the HODMD algorithm is applied to the MRI database with a change in the temporal term of the HODMD expansion. As a consequence, the new database generated will consist of 100 snapshots for each slice instead of 20 snapshots. In this way, we will be able to represent the heart, with additional reconstructed snapshots covering more than one cardiac cycle. Additionally, applying the HODMD algorithm to the tensor containing all the MRI sequences permits the use of the HODMD extrapolation properties to fill in any gaps between the individual slices. As a consequence, a 3D visualization of the full heart can be carried out.
+
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/ModelFlows_Cardiac_IMAGE05.jpg?raw=true)
+
+These results have already been published in :
+[*Groun, N., Villalba-Orero, M., Lara-Pezzi, E., Valero, E., Garicano-Mena, J. and Le Clainche, S., 2022. A novel data-driven method for the analysis and reconstruction of cardiac cine MRI. Computers in Biology and Medicine, 151, p.106317.*](https://doi.org/10.1016/j.compbiomed.2022.106317)
+
+You can also see the explanation of this paper in the following video:
+
+<iframe width="560" height="315" src="https://youtu.be/3oJoGSxvK40?si=T5K0ry4-Mb-GYvw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Vision Transformers
 <!-- Andres's work -->
