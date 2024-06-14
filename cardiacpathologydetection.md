@@ -17,12 +17,10 @@ The medical imaging datasets used for this first application are echocardiograph
 
 ### Pattern detection
 #### HODMD
-<!-- Nourel's work -->
 
 Medical imaging field is being profoundly affected by the technological revolution brought forward by increasingly sophisticated electronic devices and the continuous growth of computing power. Therefore, medical imaging has become a data intensive field: optimized tools grounded in the data science discipline are necessary to reap the full potential of the wealth of data available.
 starting from a certain point, approaches based on matrix decomposition and data-driven methods began to gain recognition in medical analysis field. In this research, we focused on the fluid dynamic tool, the higher order dynamic mode decomposition (HODMD). In the following the HODMD was applied to the analysis of echocardiography images as a feature detection technique, with the aim of identifying main patterns related to different cardiac conditions.
 
-<!-- [*Le Clainche & Vega, Higher order dynamic mode decomposition, SIAM J. Appl. Dyn. Syst., 16(2), 882-925, 2017.*](https://epubs.siam.org/doi/10.1137/15M1054924) -->
 
 #### Analysis and findings
 
@@ -41,18 +39,11 @@ These results have already been published in :
 
 You can also see the explanation of this paper in the following video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=AOD1t533sd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<!-- FOR VIDEOS UPLOADED ON GITHUB (upload them on assets/vid/ )
-<video width="640" height="360" controls>
-  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/HODMD-video.mp4?raw=true" type="video/mp4">
-</video>  -->
-
-<!-- FOR VIDEOS IN YOUTUBE: <iframe width="560" height="315" src="https://www.youtube.com/embed/ZKeShcM8nuI?si=jOUu3mio-dZYFxf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AOD1t533sd8?si=DS5swbHta_SDBqbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Cardiac disease classification
 #### Hybrid ROM combining HODMD and CNNs
-<!-- Nourel's work -->
+
 In this application the HODMD algorithm is combined with convolutional neural networks (CNNs) to improve the classification accuracy of five different cardiac conditions. 
 In order to demonstrate this application, two testcases are performed: first, the model (CNN) is trained using a database consists of the original echocardiography images only (testcase 01). Second, the database with the original images is augmented using the DMD modes obtained from the HODMD analysis.
 
@@ -88,11 +79,22 @@ These results have already been published in :
 
 You can also see the explanation of this paper in the following video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=3oJoGSxvK40&t=6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3oJoGSxvK40?si=5ZZyUISubRJENcbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 #### Vision Transformers
 <!-- Andres's work -->
 *Work in progress. Coming soon...*
+
+
+<!-- [*Le Clainche & Vega, Higher order dynamic mode decomposition, SIAM J. Appl. Dyn. Syst., 16(2), 882-925, 2017.*](https://epubs.siam.org/doi/10.1137/15M1054924) -->
+
+<!-- FOR VIDEOS UPLOADED ON GITHUB (upload them on assets/vid/ )
+<video width="640" height="360" controls>
+  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/HODMD-video.mp4?raw=true" type="video/mp4">
+</video>  -->
+
+<!-- FOR VIDEOS IN YOUTUBE: <iframe width="560" height="315" src="https://www.youtube.com/embed/ZKeShcM8nuI?si=jOUu3mio-dZYFxf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
 ### Prediction
 #### Vision Transformers
@@ -125,7 +127,6 @@ This analysis highlights the importance of CFD in advancing our understanding of
 
 You can also see the explanation of this project in the following video:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XHdfQc7LLgA?si=jY4mia541q-MqgtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<!-- Link to starccm codes and databases? -->
 
 ### Pattern detection
 *Work in progress. Coming soon...*
