@@ -68,7 +68,7 @@ In this application, the HODMD algorithm is used as a reduced order model (ROM) 
 
 This new method is applied to the tensor containing all the reconstructed slices in order to recover the information of one missing slice. In particular, the 7th slice has been completely removed, and the two neighboring slices (slice 06 and slice 08) are used to reconstruct all the information of the missing slice. This approach employs the SVD to provide matrix decomposition, while  Spline interpolation is used to recover the information of the missing MR images by interpolating through the points of the matrix of the right singular vectors.
 
-A comparison between the snapshots of the original 7th and the same snapshots from the new interpolated slice is shown in the following figure. As seen the images present a qualitative similar shapes and intensities. The noise is the main difference found between the two slices; hence the reconstructed images are clean.
+A comparison between the snapshot of the original 7th and the same snapshot from the new interpolated slice is shown in the following figure. As seen the images present a qualitative similar shapes and intensities. The noise is the main difference found between the two slices; hence the reconstructed images are clean.
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/ModelFloes_Cardiac_IMAGE06.png?raw=true)
 
