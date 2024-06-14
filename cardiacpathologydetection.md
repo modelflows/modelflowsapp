@@ -53,7 +53,7 @@ You can also see the explanation of this paper in the following video:
 ### Cardiac disease classification
 #### Hybrid ROM combining HODMD and CNNs
 <!-- Nourel's work -->
-In this application the HODMD algorithm is combined with image-classification model  (CNN) to improve the classification accuracy of five different cardiac conditions. 
+In this application the HODMD algorithm is combined with convolutional neural networks (CNNs) to improve the classification accuracy of five different cardiac conditions. 
 In order to demonstrate this application, two testcases are performed: first, the model (CNN) is trained using a database consists of the original echocardiography images only (testcase 01). Second, the database with the original images is augmented using the DMD modes obtained from the HODMD analysis.
 
 The following sketch summarizes the main steps of the application carried in this work, which can be sectioned into two stages: 
