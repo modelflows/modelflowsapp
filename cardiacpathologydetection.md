@@ -57,7 +57,6 @@ In this application the HODMD algorithm is combined with convolutional neural ne
 In order to demonstrate this application, two testcases are performed: first, the model (CNN) is trained using a database consists of the original echocardiography images only (testcase 01). Second, the database with the original images is augmented using the DMD modes obtained from the HODMD analysis.
 
 The following sketch summarizes the main steps of the application carried in this work, which can be sectioned into two stages: 
-
 1.	 Feature extraction stage using the HODMD algorithm (as illustrated in the previous application).
 2.	 Disease classification using CNNs.
 
