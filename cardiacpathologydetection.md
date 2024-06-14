@@ -9,6 +9,12 @@ ModelFLOWs-cardiac, a branch of the ModelFLOWs-app which contains an open source
 This data-driven application consists of two modules: **Medical data** and **CFD data**. The first one contains three blocks: *Pattern detection*, *Classification* and *Prediction*. The latter one contains two blocks: *Codes and simulations* and *Pattern detection*
 
 ## Medical data
+The medical imaging datasets used for this first application are echocardiography video loops and magnetic resonance imaging (MRI): 
+1.	The echocardiography videos are taken with respect to two views: long axis and shorts axis views (LAX and SAX respectively). The images are taken from mice with different cardiac conditions including healthy, diabetic cardiomyopathy, myocardial infarction, obesity, TAC hypertrophy). Each video consists of ~120 frames (snapshots).
+2.	The MRI dataset consists of 10 MRI sequences, representing 10 different slices of the heart.  In particular, 20 images (snapshots) of 128 × 128 × 1 resolution were acquired for each slice, resulting a total number of 200 snapshot per dataset. 
+
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/ModelFloes_Cardiac_IMAGE00.png?raw=true)
+
 ### Pattern detection
 #### HODMD
 <!-- Nourel's work -->
