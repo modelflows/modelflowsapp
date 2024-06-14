@@ -41,7 +41,7 @@ These results have already been published in :
 
 You can also see the explanation of this paper in the following video:
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/watch?v=AOD1t533sd8&t=3s" title="Groun et al. Higher order dynamic mode decomposition from fluid dynamics to heart disease analysis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=AOD1t533sd8&t=3s" title="Groun et al. Higher order dynamic mode decomposition from fluid dynamics to heart disease analysis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 
 <!-- FOR VIDEOS UPLOADED ON GITHUB (upload them on assets/vid/ )
 <video width="640" height="360" controls>
