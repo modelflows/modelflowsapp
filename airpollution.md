@@ -35,7 +35,7 @@ You can also see the explanation of this paper in the following video:
   <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/Tagliaferro_etal_2024.mp4?raw=true" type="video/mp4">
 </video>
 
-You can download the mentioned datasets and the code to run the GSVD method in the following [link.](https://github.com/modelflows/modelflowsapp/blob/ffc01416f8e7a251f83afe481541473a3605698b/assets/datasets/2024_Tagliaferroetal_Databases.zip)
+You can download the mentioned datasets and the code to run the GSVD method in the following [link.](https://github.com/modelflows/modelflowsapp/raw/ffc01416f8e7a251f83afe481541473a3605698b/assets/datasets/2024_Tagliaferroetal_Databases.zip)
 
 ### Funding
 
