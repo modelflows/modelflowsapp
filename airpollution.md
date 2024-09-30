@@ -35,6 +35,8 @@ You can also see the explanation of this paper in the following video:
   <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/Tagliaferro_etal_2024.mp4?raw=true" type="video/mp4">
 </video>
 
+You can download the mentioned dataset and code to run the GSVD method in the following [link.](https://github.com/modelflowsapp/blob/master/assets/datasets/2024_Tagliaferroetal_Databases.zip)
+
 ### Funding
 
 A.M. received grants to conduct the MEETOUT study from the European Union through the Italian Ministry of University and Research under the ESF REACT-EU Green and Innovation funding programme (Ministerial Decree 1061/2021) and the NextGenerationEu funding programme (Ministerial Decree 737/2021). Article processing charges were supported by the special fund at the University of Verona dedicated to Open Access publications. S.L.C. and A.C. acknowledge the grants PID2023-147790OB-I00, TED2021-129774B-C21 and PLEC2022-009235 funded by MCIN/AEI/10.13039/501100011033 and by the European Union “NextGenerationEU”/PRTR. The authors acknowledge the MODELAIR and ENCODING projects that have received funding from the European Union’s Horizon Europe research and innovation programme under the Marie Sklodowska-Curie grant agreement No. 101072559 and 101072779, respectively. The results of this publication reflect only the author(s) view and do not necessarily reflect those of the European Union. The European Union cannot be held responsible for them. A.C. acknowledges the support of Universidad Politécnica de Madrid, under the program ‘Programa Propio’. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. There was no additional external funding received for this study.
