@@ -1,7 +1,7 @@
 ---
 layout: page
-title: ModelFLOWs-cardiac
-subtitle: Our studies focused on cardiovascular diseases
+title: Air pollution
+subtitle: Our studies focused on air pollution
 ---
 
 ## Introduction
@@ -28,6 +28,12 @@ Pollen variability, which can impact imputation accuracy, was also analysed usin
 ## Results
 
 Promising results emerged, showing that the GSVD was as good as the well-established moving mean method and demonstrating its strong generalization capabilities across different data types. However, the imputation error was primarily influenced by pollen characteristics and location, regardless of the imputation method used. High variability in pollen concentrations and the distribution of missing data negatively affected imputation accuracy.
+
+You can also see the explanation of this paper in the following video:
+
+<video width="640" height="360" controls>
+  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/Tagliaferro_etal_2024.mp4?raw=true" type="video/mp4">
+</video>
 
 ### Funding
 
