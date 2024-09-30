@@ -35,3 +35,9 @@ A.M. received grants to conduct the MEETOUT study from the European Union throug
 
 ### References
 
+[*Navares, R. and Aznarte, J.L., 2019. Geographical Imputation of Missing Poaceae Pollen Data via Convolutional Neural Networks.  Atmosphere, 110(11), 717.*](https://doi.org/10.3390/atmos10110717)
+
+[*Picornell, A., Oteros,J., Ruiz-Mata, R., Recio, M., Trigo, M.M., Martínez-Bracero, M., Lara, B., Serrano-Gracía, A., Galán, C., García-Mozo, H., Alcázar, P., Pérez-Badia, R., Cabezudo, B., Romero-Morte, J. and Rojo, J.,  2021. Methods for interpolating missing data in aerobiological databases  Environmental Research, 200, p.111391.*](https://doi.org/10.3390/atmos10110717)
+
+[*Marchetti, P., Pesce, G., Villani, S., Antonicelli, L., Ariano, R., Attena, F., Bono, R., Bellisario, V., Fois, A., Gibelli, N., Nicolis, M., Olivieri, M., Pirina, P., Scopano, E., Siniscalco, C., Verlato, G., Marcon, M., 2017. Pollen concentrations and prevalence of asthma and allergic rhinitis in Italy: Evidence from the GEIRD study. Science of The Total Environment, 584-585, p.1093–1099.*](https://doi.org/10.1016/j.scitotenv.2017.01.168)
+
