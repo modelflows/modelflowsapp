@@ -9,7 +9,7 @@ Aerobiological data (e.g. pollen and spores) are typically measured on a daily b
 In this research, a simulation study was conducted to evaluate, for the first time, the effectiveness of Gappy Singular Value Decomposition (GSVD) in imputing aerobiological datasets, comparing it with a well-known statistical method, the moving mean algorithm.
 
 ## Aerobiological data
-Daily pollen concentrations for the period 2018-2022 were downloaded from the POLLnet Italian aerobiological monitoring network using the “pollnet” R package (https://rpubs.com/gbonafe/pollnet-data-extraction). Alnus and Poaceae pollen measured at two monitoring stations in northern Italy were selected for the analysis due to their different load and seasonality. The pollen season of the year 2022 was chosen as simulation period to ensure a complete data series for the preceding years, thus guaranteeing the applicability of the data-driven method.
+Daily pollen concentrations for the period 2018-2022 were downloaded from the POLLnet Italian aerobiological monitoring network using the [*“pollnet” R package*](https://rpubs.com/gbonafe/pollnet-data-extraction). Alnus and Poaceae pollen measured at two monitoring stations in northern Italy were selected for the analysis due to their different load and seasonality. The pollen season of the year 2022 was chosen as simulation period to ensure a complete data series for the preceding years, thus guaranteeing the applicability of the data-driven method.
 
 ## Imputation methods
 
