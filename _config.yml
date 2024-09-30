@@ -28,7 +28,7 @@ navbar-links:
   Applications:
     - Cardiac pathology detection: "cardiacpathologydetection"
   #  - Combustion: "combustion"
-  #  - Air pollution: "airpollution"
+    - Air pollution: "aerobiology"
 
 ################
 # --- Logo --- #
