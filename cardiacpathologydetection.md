@@ -121,23 +121,23 @@ We offer two approaches:
 * Idealized Geometry: Where the wall motion is defined analytically, and STL files are generated accordingly. 
 * Patient-Specific Geometry: Requires code adjustments since analytical expressions are unavailable. This process includes extracting the left ventricle model from cardiotomography data to ensure accurate patient-specific simulations.
 
-Download the necessary files: [Download](https://github.com/modelflows/ModelFLOWs-cardiac/STL_Generation.zip)
+Download the necessary files: [Download](https://github.com/modelflows/ModelFLOWSs-cardiac/blob/f4b7e6f558af4a7ae10de6318e3ba33988654c80/STL_Generation.zip)
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Bzd_ZniGGG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Bzd_ZniGGG0?si=UvRmu9_2Qd7QxDWJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### CFD with Star-CCM+
 This section provides a complete guide on replicating our blood flow simulations inside the left ventricle using STAR-CCM+. From loading the geometry and meshing to configuring the simulation settings, we walk you through each step to ensure accurate reproduction of our results.
 
-Download the necessary files: [Download](https://github.com/modelflows/ModelFLOWs-cardiac/Tutorial_Star-CCM+.zip)
+Download the necessary files: [Download](https://github.com/modelflows/ModelFLOWSs-cardiac/blob/f4b7e6f558af4a7ae10de6318e3ba33988654c80/Tutorial_Star-CCM%2B.zip)
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=8YjVIamKzhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8YjVIamKzhY?si=U5s0zgmYVJ2fAl5a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### CFD with Ansys Fluent
 In this section, we outline the entire process of setting up blood flow simulations within the left ventricle using Ansys Fluent. From importing the geometry and generating the mesh to configuring the simulation parameters, this guide covers everything needed to successfully replicate our results.
 
 Download the necessary files: [Download](https://drive.upm.es/s/A8EuWtjSuMAetHc)
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=zkAAioOEVDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zkAAioOEVDE?si=VAc7JBNCvohALkOS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 You can obtain the necessary tools and softwares here:
 * [Matlab](https://es.mathworks.com/products/matlab.html)
