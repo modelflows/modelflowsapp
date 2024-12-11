@@ -126,6 +126,7 @@ We offer two approaches:
 * Patient-Specific Geometry: Requires code adjustments since analytical expressions are unavailable. This process includes extracting the left ventricle model from cardiotomography data to ensure accurate patient-specific simulations.
 
 Download the necessary files: [Download](https://github.com/modelflows/ModelFLOWSs-cardiac/blob/f4b7e6f558af4a7ae10de6318e3ba33988654c80/STL_Generation.zip)
+Download the slides: [Download](https://github.com/modelflows/ModelFLOWSs-cardiac/blob/92bdd2e0c9705986b34c158afd82c57fa5a4bc1b/Tutorial_GeometryPreprocessing.pptx)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Bzd_ZniGGG0?si=UvRmu9_2Qd7QxDWJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -133,6 +134,7 @@ Download the necessary files: [Download](https://github.com/modelflows/ModelFLOW
 This section provides a complete guide on replicating our blood flow simulations inside the left ventricle using STAR-CCM+. From loading the geometry and meshing to configuring the simulation settings, we walk you through each step to ensure accurate reproduction of our results.
 
 Download the necessary files: [Download](https://github.com/modelflows/ModelFLOWSs-cardiac/blob/f4b7e6f558af4a7ae10de6318e3ba33988654c80/Tutorial_Star-CCM%2B.zip)
+Download the slides: [Download](https://github.com/modelflows/ModelFLOWSs-cardiac/blob/92bdd2e0c9705986b34c158afd82c57fa5a4bc1b/Tutorial_StarccmCFD.pptx)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8YjVIamKzhY?si=U5s0zgmYVJ2fAl5a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -140,6 +142,7 @@ Download the necessary files: [Download](https://github.com/modelflows/ModelFLOW
 In this section, we outline the entire process of setting up blood flow simulations within the left ventricle using Ansys Fluent. From importing the geometry and generating the mesh to configuring the simulation parameters, this guide covers everything needed to successfully replicate our results.
 
 Download the necessary files: [Download](https://drive.upm.es/s/A8EuWtjSuMAetHc)
+Download the slides: [Download](https://github.com/modelflows/ModelFLOWSs-cardiac/blob/92bdd2e0c9705986b34c158afd82c57fa5a4bc1b/Tutorial_FluentCFD.pptx)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zkAAioOEVDE?si=VAc7JBNCvohALkOS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
