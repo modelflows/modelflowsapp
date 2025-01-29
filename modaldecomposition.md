@@ -6,7 +6,9 @@ title: Notebooks: Modal Decomposition
 
 <!-- Comment -->
 
-Outline
+Codes available:
+* [Higher-Order Singular Value Decomposition (HOSVD)](https://modelflows.github.io/modelflowsapp/modaldecomposition/#hosvd)
+* [Higher-Order Dynamic Mode Decomposition (HODMD)](https://modelflows.github.io/modelflowsapp/modaldecomposition/#hodmd)
 
 ## HOSVD
 The Higher-Order Singular Value Decomposition (HOSVD) is a generalization of the standard SVD to tensors, 
@@ -15,30 +17,8 @@ This method is widely used in modal decomposition, data compression, and feature
 By capturing dominant structures in data, HOSVD facilitates reduced-order modeling and pattern recognition while preserving key spatial and temporal correlations.
 
 
-
 ## HODMD
+The Higher-Order Dynamic Mode Decomposition (HODMD) extends the traditional DMD to handle high-dimensional and multiway data efficiently by leveraging tensor decomposition techniques. 
+By applying HOSVD as a preprocessing step, HODMD reduces noise sensitivity and improves the extraction of dominant spatiotemporal modes in complex dynamical systems. 
+This makes it particularly useful for analyzing fluid flows, biomedical signals, and other time-dependent datasets, enabling reduced-order modeling and predictive analysis while maintaining the underlying system dynamics.
 
-
-<!-- LISTS -->
-1.	Number
-2.	List
-3.  This
-4.  Way
-
-*   Dot
-*   List
-*   This
-*   Way
-
-<!-- REFERENCES -->
-[*Author, A., and Author, A., YYYY. Title of the article. Journal.*](LINK-TO-THE-ARTICLE)
-
-<!-- LINKS -->
-[WORD](LINK)
-
-<!-- IMAGES -->
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true)
-
-<!-- VIDEOS -->
-<iframe width="560" height="315" src="LINK-EXTRACTED-FROM-YOUTUBE-CODE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<video width="640" height="360" controls><source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/YOURVIDEOHERE.mp4?raw=true" type="video/mp4">
