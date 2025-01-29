@@ -9,6 +9,12 @@ title: Notebooks: Modal Decomposition
 Outline
 
 ## HOSVD
+The Higher-Order Singular Value Decomposition (HOSVD) is a generalization of the standard SVD to tensors, 
+enabling the decomposition of multi-dimensional data into a core tensor and orthonormal factor matrices along each mode.
+This method is widely used in modal decomposition, data compression, and feature extraction, particularly in fields dealing with high-dimensional datasets such as fluid dynamics and biomedical imaging. 
+By capturing dominant structures in data, HOSVD facilitates reduced-order modeling and pattern recognition while preserving key spatial and temporal correlations.
+
+
 
 ## HODMD
 
