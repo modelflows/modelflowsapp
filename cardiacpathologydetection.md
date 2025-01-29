@@ -13,7 +13,7 @@ Content:
   *  [Pattern Detection](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#pattern-detection)
   *  [Classification](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#classification)
   *  [Prediction](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#prediction)
-  *  
+
 2-  [CFD Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection#cfd-data)
 
   *  [Tutorials](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#tutorials)
