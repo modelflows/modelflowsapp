@@ -7,13 +7,19 @@ subtitle: Our studies focused on cardiovascular diseases
 ModelFLOWs-cardiac, a branch of the ModelFLOWs-app which contains an open source Software for pattern identification, classification and prediction of cardiovascular diseases (CVDs) using modal decomposition and deep learning architectures, together with CFD databases and codes for obtention of cardiac flow simulations. 
 
 Content:
+
 1-  [Medical Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection#medical-data)
+
   *  [Pattern Detection](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#pattern-detection)
   *  [Classification](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#classification)
   *  [Prediction](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#prediction)
+  *  
 2-  [CFD Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection#cfd-data)
+
   *  [Tutorials](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#tutorials)
   *  [Pattern Detection](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#cfd-data/pattern-detection)
+
+
 This data-driven application consists of two modules: **Medical data** and **CFD data**. The first one contains three blocks: *Pattern detection*, *Classification* and *Prediction*. The latter one contains two blocks: *Codes and simulations* and *Pattern detection*
 
 ## Medical data
