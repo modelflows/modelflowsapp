@@ -28,6 +28,8 @@ Plain text is written this way.
 
 <!-- LINKS -->
 [WORD](LINK)
+[TO LINK TO SPECIFIC PLACE IN PAGE](https://modelflows.github.io/modelflowsapp/THEPAGE/#THESECTIONNAME)
+You can also add <a id="pattern-medical"></a> beside the section to override the label
 
 <!-- IMAGES -->
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true)
