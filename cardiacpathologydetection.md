@@ -10,14 +10,14 @@ Content:
 
 1-  [Medical Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection#medical-data)
 
-  *  [Pattern Detection](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#pattern-detection)
+  *  [Pattern Detection](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#pattern-medical)
   *  [Classification](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#classification)
   *  [Prediction](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#prediction)
 
-2-  [CFD Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection#cfd-data)
+2-  [CFD Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#cfd-data)
 
   *  [Tutorials](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#tutorials)
-  *  [Pattern Detection](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#cfd-data/pattern-detection)
+  *  [Pattern Detection](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#pattern-cfd)
 
 
 This data-driven application consists of two modules: **Medical data** and **CFD data**. The first one contains three blocks: *Pattern detection*, *Classification* and *Prediction*. The latter one contains two blocks: *Codes and simulations* and *Pattern detection*
@@ -29,7 +29,7 @@ The medical imaging datasets used for this first application are echocardiograph
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/ModelFloes_Cardiac_IMAGE00.png?raw=true)
 
-### Pattern detection
+### Pattern detection <a id="pattern-medical"></a>
 #### HODMD
 
 Medical imaging field is being profoundly affected by the technological revolution brought forward by increasingly sophisticated electronic devices and the continuous growth of computing power. Therefore, medical imaging has become a data intensive field: optimized tools grounded in the data science discipline are necessary to reap the full potential of the wealth of data available.
@@ -185,6 +185,6 @@ The primary objective of this study is to examine the formation and evolution of
 This analysis highlights the importance of CFD in advancing our understanding of intracardiac flow dynamics and developing improved diagnostic and therapeutic strategies for cardiovascular diseases.
 
 
-### Pattern detection
+### Pattern detection <a id="pattern-cfd"></a>
 *Work in progress. Coming soon...*
 <!-- Introduce here the work in progress for pattern detection in CFD cardiac flows with SVD, HODMD, etc. -->
