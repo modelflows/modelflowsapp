@@ -4,9 +4,16 @@ title: ModelFLOWs-cardiac
 subtitle: Our studies focused on cardiovascular diseases
 ---
 
-Prueba
 ModelFLOWs-cardiac, a branch of the ModelFLOWs-app which contains an open source Software for pattern identification, classification and prediction of cardiovascular diseases (CVDs) using modal decomposition and deep learning architectures, together with CFD databases and codes for obtention of cardiac flow simulations. 
 
+Content:
+1-  [Medical Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection#medical-data)
+  *  [Pattern Detection](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#pattern-detection)
+  *  [Classification](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#classification)
+  *  [Prediction](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#prediction)
+2-  [CFD Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection#cfd-data)
+  *  [Tutorials](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#tutorials)
+  *  [Pattern Detection](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#cfd-data/pattern-detection)
 This data-driven application consists of two modules: **Medical data** and **CFD data**. The first one contains three blocks: *Pattern detection*, *Classification* and *Prediction*. The latter one contains two blocks: *Codes and simulations* and *Pattern detection*
 
 ## Medical data
@@ -103,7 +110,7 @@ You can also see the explanation of this paper in the following video:
 *Work in progress. Coming soon...*
 
 
-## CFD on Left Ventricle
+## CFD Data
 The growing impact of cardiovascular disease (CVD) requires advances in diagnosis and treatment. Recent developments in medical research have introduced innovative methods for understanding and treating complex diseases such as CVDs. Among these, Computational Fluid Dynamics (CFD) has emerged as a key tool for modeling the intricate dynamics of intracardiac blood flow. This approach not only enhances our fundamental understanding of cardiac function, but also paves the way for innovative treatment strategies.
 
 For validation purposes, we base our study on the work of Zheng et al. and Vedula et al:
@@ -116,7 +123,7 @@ You can also see the explanation of this project in the following video:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XHdfQc7LLgA?si=jY4mia541q-MqgtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-### Codes and Tutorials
+### Tutorials
 Explore our step-by-step video tutorials on setting up CFD simulations of the left ventricle. These resources include all necessary files to replicate our results, offering a comprehensive guide for anyone aiming to deepen their understanding or reproduce our findings. 
 
 #### Geometry Pre-Processing
