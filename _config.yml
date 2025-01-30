@@ -40,8 +40,9 @@ navbar-links:
 
   Databases: "databases"
     
-  About us: "about"
+  Group:
     - Workshops: "workshops"
+    - About us: "about"
 
 ################
 # --- Logo --- #
