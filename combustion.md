@@ -44,4 +44,11 @@ These two datasets (experimental and theoretical) independently hold significant
 The tutorial on lcsvd data assimilation algorithm for reactive flows
 
 ### Results
-The results of applying lcsvd-da algorithm to two datasets
+The results of applying lcsvd-da algorithm to laminar co-flow flame dataset with fuel 65% methane and 35% nitrogen. The figure shows original database (left), reconstructed database using lcSVD data assimilation (center) and downsampled matrix (right).
+
+![lcsvd-da-res1](https://github.com/user-attachments/assets/img/re1_lcsvd-da_lam.png)
+
+The results of applying lcsvd-da algorithm to turbulent bluff body stabilized hydrogen flame dataset. The figure shows original database (left), reconstructed database using lcSVD data assimilation (center) and downsampled matrix (right).
+
+![lcsvd-da-res2](https://github.com/user-attachments/assets/img/re2_lcsvd-da_turb.png)
+
