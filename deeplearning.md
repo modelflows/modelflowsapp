@@ -28,7 +28,7 @@ Codes available:
 ### Multiparametric Tool <a id="multiparametric-tool"></a>
 <!-- Short description of the method. -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
-
+*Work in progress. Coming soon...*
 
 
 ## Spatial Resolution Enhancement <a id="spatial-resolution-enhancement"></a>
@@ -36,7 +36,7 @@ Codes available:
 ### Superresolution Tool <a id="superresolution-tool"></a>
 <!-- Short description of the method. -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
-
+*Work in progress. Coming soon...*
 
 
 ## Temporal Forecasting <a id="temporal-forecasting"></a>
@@ -46,10 +46,12 @@ Codes available:
 #### Standard <a id="hybrid-generative-standard"></a>
 <!-- Short description of the method. -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
+*Work in progress. Coming soon...*
 
 #### Advanced <a id="hybrid-generative-advanced"></a>
 <!-- Short description of the method. -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
+*Work in progress. Coming soon...*
 
 
 ### Full Deep Learning Generative Model <a id="full-dl-generative-model"></a>
@@ -57,23 +59,29 @@ Codes available:
 #### Residual <a id="full-generative-residual"></a>
 <!-- Short description of the method. -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
+*Work in progress. Coming soon...*
 
 #### Variational <a id="full-generative-variational"></a>
 <!-- Short description of the method. -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
+*Work in progress. Coming soon...*
 
 
 ### Hybrid Predictive Model <a id="hybrid-predictive-model"></a>
 <!-- Short description of the method. -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
+*Work in progress. Coming soon...*
 
 
 ### Remote Sensing and DLinear <a id="dlinear"></a>
 <!-- Short description of the method. -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
+*Work in progress. Coming soon...*
 
 
 
 ## Control <a id="control"></a>
 <!-- Short description of the method. -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
+*Work in progress. Coming soon...*
+
