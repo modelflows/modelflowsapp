@@ -17,7 +17,7 @@ Our research introduces a novel **Reduced-Order Model (ROM)** that merges experi
 More details about the implementation:
 
 <!-- REFERENCES -->
-[Jeanney, P., Hetherington, A., Ahmed, S. E., Lanceta, D., Saiz, S., Perez, J. M. \& Le Clainche, S. (2024). Ensemble Kalman Filter for Data Assimilation coupled with low-resolution computations techniques applied in Fluid Dynamics, to appear on arXiv, 2025.]()
+[Jeanney, P., Hetherington, A., Ahmed, S. E., Lanceta, D., Saiz, S., Perez, J. M. \& Le Clainche, S. (2024). Ensemble Kalman Filter for Data Assimilation coupled with low-resolution computations techniques applied in Fluid Dynamics, to be published on arXiv, 2025.]()
 
 <!-- VIDEOS 
 <iframe width="560" height="315" src="LINK-EXTRACTED-FROM-YOUTUBE-CODE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
