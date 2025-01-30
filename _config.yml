@@ -30,6 +30,7 @@ navbar-links:
     - Overview: "mainnotebooks"
     - Modal Decomposition: "modaldecomposition"
     - Deep Learning: "deeplearning"
+    - Other Codes: "others"
     
   Applications:
     - Air Pollution: "airpollution"
