@@ -31,3 +31,14 @@ One of the primary challenge associated with the industrial datasets is their he
 
 <!-- REFERENCES -->
 [Pillai, P., Hetherington, A. I., Saavedra Sago, L., & Le Clainche Martinez, S. (Year). A low cost singular value decomposition based data assimilation technique for analysis of heterogeneous combustion data., to be published on arXiv, 2025.]()
+
+
+## Spatio Temporal Koopman Decomposition (STKD)
+The Spatio-Temporal Koopman Decomposition (STKD) extends the High-Order Dynamic Mode Decomposition (HODMD) by enabling spatio-temporal analysis of multidimensional data. It represents spatio-temporal fields as combinations of traveling wave modes, each characterized by specific wavenumbers and spatial growth rates, forming intricate standing or propagating patterns. STKD accommodates expansions along multiple spatial dimensions, allowing complex dynamics to be captured across directions such as spanwise and streamwise.In the context of traveling waves, this decomposition allows us to describe how spatial patterns evolve over time in terms of their fundamental modes.STKD analysis helps us understand
+
+a) Dominant Wavenumbers and Frequencies: Identifying which spatial wavenumbers and temporal frequencies dominate the dynamics.
+b) Growth and Decay: Modes with positive/negative growth rates  indicate whether a wave pattern is amplifying or decaying over time.
+
+
+
+![Flowchart1](https://github.com/modelflows/modelflowsapp/blob/6df6193c90668bd32aeb5f4443804e4191dc9163/assets/img/2025_01_30_pillai_lcsvd-da.png)
