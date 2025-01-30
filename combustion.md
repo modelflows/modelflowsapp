@@ -57,7 +57,6 @@ You can also add <a id="pattern-medical"></a> beside the section to override the
 
 <video width="640" height="360" controls><source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/Enhancement_video.mp4?raw=true" type="video/mp4">
 
-
 ### Adaptive prediction
 Large Eddy Simulations (LES) have been widely used in various scenarios due to their capability of capturing more detailed flow fields than those captured by Reynolds-Averaged Navier–Stokes (RANS) and consuming fewer computational resources than Direct Numerical Simulations (DNS). However, for applications involving large-scale devices and combustion, huge computational resources are still required. Recent developments in machine learning have introduced innovative methods for accelerating Computational Fluid Dynamics (CFD). Among these, the adaptive method combining CFD and hybrid reduced order models (ROMs) is a promising way to accelerate the simulations. This approach not only enhances our fundamental understanding of combustion patterns but also paves the way for innovative strategies to improve the combustion efficiency.
 
