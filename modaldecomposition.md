@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Notebooks Modal Decomposition
+title: Modal Decomposition
 <!--subtitle: GENERAL SUBTITLE -->
 ---
 
