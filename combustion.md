@@ -26,4 +26,4 @@ The geometry of JHC burner
 ### Results
 The geometry of JHC burner
 <!-- IMAGES -->
-![Geometry of JHC burner](https://github.com/modelflows/modelflowsapp/assets/img/JHC burner geometry.jpg?raw=true)
+![Geometry of JHC burner](https://github.com/modelflows/modelflowsapp/assets/img/JHC_burner_geometry.jpg?raw=true)
