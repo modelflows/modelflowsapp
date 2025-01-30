@@ -55,7 +55,8 @@ In order to overcome the limitations of conventional numerical solvers, a fully 
 This model presents a hybrid ROM integrating Higher-Order Singular Value Decomposition (HOSVD) with Long Short-Term Memory (LSTM) architecture for temporal predictions. The integration of HOSVD enables dimensionality reduction, optimizing computational efficiency without compromising accuracy. The LSTM model processes the sequences, capturing nonlinear dependencies and preserving long-term temporal correlations.  The approach leverages a rolling window framework to extract temporal patterns. Predictions are generated autoregressively, where forecasted solutions are fed back as inputs to itteratively predict the next step.  While this approach can also be implemented with Singular Value Decomposition (SVD), HOSVD extends the capabilities of SVD by better preserving multi-dimensional structures, leading to improved performance in complex dynamical systems. This framework is implemented using TensorFlow/Keras for robust time-series forecasting applications.
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/d356b4aa65afd90fa0e8e1cba902d919b621e307/assets/img/2025_01_30_sengupta_Temporalforecasting.PNG?raw=true) 
-
+*Work in progress. Coming soon...*
+ 
 #### Advanced <a id="hybrid-generative-advanced"></a>
 <!-- Short description of the method. -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
