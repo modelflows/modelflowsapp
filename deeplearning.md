@@ -82,9 +82,11 @@ This model presents a hybrid ROM integrating Higher-Order Singular Value Decompo
 
 
 ### Remote Sensing and DLinear <a id="dlinear"></a>
-<!-- Short description of the method. -->
-<!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
-*Work in progress. Coming soon...*
+LC-SVD-DLinear (and LC-HOSVD-DLinear) are two hybrid machine learning models that combine [low-cost singular value decomposition (LC-SVD)](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-svd) and [low-cost high-order singular value decomposition](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-hosvd) with the DLinear architecture to efficiently forecast high-resolution experimental data collected from optimally placed sensors. These models operate by first using LC-SVD or LC-HOSVD to break down the experimental data and up-sample the temporal coefficients, POD modes, and singular values, significantly reducing computational cost while retaining all physical information. The reconstructed temporal coefficients are then processed by the DLinear model, which decomposes them into trend and seasonality components to identify temporal patterns and predict future values autoregressively, using the sliding window mechanism. Finally, the predicted temporal coefficients are combined with the reconstructed POD modes and singular values to generate high-resolution forecast snapshots, ensuring both accuracy and efficiency in handling complex, high-dimensional data.
+
+![LC-SVD-DLinear architecture summary](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/LC-SVD-DLinear.jpg?raw=true) 
+
+[Hetherington, A., Leonés, J. L., & Clainche, S. L. (2024). LC-SVD-DLinear: A low-cost physics-based hybrid machine learning model for data forecasting using sparse measurements. arXiv preprint arXiv:2411.17433.](https://arxiv.org/abs/2411.17433)
 
 
 
