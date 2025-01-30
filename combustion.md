@@ -12,7 +12,7 @@ Content:
   *  [Flow Control](https://modelflows.github.io/modelflowsapp/combustion/#flow-control)
       *  [HOSVD](https://modelflows.github.io/modelflowsapp/combustion/#hosvd)
       *  [HODMD](https://modelflows.github.io/modelflowsapp/combustion/#hodmd-combustion)
-
+  *  [Hydrogen enhanced methane combustion](https://modelflows.github.io/modelflowsapp/combustion/#hydrogen-enhanced-methane-combustion)
 
 Combustion is nice
 
