@@ -66,6 +66,8 @@ For validation purposes, we perform LES and adaptive prediction on a typical jet
 [*Dally, B. B., Karpetis, A. N., & Barlow, R. S. (2002). Structure of turbulent non-premixed jet flames in a diluted hot coflow. Proceedings of the combustion institute, 29(1), 1147-1154.*](https://doi.org/10.1016/S1540-7489(02)80145-6)
 
 #### Results
-
+The geometry of JHC burner
+<!-- IMAGES -->
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC burner geometry.jpg?raw=true)
 
 
