@@ -34,7 +34,7 @@ navbar-links:
   Applications:
     - Air Pollution: "airpollution"
     - Cardiac pathology detection: "cardiacpathologydetection"
-  #  - Combustion: "combustion"
+    - Combustion: "combustion"
   #  - Urban Flows: "urbanflows"
   
   About us: "about"
