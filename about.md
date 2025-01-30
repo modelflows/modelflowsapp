@@ -8,14 +8,25 @@ ModelFLOWs is a research group whose main promoter and tutor is [Soledad Le Clai
 
 ## List of Developers
 The following members have contributed in the development of ModelFLOWs-app, an open sourced software for data post-processing, patterns identification and development of reduced order models:
-- Adrián Corrochano
-- Eneko Lazpita
-- Ashton Ian Hetherington
-- Rodrigo Abadia-Heredia
-- Eva Muñoz Salamanca
-- Paula Díaz Morales
-- Egoitz Maiora
-- [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche/)
+
+<div style="display: flex;">
+  <ul>
+    <strong>First release:</strong>
+    <li> Adrián Corrochano</li>
+    <li> Eneko Lazpita</li>
+    <li> Ashton Ian Hetherington</li>
+    <li> Rodrigo Abadia-Heredia</li>
+    <li> Eva Muñoz Salamanca</li>
+    <li> Paula Díaz Morales</li>
+    <li> Egoitz Maiora</li>
+    <li> [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche/) </li>
+  </ul>
+  <ul>
+    <strong>Second release:</strong>
+    <li> First Participant</li>
+    <li> Second Participant</li>
+  </ul>
+</div>
 
 <!-- ### List of Contributors
 - 
