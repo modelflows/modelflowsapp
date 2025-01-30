@@ -9,26 +9,53 @@ Content:
 
 1.  [Adaptive prediction](https://modelflows.github.io/modelflowsapp/combustion/#adaptive-prediction)
     *  [Tutorials](https://modelflows.github.io/modelflowsapp/combustion/#tutorials)
+       *  [Geometry](https://modelflows.github.io/modelflowsapp/combustion/#geometry)
+       *  [Meshing](https://modelflows.github.io/modelflowsapp/combustion/#meshing)
+       *  [CFD with OpenFOAM](https://modelflows.github.io/modelflowsapp/combustion/#cfd-with-openfoam)
     *  [Results](https://modelflows.github.io/modelflowsapp/combustion/#results)
+       *  [LES results](https://modelflows.github.io/modelflowsapp/combustion/#les-results)
+       *  [Adaptive prediction](https://modelflows.github.io/modelflowsapp/combustion/#geometry)
+       *  [Coupling of OpenFOAM and adaptive prediction](https://modelflows.github.io/modelflowsapp/combustion/#coupling-of-adaptive)
 
 
 ## Adaptive prediction
 Large Eddy Simulations (LES) have been widely used in various scenarios due to their capability of capturing more detailed flow fields than those captured by Reynolds-Averaged Navier–Stokes (RANS) and consuming fewer computational resources than Direct Numerical Simulations (DNS). However, for applications involving large-scale devices and combustion, huge computational resources are still required. Recent developments in machine learning have introduced innovative methods for accelerating Computational Fluid Dynamics (CFD). Among these, the adaptive method combining CFD and hybrid reduced order models (ROMs) is a promising way to accelerate the simulations. This approach not only enhances our fundamental understanding of combustion patterns but also paves the way for innovative strategies to improve the combustion efficiency.
-
-![image](https://github.com/user-attachments/assets/eaedad25-f0e7-4f21-b39d-7d6806c1bd5c)
-
-
 For validation purposes, we perform LES and adaptive prediction on a typical jet in hot coflow burner used by Dally et al. 
+
 <!-- REFERENCES -->
 [*Dally, B. B., Karpetis, A. N., & Barlow, R. S. (2002). Structure of turbulent non-premixed jet flames in a diluted hot coflow. Proceedings of the combustion institute, 29(1), 1147-1154.*](https://doi.org/10.1016/S1540-7489(02)80145-6)
 
 ### Tutorials
-The geometry of JHC burner
-
-### Results
-The geometry of JHC burner
+Discover our detailed tutorials that walk you through the process of setting up Computational Fluid Dynamics (CFD) simulations.
+#### Geometry
+The geometry of JHC burner is shown in the following figure. The burner consists of a central jet (I.D. = 4.25 mm), an annulus (I.D. = 82 mm) and air flow inlet. 
 <!-- IMAGES -->
 ![Geometry of JHC burner](https://github.com/modelflows/modelflowsapp/assets/img/JHC_burner_geometry.jpg?raw=true)
+
+#### Meshing
+The mesh can be perform with several tools, such as SnappyHexMesh, BlockMesh, Ansys ICEM CFD, and fluent Meshing etc. The mesh employed is shown in the following figure. The total number of grid cells is 1, 600, 000. 
+<!-- IMAGES -->
+![Mesh of JHC burner](https://github.com/modelflows/modelflowsapp/assets/img/JHC_burner_mesh.jpg?raw=true)
+
+#### CFD with OpenFOAM
+This section provides a complete guide on replicating our combustion simulations using OpenFOAM-v10. We focused on one case (HM3) in the paper of Dally et al. The The mean temperature of fuel jet, hot co-flow, and air inlet are 305, 1300, and 300 K, respectively. The velocity of fuel jet, hot co-flow, and air inlet are 
+Coming soon...
+
+### Results
+This section presents the results of case HM3 for the JHC burner. 
+
+#### LES results
+The contours of temperature, mass fractions of CH4, CO2 are shown. 
+
+#### Adaptive prediction
+
+
+#### Coupling of OpenFOAM and adaptive prediction
+Work in progress. Coming soon…
+
+
+
+
 
 2.  [LcSVD-DA](https://modelflows.github.io/modelflowsapp/combustion/#lcsvd-da)
     *  [Tutorials](https://modelflows.github.io/modelflowsapp/combustion/#tutorials)
