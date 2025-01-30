@@ -92,11 +92,11 @@ Reactive flow databases are typically large, complex, and heterogeneous. Experim
 The tutorial on lcHODMD algorithm for reactive flows
 
 ### Results
-The results of applying lcsvd-da algorithm to laminar co-flow flame dataset with fuel 65% methane and 35% nitrogen. The figure shows original database , downsampled matrix, reconstructed database using lcHODMD data assimilation and absolute error (left to right) for species Temperature, OH and Methane (top to bottom).
+The results of applying lcHODMD algorithm to laminar co-flow flame dataset with fuel 65% methane and 35% nitrogen. The figure shows original database , downsampled matrix, reconstructed database using lcHODMD data assimilation and absolute error (left to right) for species Temperature, OH and Methane (top to bottom).
 
 ![lchodmd_res1](https://github.com/modelflows/modelflowsapp/blob/621c629e76f9f1dabd7d0199c6158c956184a662/assets/img/re3_lchodmd_lam.png)
 
-The results of applying lcsvd-da algorithm to turbulent bluff body stabilized hydrogen flame dataset. The figure shows original database , downsampled matrix, reconstructed database using lcHODMD data assimilation and absolute error (left to right) for variables stream-wise velocity(top) and normal velocity(bottom).
+The results of applying lcHODMD algorithm to turbulent bluff body stabilized hydrogen flame dataset. The figure shows original database , downsampled matrix, reconstructed database using lcHODMD data assimilation and absolute error (left to right) for variables stream-wise velocity(top) and normal velocity(bottom).
 
 ![lchodmd_res2](https://github.com/modelflows/modelflowsapp/blob/621c629e76f9f1dabd7d0199c6158c956184a662/assets/img/re3_lchodmd_turb.png)
 
