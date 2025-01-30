@@ -37,7 +37,12 @@ navbar-links:
     - Cardiac pathology detection: "cardiacpathologydetection"
     - Combustion: "combustion"
   #  - Urban Flows: "urbanflows"
-  
+
+  Databases: "databases"
+
+  Dissemination:
+    - Workshops: "workshops"
+    
   About us: "about"
 
 ################
