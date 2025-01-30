@@ -36,12 +36,9 @@ Codes available:
 ### Superresolution Tool <a id="superresolution-tool"></a>
 Fluid mechanics plays a significant role in most natural and anthropogenic processes. During the last decades, numerical methods such as the Finite Volume Method (FVM) have been widely used to predict the behavior of fluid dynamics phenomena. However, performing accurate numerical simulations for complex flows (such as those in a turbulent regime, multiphase flows, multiscale phenomena, etc.) demands significant computational resources in terms of processing and storage capacity and takes long periods of time to converge.
 
-In order to overcome the limitations of conventional numerical solvers, a fully data-driven hybrid physics based Reduced-Order Model (ROM) that combines modal decomposition methods and Machine Learning (ML) has been developed. This methodology combines Higher-Order Singular Value Decomposition () with fully connected neural networks (FCNN) to enhance the spatial resolution of a fluid dynamics database. [HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd) has demonstrated its capability of extracting the main patterns and structures of a fluid dynamics phenomena while denoising and compressing the database.
-
 In order to overcome the limitations of conventional numerical solvers, a fully data-driven hybrid physics-based Reduced-Order Model (ROM) that combines modal decomposition methods and Machine Learning (ML) has been developed. This methodology combines Higher-Order Singular Value Decomposition ([HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd)) with fully connected neural networks (FCNN) to enhance the spatial resolution of a fluid dynamics database. [HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd) has demonstrated its capability of extracting the main patterns and structures of fluid dynamics phenomena while denoising and compressing the database.
 
-
-[Super resolution tool - Methodology ](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_superresolution.png?raw=true)
+![Super resolution tool - Methodology ](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_superresolution.png?raw=true)
 *Work in progress. Coming soon...*
 
 
