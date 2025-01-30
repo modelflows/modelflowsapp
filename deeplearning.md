@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Notebooks Deep Learning
+title: Deep Learning
 <!-- subtitle: Our codes focused on deep learning -->
 ---
 
