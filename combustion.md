@@ -45,7 +45,6 @@ The mesh can be generated with several tools, such as SnappyHexMesh, BlockMesh, 
 </p>
 
 #### CFD with OpenFOAM
-This section provides a complete guide on how to set combustion simulations using OpenFOAM-v10. We focused on one case (HM3) in the paper of Dally et al. A mixture of H2 and CH4, equal in volume, was used as the fuel in the central jet. The annulus was fed with O2, N2, H2O and CO2 with mass fractions of 9%, 79%, 6.5% and 5.5%. The mean temperature of fuel jet, hot co-flow, and air inlet are 305, 1300, and 300 K, respectively. The Reynolds number of fuel jet is 9482, and the velocity of hot co-flow, and air inlet is 3.2 m/s. 
 This section provides a complete guide on how to set combustion simulations using OpenFOAM-v10. We focus on one case (HM3) in the paper of Dally et al. A mixture of H2 and CH4, equal in volume, was used as the fuel in the central jet. The annulus was fed with O2, N2, H2O and CO2 with mass fractions of 9%, 79%, 6.5% and 5.5%. The mean temperature of fuel jet, hot co - flow, and air inlet is 305, 1300, and 300 K, respectively. The Reynolds number of fuel jet is 9482, and the velocity of both hot co-flow and air inlet is 3.2 m/s.
 The tutorial is coming soon...
 
