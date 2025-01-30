@@ -26,8 +26,13 @@ Codes available:
 ## Parametric Study <a id="parametric-study"></a>
 
 ### Multiparametric Tool <a id="multiparametric-tool"></a>
-<!-- Short description of the method. -->
-<!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
+Numerical simulations of complex fluid phenomena are computationally expensive in terms of computational resources and processing time. Several numerical simulations must be performed to analyze the behavior of the flow under different flow regimes or parameters, and this entire process can take several weeks or even months.
+
+To overcome these limitations, we have developed an innovative tool capable of efficiently generating new fluid dynamics databases for specific flow conditions (parameters) and predicting their behavior over time. This is achieved using a hybrid, fully data-driven Reduced-Order Model (ROM), which combines Higher-Order Modal Decomposition (HOSVD) with Recurrent Neural Networks (RNN) and the Kriging interpolation method, also known as Gaussian Process Regression (GPR).
+
+This framework has been developed using [Python]( https://www.python.org/)’s ML libraries, [Tensorflow]( https://www.tensorflow.org/)/[Keras]( https://www.tensorflow.org/guide/keras?hl=es-419), and the [PyKrige]( https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/index.html ) interpolation library. The tool has been tested on databases obtained through numerical simulations at different flow parameters, such as Reynolds number and Angle of Attack.
+
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_multipar.png?raw=true)
 *Work in progress. Coming soon...*
 
 
