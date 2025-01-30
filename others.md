@@ -12,7 +12,7 @@ Our research introduces a novel **Reduced-Order Model (ROM)** that merges experi
 
 
 
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01Jan_30_Jeanney_DA.png)
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01Jan_30_Jeanney_DA.png?raw=true)
 
 More details about the implementation:
 
