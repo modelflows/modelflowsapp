@@ -11,7 +11,7 @@ The following members have contributed in the development of ModelFLOWs-app, an 
 
 <div style="display: flex;">
   <ul>
-    <strong>First release:</strong>
+    <strong>First Release:</strong>
     <li> Adrián Corrochano</li>
     <li> Eneko Lazpita</li>
     <li> Ashton Ian Hetherington</li>
@@ -22,7 +22,7 @@ The following members have contributed in the development of ModelFLOWs-app, an 
     <li><a href="[https://ejemplo.com](https://sites.google.com/view/soledadleclainche/)" target="_blank">Soledad Le Clainche</a></li>
   </ul>
   <ul>
-    <strong>Second release:</strong>
+    <strong>Second Release:</strong>
     <li> First Participant</li>
     <li> Second Participant</li>
   </ul>
