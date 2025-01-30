@@ -39,11 +39,9 @@ navbar-links:
   #  - Urban Flows: "urbanflows"
 
   Databases: "databases"
-
-  Dissemination:
-    - Workshops: "workshops"
     
   About us: "about"
+    - Workshops: "workshops"
 
 ################
 # --- Logo --- #
