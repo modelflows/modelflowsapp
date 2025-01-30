@@ -32,13 +32,17 @@ Discover our detailed tutorials that walk you through the process of setting up 
 The geometry of JHC burner is shown in the following figure. The burner consists of a central jet (I.D. = 4.25 mm), an annulus (I.D. = 82 mm). As the burner was mounted in a wind tunnel, there was air flow inlet around the annulus tube. 
 <!-- IMAGES -->
 <!--  ![Geometry of JHC burner](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_geometry.png?raw=true) -->
-<img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_geometry.png?raw=true" alt="Geometry of JHC burner" width="80%">
+<div style="text-align: center;">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_geometry.png?raw=true" alt="Geometry of JHC burner" width="80%">
+</div>
 
 #### Meshing
 The mesh can be generated with several tools, such as SnappyHexMesh, BlockMesh, Ansys ICEM CFD, and fluent Meshing etc. The mesh employed is shown in the following figure. The total number of grid cells is 1, 600, 000. 
 <!-- IMAGES -->
 <!--  ![Mesh of JHC burner](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_mesh.png?raw=true) -->
-<img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_mesh.png?raw=true" alt="Geometry of JHC burner" width="80%">
+<div style="text-align: center;">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_mesh.png?raw=true" alt="Geometry of JHC burner" width="80%">
+</div>
 
 #### CFD with OpenFOAM
 This section provides a complete guide on how to set combustion simulations using OpenFOAM-v10. We focused on one case (HM3) in the paper of Dally et al. A mixture of H2 and CH4, equal in volume, was used as the fuel in the central jet. The annulus was fed with O2, N2, H2O and CO2 with mass fractions of 9%, 79%, 6.5% and 5.5%. The mean temperature of fuel jet, hot co-flow, and air inlet are 305, 1300, and 300 K, respectively. The Reynolds number of fuel jet is 9482, and the velocity of hot co-flow, and air inlet is 3.2 m/s. 
@@ -51,7 +55,9 @@ This section presents the simulation results of JHC burner.
 #### LES results
 The contours of temperature, mass fractions of CH4, CO2 are shown as follows. 
 <!--  ![Contours of T, YCH4 and YCO2](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_T_CH4_CO2.png?raw=true) -->
-<img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_T_CH4_CO2.png?raw=true" alt="Geometry of JHC burner" width="80%">
+<div style="text-align: center;">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_T_CH4_CO2.png?raw=true" alt="Geometry of JHC burner" width="80%">
+</div>
 
 #### Prediction by hybrid ROM
 Based on the data set obtained by CFD simulations, the evolution process of flow field was forecast by hybrid ROM. The temperature distributions of two cut planes are shown in the following animations.
