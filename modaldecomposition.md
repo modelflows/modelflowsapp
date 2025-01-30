@@ -13,9 +13,9 @@ Codes available:
         - [Low Cost HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-hosvd)
         - [Low Cost HODMD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-hodmd)
 
-2. [Spatial Resolution Enhancement](https://modelflows.github.io/modelflowsapp/deeplearning/#spatial-resolution-enhancement)
-    * [Gap Filling Tool](https://modelflows.github.io/modelflowsapp/deeplearning/#gap-filling-tool)
-    * [Superresolution Tool](https://modelflows.github.io/modelflowsapp/deeplearning/#superresolution-tool)
+2. [Spatial Resolution Enhancement](https://modelflows.github.io/modelflowsapp/modaldecomposition/#spatial-resolution-enhancement)
+    * [Gap Filling Tool](https://modelflows.github.io/modelflowsapp/modaldecomposition/#gap-filling-tool)
+    * [Superresolution Tool](https://modelflows.github.io/modelflowsapp/modaldecomposition/#superresolution-tool)
 
 3. [Control](https://modelflows.github.io/modelflowsapp/modaldecomposition/#control)
    * [Passive FlowControl](https://modelflows.github.io/modelflowsapp/modaldecomposition/#passive-flow-control)
