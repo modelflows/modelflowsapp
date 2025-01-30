@@ -12,7 +12,7 @@ Content:
   *  [Flow Control](https://modelflows.github.io/modelflowsapp/combustion/#flow-control)
       *  [HOSVD](https://modelflows.github.io/modelflowsapp/combustion/#hosvd)
       *  [HODMD](https://modelflows.github.io/modelflowsapp/combustion/#hodmd-combustion)
-  *  [Hydrogen enhanced methane combustion](https://modelflows.github.io/modelflowsapp/combustion/#hydrogen-enhanced-methane-combustion)
+  *  [Adaptive prediction](https://modelflows.github.io/modelflowsapp/combustion/#adaptive-prediction)
 
 Combustion is nice
 
@@ -55,3 +55,10 @@ You can also add <a id="pattern-medical"></a> beside the section to override the
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B5xId8p3EW0?si=rsPdPHjLgpsf3pTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <video width="640" height="360" controls><source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/Enhancement_video.mp4?raw=true" type="video/mp4">
+
+
+### Adaptive prediction
+Large Eddy Simulations (LES) have been widely used in various scenarios due to their capability of capturing more detailed flow fields than those captured by Reynolds-Averaged Navier–Stokes (RANS) and consuming fewer computational resources than Direct Numerical Simulations (DNS). However, for applications involving large-scale devices and combustion, huge computational resources are still required. Recent developments in machine learning have introduced innovative methods for accelerating Computational Fluid Dynamics (CFD). Among these, the adaptive method combining CFD and hybrid reduced order models (ROMs) is a promising way to accelerate the simulations. This approach not only enhances our fundamental understanding of combustion patterns but also paves the way for innovative strategies to improve the combustion efficiency.
+
+
+
