@@ -19,17 +19,18 @@ Content:
 
 
 ## Adaptive prediction
-Large Eddy Simulations (LES) have been widely used in various scenarios due to their capability of capturing more detailed flow fields than those captured by Reynolds-Averaged Navier–Stokes (RANS) and consuming fewer computational resources than Direct Numerical Simulations (DNS). However, for applications involving large-scale devices and combustion, huge computational resources are still required. Recent developments in machine learning have introduced innovative methods for accelerating Computational Fluid Dynamics (CFD). Among these, the adaptive method combining CFD and hybrid reduced order models (ROMs) is a promising way to accelerate the simulations. This approach not only enhances our fundamental understanding of combustion patterns but also paves the way for innovative strategies to improve the combustion efficiency.
+Large Eddy Simulations (LES) have been widely used in various scenarios due to their capability of capturing more detailed flow fields than those captured by Reynolds-Averaged Navier–Stokes (RANS) simulations and consuming fewer computational resources than Direct Numerical Simulations (DNS). However, for applications involving large-scale devices and combustion, huge computational resources are still required. Recent developments in machine learning have introduced innovative methods for accelerating Computational Fluid Dynamics (CFD). Among these, the adaptive method combining CFD and hybrid reduced order models (ROMs) is a promising way to accelerate the simulations (Abadía-Heredia et al.). This approach not only enhances our fundamental understanding of combustion patterns but also paves the way for innovative strategies to improve the combustion efficiency.
 For validation purposes, we perform LES and adaptive prediction on a typical jet in hot coflow burner used by Dally et al. 
 
 <!-- REFERENCES -->
+[*Abadía-Heredia, R., López-Martín, M., Carro, B., Arribas, J. I., Pérez, J. M., & Le Clainche, S. (2022). A predictive hybrid reduced order model based on proper orthogonal decomposition combined with deep learning architectures. Expert Systems with Applications, 187, 115910.*](https://doi.org/10.1016/j.eswa.2021.115910)
 [*Dally, B. B., Karpetis, A. N., & Barlow, R. S. (2002). Structure of turbulent non-premixed jet flames in a diluted hot coflow. Proceedings of the combustion institute, 29(1), 1147-1154.*](https://doi.org/10.1016/S1540-7489(02)80145-6)
 
 ### Tutorials
 Discover our detailed tutorials that walk you through the process of setting up Computational Fluid Dynamics (CFD) simulations.
 
 #### Geometry
-The geometry of JHC burner is shown in the following figure. The burner consists of a central jet (I.D. = 4.25 mm), an annulus (I.D. = 82 mm). As the burner was mounted in a wind tunnel, there was air flow inlet around the annulus tube. 
+The geometry of JHC burner is shown in the following figure. The burner consists of a central jet (I.D. = 4.25 mm) and an annulus (I.D. = 82 mm). As the burner was mounted in a wind tunnel, there was an air flow inlet around the annulus tube.
 <!-- IMAGES -->
 <!--  ![Geometry of JHC burner](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_geometry.png?raw=true) -->
 <p style="text-align: center;">
@@ -58,8 +59,6 @@ The contours of temperature, mass fractions of CH4, CO2 are shown as follows.
     <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_T_CH4_CO2.png?raw=true" alt="Geometry of JHC burner" width="80%">
 </p>
 
-#### Prediction by hybrid ROM
-Based on the data set obtained by CFD simulations, the evolution process of flow field was forecast by hybrid ROM. The temperature distributions of two cut planes are shown in the following animations.
 #### Prediction by hybrid ROM
 Based on the data set obtained by CFD simulations, the evolution process of flow field was forecast by hybrid ROM. The temperature distributions of two cut planes are shown in the following animations.
 <p style="text-align: center;">
