@@ -68,6 +68,4 @@ For validation purposes, we perform LES and adaptive prediction on a typical jet
 #### Results
 The geometry of JHC burner
 <!-- IMAGES -->
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC burner geometry.jpg?raw=true)
-
-
+![Geometry of JHC burner](https://github.com/modelflows/modelflowsapp/assets/img/JHC burner geometry.jpg?raw=true)
