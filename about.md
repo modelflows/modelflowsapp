@@ -19,7 +19,7 @@ The following members have contributed in the development of ModelFLOWs-app, an 
     <li> Eva Muñoz Salamanca</li>
     <li> Paula Díaz Morales</li>
     <li> Egoitz Maiora</li>
-    <li> [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche/) </li>
+    <li><a href="[https://ejemplo.com](https://sites.google.com/view/soledadleclainche/)" target="_blank">Soledad Le Clainche</a></li>
   </ul>
   <ul>
     <strong>Second release:</strong>
