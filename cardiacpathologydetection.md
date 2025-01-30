@@ -98,8 +98,17 @@ You can also see the explanation of this paper in the following video:
 
 #### Vision Transformers
 <!-- Andres's work -->
-*Work in progress. Coming soon...*
+This framework implements an automatic cardiac pathology recognition system which analyses in real-time echocardiography video sequences. This works in two stages. The first one creates a large collection of annotated images from different sources of echocardiography videos. This allows to train any machine learning-based frameworks, especially deep learning-based ones. This stage involves the use of modal decomposition techniques, namely, the Singular Value Decomposition (SVD) and the HODMD algorithms, for the first time to the authors’ knowledge, for both data augmentation and feature extraction in the medical field, in a similar way as explained in the Pattern Detection block. The second stage is aimed to build and train a Vision Transformer (ViT), barely explored in the related literature about heart disease recognition in echocardiography images using deep learning. The ViT is adapted for an effective training from scratch, even with scarce databases, usual in the medical field. This designed neural network analyses the images from an echocardiography video to predict the heart state. In this section, the diagnosis or classification task is covered, that is, the classification between different cardiac conditions. 
 
+The results obtained show the efficacy of the HODMD algorithm and the superiority of the proposed system, even outperforming pretrained Convolutional Neural Networks (CNNs), the method of choice in the literature. 
+
+Further details about the work explained in this section could be found in the following reference:
+
+[*Bell-Navas, A., Groun, N., Villalba-Orero, M., Lara-Pezzi, E., Garicano-Mena, J., & Le Clainche, S., 2025. “Automatic Cardiac Pathology Recognition in Echocardiography Images using Higher Order Dynamic Mode Decomposition and a Vision Transformer for Small Datasets.” Exp. Syst. Appl., 264, 125849.*](https://doi.org/10.1016/j.eswa.2024.125849)
+
+The following video summarizes the developed system and shows the obtained results in the diagnosis task:
+
+*Work in progress. Coming soon...*
 
 <!-- [*Le Clainche & Vega, Higher order dynamic mode decomposition, SIAM J. Appl. Dyn. Syst., 16(2), 882-925, 2017.*](https://epubs.siam.org/doi/10.1137/15M1054924) -->
 
