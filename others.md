@@ -12,13 +12,14 @@ Our research introduces a novel **Reduced-Order Model (ROM)** that merges experi
 
 
 
-![Methodology scheme of the twin-experiment coupling DA code with low-resolution computations, where (b) CFD database (ub) and (c) an experimental database (w), resulting in (d) the reconstruction of assimilated data (ua).](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01Jan_30_Jeanney_DA.png)
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01Jan_30_Jeanney_DA.png)
 
 More details about the implementation:
 
 <!-- REFERENCES -->
 [Jeanney, P., Hetherington, A., Ahmed, S. E., Lanceta, D., Saiz, S., Perez, J. M. \& Le Clainche, S. (2024). Ensemble Kalman Filter for Data Assimilation coupled with low-resolution computations techniques applied in Fluid Dynamics, to appear on arXiv, 2025.]()
 
-<!-- VIDEOS -->
+<!-- VIDEOS 
 <iframe width="560" height="315" src="LINK-EXTRACTED-FROM-YOUTUBE-CODE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <video width="640" height="360" controls><source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/YOURVIDEOHERE.mp4?raw=true" type="video/mp4">
+-->
