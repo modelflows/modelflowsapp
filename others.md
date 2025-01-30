@@ -41,4 +41,4 @@ b) Growth and Decay: Modes with positive/negative growth rates  indicate whether
 
 
 
-![Flowchart1](https://github.com/modelflows/modelflowsapp/blob/6df6193c90668bd32aeb5f4443804e4191dc9163/assets/img/2025_01_30_pillai_lcsvd-da.png)
+![Flowchart1](https://github.com/modelflows/modelflowsapp/blob/a3db08de65b03b40b364cf558da910242f71fa22/assets/img/2025_01_30_pillai_stkd.png)
