@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Notebooks: Deep Learning
-<!-- subtitle: GENERAL SUBTITLE -->
+subtitle: Our codes focused on deep learning
 ---
 
 Codes available:
