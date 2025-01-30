@@ -49,7 +49,7 @@ This makes it particularly useful for analyzing fluid flows, biomedical signals,
 #### Low Cost SVD <a id="low-cost-svd"></a>
 Low-cost singular value decomposition (LC-SVD) is a modal decomposition-based database reconstruction method used for enhancing the resolution of optimally sampled experimental data using data assimilation. To achieve so, LC-SVD first uses [pysensors](https://arxiv.org/abs/2102.13476), to identify the optimal sensor positions for a reduced (or available) number of sensors, ensuring that the most critical flow patterns are captured over time. The coordinates of these sensors are then used to collect experimental data optimally. Once the experimental data has been stored, LC-SVD is applied to enhance the resolution of the POD modes and temporal coefficients matrices, fusing the experimental database an its corresponding high-resolution numerical simulation. These reconstruced matrices are then used to reconstruct the high-resolution snapshots tensor. This novel method makes it possible to enhance the resolution of experimental data 50000 times its original size, 123 times faster than standard SVD, using 40% less memory, achieving in some cases reconstruction errors close to 0.5%.    
 
-[Low-cost Singular Value Decomposition methodology summary](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/LC-SVD.jpg?raw=true) --> 
+![Low-cost Singular Value Decomposition methodology summary](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/LC-SVD.jpg?raw=true)
 
 #### Low Cost HOSVD <a id="low-cost-hosvd"></a>
 <!-- Short description of the method. -->
