@@ -60,12 +60,18 @@ The contours of temperature, mass fractions of CH4, CO2 are shown as follows.
 
 #### Prediction by hybrid ROM
 Based on the data set obtained by CFD simulations, the evolution process of flow field was forecast by hybrid ROM. The temperature distributions of two cut planes are shown in the following animations.
-<video width="640" height="360" controls>
-  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/JHC_burner_animation_T_plane1.mp4?raw=true" type="video/mp4">
-</video>
-<video width="640" height="360" controls>
-  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/JHC_burner_animation_T_plane2.mp4?raw=true" type="video/mp4">
-</video>
+#### Prediction by hybrid ROM
+Based on the data set obtained by CFD simulations, the evolution process of flow field was forecast by hybrid ROM. The temperature distributions of two cut planes are shown in the following animations.
+<p style="text-align: center;">
+    <video width="640" height="360" controls>
+      <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/JHC_burner_animation_T_plane1.mp4?raw=true" type="video/mp4">
+    </video>
+</p>
+<p style="text-align: center;">
+    <video width="640" height="360" controls>
+        <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/JHC_burner_animation_T_plane2.mp4?raw=true" type="video/mp4">
+    </video>
+</p>
 
 #### Coupling of OpenFOAM and adaptive prediction
 Work in progress. Coming soon…
