@@ -50,7 +50,7 @@ b) Growth and Decay: Modes with positive/negative growth rates  indicate whether
 ![Flowchart1](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_pillai_stkd.png?raw=true)
 
 <!-- REFERENCES -->
-![Reference](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/coherent-structures-in-the-turbulent-channel-flow-of-an-elastoviscoplastic-fluid/B2E085CA9368819934448287CCFD94A0)
+![Reference](https://www.researchgate.net/publication/338544827_Coherent_structures_in_the_turbulent_channel_flow_of_an_elastoviscoplastic_fluid)
 
 <!-- CODE AND TUTORIAL-->
 
