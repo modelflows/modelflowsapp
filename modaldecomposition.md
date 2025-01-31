@@ -26,22 +26,26 @@ Codes available:
 
 ### Higher Order Singular Value Decomposition (HOSVD) <a id="pattern-hosvd"></a>
 
-The Higher-Order Singular Value Decomposition (HOSVD) is a generalization of the standard SVD to tensors, enabling the decomposition of multi-dimensional data into a core tensor and orthonormal factor matrices along each mode. This method is widely used in modal decomposition, data compression, and feature extraction, particularly in fields dealing with high-dimensional datasets such as fluid dynamics and biomedical imaging. By capturing dominant structures in data, HOSVD facilitates reduced-order modeling and pattern recognition while preserving key spatial and temporal correlations.
+HOSVD, or High Order Singular Value Decomposition, is a mathematical technique used in pattern detection and analysis for high-dimensional data. HOSVD can be used to decompose a high-dimensional tensor into a set of orthogonal rank-1 tensors, which represent the underlying patterns in the data. The technique allows for the extraction of features that are relevant for further analysis, such as the spatiotemporal behavior of a system.
 
-<!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
+HOSVD has been used in various fields, including image and signal processing, and has gained attention in fluid mechanics for pattern detection. By applying HOSVD to flow data, researchers can identify patterns related to vortices, turbulence, and other important fluid flow phenomena. HOSVD can also be used in combination with other techniques, such as machine learning algorithms or HODMD, to enhance the accuracy and predictive power of the analysis. 
 
-*Work in progress. Coming soon...*
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/hosvd.png?raw=true)
+
+More details can be found in the book:
+
+[*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*](https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications)
+
+*Code in progress. Coming soon...*
 
 
 ### Higher Order Dynamic Mode Decomposition (HODMD) <a id="pattern-hodmd"></a>
 
 HODMD, or Higher Order Dynamic Mode Decomposition, is a mathematical technique used to analyze complex dynamical systems. It has gained attention in the fluid mechanics community as a powerful tool for pattern detection. HODMD enables the decomposition of high-dimensional data into a set of dynamic modes that represent spatiotemporal patterns in the data. These dynamic modes are computed by solving an optimization problem, which identifies the most relevant temporal and spatial patterns in the data. Once the dynamic modes have been computed, they can be used to perform a variety of analyses, including mode stability analysis, mode mixing analysis, and prediction of future behavior. By applying HODMD to flow data, researchers can identify patterns related to vortex shedding, boundary layer separation, and other important fluid flow phenomena.
 
-HODMD is also applicable to other complex dynamical systems such as chemical reactions, biological processes, and weather patterns. Its ability to extract dynamic modes from high-dimensional datasets makes it a valuable tool for analyzing complex systems that are difficult to understand using traditional analysis techniques. The use of HODMD in combination with other methods, such as machine learning algorithms, can enhance the accuracy and predictive power of the analysis. As such, HODMD is an exciting and promising technique for pattern detection and analysis in a variety of fields, including fluid mechanics. HODMD decomposes the snapshot matrix (left figure) into a Fourier-like expansion of DMD modes via a sliding window process (right).
+HODMD is also applicable to other complex dynamical systems such as chemical reactions, biological processes, and weather patterns. Its ability to extract dynamic modes from high-dimensional datasets makes it a valuable tool for analyzing complex systems that are difficult to understand using traditional analysis techniques. The use of HODMD in combination with other methods, such as machine learning algorithms, can enhance the accuracy and predictive power of the analysis. As such, HODMD is an exciting and promising technique for pattern detection and analysis in a variety of fields, including fluid mechanics.
 
-$\textbf{v}(x,y,t_{k})\simeq  \textbf{v}_k^\text{approx}=  \sum_{m=1}^M a_{m}\textbf{u}_m(x,y)e^{(\delta_m+i \omega_m)t_k},\quad k=1,\ldots,K,$
-
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/SlidingWindow.png?raw=true)
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/HODMDcalibration.png?raw=true)
 
 The following book details several applications of HODMD for patterns indentification, temporal forecasting, data reconstruction, etc. The book also includes the [Matlab codes](https://data.mendeley.com/datasets/z8ks4f5vy5/1) and some test databases:
 
@@ -77,16 +81,18 @@ Low-cost singular value decomposition (LC-SVD) is a modal decomposition-based da
 ## Spatial Resolution Enhancement <a id="spatial-resolution-enhancement"></a>
 
 ### Gap Filling Tool <a id="gap-filling-tool"></a>
-<!-- Short description of the method. -->
-<!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
-*Work in progress. Coming soon...*
+Gappy filling is a technique used to fill in missing or incomplete data points in a dataset, using various methods such as linear regression, interpolation, and extrapolation. The goal is to reconstruct a complete dataset that can be analyzed using traditional analysis techniques. Gappy filling tool aims to reconstruct the missing data points.
+
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/Gappy.png?raw=true)
+
+*Code in progress. Coming soon...*
 
 ### Superresolution Tool <a id="superresolution-tool"></a>
-<!-- Short description of the method. -->
-<!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
-*Work in progress. Coming soon...*
+The supperresolution tool, based on SVD, is a technique used to improve the quality of a dataset that contains incomplete or noisy data. This technique involves using statistical methods to identify and remove noise from the data, or to fill in missing data points with more accurate estimates. The goal is to produce a more accurate and reliable dataset that can be used for further analysis. Superresolution tool aims to improve the overall quality of the dataset.
 
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/SuperTool.png?raw=true)
 
+*Code in progress. Coming soon...*
 
 ## Control <a id="control"></a>
 
