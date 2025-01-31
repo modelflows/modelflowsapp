@@ -112,6 +112,8 @@ The following video summarizes the developed system and shows the obtained resul
 
 *Work in progress. Coming soon...*
 
+The code to run the training and testing stages of the described system can be downloaded with the following [*link*](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/Diagnosis_scripts.zip).
+
 <!-- [*Le Clainche & Vega, Higher order dynamic mode decomposition, SIAM J. Appl. Dyn. Syst., 16(2), 882-925, 2017.*](https://epubs.siam.org/doi/10.1137/15M1054924) -->
 
 <!-- FOR VIDEOS UPLOADED ON GITHUB (upload them on assets/vid/ )
