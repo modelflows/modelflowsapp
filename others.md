@@ -50,10 +50,10 @@ b) Growth and Decay: Modes with positive/negative growth rates  indicate whether
 ![Flowchart1](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_pillai_stkd.png?raw=true)
 
 <!-- REFERENCES -->
-![Reference](https://www.researchgate.net/publication/338544827_Coherent_structures_in_the_turbulent_channel_flow_of_an_elastoviscoplastic_fluid)
+[Reference](https://www.researchgate.net/publication/338544827_Coherent_structures_in_the_turbulent_channel_flow_of_an_elastoviscoplastic_fluid)
 
 <!-- CODE AND TUTORIAL-->
 
-![Code and tutorial](https://github.com/modelflows/modelflowsapp/blob/217233e25823ccdc70d1d2686db7b1552776fe9d/assets/codes/stkd.zip)
+[Code and tutorial](https://github.com/modelflows/modelflowsapp/blob/217233e25823ccdc70d1d2686db7b1552776fe9d/assets/codes/stkd.zip)
 
 The zip file contain all the necessary codes with a tutorial showing its implementation to flow past a 3D cylinder dataset.
