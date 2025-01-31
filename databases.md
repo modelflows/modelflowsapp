@@ -27,7 +27,7 @@ Databases available:
 ### 2D Laminar Flow <a id="cylinder-2d"></a>
 This database contains data from a two-dimensional CFD simulation of the flow past a circular cylinder. The flow is laminar, with six diferent Reynolds number of 50, 60, 85, 100, 130 and 160. The simulation was conducted using Nek5000.
 
-![Imagen desde Google Drive](https://drive.google.com/uc?id=1fihOdhy_sEYEF6d4SX1g8jFeNYKXjPOR)
+![Imagen desde Google Drive](https://drive.google.com/uc?export=view&id=1fihOdhy_sEYEF6d4SX1g8jFeNYKXjPOR)
 
 Database available [here](https://drive.google.com/drive/folders/1hP1ghrAtfQb7a-ZTtw64Ambgi5WVVCRN?usp=sharing).
 
