@@ -89,7 +89,7 @@ LC-SVD-DLinear (and LC-HOSVD-DLinear) are two hybrid machine learning models tha
 
 [Hetherington, A., Leonés, J. L., & Clainche, S. L. (2024). LC-SVD-DLinear: A low-cost physics-based hybrid machine learning model for data forecasting using sparse measurements. arXiv preprint arXiv:2411.17433.](https://arxiv.org/abs/2411.17433)
 
-
+*Work in progress. Coming soon...*
 
 ## Control <a id="control"></a>
 <!-- Short description of the method. -->
