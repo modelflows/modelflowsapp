@@ -34,7 +34,7 @@ This framework has been developed using [Python]( https://www.python.org/)’s M
 
 ![Multi-parametric tool - Methodology](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_multipar.png?raw=true)
 *Work in progress. Coming soon...*
-You can [Download](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/parametric.zip) the algorithms here. 
+<!-- You can [Download](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/parametric.zip) the algorithms here.   -->
 
 ## Spatial Resolution Enhancement <a id="spatial-resolution-enhancement"></a>
 
@@ -46,7 +46,8 @@ In order to overcome the limitations of conventional numerical solvers, a fully 
 ![Super resolution tool - Methodology ](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_superresolution.png?raw=true)
 *Work in progress. Coming soon...*
 
-You can [Download](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/SUPERRESOLUTION.zip) the algorithms here. 
+<!-- You can [Download](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/SUPERRESOLUTION.zip) the algorithms here.  -->
+
 ## Temporal Forecasting <a id="temporal-forecasting"></a>
 
 ### Hybrid Generative Model <a id="hybrid-generative-model"></a>
