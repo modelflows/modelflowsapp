@@ -10,6 +10,7 @@ Databases available:
     * [2D Laminar Flow (with 2 small cylinders)](https://modelflows.github.io/modelflowsapp/databases/#cylinder-2d_2)
     * [3D Laminar Flow](https://modelflows.github.io/modelflowsapp/databases/#cylinder-3d)
          - [Long](https://modelflows.github.io/modelflowsapp/databases/#cylinder-3d-long)
+         - [Short](https://modelflows.github.io/modelflowsapp/databases/#cylinder-3d-short)
 
 2. [Channel Flow](https://modelflows.github.io/modelflowsapp/databases/#channel)
     * [Plain](https://modelflows.github.io/modelflowsapp/databases/#channel-plain)
@@ -49,7 +50,7 @@ This database contains data from a two-dimensional CFD simulation of the flow pa
 
 Database available [here](https://drive.google.com/drive/folders/1_MkWVuWWoE3hGKPT0FbCba234KJ06kQo?usp=sharing).
 
-#### Short <a id="short"></a>
+#### Short <a id="cylinder-3d-short"></a>
 This database contains data from a two-dimensional CFD simulation of the flow past a circular cylinder. The flow is laminar, with a Reynolds number of 280 and a spanwise longitude of Lz = 1.67. The simulation was conducted using Nek5000.
 
 ![cyl3Dshort](/assets/img/Databases/cyl3Dshort.png)
@@ -71,7 +72,7 @@ This database contains data from a two-dimensional CFD simulation of a turbulent
 ### Cavity <a id="channel-cavity"></a>
 This database contains data from a two-dimensional CFD simulation of a turbulent channel flow with a cavity.
 
-![cavity](/assets/img/Databases/channel_cab.png)
+![cavity](/assets/img/Databases/channel_cav.png)
 
 ## Jet Flow <a id="jet"></a>
 
@@ -92,5 +93,5 @@ This database contains data from a three-dimensional CFD simulation of incompres
 ### Planar FDA Nozzle <a id="FDA"></a>
 This database contains data from a two-dimensional CFD simulation of the flow through a planar Food and Drug Administration (FDA) nozzle, starting from the exit of the nozzle. The flow is laminar, with a Reynolds number of 800. The simulation was conducted using Nek5000.
 
-![CJ](/assets/img/Databases/FDA.png)
+![FDA](/assets/img/Databases/FDAnozzle.png)
 
