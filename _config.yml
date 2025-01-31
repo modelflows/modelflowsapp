@@ -26,7 +26,7 @@ navbar-links:
     - Tutorial: "tutorial"
     - Advanced tutorials: "advanced"
 
-  Notebooks Colab:
+  Notebooks:
     - Overview: "mainnotebooks"
     - Modal Decomposition: "modaldecomposition"
     - Deep Learning: "deeplearning"
@@ -41,7 +41,7 @@ navbar-links:
   Databases: "databases"
     
   Group:
-    - Workshops: "workshops"
+    - Workshop: "workshops"
     - About us: "about"
 
 ################
