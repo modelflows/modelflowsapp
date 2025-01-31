@@ -82,7 +82,17 @@ Low-cost singular value decomposition (LC-SVD) is a modal decomposition-based da
 ## Control <a id="control"></a>
 
 ### Passive Flow Control <a id="passive-flow-control"></a>
-<!-- Short description of the method. -->
-<!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
+Based on HODMD, ModelFLOWs has been able to create a fully data-driven algorithm to calculate the so-called *non-linear structural sensitivity*. 
+This concept identifies the region in the spatial domain where the flow is most prone to changes. Therefore, it has applications in flow control, as perturbing this region with a punctual force or a small geometric modification may delay the onset of some instabilities.
+
+In linear theory, it is possible to calculate the structural sensitivity, but it is necessary to combine direct and adjoint solutions, as well as linearising the Navier-Stokes Equations. In realistic problems, these calculations would be expensive in terms of computational memory and time.  Moreover, these algorithms cannot be applied to experiments or turbulent flows.
+
+In the proposed method, any type of database (coming from experiments or numerical simulations) can be analysed. The data-driven algorithm first filters the data in order to retain the most important dynamics. Then, the non-linear structural sensitivity can be calculated, using the DMD modes and the non-linear operator of the Navier Stokes equations. A flow chart of the passive flow control process is shown below.
+
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/MDControl.png?raw=true)
+
+For a proper usage of the algorithm, it is recommended to first calibrate the HODMD algorithm, following the [Advanced Tutorial](https://modelflows.github.io/modelflowsapp/advanced/) in our website.
+
+[*Corrochano, A., Le Clainche, S., Structural sensitivity in non-linear flows using direct solutions, Computers & Mathematics with Applications, 2022.*](https://doi.org/10.1016/j.camwa.2022.10.006)
 
 
