@@ -35,14 +35,19 @@ The Higher-Order Singular Value Decomposition (HOSVD) is a generalization of the
 
 ### Higher Order Dynamic Mode Decomposition (HODMD) <a id="pattern-hodmd"></a>
 
-The Higher-Order Dynamic Mode Decomposition (HODMD) extends the traditional DMD to handle high-dimensional and multiway data efficiently by leveraging tensor decomposition techniques. 
-By applying HOSVD as a preprocessing step, HODMD reduces noise sensitivity and improves the extraction of dominant spatiotemporal modes in complex dynamical systems. 
-This makes it particularly useful for analyzing fluid flows, biomedical signals, and other time-dependent datasets, enabling reduced-order modeling and predictive analysis while maintaining the underlying system dynamics.
+HODMD, or Higher Order Dynamic Mode Decomposition, is a mathematical technique used to analyze complex dynamical systems. It has gained attention in the fluid mechanics community as a powerful tool for pattern detection. HODMD enables the decomposition of high-dimensional data into a set of dynamic modes that represent spatiotemporal patterns in the data. These dynamic modes are computed by solving an optimization problem, which identifies the most relevant temporal and spatial patterns in the data. Once the dynamic modes have been computed, they can be used to perform a variety of analyses, including mode stability analysis, mode mixing analysis, and prediction of future behavior. By applying HODMD to flow data, researchers can identify patterns related to vortex shedding, boundary layer separation, and other important fluid flow phenomena.
 
-<!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
+HODMD is also applicable to other complex dynamical systems such as chemical reactions, biological processes, and weather patterns. Its ability to extract dynamic modes from high-dimensional datasets makes it a valuable tool for analyzing complex systems that are difficult to understand using traditional analysis techniques. The use of HODMD in combination with other methods, such as machine learning algorithms, can enhance the accuracy and predictive power of the analysis. As such, HODMD is an exciting and promising technique for pattern detection and analysis in a variety of fields, including fluid mechanics. HODMD decomposes the snapshot matrix (left figure) into a Fourier-like expansion of DMD modes via a sliding window process (right).
 
-*Work in progress. Coming soon...*
+$\textbf{v}(x,y,t_{k})\simeq  \textbf{v}_k^\text{approx}=  \sum_{m=1}^M a_{m}\textbf{u}_m(x,y)e^{(\delta_m+i \omega_m)t_k},\quad k=1,\ldots,K,$
 
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/SlidingWindow.png?raw=true)
+
+The following book details several applications of HODMD for patterns indentification, temporal forecasting, data reconstruction, etc. The book also includes the [Matlab codes](https://data.mendeley.com/datasets/z8ks4f5vy5/1) and some test databases:
+
+[*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*](https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications)
+
+*Code in progress. Coming soon...*
 
 ### Low Cost Algorithms <a id="low-cost"></a>
 
