@@ -64,7 +64,7 @@ Low-cost singular value decomposition (LC-SVD) is a modal decomposition-based da
 
 *Work in progress. Coming soon...*
 
-<!-- [Download the .ipynb](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/Low-cost-singular-value-decomposition.zip)
+<!-- [Download the LC-SVD .ipynb](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/Low-cost-singular-value-decomposition.zip)
 
 #### Low Cost HOSVD <a id="low-cost-hosvd"></a>
 <!-- Short description of the method. -->
