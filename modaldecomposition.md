@@ -36,7 +36,7 @@ More details can be found in the book:
 
 [*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*](https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications)
 
-*Code in progress. Coming soon...*
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/master/hosvd.zip).
 
 
 ### Higher Order Dynamic Mode Decomposition (HODMD) <a id="pattern-hodmd"></a>
