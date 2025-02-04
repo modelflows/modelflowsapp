@@ -97,6 +97,8 @@ LC-SVD-DLinear (and LC-HOSVD-DLinear) are two hybrid machine learning models tha
 *Code in progress. Coming soon...*
 <!-- Download the code for SVD-DLinear [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/SVD-DLinear.zip).  -->
 <!-- Download the code for LC-SVD-DLinear [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/LC-SVD-DLinear.zip).  -->
+<!-- Download the code for HOSVD-DLinear [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/HOSVD-DLinear.zip).  -->
+<!-- Download the code for LC-HOSVD-DLinear [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/LC-HOSVD-DLinear.zip).  -->
 
 ## Control <a id="control"></a>
 <!-- Short description of the method. -->
