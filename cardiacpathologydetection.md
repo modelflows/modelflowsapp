@@ -108,11 +108,9 @@ Further details about the work explained in this section could be found in the f
 
 [*Bell-Navas, A., Groun, N., Villalba-Orero, M., Lara-Pezzi, E., Garicano-Mena, J., & Le Clainche, S., 2025. “Automatic Cardiac Pathology Recognition in Echocardiography Images using Higher Order Dynamic Mode Decomposition and a Vision Transformer for Small Datasets.” Exp. Syst. Appl., 264, 125849.*](https://doi.org/10.1016/j.eswa.2024.125849)
 
-The following video summarizes the developed system and shows the obtained results in the diagnosis task:
+<!-- The following video summarizes the developed system and shows the obtained results in the diagnosis task: -->
 
-*Work in progress. Coming soon...*
-
-The code to run the training and testing stages of the described system can be downloaded with the following [*link*](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/Diagnosis_scripts.zip).
+The code to run the training and testing stages of the described system can be downloaded with the following [*link*](https://github.com/modelflows/notebooks/raw/refs/heads/main/Diagnosis_scripts.zip).
 
 <!-- [*Le Clainche & Vega, Higher order dynamic mode decomposition, SIAM J. Appl. Dyn. Syst., 16(2), 882-925, 2017.*](https://epubs.siam.org/doi/10.1137/15M1054924) -->
 
@@ -133,9 +131,9 @@ This section considers the application of the system described above for the pro
 
 This work has been used to produce a journal article, which is currently in the process of elaboration. 
 
-The following video summarizes the developed system with the obtained results in the prognosis task: 
+<!-- The following video summarizes the developed system with the obtained results in the prognosis task:  -->
 
-*Work in progress. Coming soon...*
+*Code in progress. Coming soon...*
 
 
 ## CFD Data
@@ -161,24 +159,27 @@ We offer two approaches:
 * Idealized Geometry: Where the wall motion is defined analytically, and STL files are generated accordingly. 
 * Patient-Specific Geometry: Requires code adjustments since analytical expressions are unavailable. This process includes extracting the left ventricle model from cardiotomography data to ensure accurate patient-specific simulations.
 
-Download the necessary files: [Download](https://github.com/modelflows/ModelFLOWSs-cardiac/blob/f4b7e6f558af4a7ae10de6318e3ba33988654c80/STL_Generation.zip)
-Download the slides: [Download](https://github.com/modelflows/ModelFLOWSs-cardiac/blob/92bdd2e0c9705986b34c158afd82c57fa5a4bc1b/Tutorial_GeometryPreprocessing.pptx)
+Download the necessary files [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/STL_Generation.zip).
+
+Download the slides [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/Tutorial_GeometryPreprocessing.pptx).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Bzd_ZniGGG0?si=UvRmu9_2Qd7QxDWJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### CFD with Star-CCM+
 This section provides a complete guide on replicating our blood flow simulations inside the left ventricle using STAR-CCM+. From loading the geometry and meshing to configuring the simulation settings, we walk you through each step to ensure accurate reproduction of our results.
 
-Download the necessary files: [Download](https://github.com/modelflows/ModelFLOWSs-cardiac/blob/f4b7e6f558af4a7ae10de6318e3ba33988654c80/Tutorial_Star-CCM%2B.zip)
-Download the slides: [Download](https://github.com/modelflows/ModelFLOWSs-cardiac/blob/92bdd2e0c9705986b34c158afd82c57fa5a4bc1b/Tutorial_StarccmCFD.pptx)
+Download the necessary files [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/Tutorial_Star-CCM+.zip).
+
+Download the slides [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/Tutorial_StarccmCFD.pptx).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8YjVIamKzhY?si=U5s0zgmYVJ2fAl5a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### CFD with Ansys Fluent
 In this section, we outline the entire process of setting up blood flow simulations within the left ventricle using Ansys Fluent. From importing the geometry and generating the mesh to configuring the simulation parameters, this guide covers everything needed to successfully replicate our results.
 
-Download the necessary files: [Download](https://drive.upm.es/s/A8EuWtjSuMAetHc)
-Download the slides: [Download](https://github.com/modelflows/ModelFLOWSs-cardiac/blob/92bdd2e0c9705986b34c158afd82c57fa5a4bc1b/Tutorial_FluentCFD.pptx)
+Download the necessary files [*here*](https://drive.upm.es/s/A8EuWtjSuMAetHc).
+
+Download the slides [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/Tutorial_FluentCFD.pptx).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zkAAioOEVDE?si=VAc7JBNCvohALkOS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
