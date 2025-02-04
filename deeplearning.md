@@ -33,8 +33,9 @@ To overcome these limitations, we have developed an innovative tool capable of e
 This framework has been developed using [Python]( https://www.python.org/)’s ML libraries, [Tensorflow]( https://www.tensorflow.org/)/[Keras]( https://www.tensorflow.org/guide/keras?hl=es-419), and the [PyKrige]( https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/index.html ) interpolation library. The tool has been tested on databases obtained through numerical simulations at different flow parameters, such as Reynolds number and Angle of Attack.
 
 ![Multi-parametric tool - Methodology](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_multipar.png?raw=true)
-*Work in progress. Coming soon...*
-<!-- You can [Download](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/parametric.zip) the algorithms here.   -->
+
+*Code in progress. Coming soon...*
+<!-- Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/parametric.zip).   -->
 
 ## Spatial Resolution Enhancement <a id="spatial-resolution-enhancement"></a>
 
@@ -44,9 +45,10 @@ Fluid mechanics plays a significant role in most natural and anthropogenic proce
 In order to overcome the limitations of conventional numerical solvers, a fully data-driven hybrid physics-based Reduced-Order Model (ROM) that combines modal decomposition methods and Machine Learning (ML) has been developed. This methodology combines Higher-Order Singular Value Decomposition ([HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd)) with fully connected neural networks (FCNN) to enhance the spatial resolution of a fluid dynamics database. [HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd) has demonstrated its capability of extracting the main patterns and structures of fluid dynamics phenomena while denoising and compressing the database, while Neural Networks are able to model the non-linearities. This framework has been developed using [Python]( https://www.python.org/)’s ML libraries [Tensorflow]( https://www.tensorflow.org/)/[Keras]( https://www.tensorflow.org/guide/keras?hl=es-419)
 
 ![Super resolution tool - Methodology ](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_superresolution.png?raw=true)
-*Work in progress. Coming soon...*
 
-<!-- You can [Download](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/SUPERRESOLUTION.zip) the algorithms here.  -->
+*Code in progress. Coming soon...*
+
+<!-- Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/SUPERRESOLUTION.zip).  -->
 
 ## Temporal Forecasting <a id="temporal-forecasting"></a>
 
@@ -56,7 +58,9 @@ In order to overcome the limitations of conventional numerical solvers, a fully 
 This model presents a hybrid ROM integrating Higher Order Singular Value Decomposition ([HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd)) with Long Short Term Memory (LSTM) architecture for temporal predictions. The integration of [HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd) enables dimensionality reduction and the LSTM model processes the sequences, capturing nonlinear dynamics and preserving long-term temporal correlations. Predictions are generated autoregressively, where forecasted solutions are fed back as inputs to itteratively predict the next step.  While this approach can also be implemented with Singular Value Decomposition (SVD),  [HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd) extends the capabilities of SVD by better preserving multi-dimensional structures, leading to improved performance in complex dynamical systems. This framework is implemented using TensorFlow/Keras for 4D and 5D tensors.
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/d356b4aa65afd90fa0e8e1cba902d919b621e307/assets/img/2025_01_30_sengupta_Temporalforecasting.PNG?raw=true) 
-*Work in progress. Coming soon...*
+
+*Code in progress. Coming soon...*
+ <!-- Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/Temporalpredictions_Standard.zip).  -->
  
 #### Advanced <a id="hybrid-generative-advanced"></a>
 <!-- Short description of the method. -->
@@ -90,10 +94,9 @@ LC-SVD-DLinear (and LC-HOSVD-DLinear) are two hybrid machine learning models tha
 
 [Hetherington, A., Leonés, J. L., & Clainche, S. L. (2024). LC-SVD-DLinear: A low-cost physics-based hybrid machine learning model for data forecasting using sparse measurements. arXiv preprint arXiv:2411.17433.](https://arxiv.org/abs/2411.17433)
 
-*Work in progress. Coming soon...*
-
-<!-- [Download the LC-SVD-DLinear.ipynb](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/LC-SVD-DLinear.zip)
-<!-- [Download the SVD-DLinear.ipynb](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/SVD-DLinear.zip)
+*Code in progress. Coming soon...*
+<!-- Download the code for SVD-DLinear [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/SVD-DLinear.zip).  -->
+<!-- Download the code for LC-SVD-DLinear [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/LC-SVD-DLinear.zip).  -->
 
 ## Control <a id="control"></a>
 <!-- Short description of the method. -->
