@@ -36,7 +36,8 @@ More details can be found in the book:
 
 [*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*](https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/hosvd.zip).
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/hosvd.zip).
+
 
 <!--https://github.com/modelflows/notebooks/raw/refs/heads/master/hosvd.zip-->
 
@@ -52,7 +53,8 @@ The following book details several applications of HODMD for patterns indentific
 
 [*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*](https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications)
 
-*Code in progress. Coming soon...*
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/hodmd.zip).
+
 
 ### Low Cost Algorithms <a id="low-cost"></a>
 
@@ -63,9 +65,9 @@ Low-cost singular value decomposition (LC-SVD) is a modal decomposition-based da
 
 [Hetherington, Ashton, and Soledad Le Clainche. "Low-cost singular value decomposition with optimal sensor placement." *arXiv preprint* arXiv:2311.09791 (2023)](https://arxiv.org/abs/2311.09791)
 
-*Work in progress. Coming soon...*
+*Code in progress. Coming soon...*
 
-<!-- [Download the LC-SVD .ipynb](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/Low-cost-singular-value-decomposition.zip)
+<!-- [Download the LC-SVD .ipynb](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/Low-cost-singular-value-decomposition.zip) -->
 
 #### Low Cost HOSVD <a id="low-cost-hosvd"></a>
 <!-- Short description of the method. -->
@@ -111,4 +113,4 @@ For a proper usage of the algorithm, it is recommended to first calibrate the HO
 
 [*Corrochano, A., Le Clainche, S., Structural sensitivity in non-linear flows using direct solutions, Computers & Mathematics with Applications, 2022.*](https://doi.org/10.1016/j.camwa.2022.10.006)
 
-
+*Code in progress. Coming soon...*
