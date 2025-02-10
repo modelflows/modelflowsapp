@@ -6,6 +6,8 @@ title: Notebooks
 
 In this section, we provide access to some of our most useful and recently developed codes in a more accessible format. These notebooks include tools for modal decomposition and deep learning architectures designed for various applications, such as pattern analysis, reconstruction, prediction, and classification. Our goal is to facilitate the use of these methodologies in research and practical implementations.
 
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/d356b4aa65afd90fa0e8e1cba902d919b621e307/assets/img/Notebooks/scheme_notebooks.png?raw=true) 
+
 The modal decomposition tools include implementations of 
 [higher order singular value decomposition (HOSVD)](https://modelflows.github.io/modelflowsapp/modaldecomposition#hosvd) 
 and [higher order dynamic mode decomposition (HODMD)](https://modelflows.github.io/modelflowsapp/modaldecomposition#hodmd), among others.
