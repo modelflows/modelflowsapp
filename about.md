@@ -13,7 +13,7 @@ The following members have contributed in the development of ModelFLOWs-app, an 
   <ul>
     <strong>First Release:</strong>
     <li> Adrián Corrochano</li>
-    <li> Eneko Lazpita</li>
+    <li> <a href="https://sites.google.com/view/eneko-lazpita/" target="_blank">Eneko Lazpita</a></li>
     <li> Ashton Ian Hetherington</li>
     <li> Rodrigo Abadia-Heredia</li>
     <li> Eva Muñoz Salamanca</li>
