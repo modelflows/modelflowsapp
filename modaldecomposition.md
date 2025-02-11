@@ -114,4 +114,4 @@ For a proper usage of the algorithm, it is recommended to first calibrate the HO
 
 [*Corrochano, A., Le Clainche, S., Structural sensitivity in non-linear flows using direct solutions, Computers & Mathematics with Applications, 2022.*](https://doi.org/10.1016/j.camwa.2022.10.006)
 
-*Code in progress. Coming soon...*
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/mdhodmd-control.zip).
