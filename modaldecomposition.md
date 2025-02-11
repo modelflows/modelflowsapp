@@ -36,7 +36,7 @@ More details can be found in the book:
 
 [*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*](https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/hosvd.zip).
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/hosvd.zip).
 
 
 <!--https://github.com/modelflows/notebooks/raw/refs/heads/master/hosvd.zip-->
@@ -53,9 +53,9 @@ The following book details several applications of HODMD for patterns indentific
 
 [*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*](https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications)
 
-Download the code for standard HODMD [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/hodmd.zip).
+Download the code for standard HODMD [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/hodmd.zip).
 
-Download the code for multi-dimensional iterative HODMD [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/mdhodmd-it.zip).
+Download the code for multi-dimensional iterative HODMD [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/mdhodmd-it.zip).
 
 ### Low Cost Algorithms <a id="low-cost"></a>
 
