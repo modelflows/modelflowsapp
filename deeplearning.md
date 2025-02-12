@@ -80,7 +80,7 @@ Forecasting can be broadly categorized into two main types: [point forecasting](
 
 Both the Residual Autoencoder and the VAE can process datasets in a five-dimensional tensor format, structured as [C,X,Y,Z,T]. Unlike the [POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model) model, the architectures of these models are inherently dependent on the shape of the input snapshots. For the codes available on this page, the dataset must adhere to the following dimensional constraints: C = 3, X = 100, Y = 40 and Z = 64, with T remaining variable. <ins>Datasets with higher or lower dimensionality, or with a different arrangement of dimensions, may result in errors when executing the codes</ins>.
 
-For example these codes can be tested using the dataset corresponding to the two-dimensional laminar flow past a cylinder, which is available [here](https://modelflows.github.io/modelflowsapp/databases/#cylinder-2d).
+For example these codes can be tested with the dataset corresponding to the two-dimensional laminar flow past a cylinder, which is available [here](https://modelflows.github.io/modelflowsapp/databases/#cylinder-2d). Also note these models require a GPU for training.
 
 #### Residual Autoencoder (point forecasting) <a id="full-generative-residual"></a>
 ![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_Res_AE.png?raw=true)
@@ -105,7 +105,7 @@ The forecasting can be conducted using either a [fixed temporal horizon](https:/
 
 The POD-DL model can process datasets represented as tensors of either four or five dimensions, structured as [C,X,Y,Z,T]. Here, C denotes the dataset components, such as different velocity components, Reynolds numbers, or initial conditions. The indices X, Y and Z correspond to the spatial discretization along the $x$-, $y$- and $z$-axis, respectively, while T represents the temporal dimension, indicating the number of snapshots. For four-dimensional tensors, the Z index may either be absent or set to Z = 1. <ins>Datasets with higher or lower dimensionality, or with a different arrangement of dimensions, may result in errors when executing the codes</ins>.
 
-For example these codes can be tested using the dataset corresponding to the two-dimensional laminar flow past a cylinder, which is available [here](https://modelflows.github.io/modelflowsapp/databases/#cylinder-2d), or the three-dimensional laminar flow past a cylinder, which is available [here](https://modelflows.github.io/modelflowsapp/databases/#cylinder-3d-long).
+For example these codes can be tested with either the dataset corresponding to the two-dimensional laminar flow past a cylinder, which is available [here](https://modelflows.github.io/modelflowsapp/databases/#cylinder-2d), or the three-dimensional laminar flow past a cylinder, which is available [here](https://modelflows.github.io/modelflowsapp/databases/#cylinder-3d-long). Also note these models require a CPU for training.
 
 #### POD-DL: Fixed temporal horizon <a id="hybrid-predictive-model-fixed-h"></a>
 ![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_POD_DL_Orig.png?raw=true)
