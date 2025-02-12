@@ -96,7 +96,7 @@ The supperresolution tool, based on SVD, is a technique used to improve the qual
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/SuperTool.png?raw=true)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/SR_hosvd.zip).
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/sr_hosvd.zip).
 
 ## Control <a id="control"></a>
 
