@@ -93,6 +93,8 @@ The POD-DL model can process datasets represented as tensors of either four or f
 #### POD-DL: Fixed temporal horizon
 ![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_POD_DL_Orig.png?raw=true)
 
+Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/pod_dl_fixed_h.zip).
+
 [R. Abadía-Heredia, M. López-Martín, B. Carro, J. Arribas, J. Pérez, and S. Le Clainche, “A predictive hybrid reduced order model based on proper orthogonal decomposition combined with deep learning architectures,” Expert Systems with Applications 187, 115910 (2022).](https://doi.org/10.1016/j.eswa.2021.115910)
 
 #### POD-DL: Autoregressive
