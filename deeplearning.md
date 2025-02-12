@@ -15,7 +15,7 @@ Codes available:
     * [Hybrid Generative Model](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-generative-model)
         - [Standard](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-generative-standard)
         - [Advanced](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-generative-advanced)
-    * [Full Deep Learning Generative Model](https://modelflows.github.io/modelflowsapp/deeplearning/#full-dl-generative-model)
+    * [Purely Deep Learning Models](https://modelflows.github.io/modelflowsapp/deeplearning/#full-dl-generative-model)
         - [Residual Autoencoder (point forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-residual)
         - [Variational Autoencoder (probabilistic forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-variational)
     * [Hybrid Predictive Model: POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model)
@@ -70,7 +70,7 @@ This model presents a hybrid ROM integrating Higher Order Singular Value Decompo
 *Work in progress. Coming soon...*
 
 
-### Full Deep Learning Generative Model <a id="full-dl-generative-model"></a>
+### Purely Deep Learning Models <a id="full-dl-generative-model"></a>
 
 Forecasting models for fluid dynamics that rely entirely on deep learning are typically built using convolutional neural networks (CNNs). This is because datasets describing flow dynamics consist of two-dimensional or three-dimensional snapshots that encode the spatiotemporal characteristics of the flow. In this context, an autoencoder, where both the encoder and decoder are implemented with CNNs, enables efficient processing of the spatial dimensions of the dataset. 
 
@@ -78,7 +78,7 @@ Specifically, the encoder constructs a latent representation that may capture ke
 
 Forecasting can be broadly categorized into two main types: [point forecasting](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-residual) and [probabilistic forecasting](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-variational). Point forecasting approximates a deterministic function that describes the prediction process, whereas probabilistic forecasting estimates the underlying probability distribution of the forecast. A Residual Autoencoder is employed for point forecasting, while a Variational Autoencoder (VAE) is used for probabilistic forecasting.
 
-Both the Residual Autoencoder and the VAE can process datasets in a five-dimensional tensor format, structured as [C,X,Y,Z,T]. Unlike the [POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model) model, the architectures of these models are inherently dependent on the shape of the input snapshots. For the codes available on this page, the dataset must adhere to the following dimensional constraints: C = 3, X = 100, Y = 40 and Z = 64, with T remaining variable. <ins>Datasets with higher or lower dimensionality, or with a different arrangement of dimensions, may result in errors when executing the codes</ins>.
+Both the Residual Autoencoder and the VAE are autoregressive and they can process datasets in a five-dimensional tensor format, structured as [C,X,Y,Z,T]. Unlike the [POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model) model, the architectures of these models are inherently dependent on the shape of the input snapshots. For the codes available on this page, the dataset must adhere to the following dimensional constraints: C = 3, X = 100, Y = 40 and Z = 64, with T remaining variable. <ins>Datasets with higher or lower dimensionality, or with a different arrangement of dimensions, may result in errors when executing the codes</ins>.
 
 For example these codes can be tested with the dataset corresponding to the two-dimensional laminar flow past a cylinder, which is available [here](https://modelflows.github.io/modelflowsapp/databases/#cylinder-2d). Also note these models require a GPU for training.
 
