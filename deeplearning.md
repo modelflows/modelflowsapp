@@ -81,14 +81,18 @@ Forecasting can be broadly categorized into two main types: [point forecasting](
 Both the Residual Autoencoder and the VAE can process datasets in a five-dimensional tensor format, structured as [C,X,Y,Z,T]. Unlike the [POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model) model, the architectures of these models are inherently dependent on the shape of the input snapshots. For the codes available on this page, the dataset must adhere to the following dimensional constraints: C = 3, X = 100, Y = 40 and Z = 64, with T remaining variable. <ins>Datasets with higher or lower dimensionality, or with a different arrangement of dimensions, may result in errors when executing the codes</ins>.
 
 #### Residual Autoencoder (point forecasting) <a id="full-generative-residual"></a>
+![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_VAE.png?raw=true)
+
 [R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
 
 Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFLows_ar_res_conv_ae.ipynb).
 
 #### Variational Autoencoder (probabilistic forecasting) <a id="full-generative-variational"></a>
+![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_Res_AE.png?raw=true)
+
 [R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFLows_ar_vae.ipynb).
+Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFlows_ar_vae.ipynb).
 
 ### Hybrid Predictive Model: POD-DL <a id="hybrid-predictive-model"></a>
 <!-- Short description of the method. -->
