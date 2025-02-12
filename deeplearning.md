@@ -16,8 +16,8 @@ Codes available:
         - [Standard](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-generative-standard)
         - [Advanced](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-generative-advanced)
     * [Full Deep Learning Generative Model](https://modelflows.github.io/modelflowsapp/deeplearning/#full-dl-generative-model)
-        - [Residual](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-residual)
-        - [Variational](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-variational)
+        - [Residual Autoencoder (point forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-residual)
+        - [Variational Autoencoder (probabilistic forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-variational)
     * [Hybrid Predictive Model: POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model)
         - [POD-DL: Fixed temporal horizon](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-fixed-h)
         - [POD-DL: Autoregressive](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-ar)
@@ -83,12 +83,12 @@ Both the Residual Autoencoder and the VAE can process datasets in a five-dimensi
 #### Residual Autoencoder (point forecasting) <a id="full-generative-residual"></a>
 [R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFlows_ar_res_conv_ae.ipynb).
+Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFLows_ar_res_conv_ae.ipynb).
 
 #### Variational Autoencoder (probabilistic forecasting) <a id="full-generative-variational"></a>
 [R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFlows_ar_vae.ipynb).
+Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFLows_ar_vae.ipynb).
 
 ### Hybrid Predictive Model: POD-DL <a id="hybrid-predictive-model"></a>
 <!-- Short description of the method. -->
