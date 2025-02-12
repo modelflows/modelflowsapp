@@ -100,6 +100,8 @@ Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/dee
 #### POD-DL: Autoregressive
 ![Figure pod_dl_ar](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_POD_DL.png?raw=true)
 
+Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip).
+
 [R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
 
 ### Remote Sensing and DLinear <a id="dlinear"></a>
