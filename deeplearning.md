@@ -70,12 +70,18 @@ This model presents a hybrid ROM integrating Higher Order Singular Value Decompo
 
 ### Full Deep Learning Generative Model <a id="full-dl-generative-model"></a>
 
-#### Residual <a id="full-generative-residual"></a>
+Forecasting models applied to fluid dynamics and fully based on deep learning are usually composed by convolutional neural networks (CNNs). This is because, datasets describing flow dynamics are made of two-dimensional or three-dimensional snapshots that carry the spatio-temporal information of the dynamics involved. In this meaning, an autoencoder, where both the encoder and decoder are defined by CNNs, allows to work on the spatial dimension of datasets. 
+
+Specifically the encoder constructs a lattent dimension that may represent the different structures within the flow. The forecasting is then performed in this latten dimension and is usually done by a convolutional long-short term memory (ConvLSTM). The predicted latten variables are passed through the encoder to recover the snapshots corresponding to the future dynamics.
+
+This is done,
+
+#### Residual Autoencoder (point forecasting) <a id="full-generative-residual"></a>
 <!-- Short description of the method. -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
 *Work in progress. Coming soon...*
 
-#### Variational <a id="full-generative-variational"></a>
+#### Variational Autoencoder (probabilistic forecasting) <a id="full-generative-variational"></a>
 <!-- Short description of the method. -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
 *Work in progress. Coming soon...*
@@ -95,7 +101,7 @@ The POD-DL model can process datasets represented as tensors of either four or f
 
 [R. Abadía-Heredia, M. López-Martín, B. Carro, J. Arribas, J. Pérez, and S. Le Clainche, “A predictive hybrid reduced order model based on proper orthogonal decomposition combined with deep learning architectures,” Expert Systems with Applications 187, 115910 (2022).](https://doi.org/10.1016/j.eswa.2021.115910)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/pod_dl_fixed_h.zip).
+Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/pod_dl_fixed_h.zip) or open it in [*colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/pod_dl_fixed_h.ipynb).
 
 #### POD-DL: Autoregressive
 ![Figure pod_dl_ar](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_POD_DL.png?raw=true)
