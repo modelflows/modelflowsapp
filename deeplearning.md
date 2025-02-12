@@ -18,7 +18,9 @@ Codes available:
     * [Full Deep Learning Generative Model](https://modelflows.github.io/modelflowsapp/deeplearning/#full-dl-generative-model)
         - [Residual](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-residual)
         - [Variational](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-variational)
-    * [Hybrid Predictive Model](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model)
+    * [Hybrid Predictive Model: POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model)
+        - [POD-DL: Fixed temporal horizon](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-fixed-h)
+        - [POD-DL: Autoregressive](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-ar)
     * [Remote Sensing and DLinear](https://modelflows.github.io/modelflowsapp/deeplearning/#dlinear)
 
 3. [Control](https://modelflows.github.io/modelflowsapp/deeplearning/#control)
@@ -96,14 +98,14 @@ The forecasting can be conducted using either a fixed temporal horizon, where th
 
 The POD-DL model can process datasets represented as tensors of either four or five dimensions, structured as [C,X,Y,Z,T]. Here, C denotes the dataset components, such as different velocity components, Reynolds numbers, or initial conditions. The indices X, Y and Z correspond to the spatial discretization along the $x$-, $y$- and $z$-axis, respectively, while T represents the temporal dimension, indicating the number of snapshots. For four-dimensional tensors, the Z index may either be absent or set to Z = 1. Datasets with higher or lower dimensionality, or with a different arrangement of dimensions, may result in errors when executing the code.
 
-#### POD-DL: Fixed temporal horizon
+#### POD-DL: Fixed temporal horizon <a id="hybrid-predictive-model-fixed-h"></a>
 ![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_POD_DL_Orig.png?raw=true)
 
 [R. Abadía-Heredia, M. López-Martín, B. Carro, J. Arribas, J. Pérez, and S. Le Clainche, “A predictive hybrid reduced order model based on proper orthogonal decomposition combined with deep learning architectures,” Expert Systems with Applications 187, 115910 (2022).](https://doi.org/10.1016/j.eswa.2021.115910)
 
 Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/pod_dl_fixed_h.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/pod_dl_fixed_h.ipynb).
 
-#### POD-DL: Autoregressive
+#### POD-DL: Autoregressive <a id="hybrid-predictive-model-ar"></a>
 ![Figure pod_dl_ar](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_POD_DL.png?raw=true)
 
 [R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
