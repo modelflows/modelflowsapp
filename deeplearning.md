@@ -91,6 +91,8 @@ The forecasting can be conducted using either a fixed temporal horizon, where th
 #### POD-DL: Fixed temporal horizon
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/d356b4aa65afd90fa0e8e1cba902d919b621e307/assets/img/2025_01_30_AbadiaHeredia_POD_DL_Orig.png?raw=true)
 
+[R. Abadía-Heredia, M. López-Martín, B. Carro, J. Arribas, J. Pérez, and S. Le Clainche, “A predictive hybrid reduced order model based on proper orthogonal decomposition combined with deep learning architectures,” Expert Systems with Applications 187, 115910 (2022).](https://doi.org/10.1016/j.eswa.2021.115910)
+
 #### POD-DL: Autoregressive
 
 ### Remote Sensing and DLinear <a id="dlinear"></a>
