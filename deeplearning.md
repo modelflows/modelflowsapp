@@ -89,7 +89,7 @@ The POD-DL model is a hybrid approach that integrates proper orthogonal decompos
 The forecasting can be conducted using either a fixed temporal horizon, where the model predicts a predetermined number of snapshots simultaneously, or an autoregressive approach, where multiple predictions are iteratively computed by feeding previously generated outputs back into the model.
 
 #### POD-DL: Fixed temporal horizon
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/d356b4aa65afd90fa0e8e1cba902d919b621e307/assets/img/2025_01_30_AbadiaHeredia_POD_DL_Orig?raw=true)
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/d356b4aa65afd90fa0e8e1cba902d919b621e307/assets/img/2025_01_30_AbadiaHeredia_POD_DL_Orig.png?raw=true)
 
 #### POD-DL: Autoregressive
 
