@@ -89,7 +89,7 @@ Gappy filling is a technique used to fill in missing or incomplete data points i
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/Gappy.png?raw=true)
 
-*Code in progress. Coming soon...*
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/gappy_hosvd.zip).
 
 ### Superresolution Tool <a id="superresolution-tool"></a>
 The supperresolution tool, based on SVD, is a technique used to improve the quality of a dataset that contains incomplete or noisy data. This technique involves using statistical methods to identify and remove noise from the data, or to fill in missing data points with more accurate estimates. The goal is to produce a more accurate and reliable dataset that can be used for further analysis. Superresolution tool aims to improve the overall quality of the dataset.
