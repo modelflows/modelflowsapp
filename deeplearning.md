@@ -81,10 +81,10 @@ This model presents a hybrid ROM integrating Higher Order Singular Value Decompo
 *Work in progress. Coming soon...*
 
 
-### Hybrid Predictive Model <a id="hybrid-predictive-model"></a>
+### Hybrid Predictive Model: POD-DL <a id="hybrid-predictive-model"></a>
 <!-- Short description of the method. -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
-*Work in progress. Coming soon...*
+The POD-DL is a hybrid model that combines proper orthogonal decomposition (POD) with deep learning (DL) architectures, mainly an LSTM, to forecast the temporal evolution of flow dynamics. To do this the POD is first applied to a dataset $D$. 
 
 
 ### Remote Sensing and DLinear <a id="dlinear"></a>
