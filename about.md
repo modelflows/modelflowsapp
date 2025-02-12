@@ -22,9 +22,16 @@ The following members have contributed in the development of ModelFLOWs-app, an 
     <li><a href="https://sites.google.com/view/soledadleclainche/" target="_blank">Soledad Le Clainche</a></li>
   </ul>
   <ul>
-    <strong>Second Release:</strong>
-    <li> First Participant</li>
-    <li> Second Participant</li>
+    <strong>New Members:</strong>
+    <li> Andrés Bell-Navas</li>
+    <li> Xiangrui Zou</li>
+    <li> Guillermo Barragán</li>
+    <li> Han Chen</li>
+    <li> Francisco José García Soto</li>
+    <li> Iñaki Gutierrez Béjar</li>
+    <li> Paul Jeanney</li>
+    <li> Prajith Pillai</li>
+    <li> Arindam Sengupta</li>
   </ul>
 </div>
 
