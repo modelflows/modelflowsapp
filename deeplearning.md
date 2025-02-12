@@ -84,8 +84,14 @@ This model presents a hybrid ROM integrating Higher Order Singular Value Decompo
 ### Hybrid Predictive Model: POD-DL <a id="hybrid-predictive-model"></a>
 <!-- Short description of the method. -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
-The POD-DL is a hybrid model that combines proper orthogonal decomposition (POD) with deep learning (DL) architectures, mainly an LSTM, to forecast the temporal evolution of flow dynamics. To do this the POD is first applied to a dataset $D$. 
+The POD-DL model is a hybrid approach that integrates proper orthogonal decomposition (POD) with deep learning (DL) architectures, primarily an LSTM, to forecast the temporal evolution of flow dynamics. It follows an encoder-decoder structure, where the encoder corresponds to the matrix decomposition performed by POD, encapsulating the POD modes and coefficients. Since the temporal dynamics are encoded in the POD coefficients, the DL architecture focuses solely on forecasting these coefficients, while the POD modes remain unchanged. Once the new coefficients are computed, the decoder reconstructs the flow field by reversing the POD decomposition, i.e., performing a matrix multiplication. This process yields snapshots corresponding to future flow dynamics.
 
+The forecasting can be conducted using either a fixed temporal horizon, where the model predicts a predetermined number of snapshots simultaneously, or an autoregressive approach, where multiple predictions are iteratively computed by feeding previously generated outputs back into the model.
+
+#### POD-DL: Fixed temporal horizon
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/d356b4aa65afd90fa0e8e1cba902d919b621e307/assets/img/2025_01_30_AbadiaHeredia_POD_DL_Orig?raw=true)
+
+#### POD-DL: Autoregressive
 
 ### Remote Sensing and DLinear <a id="dlinear"></a>
 LC-SVD-DLinear (and LC-HOSVD-DLinear) are two hybrid machine learning models that combine [low-cost singular value decomposition (LC-SVD)](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-svd) and [low-cost high-order singular value decomposition](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-hosvd) with the DLinear architecture to efficiently forecast high-resolution experimental data collected from optimally placed sensors. These models operate by first using LC-SVD or LC-HOSVD to break down the experimental data and up-sample the temporal coefficients, POD modes, and singular values, significantly reducing computational cost while retaining all physical information. The reconstructed temporal coefficients are then processed by the DLinear model, which decomposes them into trend and seasonality components to identify temporal patterns and predict future values autoregressively, using the sliding window mechanism. Finally, the predicted temporal coefficients are combined with the reconstructed POD modes and singular values to generate high-resolution forecast snapshots, ensuring both accuracy and efficiency in handling complex, high-dimensional data.
