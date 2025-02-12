@@ -93,16 +93,16 @@ The POD-DL model can process datasets represented as tensors of either four or f
 #### POD-DL: Fixed temporal horizon
 ![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_POD_DL_Orig.png?raw=true)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/pod_dl_fixed_h.zip).
-
 [R. Abadía-Heredia, M. López-Martín, B. Carro, J. Arribas, J. Pérez, and S. Le Clainche, “A predictive hybrid reduced order model based on proper orthogonal decomposition combined with deep learning architectures,” Expert Systems with Applications 187, 115910 (2022).](https://doi.org/10.1016/j.eswa.2021.115910)
+
+Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/pod_dl_fixed_h.zip).
 
 #### POD-DL: Autoregressive
 ![Figure pod_dl_ar](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_POD_DL.png?raw=true)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip).
-
 [R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
+
+Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip).
 
 ### Remote Sensing and DLinear <a id="dlinear"></a>
 LC-SVD-DLinear (and LC-HOSVD-DLinear) are two hybrid machine learning models that combine [low-cost singular value decomposition (LC-SVD)](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-svd) and [low-cost high-order singular value decomposition](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-hosvd) with the DLinear architecture to efficiently forecast high-resolution experimental data collected from optimally placed sensors. These models operate by first using LC-SVD or LC-HOSVD to break down the experimental data and up-sample the temporal coefficients, POD modes, and singular values, significantly reducing computational cost while retaining all physical information. The reconstructed temporal coefficients are then processed by the DLinear model, which decomposes them into trend and seasonality components to identify temporal patterns and predict future values autoregressively, using the sliding window mechanism. Finally, the predicted temporal coefficients are combined with the reconstructed POD modes and singular values to generate high-resolution forecast snapshots, ensuring both accuracy and efficiency in handling complex, high-dimensional data.
