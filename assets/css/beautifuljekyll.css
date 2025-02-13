@@ -485,6 +485,10 @@ footer .footer-custom-content {
   overflow: hidden;
 }
 
+.navbar-links a[href*="modaldecomposition"] {
+    font-size: 3px; /* Ajusta el tamaño según prefieras */
+}
+
 @media (min-width: 768px) {
   .post-preview {
     padding: 2.1875rem 0;
