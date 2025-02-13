@@ -1123,8 +1123,4 @@ pre {
     display: inline-block;
   }
 
-  .navbar-links a[href*="modaldecomposition"] {
-    font-size: 3px !important; /* Ajusta el tamaño según prefieras */
-}
-
 }
