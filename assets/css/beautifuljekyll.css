@@ -1122,7 +1122,5 @@ pre {
   #nav-search-text {
     display: inline-block;
   }
-  .navbar-links a[href*="tutorial"] {
-    font-size: 6px; /* Ajusta el tamaño según prefieras */
-}
+
 }
