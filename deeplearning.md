@@ -21,6 +21,8 @@ Codes available:
     * [Hybrid Predictive Model: POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model)
         - [POD-DL: Fixed temporal horizon](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-fixed-h)
         - [POD-DL: Autoregressive](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-ar)
+   * [Hybrid Predictive Model: HOSVD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model)
+        - [HOSVD-DL: Autoregressive](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-ar)
     * [Remote Sensing and DLinear](https://modelflows.github.io/modelflowsapp/deeplearning/#dlinear)
 
 3. [Control](https://modelflows.github.io/modelflowsapp/deeplearning/#control)
