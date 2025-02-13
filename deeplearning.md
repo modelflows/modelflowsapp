@@ -118,7 +118,7 @@ Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/dee
 
 Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFlows_ar_pod_dl.ipynb).
 
-#### HOSVD-DL: Autoregreesive <a id="hybrid-predictive-model-ar"></a>
+#### HOSVD-DL: Autoregressive <a id="hybrid-predictive-model-ar"></a>
 This model presents a hybrid ROM integrating Higher Order Singular Value Decomposition ([HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd)) with Long Short Term Memory (LSTM) architecture for temporal predictions. The integration of [HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd) enables dimensionality reduction and the LSTM model processes the sequences, capturing nonlinear dynamics and preserving long-term temporal correlations. Predictions are generated autoregressively, where forecasted solutions are fed back as inputs to itteratively predict the next step.  While this approach can also be implemented with Singular Value Decomposition (SVD),  [HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd) extends the capabilities of SVD by better preserving multi-dimensional structures, leading to improved performance in complex dynamical systems. This framework is implemented using TensorFlow/Keras for 4D and 5D tensors.
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/d356b4aa65afd90fa0e8e1cba902d919b621e307/assets/img/2025_01_30_sengupta_Temporalforecasting.PNG?raw=true) 
