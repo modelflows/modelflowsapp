@@ -58,7 +58,7 @@ In order to overcome the limitations of conventional numerical solvers, a fully 
 
 ### Hybrid Generative Model <a id="hybrid-generative-model"></a>
 
-
+#### Standard <a id="hybrid-generative-standard"></a>
 
 *Code in progress. Coming soon...*
  <!-- Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/Temporalpredictions_Standard.zip).  -->
