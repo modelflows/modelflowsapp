@@ -71,7 +71,9 @@ Low-cost singular value decomposition (LC-SVD) is a modal decomposition-based da
 <!-- [Download the LC-SVD .ipynb](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/Low-cost-singular-value-decomposition.zip) -->
 
 #### Low Cost HODMD <a id="low-cost-hodmd"></a>
-<!-- Short description of the method. -->
+Large and complex datasets often present computational challenges, particularly when using standard Singular Value Decomposition (SVD). As dataset sizes grow, the scalability of conventional SVD becomes a major bottleneck, especially in applications requiring repeated computations.
+
+To address this, Low-Cost Higher Order Dynamic Mode Decomposition (lcHODMD) extends standard HODMD with a more efficient approach that reduces both memory usage and computational time. This method leverages either Low-Cost Singular Value Decomposition (lcSVD) or Low-Cost Higher Order Singular Value Decomposition (lcHOSVD) to enhance scalability and performance.
 
 
 Reference us with:
