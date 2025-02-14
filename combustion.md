@@ -87,9 +87,6 @@ These two datasets (experimental and theoretical) independently hold significant
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/f2cc14f96da7255149471ca3d1aeed99de96c7c1/assets/img/2025_01_30_pillai_lcsvd-da.png?raw=true)
 
-### Tutorials
-The tutorial on lcsvd data assimilation algorithm for reactive flows
-
 ### Results
 The results of applying lcsvd-da algorithm to laminar co-flow flame dataset with fuel 65% methane and 35% nitrogen. The figure shows original database (left), reconstructed database using lcSVD data assimilation (center) and downsampled matrix (right) for species Temperature, OH and Methane (top to bottom).
 
@@ -99,17 +96,11 @@ The results of applying lcsvd-da algorithm to turbulent bluff body stabilized hy
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/f2cc14f96da7255149471ca3d1aeed99de96c7c1/assets/img/re2_lcsvd-da_turb.png?raw=true)
 
-### CODE
-
-Download the code [*here*](https://github.com/modelflows/ModelFLOWs-combustion/raw/refs/heads/main/lcsvd_da.zip).
 
 ## LcHODMD (application to reactive flows)
 Reactive flow databases are typically large, complex, and heterogeneous. Experimental data, on the one hand, is often gathered using a sparse array of sensors. While this sparsity poses limitations, it can still provide critical insights during real-time analysis and decision-making. On the other hand, simulation datasets are characterized by their high dimensionality and intricate information, which makes processing them with standard SVD computationally expensive and time-consuming. As datasets grows size, the scalability of standard SVD becomes a significant bottleneck, particularly in applications requiring repeated computations. Low-Cost Higher Order Dynamic Mode Decomposition (lcHODMD) is a lightweight extension of standard HODMD, designed to reduce memory usage and computational time . This method can be implemented using either Low-Cost Singular Value Decomposition (lcSVD) or Low-Cost Higher Order Singular Value Decomposition (lcHOSVD). 
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/621c629e76f9f1dabd7d0199c6158c956184a662/assets/img/2025_01_30_pillai_lchodmd.png?raw=true)
-
-### Tutorials
-The tutorial on lcHODMD algorithm for reactive flows
 
 ### Results
 The results of applying lcHODMD algorithm to laminar co-flow flame dataset with fuel 65% methane and 35% nitrogen. The figure shows original database , downsampled matrix, reconstructed database using lcHODMD data assimilation and absolute error (left to right) for species Temperature, OH and Methane (top to bottom).
@@ -119,6 +110,3 @@ The results of applying lcHODMD algorithm to laminar co-flow flame dataset with 
 The results of applying lcHODMD algorithm to turbulent bluff body stabilized hydrogen flame dataset. The figure shows original database , downsampled matrix, reconstructed database using lcHODMD data assimilation and absolute error (left to right) for variables stream-wise velocity(top) and normal velocity(bottom).
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/621c629e76f9f1dabd7d0199c6158c956184a662/assets/img/re3_lchodmd_turb.png?raw=true)
-
-### CODE
-Download the code [*here*](https://github.com/modelflows/ModelFLOWs-combustion/raw/refs/heads/main/lchodmd_code.zip).
