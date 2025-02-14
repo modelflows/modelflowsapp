@@ -16,9 +16,8 @@ Content:
        *  [Coupling of OpenFOAM and adaptive prediction](https://modelflows.github.io/modelflowsapp/combustion/#coupling-of-adaptive)
 
 2.  [LcSVD-DA](https://modelflows.github.io/modelflowsapp/combustion/#lcsvd-da)
-    *  [Tutorials](https://modelflows.github.io/modelflowsapp/combustion/#tutorials)
-    *  [Results](https://modelflows.github.io/modelflowsapp/combustion/#results)
 
+3.  [LcHODMD-DA](https://modelflows.github.io/modelflowsapp/combustion/#lchodmd)
 
 
 ## Adaptive prediction
@@ -97,7 +96,7 @@ The results of applying lcsvd-da algorithm to turbulent bluff body stabilized hy
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/f2cc14f96da7255149471ca3d1aeed99de96c7c1/assets/img/re2_lcsvd-da_turb.png?raw=true)
 
 
-## LcHODMD (application to reactive flows)
+## LcHODMD
 Reactive flow databases are typically large, complex, and heterogeneous. Experimental data, on the one hand, is often gathered using a sparse array of sensors. While this sparsity poses limitations, it can still provide critical insights during real-time analysis and decision-making. On the other hand, simulation datasets are characterized by their high dimensionality and intricate information, which makes processing them with standard SVD computationally expensive and time-consuming. As datasets grows size, the scalability of standard SVD becomes a significant bottleneck, particularly in applications requiring repeated computations. Low-Cost Higher Order Dynamic Mode Decomposition (lcHODMD) is a lightweight extension of standard HODMD, designed to reduce memory usage and computational time . This method can be implemented using either Low-Cost Singular Value Decomposition (lcSVD) or Low-Cost Higher Order Singular Value Decomposition (lcHOSVD). 
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/621c629e76f9f1dabd7d0199c6158c956184a662/assets/img/2025_01_30_pillai_lchodmd.png?raw=true)
