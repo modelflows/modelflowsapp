@@ -4,6 +4,11 @@ title: Databases
 subtitle: Our repository of public databases
 ---
 
+If you use our databases for your studies, please reference our website with:
+
+ModelFLOWs (2023). *ModelFLOWs-app*. Retrieved [date], from [https://modelflows.github.io/modelflowsapp/](https://modelflows.github.io/modelflowsapp/)
+
+
 Databases available:
 1. [Flow Past a Cylinder](https://modelflows.github.io/modelflowsapp/databases/#cylinder)
     * [2D Laminar Flow](https://modelflows.github.io/modelflowsapp/databases/#cylinder-2d)
