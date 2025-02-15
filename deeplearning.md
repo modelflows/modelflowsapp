@@ -56,19 +56,6 @@ In order to overcome the limitations of conventional numerical solvers, a fully 
 
 ## Temporal Forecasting <a id="temporal-forecasting"></a>
 
-### Hybrid Generative Model <a id="hybrid-generative-model"></a>
-
-#### Standard <a id="hybrid-generative-standard"></a>
-
-*Code in progress. Coming soon...*
- <!-- Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/Temporalpredictions_Standard.zip).  -->
- 
-#### Advanced <a id="hybrid-generative-advanced"></a>
-<!-- Short description of the method. -->
-<!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) -->
-*Work in progress. Coming soon...*
-
-
 ### Purely Deep Learning Models <a id="full-dl-generative-model"></a>
 
 Forecasting models for fluid dynamics that rely entirely on deep learning are typically built using convolutional neural networks (CNNs). This is because datasets describing flow dynamics consist of two-dimensional or three-dimensional snapshots that encode the spatiotemporal characteristics of the flow. In this context, an autoencoder, where both the encoder and decoder are implemented with CNNs, enables efficient processing of the spatial dimensions of the dataset. 
