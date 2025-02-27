@@ -7,6 +7,7 @@ subtitle: Our studies focused on air pollution
 ## Introduction
 Aerobiological data (e.g. pollen and spores) are typically measured on a daily basis. Current monitoring typically relies on manual sampling, which can result in incomplete datasets due to malfunctions or voluntary interruptions of sampling (Navares & Azanarte, 2019). Various imputation methods are used to address missing data issues, such as statistical approaches (e.g., linear or moving mean interpolation) and machine learning (ML) techniques (e.g., Convolutional Neural Networks, k-Nearest Neighbours algorithm) (Navares & Azanarte, 2019; Picornell et al., 2021; Marchetti et al., 2017). However, the application of ML approaches in aerobiological missing data imputation has not been well-explored yet.
 In this research, a simulation study was conducted to evaluate, for the first time, the effectiveness of Gappy Singular Value Decomposition (GSVD) in imputing aerobiological datasets, comparing it with a well-known statistical method, the moving mean algorithm. The GSVD is part of [*ModelFLOWs-app*](https://github.com/modelflows/ModelFLOWs-app) and it has been adapted for the present study. See more details of this research here:
+
 [*Tagilaferro, S., Corrochano, A., Marchetti, P., Marcon, A., Le Clainche, S., A new method based on physical patterns to impute aerobiological datasets, PLoS ONE 19(11): e0314005, 2024.*](https://doi.org/10.1371/journal.pone.0314005)
 
 ## Aerobiological data
