@@ -12,16 +12,15 @@ Codes available:
     * [Superresolution Tool](https://modelflows.github.io/modelflowsapp/deeplearning/#superresolution-tool)
 
 3. [Temporal Forecasting](https://modelflows.github.io/modelflowsapp/deeplearning/#temporal-forecasting)
-    * [Deep Learning Models](https://modelflows.github.io/modelflowsapp/deeplearning/#full-dl-generative-model)
-        - [Residual Autoencoder (point forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-residual)
-        - [Variational Autoencoder (probabilistic forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-variational)
     * [Hybrid Predictive Model: POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model)
         - [POD-DL: Fixed temporal horizon](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-fixed-h)
         - [POD-DL: Autoregressive](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-ar)
    * [Hybrid Predictive Model: HOSVD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model)
         - [HOSVD-DL: Autoregressive](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-ar)
     * [Remote Sensing and DLinear](https://modelflows.github.io/modelflowsapp/deeplearning/#dlinear)
-
+    * [Deep Learning Models](https://modelflows.github.io/modelflowsapp/deeplearning/#full-dl-generative-model)
+        - [Residual Autoencoder (point forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-residual)
+        - [Variational Autoencoder (probabilistic forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-variational)
 3. [Control](https://modelflows.github.io/modelflowsapp/deeplearning/#control)
 
 ## Parametric Study <a id="parametric-study"></a>
@@ -52,34 +51,6 @@ In order to overcome the limitations of conventional numerical solvers, a fully 
 <!-- Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/SUPERRESOLUTION.zip).  -->
 
 ## Temporal Forecasting <a id="temporal-forecasting"></a>
-
-### Purely Deep Learning Models <a id="full-dl-generative-model"></a>
-
-Forecasting models for fluid dynamics that rely entirely on deep learning are typically built using convolutional neural networks (CNNs). This is because datasets describing flow dynamics consist of two-dimensional or three-dimensional snapshots that encode the spatiotemporal characteristics of the flow. In this context, an autoencoder, where both the encoder and decoder are implemented with CNNs, enables efficient processing of the spatial dimensions of the dataset. 
-
-Specifically, the encoder constructs a latent representation that may capture key flow structures. Forecasting is then performed within this latent space, commonly using a convolutional long short-term memory (ConvLSTM) network. The predicted latent variables are subsequently passed through the decoder to reconstruct the snapshots corresponding to future flow dynamics.
-
-Forecasting can be broadly categorized into two main types: [point forecasting](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-residual) and [probabilistic forecasting](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-variational). Point forecasting approximates a deterministic function that describes the prediction process, whereas probabilistic forecasting estimates the underlying probability distribution of the forecast. A Residual Autoencoder is employed for point forecasting, while a Variational Autoencoder (VAE) is used for probabilistic forecasting.
-
-Both the Residual Autoencoder and the VAE are autoregressive and they can process datasets in a five-dimensional tensor format, structured as [C,X,Y,Z,T]. Here, C denotes the dataset components, such as different velocity components, Reynolds numbers, or initial conditions. The indices X, Y and Z correspond to the spatial discretization along the x-, y- and z-axis, respectively, while T represents the temporal dimension, indicating the number of snapshots.
-
-Unlike the [POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model) model, the architectures of these models are inherently dependent on the shape of the input snapshots. For the codes available on this page, the dataset must adhere to the following dimensional constraints: C = 3, X = 100, Y = 40 and Z = 64, with T remaining variable. <ins>Datasets with higher or lower dimensionality, or with a different arrangement of dimensions, may result in errors when executing the codes</ins>.
-
-For example these codes can be tested with the dataset corresponding to the two-dimensional laminar flow past a cylinder, which is available [here](https://modelflows.github.io/modelflowsapp/databases/#cylinder-2d). Also note these models require a GPU for training.
-
-#### Residual Autoencoder (point forecasting) <a id="full-generative-residual"></a>
-![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_Res_AE.png?raw=true)
-
-[R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
-
-Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFLows_ar_res_conv_ae.ipynb).
-
-#### Variational Autoencoder (probabilistic forecasting) <a id="full-generative-variational"></a>
-![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_VAE.png?raw=true)
-
-[R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
-
-Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFlows_ar_vae.ipynb).
 
 ### Hybrid Predictive Model: POD-DL <a id="hybrid-predictive-model"></a>
 <!-- Short description of the method. -->
@@ -125,6 +96,35 @@ LC-SVD-DLinear (and LC-HOSVD-DLinear) are two hybrid machine learning models tha
 <!-- Download the code for LC-SVD-DLinear [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/LC-SVD-DLinear.zip).  -->
 <!-- Download the code for HOSVD-DLinear [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/HOSVD-DLinear.zip).  -->
 <!-- Download the code for LC-HOSVD-DLinear [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/LC-HOSVD-DLinear.zip).  -->
+
+### Deep Learning Models <a id="full-dl-generative-model"></a>
+
+Forecasting models for fluid dynamics that rely entirely on deep learning are typically built using convolutional neural networks (CNNs). This is because datasets describing flow dynamics consist of two-dimensional or three-dimensional snapshots that encode the spatiotemporal characteristics of the flow. In this context, an autoencoder, where both the encoder and decoder are implemented with CNNs, enables efficient processing of the spatial dimensions of the dataset. 
+
+Specifically, the encoder constructs a latent representation that may capture key flow structures. Forecasting is then performed within this latent space, commonly using a convolutional long short-term memory (ConvLSTM) network. The predicted latent variables are subsequently passed through the decoder to reconstruct the snapshots corresponding to future flow dynamics.
+
+Forecasting can be broadly categorized into two main types: [point forecasting](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-residual) and [probabilistic forecasting](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-variational). Point forecasting approximates a deterministic function that describes the prediction process, whereas probabilistic forecasting estimates the underlying probability distribution of the forecast. A Residual Autoencoder is employed for point forecasting, while a Variational Autoencoder (VAE) is used for probabilistic forecasting.
+
+Both the Residual Autoencoder and the VAE are autoregressive and they can process datasets in a five-dimensional tensor format, structured as [C,X,Y,Z,T]. Here, C denotes the dataset components, such as different velocity components, Reynolds numbers, or initial conditions. The indices X, Y and Z correspond to the spatial discretization along the x-, y- and z-axis, respectively, while T represents the temporal dimension, indicating the number of snapshots.
+
+Unlike the [POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model) model, the architectures of these models are inherently dependent on the shape of the input snapshots. For the codes available on this page, the dataset must adhere to the following dimensional constraints: C = 3, X = 100, Y = 40 and Z = 64, with T remaining variable. <ins>Datasets with higher or lower dimensionality, or with a different arrangement of dimensions, may result in errors when executing the codes</ins>.
+
+For example these codes can be tested with the dataset corresponding to the two-dimensional laminar flow past a cylinder, which is available [here](https://modelflows.github.io/modelflowsapp/databases/#cylinder-2d). Also note these models require a GPU for training.
+
+#### Residual Autoencoder (point forecasting) <a id="full-generative-residual"></a>
+![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_Res_AE.png?raw=true)
+
+[R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
+
+Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFLows_ar_res_conv_ae.ipynb).
+
+#### Variational Autoencoder (probabilistic forecasting) <a id="full-generative-variational"></a>
+![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_VAE.png?raw=true)
+
+[R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
+
+Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFlows_ar_vae.ipynb).
+
 
 ## Control <a id="control"></a>
 <!-- Short description of the method. -->
