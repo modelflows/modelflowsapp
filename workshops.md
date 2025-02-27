@@ -10,5 +10,5 @@ The given talks focused on innovative AI strategies, presenting new models based
 
 A key aspect highlighted during the sessions was the explainability of these models, directly linked to the underlying physics of the studied phenomena, which plays a crucial role in demonstrating their excellent performance and their potential to advance the state-of-the-art in each application domain.
 
-![Figure text](https://github.com/modelflows/modelflowsapp/Events_ModelFLOWs_Workshop/ModelFLOWs_WS25_groupPicture.jpeg)
+![Figure text](https://github.com/modelflows/modelflowsapp/assets/img/Workshops_Events/ModelFLOWs_WS25_groupPicture.jpeg)
 
