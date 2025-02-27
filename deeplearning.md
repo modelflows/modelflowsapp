@@ -12,10 +12,7 @@ Codes available:
     * [Superresolution Tool](https://modelflows.github.io/modelflowsapp/deeplearning/#superresolution-tool)
 
 3. [Temporal Forecasting](https://modelflows.github.io/modelflowsapp/deeplearning/#temporal-forecasting)
-    * [Hybrid Generative Model](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-generative-model)
-        - [Standard](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-generative-standard)
-        - [Advanced](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-generative-advanced)
-    * [Purely Deep Learning Models](https://modelflows.github.io/modelflowsapp/deeplearning/#full-dl-generative-model)
+    * [Deep Learning Models](https://modelflows.github.io/modelflowsapp/deeplearning/#full-dl-generative-model)
         - [Residual Autoencoder (point forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-residual)
         - [Variational Autoencoder (probabilistic forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-variational)
     * [Hybrid Predictive Model: POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model)

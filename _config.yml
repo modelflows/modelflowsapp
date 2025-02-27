@@ -28,7 +28,7 @@ navbar-links:
 
   Notebooks:
     - Overview: "mainnotebooks"
-    - Modal Decomposition: "modaldecomposition"
+    - Modal Decomp.: "modaldecomposition"
     - Deep Learning: "deeplearning"
     - Other Codes: "others"
     
@@ -41,7 +41,7 @@ navbar-links:
   Databases: "databases"
     
   Group:
-    - Workshop: "workshops"
+    - Events: "workshops"
     - About us: "about"
 
 ################

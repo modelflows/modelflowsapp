@@ -6,7 +6,8 @@ subtitle: Our studies focused on air pollution
 
 ## Introduction
 Aerobiological data (e.g. pollen and spores) are typically measured on a daily basis. Current monitoring typically relies on manual sampling, which can result in incomplete datasets due to malfunctions or voluntary interruptions of sampling (Navares & Azanarte, 2019). Various imputation methods are used to address missing data issues, such as statistical approaches (e.g., linear or moving mean interpolation) and machine learning (ML) techniques (e.g., Convolutional Neural Networks, k-Nearest Neighbours algorithm) (Navares & Azanarte, 2019; Picornell et al., 2021; Marchetti et al., 2017). However, the application of ML approaches in aerobiological missing data imputation has not been well-explored yet.
-In this research, a simulation study was conducted to evaluate, for the first time, the effectiveness of Gappy Singular Value Decomposition (GSVD) in imputing aerobiological datasets, comparing it with a well-known statistical method, the moving mean algorithm. The GSVD is part of [*ModelFLOWs-app*](https://github.com/modelflows/ModelFLOWs-app) and it has been adapted for the present study.
+In this research, a simulation study was conducted to evaluate, for the first time, the effectiveness of Gappy Singular Value Decomposition (GSVD) in imputing aerobiological datasets, comparing it with a well-known statistical method, the moving mean algorithm. The GSVD is part of [*ModelFLOWs-app*](https://github.com/modelflows/ModelFLOWs-app) and it has been adapted for the present study. See more details of this research here:
+[*Tagilaferro, S., Corrochano, A., Marchetti, P., Marcon, A., Le Clainche, S., A new method based on physical patterns to impute aerobiological datasets, PLoS ONE 19(11): e0314005, 2024.*](https://doi.org/10.1371/journal.pone.0314005)
 
 ## Aerobiological data
 Daily pollen concentrations for the period 2018-2022 were downloaded from the POLLnet Italian aerobiological monitoring network using the [*“pollnet” R package*](https://rpubs.com/gbonafe/pollnet-data-extraction). Alnus and Poaceae pollen measured at two monitoring stations in northern Italy were selected for the analysis due to their different load and seasonality. The pollen season of the year 2022 was chosen as simulation period to ensure a complete data series for the preceding years, thus guaranteeing the applicability of the data-driven method.
@@ -29,19 +30,19 @@ Pollen variability, which can impact imputation accuracy, was also analysed usin
 
 Promising results emerged, showing that the GSVD was as good as the well-established moving mean method and demonstrating its strong generalization capabilities across different data types. However, the imputation error was primarily influenced by pollen characteristics and location, regardless of the imputation method used. High variability in pollen concentrations and the distribution of missing data negatively affected imputation accuracy.
 
-You can also see the explanation of this paper in the following video:
+You can also see the explanation of this [*paper*](https://doi.org/10.1371/journal.pone.0314005) in the following video:
 
 <video width="640" height="360" controls>
   <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/Tagliaferro_etal_2024.mp4?raw=true" type="video/mp4">
 </video>
 
-You can download the mentioned datasets and the code to run the GSVD method in the following [*link*](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/datasets/2024_Tagliaferroetal_Databases.zip).
+You can download the mentioned datasets and the code to run the GSVD method in the following [*link*](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/datasets/2024_Tagliaferroetal_Databases.zip). 
 
 ### Funding
 
 A.M. received grants to conduct the MEETOUT study from the European Union through the Italian Ministry of University and Research under the ESF REACT-EU Green and Innovation funding programme (Ministerial Decree 1061/2021) and the NextGenerationEu funding programme (Ministerial Decree 737/2021). Article processing charges were supported by the special fund at the University of Verona dedicated to Open Access publications. S.L.C. and A.C. acknowledge the grants PID2023-147790OB-I00, TED2021-129774B-C21 and PLEC2022-009235 funded by MCIN/AEI/10.13039/501100011033 and by the European Union “NextGenerationEU”/PRTR. The authors acknowledge the MODELAIR and ENCODING projects that have received funding from the European Union’s Horizon Europe research and innovation programme under the Marie Sklodowska-Curie grant agreement No. 101072559 and 101072779, respectively. The results of this publication reflect only the author(s) view and do not necessarily reflect those of the European Union. The European Union cannot be held responsible for them. A.C. acknowledges the support of Universidad Politécnica de Madrid, under the program ‘Programa Propio’. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. There was no additional external funding received for this study.
 
-### References
+### Other Relevant References
 
 [*Navares, R. and Aznarte, J.L., 2019. Geographical Imputation of Missing Poaceae Pollen Data via Convolutional Neural Networks.  Atmosphere, 110(11), 717.*](https://doi.org/10.3390/atmos10110717)
 
