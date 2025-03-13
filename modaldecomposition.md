@@ -18,7 +18,7 @@ Codes available:
     * [Superresolution Tool](https://modelflows.github.io/modelflowsapp/modaldecomposition/#superresolution-tool)
 
 3. [Control](https://modelflows.github.io/modelflowsapp/modaldecomposition/#control)
-   * [Passive FlowControl](https://modelflows.github.io/modelflowsapp/modaldecomposition/#passive-flow-control)
+   * [Passive Flow Control](https://modelflows.github.io/modelflowsapp/modaldecomposition/#passive-flow-control)
 
 
 
@@ -116,5 +116,11 @@ In the proposed method, any type of database (coming from experiments or numeric
 For a proper usage of the algorithm, it is recommended to first calibrate the HODMD algorithm, following the [Advanced Tutorial](https://modelflows.github.io/modelflowsapp/advanced/) in our website.
 
 [*Corrochano, A., Le Clainche, S., Structural sensitivity in non-linear flows using direct solutions, Computers & Mathematics with Applications, 2022.*](https://doi.org/10.1016/j.camwa.2022.10.006)
+
+The following video explains how this algorithm is applied and the previus paper:
+
+<video width="640" height="360" controls>
+  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/2025_03Mar_Corrochano_FlowControl.mp4?raw=true" type="video/mp4">
+</video>
 
 Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/mdhodmd-control.zip).
