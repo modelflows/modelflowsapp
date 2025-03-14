@@ -120,7 +120,7 @@ For a proper usage of the algorithm, it is recommended to first calibrate the HO
 The following video explains how this algorithm is applied and the previus paper:
 
 <video width="640" height="360" controls>
-  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/2025_03Mar_Corrochano_FlowControl.mp4?raw=true" type="video/mp4">
+  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/HODMD_FlowControl_Video.mp4?raw=true" type="video/mp4">
 </video>
 
 Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/mdhodmd-control.zip).
