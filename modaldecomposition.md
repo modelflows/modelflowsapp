@@ -117,7 +117,7 @@ For a proper usage of the algorithm, it is recommended to first calibrate the HO
 
 [*Corrochano, A., Le Clainche, S., Structural sensitivity in non-linear flows using direct solutions, Computers & Mathematics with Applications, 2022.*](https://doi.org/10.1016/j.camwa.2022.10.006)
 
-The following video explains how this algorithm is applied and the previus paper:
+The following video explains how this algorithm is applied and the previous paper:
 
 <video width="640" height="360" controls>
   <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/HODMD_FlowControl_Video.mp4?raw=true" type="video/mp4">
