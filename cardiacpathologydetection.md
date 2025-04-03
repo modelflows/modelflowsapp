@@ -71,14 +71,14 @@ The results obtained from all testcases, and experiments showed a clear improvem
 
 This work has been used to produce a journal paper, which has been subbmited and currently under review in the journal of Artificial Intelligence In Medicine.
 
-### HODMD-based reduced order model for cardiac MRI analysis
+#### HODMD-based reduced order model for cardiac MRI analysis
 
 In this application, the HODMD algorithm is used as a reduced order model (ROM) to generate new MRI databases covering more cardiac cycles, varying for longer periods of time. In particular, the HODMD algorithm is applied to the MRI database with a change in the temporal term of the HODMD expansion. As a consequence, the new database generated will consist of 100 snapshots for each slice instead of 20 snapshots. In this way, we will be able to represent the heart, with additional reconstructed snapshots covering more than one cardiac cycle. Additionally, applying the HODMD algorithm to the tensor containing all the MRI sequences permits the use of the HODMD extrapolation properties to fill in any gaps between the individual slices. As a consequence, a 3D visualization of the full heart can be carried out.
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/ModelFlows_Cardiac_IMAGE05.jpg?raw=true)
 
 
-### SVD Based interpolation tool for information recovery
+#### SVD Based interpolation tool for information recovery
 
 This new method is applied to the tensor containing all the reconstructed slices in order to recover the information of one missing slice. In particular, the 7th slice has been completely removed, and the two neighboring slices (slice 06 and slice 08) are used to reconstruct all the information of the missing slice. This approach employs the SVD to provide matrix decomposition, while  Spline interpolation is used to recover the information of the missing MR images by interpolating through the points of the matrix of the right singular vectors.
 
@@ -110,7 +110,9 @@ Further details about the work explained in this section could be found in the f
 
 <!-- The following video summarizes the developed system and shows the obtained results in the diagnosis task: -->
 
-The code to run the training and testing stages of the described system can be downloaded with the following [*link*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/medical-data/Diagnosis_scripts.zip).
+The code of the training and testing stages (as python files and notebooks) of the described system, including the requirements file, can be downloaded with the following [*link*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/medical-data/Diagnosis_scripts.zip).
+
+A file with the pretrained weights of the ViT, to skip the training part and directly run the testing stage, can be downloaded with the following [*link*](https://drive.google.com/file/d/1tO9dv1zjzObGCOOrsoJgYpPxQZYdi2BC/view?usp=drive_link). 
 
 ### Prediction
 #### Vision Transformers
