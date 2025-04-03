@@ -15,10 +15,10 @@ We are committed to open science and education. Whether you're a Master’s or P
    + **Tutorials & YouTube Channel**: Step-by-step guides and video explanations of our latest advancements.
    
    + **ModelFLOWs-app**: Our open-source software for data post-processing, pattern identification, and reduced order modeling. This tool leverages modal decomposition and deep learning architectures to analyze complex datasets efficiently.
-        + Available as a desktop application and a web-browser version built with Streamlit.
-        + The web-browser version is designed for educational purposes, providing a limited-functionality demo to explore the tool’s capabilities.
-        + The desktop application is fully equipped for real research and allows you to process your own datasets.
-        + Find installation & setup guides in the Software menu.
-        + Explore advanced video tutorials explaining the mathematical foundations of each module with practical examples.
+        + Available as a **desktop** application and a **web-browser** version built with *Streamlit*.
+        + The **web-browser** version is designed for educational purposes, providing a limited-functionality demo to explore the tool’s capabilities.
+        + The **desktop** application is fully equipped for real research and allows you to process your own datasets.
+        + Find **installation & setup** guides in the **Software menu**.
+        + Explore advanced **video tutorials** explaining the mathematical foundations of each module with practical examples.
 
 Join us in pushing the boundaries of computational modeling and data-driven science! 
