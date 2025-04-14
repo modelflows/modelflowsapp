@@ -12,14 +12,14 @@ The following members have contributed in the development of ModelFLOWs-app, an 
 <div style="display: flex;">
   <ul>
     <strong>First Release:</strong>
-    <li> <a href="https://shorturl.at/FIoD3" target="_blank">Adrián Corrochano</a></li>
-    <li> <a href="https://sites.google.com/view/eneko-lazpita/" target="_blank">Eneko Lazpita</a></li>
-    <li> Ashton Ian Hetherington</li>
-    <li> Rodrigo Abadia-Heredia</li>
+    <li> <a href="https://shorturl.at/FIoD3" target="_blank">Adrián Corrochano</a></li> *
+    <li> <a href="https://sites.google.com/view/eneko-lazpita/" target="_blank">Eneko Lazpita</a></li> *
+    <li> Ashton Ian Hetherington</li> *
+    <li> Rodrigo Abadia-Heredia</li> *
     <li> Eva Muñoz Salamanca</li>
     <li> Paula Díaz Morales</li>
     <li> Egoitz Maiora</li>
-    <li><a href="https://sites.google.com/view/soledadleclainche/" target="_blank">Soledad Le Clainche</a></li>
+    <li><a href="https://sites.google.com/view/soledadleclainche/" target="_blank">Soledad Le Clainche</a></li>  *
   </ul>
   <ul>
     <strong>New Members:</strong>
@@ -35,6 +35,8 @@ The following members have contributed in the development of ModelFLOWs-app, an 
   </ul>
 </div>
 
+* Main developers
+* 
 <!-- ### List of Contributors
 - 
 -->
