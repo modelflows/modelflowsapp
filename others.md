@@ -47,6 +47,4 @@ b) Growth and Decay: Modes with positive/negative growth rates  indicate whether
 
 [Reference](https://www.researchgate.net/publication/338544827_Coherent_structures_in_the_turbulent_channel_flow_of_an_elastoviscoplastic_fluid)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/others/stkd.zip).
-
-The zip file contain all the necessary codes with a tutorial showing its implementation to flow past a 3D cylinder dataset.
+Download the code for **Parallel STKD** in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/stkd_parallel.zip),
