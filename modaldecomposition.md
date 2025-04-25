@@ -36,10 +36,10 @@ More details can be found in the book:
 
 [*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*](https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/hosvd.zip).
+Download the code for **HOSVD** in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/hosvd.zip),
+in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/hosvd.zip),
+or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc0777dcfe047fadf93d46053f975f9/modal-decomposition/python/hosvd.ipynb).
 
-
-<!--https://github.com/modelflows/notebooks/raw/refs/heads/master/hosvd.zip-->
 
 ### Higher Order Dynamic Mode Decomposition (HODMD) <a id="pattern-hodmd"></a>
 
@@ -53,9 +53,14 @@ The following book details several applications of HODMD for patterns indentific
 
 [*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*](https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications)
 
-Download the code for standard HODMD [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/hodmd.zip).
+Download the code for **standard HODMD** in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/hodmd.zip),
+in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/hodmd.zip),
+or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc0777dcfe047fadf93d46053f975f9/modal-decomposition/python/hodmd.ipynb).
 
-Download the code for multi-dimensional iterative HODMD [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/mdhodmd-it.zip).
+Download the code for **multi-dimensional iterative HODMD** in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/mdhodmd.zip),
+in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/mdhodmd.zip),
+or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc0777dcfe047fadf93d46053f975f9/modal-decomposition/python/mdhodmd.ipynb).
+
 
 ### Low Cost Algorithms <a id="low-cost"></a>
 
@@ -92,14 +97,17 @@ Gappy filling is a technique used to fill in missing or incomplete data points i
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/Gappy.png?raw=true)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/gappy_hosvd.zip).
+Download the code for **Gap Filling Tool** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/hosvd_gappy.zip),
+or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc0777dcfe047fadf93d46053f975f9/modal-decomposition/python/hosvd_gappy.ipynb).
+
 
 ### Superresolution Tool <a id="superresolution-tool"></a>
 The supperresolution tool, based on SVD, is a technique used to improve the quality of a dataset that contains incomplete or noisy data. This technique involves using statistical methods to identify and remove noise from the data, or to fill in missing data points with more accurate estimates. The goal is to produce a more accurate and reliable dataset that can be used for further analysis. Superresolution tool aims to improve the overall quality of the dataset.
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/SuperTool.png?raw=true)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/sr_hosvd.zip).
+Download the code for **Superresolution Tool** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/hosvd_superres.zip),
+or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc0777dcfe047fadf93d46053f975f9/modal-decomposition/python/hosvd_superres.ipynb).
 
 ## Control <a id="control"></a>
 
@@ -123,4 +131,5 @@ The following video explains how this algorithm is applied and the previous pape
   <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/HODMD_FlowControl_Video.mp4?raw=true" type="video/mp4">
 </video>
 
-Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/mdhodmd-control.zip).
+Download the code for **Passive Flow Control** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/mdhodmd_control.zip),
+or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc0777dcfe047fadf93d46053f975f9/modal-decomposition/python/mdhodmd_control.ipynb).
