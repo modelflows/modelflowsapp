@@ -47,4 +47,4 @@ b) Growth and Decay: Modes with positive/negative growth rates  indicate whether
 
 [Le Clainche, S., Izbassarov, D., Rosti, M., Brandt, L., & Tammisola, O. (2020). Coherent structures in the turbulent channel flow of an elastoviscoplastic fluid. Journal of Fluid Mechanics, 888, A5.](https://www.researchgate.net/publication/338544827_Coherent_structures_in_the_turbulent_channel_flow_of_an_elastoviscoplastic_fluid)
 
-Download the code for **STKD** in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/stkd.zip),
+Download the code for **STKD** in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/stkd.zip).
