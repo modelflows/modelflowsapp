@@ -97,6 +97,10 @@ Gappy filling is a technique used to fill in missing or incomplete data points i
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/Gappy.png?raw=true)
 
+Application in complex databases:
+
+[Tagilaferro, S., Corrochano, A., Marchetti, P., Marcon, A., Le Clainche, S., A new method based on physical patterns to impute aerobiological datasets, PLoS ONE 19(11): e0314005, 2024.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0314005)
+
 Download the code for **Gap Filling Tool** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/hosvd_gappy.zip),
 or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc0777dcfe047fadf93d46053f975f9/modal-decomposition/python/hosvd_gappy.ipynb).
 
@@ -105,6 +109,10 @@ or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc
 The supperresolution tool, based on SVD, is a technique used to improve the quality of a dataset that contains incomplete or noisy data. This technique involves using statistical methods to identify and remove noise from the data, or to fill in missing data points with more accurate estimates. The goal is to produce a more accurate and reliable dataset that can be used for further analysis. Superresolution tool aims to improve the overall quality of the dataset.
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/SuperTool.png?raw=true)
+
+Application in complex problems:
+
+[Hetherington, A., Serfaty, D., Corrochano, A., Soria, J., Le Clainche, S., Data repairing and resolution enhancement using data-driven modal decomposition and deep learning, Exp. Therm. Fluid  Sci., 157, 111241, 2024.](https://www.sciencedirect.com/science/article/pii/S0894177724001109)
 
 Download the code for **Superresolution Tool** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/hosvd_superres.zip),
 or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc0777dcfe047fadf93d46053f975f9/modal-decomposition/python/hosvd_superres.ipynb).
