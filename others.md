@@ -45,6 +45,9 @@ b) Growth and Decay: Modes with positive/negative growth rates  indicate whether
 
 ![Flowchart1](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_pillai_stkd.png?raw=true)
 
+[Le Clainche, S., Vega, J.M., ‘Spatio-Temporal Koopman Decomposition’, J. of Nonlin. Sci. Vol. 28 (3), 1-50, 2018 ](https://link.springer.com/article/10.1007/s00332-018-9464-z)
+
+Application to identify flow instabilitites:
 [Le Clainche, S., Izbassarov, D., Rosti, M., Brandt, L., & Tammisola, O. (2020). Coherent structures in the turbulent channel flow of an elastoviscoplastic fluid. Journal of Fluid Mechanics, 888, A5.](https://www.researchgate.net/publication/338544827_Coherent_structures_in_the_turbulent_channel_flow_of_an_elastoviscoplastic_fluid)
 
 Download the code for **STKD** in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/stkd.zip).
