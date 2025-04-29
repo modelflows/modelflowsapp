@@ -32,7 +32,7 @@ One of the primary challenge associated with the industrial datasets is their he
 
 ![Flowchart](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_pillai_lcsvd-da.png?raw=true)
 
-[Pillai, P., Hetherington, A. I., Saavedra Sago, L., & Le Clainche Martinez, S. (Year). A low cost singular value decomposition based data assimilation technique for analysis of heterogeneous combustion data., to be published on arXiv, 2025.]()
+[Pillai, P., Hetherington, A., Saavedra, L., Le Clainche, S., A low cost singular value decomposition based data assimilation technique for analysis of heterogeneous combustion data, arXiv:2503.24064, 2025.](https://arxiv.org/abs/2503.24064)
 
 *Code in progress. Coming soon...*
 <!-- Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/ZIPNAME.zip). -->
