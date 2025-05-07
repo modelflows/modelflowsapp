@@ -6,6 +6,14 @@ subtitle: Our studies focused on cardiovascular diseases
 
 ModelFLOWs-cardiac, a branch of the ModelFLOWs-app which contains an open source Software for pattern identification, classification and prediction of cardiovascular diseases (CVDs) using modal decomposition and deep learning architectures, together with CFD databases and codes for obtention of cardiac flow simulations. 
 
+Main projects funding this research:
+
+2022-2024. DigitHEART (New tools and models based on CFD and non-invasive imaging to predict heart disease progression and response to treatment). Plan de Recuperación, Transformación y Resiliencia–Ministerio de Ciencia e Innovación, Spain, TED2021-129774B-C21.
+
+2022-2025. CardioAging (Mecanometabolismos de la insuficiencia cardíaca asociada a la edad). Líneas Estratégicas–Ministerio de Ciencia e Innovación, Spain, PLEC2022-009235. 
+
+
+
 Content:
 
 1-  [Medical Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection#medical-data)
