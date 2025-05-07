@@ -101,7 +101,7 @@ Application in complex databases:
 
 [Tagilaferro, S., Corrochano, A., Marchetti, P., Marcon, A., Le Clainche, S., A new method based on physical patterns to impute aerobiological datasets, PLoS ONE 19(11): e0314005, 2024.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0314005)
 
-Download the code for **Gap Filling Tool** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/hosvd_gappy.zip),
+Download the code for **Gap Filling Tool**  in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/hosvd_gappy_Matlab.zip), in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/hosvd_gappy.zip),
 or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc0777dcfe047fadf93d46053f975f9/modal-decomposition/python/hosvd_gappy.ipynb).
 
 
@@ -114,7 +114,7 @@ Application in complex problems:
 
 [Hetherington, A., Serfaty, D., Corrochano, A., Soria, J., Le Clainche, S., Data repairing and resolution enhancement using data-driven modal decomposition and deep learning, Exp. Therm. Fluid  Sci., 157, 111241, 2024.](https://www.sciencedirect.com/science/article/pii/S0894177724001109)
 
-Download the code for **Superresolution Tool** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/hosvd_superres.zip),
+Download the code for **Superresolution Tool**  in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/hosvd_superres_Matlab.zip), in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/hosvd_superres.zip),
 or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc0777dcfe047fadf93d46053f975f9/modal-decomposition/python/hosvd_superres.ipynb).
 
 ## Control <a id="control"></a>
@@ -139,5 +139,5 @@ The following video explains how this algorithm is applied and the previous pape
   <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/HODMD_FlowControl_Video.mp4?raw=true" type="video/mp4">
 </video>
 
-Download the code for **Passive Flow Control** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/mdhodmd_control.zip),
+Download the code for **Passive Flow Control**  in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/mdhodmd_control_Matlab.zip), in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/mdhodmd_control.zip),
 or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc0777dcfe047fadf93d46053f975f9/modal-decomposition/python/mdhodmd_control.ipynb).
