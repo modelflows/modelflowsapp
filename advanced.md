@@ -145,7 +145,7 @@ The following videos explain how this hybrid predictive reduced order models wor
 <video width="640" height="360" controls>
   <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/Full_DL_RNN_CNN.mp4?raw=true" type="video/mp4">
 </video>
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=ldSkguBpomY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ldSkguBpomY?si=NxMGArajpA_i33P0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **Hybrid Deep Learning**
 
