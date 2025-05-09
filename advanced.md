@@ -96,9 +96,7 @@ Details about the application of autoencoders for patterns identification can be
 
 The following video explains how this neural network works:
 
-<video width="640" height="360" controls>
-  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/Autoencoders_Video.mp4?raw=true" type="video/mp4">
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2i98X5lV_U0?si=o4lgORib9ahFJrc6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Reconstruction
 Hybrid predictive reduced order models have been developed combining modal decomposition techniques and deep learning architectures. Modal decompositions reduc e data dimensionaliy and identifying the main patterns describing the physics of the dynamical system. Then, neural networks are used to predict the evolution in time the dimensionality reduced dataset. ModelFLOWs-app presents an algorithm combining singular value decomposition with convolutional or recurrent neural networks. 
