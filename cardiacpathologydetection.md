@@ -106,7 +106,8 @@ You can also see the explanation of this paper in the following video:
 <!-- Andres's work -->
 This framework implements an automatic cardiac pathology recognition system which analyses in real-time echocardiography video sequences. This works in two stages. The first one creates a large collection of annotated images from different sources of echocardiography videos. This allows to train any machine learning-based frameworks, especially deep learning-based ones. This stage involves the use of modal decomposition techniques, namely, the Singular Value Decomposition (SVD) and the HODMD algorithms, for the first time to the authors’ knowledge, for both data augmentation and feature extraction in the medical field, in a similar way as explained in the Pattern Detection block. The second stage is aimed to build and train a Vision Transformer (ViT), barely explored in the related literature about heart disease recognition in echocardiography images using deep learning. The ViT is adapted for an effective training from scratch, even with scarce databases, usual in the medical field. This designed neural network analyses the images from an echocardiography video to predict the heart state. In this section, the diagnosis or classification task is covered, that is, the classification between different cardiac conditions. 
 
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01Jan_30_Bell_DiagnosisOverview.jpg?raw=true)
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/db1301202e36c51af7cdbe58c3756ed501e4f642/assets/img/2025_01Jan_30_Bell_DiagnosisOverview.jpg)
+
 
 The results obtained show the efficacy of the HODMD algorithm and the superiority of the proposed system, even outperforming pretrained Convolutional Neural Networks (CNNs), the method of choice in the literature. 
 
@@ -126,7 +127,7 @@ A file with the pretrained weights of the ViT, to skip the training part and dir
 
 This section considers the application of the system described above for the prognosis task, which is a challenging regression task consisting in predicting the time in which a heart failure will happen. In a similar way, the system first creates a large database of annotated images from different sources of echocardiography videos. For this purpose, the use of the SVD and the HODMD algorithms for both feature extraction and data augmentation is involved. After this machine learning-compatible database creation, a ViT is built and trained with Self-supervised learning (SSL) methods to deal with scarce databases of echocardiograms. This designed ViT analyses images from an echocardiography video sequence to predict the time in which a heart failure will happen.  
 
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01Jan_30_Bell_PrognosisOverview.jpg?raw=true)
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/b831808c275ca5fa68f8345f2f1dbee75a4552a1/assets/img/2025_01Jan_30_Bell_PrognosisOverview.jpg)
 
 This work has been used to produce a journal article, which is currently in the process of elaboration. 
 
