@@ -128,7 +128,7 @@ More details about the main algorithm and some of their applications can be foun
 
 [*Corrochano, A., Freitas, R.S.M., Parente, A., Le Clainche, S., A predictive physics-aware hybrid reduced order model for reacting flows, arXiv:2301.09860, 2023.*](https://arxiv.org/abs/2301.09860)
 
-[*Mata, L., Abadía-Heredia, R., López-Martín, M., Pérez, J.M., Le Clainche, S., Forecasting through deep learning and modal decomposition in multi-phase concentric jets, arXiv:2212.12731, 2022.*](https://arxiv.org/abs/2212.12731)
+[*Mata, L., Abadía-Heredia, R., López-Martín, M., Pérez, J.M., Le Clainche, S., Forecasting through deep learning and modal decomposition in multi-phase concentric jets, Exp. Syst. Appl., 232, 120817, 2023.*](https://doi.org/10.1016/j.eswa.2023.120817)
 
 The following videos explain how this hybrid predictive reduced order models works for temporal forecasting:
 
@@ -138,6 +138,4 @@ The following videos explain how this hybrid predictive reduced order models wor
 
 **Hybrid Deep Learning**
 
-<video width="640" height="360" controls>
-  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/HybridDL_Video.mp4?raw=true" type="video/mp4">
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m4JeaEdbm-A?si=512EgoOS5NtWwcDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
