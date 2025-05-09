@@ -30,7 +30,8 @@ HOSVD, or High Order Singular Value Decomposition, is a mathematical technique u
 
 HOSVD has been used in various fields, including image and signal processing, and has gained attention in fluid mechanics for pattern detection. By applying HOSVD to flow data, researchers can identify patterns related to vortices, turbulence, and other important fluid flow phenomena. HOSVD can also be used in combination with other techniques, such as machine learning algorithms or HODMD, to enhance the accuracy and predictive power of the analysis.
 
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/hosvd.png?raw=true)
+![Alt text](https://drive.google.com/uc?export=view&id=1RJjMFACgH2RqFEV-gM7ZIJBAs4xFco1b)
+<!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/hosvd.png?raw=true) -->
 
 The following video explains how this algorithm is applied:
 
