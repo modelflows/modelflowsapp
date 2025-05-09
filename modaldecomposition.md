@@ -127,7 +127,10 @@ In linear theory, it is possible to calculate the structural sensitivity, but it
 
 In the proposed method, any type of database (coming from experiments or numerical simulations) can be analysed. The data-driven algorithm first filters the data in order to retain the most important dynamics. Then, the non-linear structural sensitivity can be calculated, using the DMD modes and the non-linear operator of the Navier Stokes equations. A flow chart of the passive flow control process is shown below.
 
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/MDControl.png?raw=true)
+<img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/MDControl.png?raw=true" 
+     onload="this.style.visibility='visible';" 
+     style="visibility: hidden;" 
+     alt="Figure text" />
 
 For a proper usage of the algorithm, it is recommended to first calibrate the HODMD algorithm, following the [Advanced Tutorial](https://modelflows.github.io/modelflowsapp/advanced/) in our website.
 
