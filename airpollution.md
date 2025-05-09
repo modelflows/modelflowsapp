@@ -33,9 +33,7 @@ Promising results emerged, showing that the GSVD was as good as the well-establi
 
 You can also see the explanation of this [*paper*](https://doi.org/10.1371/journal.pone.0314005) in the following video:
 
-<video width="640" height="360" controls>
-  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/Tagliaferro_etal_2024.mp4?raw=true" type="video/mp4">
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YFIngPlvy0U?si=nKYXZ5wwib2gm1Ad" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 You can download the mentioned datasets and the code to run the GSVD method in the following [*link*](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/datasets/2024_Tagliaferroetal_Databases.zip). 
 
