@@ -90,7 +90,7 @@ Once the autoencoder is trained, it can be used to detect patterns in new fluid 
 
 Details about the application of autoencoders for patterns identification can be found in:
 
-[*Muñoz, E., Dave, H., D’Alessio, G., Parente, A., Le Clainche, S., Extraction and analysis of flow features in planar synthetic jets using different machine learning techniques, preprint in ARXIV, 2023.*](https://www.researchgate.net/publication/370277088_Extraction_and_Analysis_of_Flow_Features_in_Planar_Synthetic_Jets_Using_Different_Machine_Learning_Techniques) 
+[*Muñoz, E., Dave, H., D’Alessio, G., Parente, A., Le Clainche, S., Extraction and analysis of flow features in planar synthetic jets using different machine learning techniques, Phys. Fluids, 35, 094107, 2023.*](https://doi.org/10.1063/5.0163833) 
 
 [*Evazi, H. Le Clainche, S., Hoyas, S., Vinuesa, R., Towards extraction of orthogonal and parsimonious non-linear modes from turbulent flows, Exp. Syst. Appl., 202, 117038, 2022.*](https://www.sciencedirect.com/science/article/pii/S0957417422004535)
 
@@ -105,13 +105,11 @@ Singular Value Decomposition (SVD) is a matrix decomposition technique that can 
 
 This application combining SVD + NNs uses data from sensors or under-resolved data and reconstruct the dataset. More details can be found in:
 
-[*Díaz, P., Corrochano, A., López-Martín, M., Le Clainche, S., Deep Learning combined with singular value decomposition to reconstruct databases in fluid dynamics, arXiv:2305.08832, 2023.*](https://arxiv.org/abs/2305.08832)
+[*Díaz, P., Corrochano, A., López-Martín, M., Le Clainche, S., Deep Learning combined with singular value decomposition to reconstruct databases in fluid dynamics, Exp. Syst. Appl., 238, 121924, 2022.*](https://doi.org/10.1016/j.eswa.2023.121924)
 
 The following video explains how this hybrid predictive reduced order models works for data reconstruction:
 
-<video width="640" height="360" controls>
-  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/DL%20superresolution.mp4?raw=true" type="video/mp4">
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hvv0JtDm-MM?si=PAX0LOytIJkf_GnC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Prediction
 Hybrid predictive reduced order models have been developed combining modal decomposition (singular value decomposition, SVD) and deep learning architectures (neural networks, NNs). Modal decompositions reduce data dimensionaliy and identifying the main patterns describing the physics of the dynamical system. Then, neural networks are used to predict the evolution in time the dimensionality reduced dataset. ModelFLOWs-app presents an algorithm combining singular value decomposition with convolutional or recurrent neural networks (CNN or RNN). Additionally, a full deep learning model for fluid mechanics predictions is presented. This model consist of multiple layers of neural networks, such as RNN and CNN. 
