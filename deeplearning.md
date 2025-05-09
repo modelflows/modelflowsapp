@@ -75,7 +75,7 @@ Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/dee
 
 [R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFlows_ar_pod_dl.ipynb).
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFlows_ar_pod_dl.ipynb).
 
 ### Hybrid Predictive Model: HOSVD-DL <a id="hybrid-predictive-model"></a>
 This model presents a hybrid ROM integrating Higher Order Singular Value Decomposition ([HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd)) with Long Short Term Memory (LSTM) architecture for temporal predictions. The integration of [HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd) enables dimensionality reduction and the LSTM model processes the sequences, capturing nonlinear dynamics and preserving long-term temporal correlations. Predictions are generated autoregressively, where forecasted solutions are fed back as inputs to itteratively predict the next step.  While this approach can also be implemented with Singular Value Decomposition (SVD),  [HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd) extends the capabilities of SVD by better preserving multi-dimensional structures, leading to improved performance in complex dynamical systems. This framework is implemented using TensorFlow/Keras for 4D and 5D tensors.
@@ -118,14 +118,14 @@ For example these codes can be tested with the dataset corresponding to the two-
 
 [R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFLows_ar_res_conv_ae.ipynb).
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFLows_ar_res_conv_ae.ipynb).
 
 #### Variational Autoencoder (probabilistic forecasting) <a id="full-generative-variational"></a>
 ![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_VAE.png?raw=true)
 
 [R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFlows_ar_vae.ipynb).
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFlows_ar_vae.ipynb).
 
 
 ## Control <a id="control"></a>
