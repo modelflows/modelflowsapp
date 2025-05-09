@@ -68,9 +68,7 @@ The following videos explain how these techniques are applied:
 
 **Gappy data enhancement**
 
-<video width="640" height="360" controls>
-  <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/Enhancement_Video.mp4?raw=true" type="video/mp4">
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jJ03-IzU28g?si=p4o1TA1fONZY_JTa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Prediction
 #### HODMD
