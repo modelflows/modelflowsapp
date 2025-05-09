@@ -28,13 +28,20 @@ Codes available:
 
 HOSVD, or High Order Singular Value Decomposition, is a mathematical technique used in pattern detection and analysis for high-dimensional data. HOSVD can be used to decompose a high-dimensional tensor into a set of orthogonal rank-1 tensors, which represent the underlying patterns in the data. The technique allows for the extraction of features that are relevant for further analysis, such as the spatiotemporal behavior of a system.
 
-HOSVD has been used in various fields, including image and signal processing, and has gained attention in fluid mechanics for pattern detection. By applying HOSVD to flow data, researchers can identify patterns related to vortices, turbulence, and other important fluid flow phenomena. HOSVD can also be used in combination with other techniques, such as machine learning algorithms or HODMD, to enhance the accuracy and predictive power of the analysis. 
+HOSVD has been used in various fields, including image and signal processing, and has gained attention in fluid mechanics for pattern detection. By applying HOSVD to flow data, researchers can identify patterns related to vortices, turbulence, and other important fluid flow phenomena. HOSVD can also be used in combination with other techniques, such as machine learning algorithms or HODMD, to enhance the accuracy and predictive power of the analysis.
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/hosvd.png?raw=true)
+
+The following video explains how this algorithm is applied:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3DzDHSrZtYA?si=fGOXS4YYKOeKZ-q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 More details can be found in the book:
 
 [*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*](https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications)
+
+And application of the code in:
+[*Lazpita, E., Martínez-Sánchez, Á., Corrochano, A., Hoyas, S., Le Clainche, S., & Vinuesa, R. (2022). On the generation and destruction mechanisms of arch vortices in urban fluid flows. Physics of Fluids, 34(5).*](https://doi.org/10.1063/5.0088305)
 
 Download the code for **HOSVD** in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/hosvd.zip),
 in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/hosvd.zip),
@@ -49,9 +56,16 @@ HODMD is also applicable to other complex dynamical systems such as chemical rea
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/HODMDcalibration.png?raw=true)
 
+The following video explains how this algorithm is applied:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RYyPlpjD3PU?si=kc7jAd69KQz35bXK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 The following book details several applications of HODMD for patterns indentification, temporal forecasting, data reconstruction, etc. The book also includes the [Matlab codes](https://data.mendeley.com/datasets/z8ks4f5vy5/1) and some test databases:
 
 [*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*](https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications)
+
+And application of the code in:
+[*Lazpita, E., Martínez-Sánchez, Á., Corrochano, A., Hoyas, S., Le Clainche, S., & Vinuesa, R. (2022). On the generation and destruction mechanisms of arch vortices in urban fluid flows. Physics of Fluids, 34(5).*](https://doi.org/10.1063/5.0088305)
 
 Download the code for **standard HODMD** in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/hodmd.zip),
 in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/hodmd.zip),
@@ -127,10 +141,9 @@ In linear theory, it is possible to calculate the structural sensitivity, but it
 
 In the proposed method, any type of database (coming from experiments or numerical simulations) can be analysed. The data-driven algorithm first filters the data in order to retain the most important dynamics. Then, the non-linear structural sensitivity can be calculated, using the DMD modes and the non-linear operator of the Navier Stokes equations. A flow chart of the passive flow control process is shown below.
 
-<img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/MDControl.png?raw=true" 
-     onload="this.style.visibility='visible';" 
-     style="visibility: hidden;" 
-     alt="Figure text" />
+<img src="https://raw.githubusercontent.com/modelflows/modelflowsapp/master/assets/img/MDControl.png"
+     alt="Figure text"
+     style="visibility: visible;" />
 
 For a proper usage of the algorithm, it is recommended to first calibrate the HODMD algorithm, following the [Advanced Tutorial](https://modelflows.github.io/modelflowsapp/advanced/) in our website.
 
