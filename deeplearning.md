@@ -68,7 +68,7 @@ For example these codes can be tested with either the dataset corresponding to t
 
 [R. Abadía-Heredia, M. López-Martín, B. Carro, J. Arribas, J. Pérez, and S. Le Clainche, “A predictive hybrid reduced order model based on proper orthogonal decomposition combined with deep learning architectures,” Expert Systems with Applications 187, 115910 (2022).](https://doi.org/10.1016/j.eswa.2021.115910)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/blob/main/deep-learning/pod_dl_fixed_h.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/pod_dl_fixed_h.ipynb).
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/pod_dl_fixed_h.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/pod_dl_fixed_h.ipynb).
 
 #### POD-DL: Autoregressive <a id="hybrid-predictive-model-ar"></a>
 ![Figure pod_dl_ar](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_POD_DL.png?raw=true)
