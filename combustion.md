@@ -74,21 +74,9 @@ Based on the data set obtained by CFD simulations, the evolution process of flow
  of T in the YOZ plane" width="80%">
 </p>
 
-<!--
-<p style="text-align: center;">
-    <video width="640" height="360" controls>
-      <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/JHC_burner_animation_T_plane1.mp4?raw=true" type="video/mp4">
-    </video>
-</p>
-<p style="text-align: center;">
-    <video width="640" height="360" controls>
-        <source src="https://github.com/modelflows/modelflowsapp/blob/master/assets/vid/JHC_burner_animation_T_plane2.mp4?raw=true" type="video/mp4">
-    </video>
-</p>  
--->
-
 #### Coupling of OpenFOAM and adaptive prediction
 *Work in progress. Coming soon…*
+
 
 
 ## LcSVD-DA
