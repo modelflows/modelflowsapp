@@ -58,21 +58,25 @@ This section presents the simulation results of JHC burner.
 
 #### LES results
 The contours of temperature, mass fractions of CH4, CO2 are shown as follows. 
-<!--  ![Contours of T, YCH4 and YCO2](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_T_CH4_CO2.png?raw=true) -->
-<p style="text-align: center;">
+![Contours of T, YCH4 and YCO2](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_T_CH4_CO2.png?raw=true) 
+<!--  <p style="text-align: center;">
     <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_T_CH4_CO2.png?raw=true" alt="Contours of T, YCH4 and YCO2" width="80%">
-</p>
+</p> -->
 
 #### Prediction by hybrid ROM
 Based on the data set obtained by CFD simulations, the evolution process of flow field was forecast by hybrid ROM. The temperature distributions of two cut planes are shown as follows.
-<p style="text-align: center;">
+![Comparison 
+ of T in the XOZ plane](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane1.png?raw=true) 
+![Comparison 
+ of T in the YOZ plane](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane2.png?raw=true) 
+<!--  <p style="text-align: center;">
     <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane1.png?raw=true" alt="Comparison 
  of T in the XOZ plane" width="80%">
 </p>
 <p style="text-align: center;">
     <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane2.png?raw=true" alt="Comparison 
  of T in the YOZ plane" width="80%">
-</p>
+</p>  -->
 
 #### Coupling of OpenFOAM and adaptive prediction
 *Work in progress. Coming soon…*
