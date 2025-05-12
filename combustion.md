@@ -65,7 +65,7 @@ The contours of temperature, mass fractions of CH4, CO2 are shown as follows.
 
 #### Prediction by hybrid ROM
 Based on the data set obtained by CFD simulations, the evolution process of flow field was forecast by hybrid ROM. The temperature distributions of two cut planes are shown as follows.
-<p style="text-align: center;">assets/img/JHC_burner_prediction_T_plane1.png
+<p style="text-align: center;">
     <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane1.png?raw=true" alt="Comparison 
  of T in the XOZ plane" width="80%">
 </p>
