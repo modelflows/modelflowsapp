@@ -37,7 +37,7 @@ The geometry of JHC burner is shown in the following figure. The burner consists
 <!-- IMAGES -->
 <!--  ![Geometry of JHC burner](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_geometry.png?raw=true) -->
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_geometry.png?raw=true" alt="Geometry of JHC burner" width="80%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_geometry.png?raw=true" alt="Figure text" width="80%">
 </p>
 
 #### Meshing
@@ -45,7 +45,7 @@ The mesh can be generated with several tools, such as SnappyHexMesh, BlockMesh, 
 <!-- IMAGES -->
 <!--  ![Mesh of JHC burner](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_mesh.png?raw=true) -->
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_mesh.png?raw=true" alt="Mesh of JHC burner" width="80%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_mesh.png?raw=true" alt="Figure text" width="80%">
 </p>
 
 #### CFD with OpenFOAM
@@ -59,13 +59,13 @@ This section presents the simulation results of JHC burner.
 #### LES results
 The contours of temperature, mass fractions of CH4, CO2 are shown as follows. 
 <!-- IMAGES -->
-![Contours](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_T_CH4_CO2.png?raw=true) 
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_T_CH4_CO2.png?raw=true) 
 
 #### Prediction by hybrid ROM
 Based on the data set obtained by CFD simulations, the evolution process of flow field was forecast by hybrid ROM. The temperature distributions of two cut planes are shown as follows. 
 <!-- IMAGES -->
-![Comparison of T in the XOZ plane](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane1.png?raw=true) 
-![Comparison of T in the YOZ plane](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane2.png?raw=true) 
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane1.png?raw=true) 
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane2.png?raw=true) 
 
 #### Coupling of OpenFOAM and adaptive prediction
 *Work in progress. Coming soon…*
