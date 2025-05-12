@@ -45,7 +45,7 @@ The mesh can be generated with several tools, such as SnappyHexMesh, BlockMesh, 
 <!-- IMAGES -->
 <!--  ![Mesh of JHC burner](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_mesh.png?raw=true) -->
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_mesh.png?raw=true" alt="Mesh grid of JHC burner" width="80%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_mesh.png?raw=true" alt="Mesh of JHC burner" width="80%">
 </p>
 
 #### CFD with OpenFOAM
