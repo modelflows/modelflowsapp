@@ -59,13 +59,13 @@ This section presents the simulation results of JHC burner.
 #### LES results
 The contours of temperature, mass fractions of CH4, CO2 are shown as follows. 
 <!-- IMAGES -->
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_T_CH4_CO2.png?raw=true) 
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_T_CH4_CO2.png?raw=true)
 
 #### Prediction by hybrid ROM
 Based on the data set obtained by CFD simulations, the evolution process of flow field was forecast by hybrid ROM. The temperature distributions of two cut planes are shown as follows. 
 <!-- IMAGES -->
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane1.png?raw=true) 
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane2.png?raw=true) 
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane1.png?raw=true)
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane2.png?raw=true)
 
 #### Coupling of OpenFOAM and adaptive prediction
 *Work in progress. Coming soon…*
