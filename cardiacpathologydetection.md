@@ -122,18 +122,24 @@ The code of the training and testing stages (as python files and notebooks) of t
 A file with the pretrained weights of the ViT, to skip the training part and directly run the testing stage, can be downloaded with the following [*link*](https://drive.google.com/file/d/1tO9dv1zjzObGCOOrsoJgYpPxQZYdi2BC/view?usp=drive_link). 
 
 ### Prediction
-#### Vision Transformers
+#### Masked Autoencoders
 <!-- Andres's work -->
 
-This section considers the application of the system described above for the prognosis task, which is a challenging regression task consisting in predicting the time in which a heart failure will happen. In a similar way, the system first creates a large database of annotated images from different sources of echocardiography videos. For this purpose, the use of the SVD and the HODMD algorithms for both feature extraction and data augmentation is involved. After this machine learning-compatible database creation, a ViT is built and trained with Self-supervised learning (SSL) methods to deal with scarce databases of echocardiograms. This designed ViT analyses images from an echocardiography video sequence to predict the time in which a heart failure will happen.  
+This section considers the application of the system described above for the prognosis task, which is a challenging and more specific regression task, not previously addressed in the related literature, to the best of the authors' knowledge, consisting in predicting the time in which a heart failure will happen. In a similar way, the system first creates a large database of annotated images from different sources of echocardiography videos. For this purpose, the use of the SVD and the HODMD algorithms for both feature extraction and data augmentation is involved. After this machine learning-compatible database creation, a ViT is built and trained based on the Masked Autoencoder scheme, in which the pretraining and finetuning stages are performed at the same time, i.e., combining Self-supervised learning (SSL) methods and the Supervised Learning, to deal with scarce databases of echocardiograms. This designed ViT analyses images from an echocardiography video sequence to predict the time in which a heart failure will happen.  
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01Jan_30_Bell_PrognosisOverview.jpg?raw=true)
 
-This work has been used to produce a journal article, which is currently in the process of elaboration. 
+The experiments performed demonstrate the efficacy of the modal decomposition algorithms for data augmentation and feature extraction, and also the superiority of the proposed system, obtaining more accurate heart failure times than those with Convolutional Neural Networks (CNN) and Vision Transformers (ViT).
+
+Further details about the work explained in this section could be found in the following reference:
+
+[*Bell-Navas, Andrés, Villalba-Orero, M., Lara-Pezzi, E., Garicano-Mena, J., & Clainche, S. L., Heart Failure Prediction using Modal Decomposition and Masked Autoencoders for Scarce Echocardiography Databases. arXiv preprint arXiv:2504.07606, 2025.*](https://arxiv.org/abs/2504.07606)
 
 <!-- The following video summarizes the developed system with the obtained results in the prognosis task:  -->
 
-*Code in progress. Coming soon...*
+The code of the training and testing stages (as python files and notebooks) of the described system, including the requirements file, can be downloaded with the following [*link*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/medical-data/Prognosis_scripts.zip).
+
+A file with the pretrained weights of the ViT for heart failure prediction (obtained with the Masked Autoencoder scheme, after pretraining and finetuning stages), to skip the training part and directly run the testing stage, can be downloaded with the following [*link*](https://drive.google.com/file/d/1tyi5j6bJfCB1OhXh6c36eDPT4D8E8dST/view?usp=drive_link).
 
 
 ## CFD Data
