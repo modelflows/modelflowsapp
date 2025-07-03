@@ -83,7 +83,7 @@ This model presents a hybrid ROM integrating Higher Order Singular Value Decompo
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/d356b4aa65afd90fa0e8e1cba902d919b621e307/assets/img/2025_01_30_sengupta_Temporalforecasting.PNG?raw=true) 
 [A. Sengupta, R. Abadía-Heredia, A. Hetherington, J. Miguel Perez, S. Le Clainche - " Hybrid machine learning models based on physical patterns to accelerate CFD simulations: a short guide on autoregressive models," arXiv:2504.06774 (2025).](https://doi.org/10.48550/arXiv.2504.06774)
 
-To run it in [*Colab*], or to download the codes click [*here*](https://drive.google.com/drive/folders/1BLRw6WsNC451o9shnhw7gf-Q8OtBmcpo) 
+To run it in *Colab*, or to download the codes click [*here*](https://drive.google.com/drive/folders/1BLRw6WsNC451o9shnhw7gf-Q8OtBmcpo) 
 
 
 
