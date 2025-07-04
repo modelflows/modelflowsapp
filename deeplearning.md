@@ -74,7 +74,7 @@ Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/head
 #### POD-DL: Autoregressive <a id="hybrid-predictive-model-ar"></a>
 ![Figure pod_dl_ar](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_POD_DL.png?raw=true)
 
-[R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
+[R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” Physics of Fluids 37, 035149 (2025).](https://doi.org/10.1063/5.0253876)
 
 Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFlows_ar_pod_dl.ipynb).
 
@@ -118,14 +118,14 @@ For example these codes can be tested with the dataset corresponding to the two-
 #### Residual Autoencoder (point forecasting) <a id="full-generative-residual"></a>
 ![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_Res_AE.png?raw=true)
 
-[R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
+[R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” Physics of Fluids 37, 035149 (2025).](https://doi.org/10.1063/5.0253876)
 
 Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFLows_ar_res_conv_ae.ipynb).
 
 #### Variational Autoencoder (probabilistic forecasting) <a id="full-generative-variational"></a>
 ![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_VAE.png?raw=true)
 
-[R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” arXiv preprint arXiv:2404.17884 (2024).](https://doi.org/10.48550/arXiv.2404.17884)
+[R. Abadía-Heredia, A.Corrochano, M. López-Martín and S. Le Clainche, “Generalization capabilities and robustness of hybrid machine learning models grounded in flow physics compared to purely deep learning models,” Physics of Fluids 37, 035149 (2025).](https://doi.org/10.1063/5.0253876)
 
 Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFlows_ar_vae.ipynb).
 
@@ -135,7 +135,11 @@ The use of fully data-driven models to modelize flow dynamics is a challenging t
 
 ![Figure adaptive_methodology](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/adaptive_methodology.png?raw=true)
 
-The code available for now in ModelFlows-app correspond to the official implementation of the work from [R. Abadia-Heredia *et.al.* 2025](https://arxiv.org/abs/2505.01531), which a presents a proof of concept for this adaptive methodology
+The code available for now in ModelFlows-app correspond to the official implementation of the work from [R. Abadia-Heredia *et.al.* 2025](https://arxiv.org/abs/2505.01531), which presents a proof of concept for this adaptive methodology combining datasets obtained from high-fidelity numerical simulations and experiments, with the POD-DL model. A work showing a real application of this adaptive methodology, by coupling the POD-DL model with a numerical solver is under review will be uploaded to this page soon.
+
+[R. Abadía-Heredia, M. López-Martín and S. Le Clainche, “An Adaptive Framework for Autoregressive Forecasting in CFD Using Hybrid Modal Decomposition and Deep Learning,” arXiv preprint 	arXiv:2505.01531 (2025).](https://doi.org/10.48550/arXiv.2505.01531)
+
+Check the official GitHub repository [*here*](https://github.com/RAbadiaH/adaptive-cfd-forecasting-hybrid-modal-decomposition-deep-learning.git) or download it [*here*.](https://github.com/RAbadiaH/adaptive-cfd-forecasting-hybrid-modal-decomposition-deep-learning/archive/refs/heads/main.zip)
 
 ## Control <a id="control"></a>
 <!-- Short description of the method. -->
