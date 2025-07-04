@@ -139,7 +139,7 @@ The code available for now in ModelFlows-app correspond to the official implemen
 
 [R. Abadía-Heredia, M. López-Martín and S. Le Clainche, “An Adaptive Framework for Autoregressive Forecasting in CFD Using Hybrid Modal Decomposition and Deep Learning,” arXiv preprint 	arXiv:2505.01531 (2025).](https://doi.org/10.48550/arXiv.2505.01531)
 
-Check the official GitHub repository [*here*](https://github.com/RAbadiaH/adaptive-cfd-forecasting-hybrid-modal-decomposition-deep-learning.git) or download it [*here*.](https://github.com/RAbadiaH/adaptive-cfd-forecasting-hybrid-modal-decomposition-deep-learning/archive/refs/heads/main.zip)
+Check the official GitHub [*repository*](https://github.com/RAbadiaH/adaptive-cfd-forecasting-hybrid-modal-decomposition-deep-learning.git) or download it [*here*.](https://github.com/RAbadiaH/adaptive-cfd-forecasting-hybrid-modal-decomposition-deep-learning/archive/refs/heads/main.zip)
 
 ## Control <a id="control"></a>
 <!-- Short description of the method. -->
