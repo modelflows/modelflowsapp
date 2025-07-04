@@ -135,7 +135,7 @@ The use of fully data-driven models to modelize flow dynamics is a challenging t
 
 ![Figure adaptive_methodology](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/adaptive_methodology.png?raw=true)
 
-The code available for now in ModelFlows-app correspond to the official implementation of the work from [R. Abadia-Heredia *et.al.* 2025](https://arxiv.org/abs/2505.01531), which presents a proof of concept for this adaptive methodology combining datasets obtained from high-fidelity numerical simulations and experiments, with the POD-DL model. A work showing a real application of this adaptive methodology, by coupling the POD-DL model with a numerical solver is under review will be uploaded to this page soon.
+The code available for now in ModelFlows-app correspond to the official implementation of the work from [R. Abadia-Heredia *et.al.* 2025](https://arxiv.org/abs/2505.01531), which presents a proof of concept for this adaptive methodology combining datasets obtained from high-fidelity numerical simulations and experiments, with the POD-DL model. A work showing a real application of this adaptive methodology, by coupling the POD-DL model with a numerical solver is under review and will be uploaded to this site soon.
 
 [R. Abadía-Heredia, M. López-Martín and S. Le Clainche, “An Adaptive Framework for Autoregressive Forecasting in CFD Using Hybrid Modal Decomposition and Deep Learning,” arXiv preprint 	arXiv:2505.01531 (2025).](https://doi.org/10.48550/arXiv.2505.01531)
 
