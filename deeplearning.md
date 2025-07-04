@@ -128,6 +128,11 @@ Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/head
 
 Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/dl_ar_models.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/modelFlows_ar_vae.ipynb).
 
+## Adaptive Methodology <a id="adaptive methodology"></a>
+
+The use of fully data-driven models to modelize flow dynamics is a challenging task due to the apperance of distribution shifts within the dynamics. Data-driven models are allways trained on a dataset representing a certain distribution, if the real dynamics to be predicted start to deviate from the training distribution (e.g., due to a change of flow regime, the apperance of a new attractor, etc.), the model would not be able to predict this unseen variation, making the prediction unaccurate. Therefore, an adaptive methodology was proposed to couple traditional numerical solvers (costly, but highly accurate) with deep learning models (cheap, but less accurate) to simulate the dynamics of a fluid for a long-term temporal horizon.
+
+The codes available for now in ModelFlows-app correspond the to the official implementation of the work from [R. Abadia-Heredia et.al. 2025](https://arxiv.org/abs/2505.01531)
 
 ## Control <a id="control"></a>
 <!-- Short description of the method. -->
