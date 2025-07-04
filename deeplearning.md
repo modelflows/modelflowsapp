@@ -21,8 +21,8 @@ Codes available:
     * [Deep Learning Models](https://modelflows.github.io/modelflowsapp/deeplearning/#full-dl-generative-model)
         - [Residual Autoencoder (point forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-residual)
         - [Variational Autoencoder (probabilistic forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-variational)
-3. [Adaptive Methodology](https://modelflows.github.io/modelflowsapp/deeplearning/#adaptive-methodology)
-4. [Control](https://modelflows.github.io/modelflowsapp/deeplearning/#control)
+4. [Adaptive Methodology](https://modelflows.github.io/modelflowsapp/deeplearning/#adaptive-methodology)
+5. [Control](https://modelflows.github.io/modelflowsapp/deeplearning/#control)
 
 ## Parametric Study <a id="parametric-study"></a>
 
