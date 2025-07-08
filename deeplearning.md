@@ -95,10 +95,10 @@ LC-SVD-DLinear (and LC-HOSVD-DLinear) are two hybrid machine learning models tha
 
 [Hetherington, A., Leonés, J. L., & Clainche, S. L. (2024). LC-SVD-DLinear: A low-cost physics-based hybrid machine learning model for data forecasting using sparse measurements. arXiv preprint arXiv:2411.17433.](https://arxiv.org/abs/2411.17433)
 
-Download the code for SVD-DLinear [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/SVD-DLinear.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/SVD-DLinear.ipynb).  
-Download the code for LC-SVD-DLinear [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/LC-SVD-DLinear.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/LC-SVD-DLinear.ipynb).  
-Download the code for HOSVD-DLinear [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/HOSVD-DLinear.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/HOSVD-DLinear.ipynb). 
-Download the code for LC-HOSVD-DLinear [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/LC-HOSVD-DLinear.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/LC-HOSVD-DLinear.ipynb). 
+Download the code for **SVD-DLinear** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/SVD-DLinear.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/SVD-DLinear.ipynb).  
+Download the code for **LC-SVD-DLinear** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/LC-SVD-DLinear.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/LC-SVD-DLinear.ipynb).  
+Download the code for **HOSVD-DLinear** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/HOSVD-DLinear.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/HOSVD-DLinear.ipynb). 
+Download the code for **LC-HOSVD-DLinear** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/LC-HOSVD-DLinear.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/LC-HOSVD-DLinear.ipynb). 
 
 ### Deep Learning Models <a id="full-dl-generative-model"></a>
 
@@ -110,9 +110,9 @@ Forecasting can be broadly categorized into two main types: [point forecasting](
 
 Both the Residual Autoencoder and the VAE are autoregressive and they can process datasets in a five-dimensional tensor format, structured as [C,X,Y,Z,T]. Here, C denotes the dataset components, such as different velocity components, Reynolds numbers, or initial conditions. The indices X, Y and Z correspond to the spatial discretization along the x-, y- and z-axis, respectively, while T represents the temporal dimension, indicating the number of snapshots.
 
-Unlike the [POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model) model, the architectures of these models are inherently dependent on the shape of the input snapshots. For the codes available on this page, the dataset must adhere to the following dimensional constraints: C = 3, X = 100, Y = 40 and Z = 64, with T remaining variable. <ins>Datasets with higher or lower dimensionality, or with a different arrangement of dimensions, may result in errors when executing the codes</ins>.
+Unlike the [POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model) model, the architectures of these models are inherently dependent on the shape of the input snapshots. For the codes available on this page, the dataset must adhere to the following dimensional constraints: C = 3, X = 100, Y = 40, and Z = 64, with T remaining variable. <ins>Datasets with higher or lower dimensionality, or with a different arrangement of dimensions, may result in errors when executing the codes</ins>.
 
-For example these codes can be tested with the dataset corresponding to the two-dimensional laminar flow past a cylinder, which is available [here](https://modelflows.github.io/modelflowsapp/databases/#cylinder-2d). Also note these models require a GPU for training.
+For example, these codes can be tested with the dataset corresponding to the two-dimensional laminar flow past a cylinder, which is available [here](https://modelflows.github.io/modelflowsapp/databases/#cylinder-2d). Also note these models require a GPU for training.
 
 #### Residual Autoencoder (point forecasting) <a id="full-generative-residual"></a>
 ![Figure pod_dl_fixed_horizon](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_AbadiaHeredia_ARmodels_Res_AE.png?raw=true)
