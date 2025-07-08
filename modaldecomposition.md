@@ -60,11 +60,11 @@ The following video explains how this algorithm is applied:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RYyPlpjD3PU?si=kc7jAd69KQz35bXK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-The following book details several applications of HODMD for patterns indentification, temporal forecasting, data reconstruction, etc. The book also includes the [Matlab codes](https://data.mendeley.com/datasets/z8ks4f5vy5/1) and some test databases:
+The following book details several applications of HODMD for pattern identification, temporal forecasting, data reconstruction, etc. The book also includes the [Matlab codes](https://data.mendeley.com/datasets/z8ks4f5vy5/1) and some test databases:
 
 [*J.M. Vega & S. Le Clainche, " Higher Order Dynamic Mode Decomposition and Its Applications", Academic Press, Elsevier, 2020, ISBN 9780128197431.*](https://www.sciencedirect.com/book/9780128197431/higher-order-dynamic-mode-decomposition-and-its-applications)
 
-And application of the code in:
+And the application of the code in:
 [*Lazpita, E., Martínez-Sánchez, Á., Corrochano, A., Hoyas, S., Le Clainche, S., & Vinuesa, R. (2022). On the generation and destruction mechanisms of arch vortices in urban fluid flows. Physics of Fluids, 34(5).*](https://doi.org/10.1063/5.0088305)
 
 Download the code for **standard HODMD** in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/hodmd.zip),
@@ -79,15 +79,14 @@ or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc
 ### Low Cost Algorithms <a id="low-cost"></a>
 
 #### Low Cost SVD <a id="low-cost-svd"></a>
-Low-cost singular value decomposition (LC-SVD) is a modal decomposition-based database reconstruction method used for enhancing the resolution of optimally sampled experimental data using data assimilation. To achieve so, LC-SVD first uses [pysensors](https://arxiv.org/abs/2102.13476), to identify the optimal sensor positions for a reduced (or available) number of sensors, ensuring that the most critical flow patterns are captured over time. The coordinates of these sensors are then used to collect experimental data optimally. Once the experimental data has been stored, LC-SVD is applied to enhance the resolution of the POD modes and temporal coefficients matrices, fusing the experimental database an its corresponding high-resolution numerical simulation. These reconstruced matrices are then used to reconstruct the high-resolution snapshots tensor. This novel method makes it possible to enhance the resolution of experimental data 50000 times its original size, 123 times faster than standard SVD, using 40% less memory, achieving in some cases reconstruction errors close to 0.5%.    
+Low-cost singular value decomposition (LC-SVD) is a modal decomposition-based database reconstruction method used to enhance the resolution of optimally sampled experimental data using data assimilation. To achieve so, LC-SVD first uses [pysensors](https://arxiv.org/abs/2102.13476), to identify the optimal sensor positions for a reduced (or available) number of sensors, ensuring that the most critical flow patterns are captured over time. The coordinates of these sensors are then used to collect experimental data optimally. Once the experimental data has been stored, LC-SVD is applied to enhance the resolution of the POD modes and temporal coefficients matrices, fusing the experimental database and its corresponding high-resolution numerical simulation. These reconstructed matrices are then used to reconstruct the high-resolution snapshots tensor. This novel method makes it possible to enhance the resolution of experimental data 50000 times its original size, 123 times faster than standard SVD, using 40% less memory, achieving in some cases reconstruction errors close to 0.5%.    
 
 ![Low-cost Singular Value Decomposition methodology summary](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/LC-SVD.jpg?raw=true)
 
 [Hetherington, Ashton, and Soledad Le Clainche. "Low-cost singular value decomposition with optimal sensor placement." *arXiv preprint* arXiv:2311.09791 (2023)](https://arxiv.org/abs/2311.09791)
 
-*Code in progress. Coming soon...*
-
-<!-- [Download the LC-SVD .ipynb](https://github.com/modelflows/modelflowsapp/raw/refs/heads/master/assets/codes/Low-cost-singular-value-decomposition.zip) -->
+Download the code for **low-cost SVD** in Python version [*here*](https://github.com/modelflows/notebooks/blob/main/modal-decomposition/python/Low-cost-singular-value-decomposition.zip),
+or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/modal-decomposition/python/Low-cost-singular-value-decomposition.ipynb).
 
 #### Low Cost HODMD <a id="low-cost-hodmd"></a>
 Large and complex datasets often present computational challenges, particularly when using standard Singular Value Decomposition (SVD). As dataset sizes grow, the scalability of conventional SVD becomes a major bottleneck, especially in applications requiring repeated computations.
@@ -120,7 +119,7 @@ or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc
 
 
 ### Superresolution Tool <a id="superresolution-tool"></a>
-The supperresolution tool, based on SVD, is a technique used to improve the quality of a dataset that contains incomplete or noisy data. This technique involves using statistical methods to identify and remove noise from the data, or to fill in missing data points with more accurate estimates. The goal is to produce a more accurate and reliable dataset that can be used for further analysis. Superresolution tool aims to improve the overall quality of the dataset.
+The super-resolution tool, based on SVD, is a technique used to improve the quality of a dataset that contains incomplete or noisy data. This technique involves using statistical methods to identify and remove noise from the data or to fill in missing data points with more accurate estimates. The goal is to produce a more accurate and reliable dataset that can be used for further analysis. Superresolution tool aims to improve the overall quality of the dataset.
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/SuperTool.png?raw=true)
 
@@ -139,7 +138,7 @@ This concept identifies the region in the spatial domain where the flow is most 
 
 In linear theory, it is possible to calculate the structural sensitivity, but it is necessary to combine direct and adjoint solutions, as well as linearising the Navier-Stokes Equations. In realistic problems, these calculations would be expensive in terms of computational memory and time.  Moreover, these algorithms cannot be applied to experiments or turbulent flows.
 
-In the proposed method, any type of database (coming from experiments or numerical simulations) can be analysed. The data-driven algorithm first filters the data in order to retain the most important dynamics. Then, the non-linear structural sensitivity can be calculated, using the DMD modes and the non-linear operator of the Navier Stokes equations. A flow chart of the passive flow control process is shown below.
+In the proposed method, any type of database (coming from experiments or numerical simulations) can be analysed. The data-driven algorithm first filters the data in order to retain the most important dynamics. Then, the non-linear structural sensitivity can be calculated, using the DMD modes and the non-linear operator of the Navier-Stokes equations. A flow chart of the passive flow control process is shown below.
 
 <img src="https://raw.githubusercontent.com/modelflows/modelflowsapp/master/assets/img/MDControl.png"
      alt="Figure text"
