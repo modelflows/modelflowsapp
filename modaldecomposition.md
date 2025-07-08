@@ -8,10 +8,10 @@ Codes available:
 1. [Pattern Detection](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-detection)
     * [HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd)
     * [HODMD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hodmd)
-    * [Low Cost Algorithms](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hodmd)
-        - [Low Cost SVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-svd)
-        - [Low Cost HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-hosvd)
-        - [Low Cost HODMD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-hodmd)
+    * [Low-cost Algorithms](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hodmd)
+        - [Low-cost SVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-svd)
+        - [Low-cost HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-hosvd)
+        - [Low-cost HODMD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-hodmd)
 
 2. [Spatial Resolution Enhancement](https://modelflows.github.io/modelflowsapp/modaldecomposition/#spatial-resolution-enhancement)
     * [Gap Filling Tool](https://modelflows.github.io/modelflowsapp/modaldecomposition/#gap-filling-tool)
@@ -76,9 +76,9 @@ in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/head
 or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc0777dcfe047fadf93d46053f975f9/modal-decomposition/python/mdhodmd.ipynb).
 
 
-### Low Cost Algorithms <a id="low-cost"></a>
+### Low-cost Algorithms <a id="low-cost"></a>
 
-#### Low Cost SVD <a id="low-cost-svd"></a>
+#### Low-cost SVD <a id="low-cost-svd"></a>
 Low-cost singular value decomposition (LC-SVD) is a modal decomposition-based database reconstruction method used to enhance the resolution of optimally sampled experimental data using data assimilation. To achieve so, LC-SVD first uses [pysensors](https://arxiv.org/abs/2102.13476), to identify the optimal sensor positions for a reduced (or available) number of sensors, ensuring that the most critical flow patterns are captured over time. The coordinates of these sensors are then used to collect experimental data optimally. Once the experimental data has been stored, LC-SVD is applied to enhance the resolution of the POD modes and temporal coefficients' matrices, fusing the experimental database and its corresponding high-resolution numerical simulation. These reconstructed matrices are then used to reconstruct the high-resolution snapshots tensor. This novel method makes it possible to enhance the resolution of experimental data 50000 times its original size, 123 times faster than standard SVD, using 40% less memory, achieving in some cases reconstruction errors close to 0.5%.    
 
 ![Low-cost Singular Value Decomposition methodology summary](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/LC-SVD.jpg?raw=true)
@@ -88,10 +88,10 @@ Low-cost singular value decomposition (LC-SVD) is a modal decomposition-based da
 Download the code for **low-cost SVD** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/Low-cost-singular-value-decomposition.zip),
 or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/modal-decomposition/python/Low-cost-singular-value-decomposition.ipynb).
 
-#### Low Cost HODMD <a id="low-cost-hodmd"></a>
+#### Low-cost HODMD <a id="low-cost-hodmd"></a>
 Large and complex datasets often present computational challenges, particularly when using standard Singular Value Decomposition (SVD). As dataset sizes grow, the scalability of conventional SVD becomes a major bottleneck, especially in applications requiring repeated computations.
 
-To address this, Low-Cost Higher Order Dynamic Mode Decomposition (lcHODMD) extends standard HODMD with a more efficient approach that reduces both memory usage and computational time. This method leverages either Low-Cost Singular Value Decomposition (lcSVD) or Low-Cost Higher Order Singular Value Decomposition (lcHOSVD) to enhance scalability and performance.
+To address this, Low-cost Higher Order Dynamic Mode Decomposition (lcHODMD) extends standard HODMD with a more efficient approach that reduces both memory usage and computational time. This method leverages either Low-cost Singular Value Decomposition (lcSVD) or Low-cost Higher Order Singular Value Decomposition (lcHOSVD) to enhance scalability and performance.
 
 
 Reference us with:
