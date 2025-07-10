@@ -45,6 +45,8 @@ The framework is implemented using:
 
 This tool has been validated on datasets obtained from numerical simulations at varying flow parameters such as Reynolds number and Angle of Attack.
 
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/main/deep-learning/Multiparametric.zip) or the Jupyter notebook [*here*](https://github.com/modelflows/notebooks/raw/main/deep-learning/Multiparametric.zip)
+
 ![Multi-parametric tool - Methodology](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_multipar.png?raw=true)
 
 *Code in progress. Coming soon...*
@@ -59,9 +61,7 @@ In order to overcome the limitations of conventional numerical solvers, a fully 
 
 ![Super resolution tool - Methodology ](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_superresolution.png?raw=true)
 
-*Code in progress. Coming soon...*
-
-<!-- Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/SUPERRESOLUTION.zip).  -->
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/SUPERRESOLUTION.zip).  -->
 
 ## Temporal Forecasting <a id="temporal-forecasting"></a>
 
