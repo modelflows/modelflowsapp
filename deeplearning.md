@@ -29,7 +29,7 @@ Codes available:
 ### Multiparametric Tool <a id="multiparametric-tool"></a>
 ## Hybrid Data-Driven Reduced-Order Modeling for Fluid Dynamics
 
-Numerical simulations of complex fluid phenomena are computationally expensive in terms of resources and processing time. Multiple simulations are typically required to analyze flow behavior under various regimes or parameters—an effort that can span several weeks or even months.
+Numerical simulations of complex fluid phenomena are computationally expensive in terms of resources and processing time. Multiple simulations are typically required to analyze flow behavior under various regimes or parameters, an effort that can span several weeks or even months.
 
 To address these challenges, we have developed an innovative tool capable of efficiently generating new fluid dynamics databases for specific flow conditions and predicting their temporal evolution. This is achieved using a hybrid, fully data-driven Reduced-Order Model (ROM), which integrates:
 
