@@ -27,11 +27,23 @@ Codes available:
 ## Parametric Study <a id="parametric-study"></a>
 
 ### Multiparametric Tool <a id="multiparametric-tool"></a>
-Numerical simulations of complex fluid phenomena are computationally expensive in terms of computational resources and processing time. Several numerical simulations must be performed to analyze the behavior of the flow under different flow regimes or parameters, and this entire process can take several weeks or even months.
+## Hybrid Data-Driven Reduced-Order Modeling for Fluid Dynamics
 
-To overcome these limitations, we have developed an innovative tool capable of efficiently generating new fluid dynamics databases for specific flow conditions (parameters) and predicting their behavior over time. This is achieved using a hybrid, fully data-driven Reduced-Order Model (ROM), which combines Higher-Order Modal Decomposition (HOSVD) with Recurrent Neural Networks (RNN) and the Kriging interpolation method, also known as Gaussian Process Regression (GPR).
+Numerical simulations of complex fluid phenomena are computationally expensive in terms of resources and processing time. Multiple simulations are typically required to analyze flow behavior under various regimes or parameters—an effort that can span several weeks or even months.
 
-This framework has been developed using [Python]( https://www.python.org/)’s ML libraries, [Tensorflow]( https://www.tensorflow.org/)/[Keras]( https://www.tensorflow.org/guide/keras?hl=es-419), and the [PyKrige]( https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/index.html ) interpolation library. The tool has been tested on databases obtained through numerical simulations at different flow parameters, such as Reynolds number and Angle of Attack.
+To address these challenges, we have developed an innovative tool capable of efficiently generating new fluid dynamics databases for specific flow conditions and predicting their temporal evolution. This is achieved using a hybrid, fully data-driven Reduced-Order Model (ROM), which integrates:
+
+- **Higher-Order Singular Value Decomposition (HOSVD)** for modal decomposition,
+- **Recurrent Neural Networks (RNN)** for temporal prediction,
+- **Gaussian Process Regression (GPR)** for parameter-space interpolation.
+
+The framework is implemented using:
+
+- [Python](https://www.python.org/)
+- [PyTorch](https://pytorch.org/) for deep learning (RNN)
+- [scikit-learn](https://scikit-learn.org/stable/modules/gaussian_process.html) for GPR-based interpolation
+
+This tool has been validated on datasets obtained from numerical simulations at varying flow parameters such as Reynolds number and Angle of Attack.
 
 ![Multi-parametric tool - Methodology](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_multipar.png?raw=true)
 
