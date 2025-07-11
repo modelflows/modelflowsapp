@@ -29,46 +29,42 @@ For validation purposes, we perform LES and adaptive prediction on a typical jet
 
 [*Dally, B. B., Karpetis, A. N., & Barlow, R. S. (2002). Structure of turbulent non-premixed jet flames in a diluted hot coflow. Proceedings of the combustion institute, 29(1), 1147-1154.*](https://doi.org/10.1016/S1540-7489(02)80145-6)
 
-### Tutorials
+### CFD setup
 Discover our detailed tutorials that walk you through the process of setting up Computational Fluid Dynamics (CFD) simulations.
 
-#### Geometry
+#### Geometry and Mesh
 The geometry of JHC burner is shown in the following figure. The burner consists of a central jet (I.D. = 4.25 mm) and an annulus (I.D. = 82 mm). As the burner was mounted in a wind tunnel, there was an air flow inlet around the annulus tube.
+The mesh can be generated with several tools, such as SnappyHexMesh, BlockMesh, Ansys ICEM CFD, and fluent Meshing etc. The mesh employed is shown in the following figure. The total number of grid cells is 1, 960, 000. 
 <!-- IMAGES -->
-<!--  ![Geometry of JHC burner](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_geometry.png?raw=true) -->
+<!--  ![Geometry of JHC burner](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_Geometry_mesh.png?raw=true) -->
 <p style="text-align: center;">
     <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_geometry.png?raw=true" alt="Figure text" width="80%">
 </p>
 
-#### Meshing
-The mesh can be generated with several tools, such as SnappyHexMesh, BlockMesh, Ansys ICEM CFD, and fluent Meshing etc. The mesh employed is shown in the following figure. The total number of grid cells is 1, 600, 000. 
-<!-- IMAGES -->
-<!--  ![Mesh of JHC burner](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_mesh.png?raw=true) -->
-<p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_mesh.png?raw=true" alt="Figure text" width="80%">
-</p>
 
-#### CFD with OpenFOAM
-This section provides a complete guide on how to set combustion simulations using OpenFOAM-v10. We focus on one case (HM3) in the paper of Dally et al. A mixture of H2 and CH4, equal in volume, was used as the fuel in the central jet. The annulus was fed with O2, N2, H2O and CO2 with mass fractions of 9%, 79%, 6.5% and 5.5%. The mean temperature of fuel jet, hot co - flow, and air inlet is 305, 1300, and 300 K, respectively. The Reynolds number of fuel jet is 9482, and the velocity of both hot co-flow and air inlet is 3.2 m/s.
+#### Boundary
+A mixture of H2 and CH4, equal in volume, was used as the fuel in the central jet. The annulus was fed with O2, N2, H2O and CO2 with mass fractions of 9%, 79%, 6.5% and 5.5%. The mean temperature of fuel jet, hot co-flow, and air inlet is 305, 1300, and 300 K, respectively. The Reynolds number of fuel jet is 9482, and the velocity of both hot co-flow and air inlet is 3.2 m/s.
 
-*Tutorial coming soon...*
 
 ### Results
 This section presents the simulation results of JHC burner. 
 
 #### LES results
-The contours of temperature, mass fractions of CH4, CO2 are shown as follows. 
+The contours of temperature, velocity, vorticity and mass fractions of typical species are shown as follows. 
 <!-- IMAGES -->
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_T_CH4_CO2.png?raw=true)
+<!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_LES-results.png?raw=true) -->
+<p style="text-align: center;">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_LES-results.png?raw=true" alt="Geometry of JHC burner" width="60%">
+</p>
 
 #### Prediction by hybrid ROM
-Based on the data set obtained by CFD simulations, the evolution process of flow field was forecast by hybrid ROM. The temperature distributions of two cut planes are shown as follows. 
+Based on the data set obtained by CFD simulations, the evolution process of flow field was forecast by hybrid ROM. The comparison of temperature and mass fractions of CO, CO2 and H2O between LES and predicted results are given as follows. 
 <!-- IMAGES -->
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane1.png?raw=true)
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_prediction_T_plane2.png?raw=true)
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_Prediction.png?raw=true)
 
-#### Coupling of OpenFOAM and adaptive prediction
-*Work in progress. Coming soon…*
+Additionally, the predicted temperature and H2O mass fraction are compared with LES results along radial direction at different axial positions and time instants, shown as follows. 
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_Prediction-curves.png?raw=true)
+
 
 
 
