@@ -37,7 +37,7 @@ The geometry of JHC burner is shown in the following figure. The burner consists
 The mesh can be generated with several tools, such as SnappyHexMesh, BlockMesh, Ansys ICEM CFD, and fluent Meshing etc. The mesh employed is shown in the following figure. The total number of grid cells is 1, 960, 000. 
 <!-- IMAGES -->
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_Geometry_mesh.png?raw=true" alt="Figure text" width="60%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_Geometry_mesh.png?raw=true" alt="Figure text" width="70%">
 </p>
 
 
@@ -51,10 +51,8 @@ This section presents the simulation results of JHC burner.
 #### LES results
 The contours of temperature, velocity, vorticity and mass fractions of typical species are shown as follows. 
 <!-- IMAGES -->
-<!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_LES-results.png?raw=true) -->
-<p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_LES-results.png?raw=true" alt="Geometry of JHC burner" width="90%">
-</p>
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_LES-results.png?raw=true) 
+
 
 #### Prediction by hybrid ROM
 Based on the data set obtained by CFD simulations, the evolution process of flow field was forecast by hybrid ROM. The comparison of temperature and mass fractions of CO, CO2 and H2O between LES and predicted results are given as follows. 
