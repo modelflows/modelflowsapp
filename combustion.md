@@ -36,9 +36,8 @@ Discover our detailed tutorials that walk you through the process of setting up 
 The geometry of JHC burner is shown in the following figure. The burner consists of a central jet (I.D. = 4.25 mm) and an annulus (I.D. = 82 mm). As the burner was mounted in a wind tunnel, there was an air flow inlet around the annulus tube.
 The mesh can be generated with several tools, such as SnappyHexMesh, BlockMesh, Ansys ICEM CFD, and fluent Meshing etc. The mesh employed is shown in the following figure. The total number of grid cells is 1, 960, 000. 
 <!-- IMAGES -->
-<!--  ![Geometry of JHC burner](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_Geometry_mesh.png?raw=true) -->
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_burner_geometry.png?raw=true" alt="Figure text" width="80%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_Geometry_mesh.png?raw=true" alt="Figure text" width="60%">
 </p>
 
 
@@ -54,7 +53,7 @@ The contours of temperature, velocity, vorticity and mass fractions of typical s
 <!-- IMAGES -->
 <!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_LES-results.png?raw=true) -->
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_LES-results.png?raw=true" alt="Geometry of JHC burner" width="60%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_LES-results.png?raw=true" alt="Geometry of JHC burner" width="90%">
 </p>
 
 #### Prediction by hybrid ROM
