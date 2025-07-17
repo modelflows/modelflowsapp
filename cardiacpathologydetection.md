@@ -117,9 +117,8 @@ Further details about the work explained in this section could be found in the f
 
 <!-- The following video summarizes the developed system and shows the obtained results in the diagnosis task: -->
 
-The code of the training and testing stages (as python files and notebooks) of the described system, including the requirements file, can be downloaded with the following [*link*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/medical-data/Diagnosis_scripts.zip).
-
-A file with the pretrained weights of the ViT, to skip the training part and directly run the testing stage, can be downloaded with the following [*link*](https://drive.google.com/file/d/1tO9dv1zjzObGCOOrsoJgYpPxQZYdi2BC/view?usp=drive_link). 
+Download the code for **Diagnosis** in Python version [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/medical-data/Diagnosis_scripts.zip).
+The pretrained weights can be downloaded [*here*](https://drive.google.com/file/d/1tO9dv1zjzObGCOOrsoJgYpPxQZYdi2BC/view?usp=drive_link). 
 
 ### Prediction
 #### Masked Autoencoders
@@ -137,9 +136,8 @@ Further details about the work explained in this section could be found in the f
 
 <!-- The following video summarizes the developed system with the obtained results in the prognosis task:  -->
 
-The code of the training and testing stages (as python files and notebooks) of the described system, including the requirements file, can be downloaded with the following [*link*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/medical-data/Prognosis_scripts.zip).
-
-A file with the pretrained weights of the ViT for heart failure prediction (obtained with the Masked Autoencoder scheme, after pretraining and finetuning stages), to skip the training part and directly run the testing stage, can be downloaded with the following [*link*](https://drive.google.com/file/d/1tyi5j6bJfCB1OhXh6c36eDPT4D8E8dST/view?usp=drive_link).
+Download the code for **Prognosis** in Python version [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/medical-data/Prognosis_scripts.zip).
+The pretrained weights can be downloaded [*here*](https://drive.google.com/file/d/1tyi5j6bJfCB1OhXh6c36eDPT4D8E8dST/view?usp=drive_link).
 
 
 ## CFD Data
