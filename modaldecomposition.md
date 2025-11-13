@@ -168,12 +168,16 @@ Two test cases are demonstrated:
 
 This algorithm provides a powerful, fully data-driven framework for passive flow control, applicable to laminar and turbulent regimes alike.
 
+<img src="https://raw.githubusercontent.com/modelflows/modelflowsapp/master/assets/img/ra.png"
+     alt="Figure text"
+     style="visibility: visible;" />
+
 [*Lazpita, E., Garicano-Mena, J., Paniagua, G., Le Clainche, S., Valero, E., A data–driven sensibility tool for flow control based on resolvent analysis, Results in Engineering, 2024.*](https://www.sciencedirect.com/science/article/pii/S2590123024003244)
 
 The following video explains how this algorithm is applied and the previous paper:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y1DqWTl9FB0?si=5iUPbMpeTnQpSO-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
 Download the code for **Passive Flow Control with Resolvent Analysis**  in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/ra.zip), or the version including HODMD [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/ra-hodmd.zip).
 
+For a proper usage of the algorithm, it is recommended to first calibrate the HODMD algorithm, following the [Advanced Tutorial](https://modelflows.github.io/modelflowsapp/advanced/) in our website.
