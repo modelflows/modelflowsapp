@@ -18,7 +18,8 @@ Codes available:
     * [Superresolution Tool](https://modelflows.github.io/modelflowsapp/modaldecomposition/#superresolution-tool)
 
 3. [Control](https://modelflows.github.io/modelflowsapp/modaldecomposition/#control)
-   * [Passive Flow Control](https://modelflows.github.io/modelflowsapp/modaldecomposition/#passive-flow-control)
+   * [Passive Flow Control with HODMD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#passive-flow-control-with-hodmd)
+   * [Passive Flow Control with Resolvent Analysis](https://modelflows.github.io/modelflowsapp/modaldecomposition/#passive-flow-control-with-resolvent-analysis)
 
 
 
@@ -132,7 +133,7 @@ or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc
 
 ## Control <a id="control"></a>
 
-### Passive Flow Control <a id="passive-flow-control"></a>
+### Passive Flow Control with HODMD <a id="passive-flow-control-with-hodmd"></a>
 Based on HODMD, ModelFLOWs has been able to create a fully data-driven algorithm to calculate the so-called *non-linear structural sensitivity*. 
 This concept identifies the region in the spatial domain where the flow is most prone to changes. Therefore, it has applications in flow control, as perturbing this region with a punctual force or a small geometric modification may delay the onset of some instabilities.
 
@@ -153,5 +154,26 @@ The following video explains how this algorithm is applied and the previous pape
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fbd_loMGghs?si=NVipGqQ6BJH913vI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-Download the code for **Passive Flow Control**  in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/mdhodmd_control_Matlab.zip), in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/mdhodmd_control.zip),
+Download the code for **Passive Flow Control with HODMD**  in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/mdhodmd_control_Matlab.zip), in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/mdhodmd_control.zip),
 or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc0777dcfe047fadf93d46053f975f9/modal-decomposition/python/mdhodmd_control.ipynb).
+
+### Passive Flow Control with Resolvent Analysis <a id="passive-flow-control-with-resolvent-analysis"></a>
+This study introduces a data-driven flow control tool based on resolvent analysis, designed to identify the most sensitive regions of a flow field, areas where small perturbations can produce large effects. Using modal decomposition techniques and the HODMD algorithm, the method extracts coherent structures and quantifies the input–output gain that governs flow amplification mechanisms.
+
+The approach enables the detection of regions of high structural sensitivity without requiring linearization of the Navier–Stokes equations or adjoint computations, making it suitable for complex or experimental data.
+
+Two test cases are demonstrated:
+* Flow past a circular cylinder, where the tool identifies optimal positions to introduce small stabilizing cylinders that delay vortex shedding and flow instabilities.
+* Turbulent channel flow with heat transfer, where resolvent analysis highlights sensitive areas for geometric modifications (ribs and cavities). The resulting configurations achieve enhanced heat transfer (≈ +10%) while reducing drag (≈ –6%), outperforming conventional designs.
+
+This algorithm provides a powerful, fully data-driven framework for passive flow control, applicable to laminar and turbulent regimes alike.
+
+[*Lazpita, E., Garicano-Mena, J., Paniagua, G., Le Clainche, S., Valero, E., A data–driven sensibility tool for flow control based on resolvent analysis, Results in Engineering, 2024.*](https://www.sciencedirect.com/science/article/pii/S2590123024003244)
+
+The following video explains how this algorithm is applied and the previous paper:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y1DqWTl9FB0?si=5iUPbMpeTnQpSO-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+Download the code for **Passive Flow Control with Resolvent Analysis**  in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/ra.zip), or the version including HODMD [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/ra-hodmd.zip).
+
