@@ -15,4 +15,4 @@ Codes available:
 
 Low-cost air quality sensors (LCS) provide a practical alternative to regulatory-grade instruments, enabling dense monitoring networks in urban environments. Their deployment, however, is constrained by calibration challenges related to sensor drift, environmental cross-sensitivity, and device-to-device variability. This section presents a deep learning based calibration framework built around a Long Short-Term Memory (LSTM) model trained on co-located reference measurements. The model operates on a structured input space that combines lagged sensor and meteorological variables with harmonic encodings of diurnal and seasonal cycles, as well as interaction terms. By combining both temporal memory and cyclic structure into the learning process, the approach captures short-term dynamics and long-term trends in pollutant behaviour.
 
-<!-- calibration framework  -->
+<!-- calibration framework image -->
