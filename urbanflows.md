@@ -23,7 +23,7 @@ These baseline simulations establish a foundation for evaluating both passive mi
 ## Technical Methodology Overview
 
 ### Geometry Generation
-Urban geometry was created using [city4CFD](https://github.com/tudelft3d/City4CFD), an open-source tool that integrates GIS datasets and point clouds from the Madrid city council ([geoportal](https://geoportal.madrid.es/IDEAM_WBGEOPORTAL/index.iam)) to generate CFD-ready 3D models. The detailed geometry captures buildings, vegetation, water zones, and critical street-canyon configurations across the Vallecas district, with the computational domain sized following Blocken (2015) guidelines: 15× maximum building height (=1705m) horizontally and 6-7× vertically (=390m).
+Urban geometry was created using [city4CFD](https://github.com/tudelft3d/City4CFD), an open-source tool that integrates polygons footprints datasets and point clouds from the Madrid city council ([geoportal](https://geoportal.madrid.es/IDEAM_WBGEOPORTAL/index.iam)) to generate CFD-ready 3D models. The detailed geometry captures buildings, vegetation, water zones, and critical street-canyon configurations across the Vallecas district, with the computational domain sized following Blocken (2015) guidelines: 15× maximum building height (=1705m) horizontally and 6-7× vertically (=390m).
 
 ### Computational Mesh
 A **polyhedral mesh with ~90 million cells** was generated using **snappyHexMesh** in [OpenFOAM](https://openfoam.org/version/8/) (v8). The hexahedral-dominant structure includes refined regions near surfaces and additional boundary layer cells to accurately resolve near-wall flow behavior and capture complex urban geometry details.
