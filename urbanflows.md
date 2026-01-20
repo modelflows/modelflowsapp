@@ -29,7 +29,7 @@ Urban geometry was created using [city4CFD](https://github.com/tudelft3d/City4CF
 A **polyhedral mesh with ~90 million cells** was generated using **snappyHexMesh** in [OpenFOAM](https://openfoam.org/version/8/) (v8). The hexahedral-dominant structure includes refined regions near surfaces and additional boundary layer cells to accurately resolve near-wall flow behavior and capture complex urban geometry details.
 
 ### Numerical Methods & Solver
-**Steady-State Flow Modeling (simpleFoam – SIMPLE algorithm)**  
+**Steady-State Flow Modeling**  
 The flow field is computed using OpenFOAM’s *simpleFoam* solver, which is dedicated to steady-state incompressible flows. It relies on the SIMPLE (Semi-Implicit Method for Pressure-Linked Equations) algorithm to iteratively couple pressure and velocity, ensuring mass conservation while solving the momentum equations. A second-order linear upwind scheme is used for advection terms, offering a good compromise between numerical accuracy and stability when resolving velocity gradients and recirculation zones.
 
 **Turbulence Modeling (RANS k–ε)**  
@@ -68,9 +68,8 @@ The simulations revealed characteristic urban atmospheric boundary layer feature
 - Street canyons aligned with wind act as preferential channels (Venturi effect), while perpendicular streets show weak channeling and dominant recirculation
 - Dense building clusters produce successive wake interactions, reducing ventilation efficiency and creating persistent low-velocity pockets
 
-
 ![Topological slice at z = 5 m of velocity, CO, NOx, and PM fields, at different hours.](assets/img/urban_flows/ezgif.com-animated-gif-maker.gif)
-![Streamlines over a building](assets/img/urban_flows/streamlines_sole3.png)
+
 
 ### Pollutant Dispersion Patterns
 
@@ -83,6 +82,8 @@ The simulations revealed characteristic urban atmospheric boundary layer feature
 **Case C (19:00, E wind):** A-6 plumes disperse more efficiently due to open upwind geometry, while M-40 plumes encounter denser urban layouts, resulting in slower dilution and longer residence times.
 
 **Key Finding:** Urban geometry, more than emission intensity, controls pollutant exposure at neighborhood scale. Recirculation cavities, horseshoe vortices, and wake zones act as pollutant traps, creating highly heterogeneous dispersion patterns that require high-resolution CFD analysis to identify and mitigate.
+
+![Pollutants fields at different slice heights](assets/img/urban_flows/Presentation1_01.png)
 
 # CFD Tutorial 
 
