@@ -2,7 +2,7 @@
 layout: page
 title: Urban Flows
 subtitle: Our studies focused on urban flows
-published: false
+published: true
 ---
 
 ***Main projects funding this research:***
