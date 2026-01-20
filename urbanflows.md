@@ -51,13 +51,12 @@ Surface roughness values were differentiated by terrain type. Turbulent kinetic 
 For pressure, solid surfaces received **zero-gradient conditions** (∂p/∂n=0), while lateral and top boundaries used **freestreamPressure** conditions that automatically switch between fixed values during inflow and zero-gradient during outflow.
 
 Near-wall turbulence was handled with **kqRWallFunction**, ensuring proper dissipation behavior and compatibility with wall-function RANS modeling.
+![Domain boundaries](assets/img/urban_flows/boundaries.png)
 
 ### Meteorological Input Data
 Atmospheric data (wind speed and direction at 10m reference height) was sourced from the nearest meteorological monitoring station (from [geoportal](https://geoportal.madrid.es/IDEAM_WBGEOPORTAL/index.iam)). **24 hourly simulations** were performed for the most polluted day of 2024, capturing diurnal evolution of meteorology and traffic emissions under worst-case air quality conditions.
 
 Traffic emissions were calculated using [COPERT values](https://copert.emisia.com/) with emission factors based on hourly traffic flow, speed data from Madrid City Council sensors (A-6) and estimated values (M-40), and vehicle fleet composition for the zone. 
-
-![Domain boundaries](assets/img/urban_flows/boundaries.png)
 
 ## Flow & Pollutant Field Analysis
 
@@ -69,16 +68,9 @@ The simulations revealed characteristic urban atmospheric boundary layer feature
 - Street canyons aligned with wind act as preferential channels (Venturi effect), while perpendicular streets show weak channeling and dominant recirculation
 - Dense building clusters produce successive wake interactions, reducing ventilation efficiency and creating persistent low-velocity pockets
 
-![Figure text](assets/img/urban_flows/streamlines_sole3.png)
 
-<figure style="text-align: center;">
-  <video autoplay loop muted playsinline style="max-width:100%; height:auto;">
-    <source src="assets/img/urban_flows/animation.mp4" type="video/mp4">
-  </video>
-  <figcaption>
-    Topological slice at z = 5m of velocity, CO, NOx, and PM fields, at different hours.
-  </figcaption>
-</figure>
+![Topological slice at z = 5 m of velocity, CO, NOx, and PM fields, at different hours.](assets/img/urban_flows/ezgif.com-animated-gif-maker.gif)
+![Streamlines over a building](assets/img/urban_flows/streamlines_sole3.png)
 
 ### Pollutant Dispersion Patterns
 
