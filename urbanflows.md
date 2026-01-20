@@ -68,6 +68,8 @@ The simulations revealed characteristic urban atmospheric boundary layer feature
 - Street canyons aligned with wind act as preferential channels (Venturi effect), while perpendicular streets show weak channeling and dominant recirculation
 - Dense building clusters produce successive wake interactions, reducing ventilation efficiency and creating persistent low-velocity pockets
 
+![Streamlines over a building](assets/img/urban_flows/streamlines_sole3.png)
+
 ![Topological slice at z = 5 m of velocity, CO, NOx, and PM fields, at different hours.](assets/img/urban_flows/ezgif.com-animated-gif-maker.gif)
 
 
