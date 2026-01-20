@@ -83,9 +83,9 @@ The simulations revealed characteristic urban atmospheric boundary layer feature
 
 **Case C (19:00, E wind):** A-6 plumes disperse more efficiently due to open upwind geometry, while M-40 plumes encounter denser urban layouts, resulting in slower dilution and longer residence times.
 
-**Key Finding:** Urban geometry, more than emission intensity, controls pollutant exposure at neighborhood scale. Recirculation cavities, horseshoe vortices, and wake zones act as pollutant traps, creating highly heterogeneous dispersion patterns that require high-resolution CFD analysis to identify and mitigate.
-
 ![Pollutants fields at different slice heights](assets/img/urban_flows/Presentation1_01.png)
+
+**Key Finding:** Urban geometry, more than emission intensity, controls pollutant exposure at neighborhood scale. Recirculation cavities, horseshoe vortices, and wake zones act as pollutant traps, creating highly heterogeneous dispersion patterns that require high-resolution CFD analysis to identify and mitigate.
 
 # CFD Tutorial 
 
