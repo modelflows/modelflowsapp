@@ -75,7 +75,7 @@ The simulations revealed characteristic urban atmospheric boundary layer feature
 
 ### Pollutant Dispersion Patterns
 
-**Wind direction plays a critical role** in pollutant transport: perpendicular winds on dense blocks generate strong recirculation and reduced ventilation, while aligned winds facilitate faster transport and vertical dilution. Three representative evening hours (17:00-19:00) during peak traffic were analyzed:
+**Wind direction plays a critical role** in pollutant transport: perpendicular winds on dense blocks generate strong recirculation and reduced ventilation, while aligned winds facilitate faster transport and vertical dilution. Three representative evening hours (17:00-19:00) during peak traffic were analyzed (here, on CO fields):
 
 **Case A (17:00, SE wind):** Pollutant plumes show rapid initial vertical spreading, then strong trapping in building clusters. Multiple recirculation zones cause accumulation and pollutant streaks at higher elevations, with concentration levels up to 1.5× higher than open areas.
 
