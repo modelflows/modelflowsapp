@@ -34,6 +34,8 @@ Urban geometry was created using [city4CFD](https://github.com/tudelft3d/City4CF
 ### Computational Mesh
 A **polyhedral mesh with ~90 million cells** was generated using **snappyHexMesh** in [OpenFOAM](https://openfoam.org/version/8/) (v8). The hexahedral-dominant structure includes refined regions near surfaces and additional boundary layer cells to accurately resolve near-wall flow behavior and capture complex urban geometry details.
 
+![mesh](assets/img/urban_flows/mesh_med.png)
+
 ### Numerical Methods & Solver
 **Steady-State Flow Modeling**  
 The flow field is computed using OpenFOAM’s *simpleFoam* solver, which is dedicated to steady-state incompressible flows. It relies on the SIMPLE (Semi-Implicit Method for Pressure-Linked Equations) algorithm to iteratively couple pressure and velocity, ensuring mass conservation while solving the momentum equations. A second-order linear upwind scheme is used for advection terms, offering a good compromise between numerical accuracy and stability when resolving velocity gradients and recirculation zones.
