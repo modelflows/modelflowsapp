@@ -36,7 +36,7 @@ navbar-links:
     - Air Pollution: "airpollution"
     - Cardiac pathology detection: "cardiacpathologydetection"
     - Combustion: "combustion"
-  #  - Urban Flows: "urbanflows"
+    - Urban Flows: "urbanflows"
 
   Databases: "databases"
     
