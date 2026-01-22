@@ -11,12 +11,16 @@ The MODELAIR project has received funding from the European Union’s Horizon Eu
 
 # Computational Fluid Dynamics assessment of Urban Air Quality
 
-Urban environments remains one of the most critical environmental and public health challenges worldwide. Rapid urbanisation, increasing traffic density, and high energy demand have intensified pollutant emissions, creating localised areas of poor air quality that threaten both human health and urban sustainability. The complex interaction between urban form, meteorological conditions, and emission sources makes understanding pollutant dispersion in cities particularly challenging. 
+Urban environments remains one of the most critical environmental and public health challenges worldwide. Rapid urbanisation, increasing traffic density, and high energy demand have intensified pollutant emissions, creating localised areas of poor air quality that threaten both human health and urban sustainability. The complex interaction between urban form, meteorological conditions, and emission sources makes understanding pollutant dispersion in cities particularly challenging.
 Within the urban canopy, the airflow is highly turbulent and strongly influenced by the geometry of buildings and streets. These interactions give rise to vortical structures and recirculation zones that can trap pollutants and generate persistent hot spots of contamination. Understanding these flow patterns and how they vary with urban topology and pollutant release sources is essential to improving predictive models and to defining targeted mitigation strategies.
 
 # Urban Air Quality CFD simulation - Vallecas District, Madrid
 
-Computational Fluid Dynamics (CFD) simulations provide crucial insights into traffic pollution dispersion across Madrid's urban landscape. By resolving street-level flow structures, including recirculation zones, canyon vortices, and stagnation areas—these simulations identify pollution hotspots that threaten public health in densely populated areas. The results directly inform evidence-based decisions for traffic regulation, traffic light re-timing, and urban planning interventions where emission sources and vulnerable populations (residents, students, pedestrians) are in close proximity.
+![vel_plot](assets/img/urban_flows/tmp.png)
+
+Computational Fluid Dynamics (CFD) simulations provide crucial insights into traffic pollution dispersion across Madrid's urban landscape. By resolving street-level flow structures, including recirculation zones, canyon vortices, and stagnation areas—these simulations identify pollution hotspots that threaten public health in densely populated areas. The results directly inform evidence-based decisions for traffic regulation, traffic light re-timing, and urban planning interventions where emission sources and vulnerable populations (residents, students, pedestrians) are in close proximity. The Vallecas district has been identified by the municipal authority as a strategic intervention area due to the combination of major traffic corridors with residential, recreational and educational activities, including the development of a new green student-housing complex.
+
+![ZOI](assets/img/urban_flows/geo_scheme.png)
 
 These baseline simulations establish a foundation for evaluating both passive mitigation strategies (vegetation corridors, urban design modifications) and active control measures (traffic management, operational changes), enabling the municipal authority to target interventions where and when they will be most effective.
 
@@ -24,6 +28,8 @@ These baseline simulations establish a foundation for evaluating both passive mi
 
 ### Geometry Generation
 Urban geometry was created using [city4CFD](https://github.com/tudelft3d/City4CFD), an open-source tool that integrates polygons footprints datasets and point clouds from the Madrid city council ([geoportal](https://geoportal.madrid.es/IDEAM_WBGEOPORTAL/index.iam)) to generate CFD-ready 3D models. The detailed geometry captures buildings, vegetation, water zones, and critical street-canyon configurations across the Vallecas district, with the computational domain sized following Blocken (2015) guidelines: 15× maximum building height (=1705m) horizontally and 6-7× vertically (=390m).
+
+![geometry](assets/img/urban_flows/domain1.png)
 
 ### Computational Mesh
 A **polyhedral mesh with ~90 million cells** was generated using **snappyHexMesh** in [OpenFOAM](https://openfoam.org/version/8/) (v8). The hexahedral-dominant structure includes refined regions near surfaces and additional boundary layer cells to accurately resolve near-wall flow behavior and capture complex urban geometry details.
