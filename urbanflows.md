@@ -16,13 +16,14 @@ Within the urban canopy, the airflow is highly turbulent and strongly influenced
 
 # Urban Air Quality CFD simulation - Vallecas District, Madrid
 
-![vel_plot](assets/img/urban_flows/tmp.png)
-
 Computational Fluid Dynamics (CFD) simulations provide crucial insights into traffic pollution dispersion across Madrid's urban landscape. By resolving street-level flow structures, including recirculation zones, canyon vortices, and stagnation areas—these simulations identify pollution hotspots that threaten public health in densely populated areas. The results directly inform evidence-based decisions for traffic regulation, traffic light re-timing, and urban planning interventions where emission sources and vulnerable populations (residents, students, pedestrians) are in close proximity. The Vallecas district has been identified by the municipal authority as a strategic intervention area due to the combination of major traffic corridors with residential, recreational and educational activities, including the development of a new green student-housing complex.
 
 ![ZOI](assets/img/urban_flows/geo_scheme.png)
 
 These baseline simulations establish a foundation for evaluating both passive mitigation strategies (vegetation corridors, urban design modifications) and active control measures (traffic management, operational changes), enabling the municipal authority to target interventions where and when they will be most effective.
+The following picture represents a topological slice of the U magnitude at 5m above the ground, with a inlet ABL velocity of 0.85 m/s at z0 = 10m. 
+
+![vel_plot](assets/img/urban_flows/tmp.png)
 
 ## Technical Methodology Overview
 
