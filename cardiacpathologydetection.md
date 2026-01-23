@@ -145,16 +145,19 @@ The pretrained weights can be downloaded [*here*](https://drive.google.com/file/
 
 CardioMOD-Net, an AI-based tool capable of addressing the two challenging aforementioned tasks, diagnosis and prognosis, is presented in this section. Specifically, CardioMOD-Net can recognize different heart states and estimate the precise time in which a heart failure will happen, becoming the first unified frmework which jointly addresses the challenges derived from each task. For this purpose, CardioMOD-Net combines Modal Decomposition techniques and state-of-the-art Deep Learning algorithms adapted to databases of video sequences of echocardiography images. In particular, the SVD and the HODMD algorithms are employed to each video sequence of echocardiography images for feature extraction and data augmentation, obtaining reconstructions and modes. After that, the AI-based tool based on Masked Autoencoders (MAE) is trained using all those data and combining Self-supervised learning (SSL) methods and Supervised Learning, to deal with scarce databases of echocardiograms. Finally, unseen video sequences of echocardiography images are preprocessed and analyzed with the Modal Decomposition techniques and the trained AI-based tool to perform diagnosis and prognosis.
 
-Graphical Abstract in process...      
-
 The results obtained show the potential of this unified framework to integrate diagnosis and prognosis in a single architecture. This offers more information about the heart state evolution of a patient, more effectively preventing from heart failures and improving customized medicine.
+
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_12Dec_Belletal_ToolOverview.png?raw=true)
+
+The figure depicts an overview of the developed tool for heart disease recognition, capable of addressing two challenging tasks: diagnosis, as heart state classification, and prognosis, as the estimation of the time of a heart failure. (a) The training process of the developed tool, involving a database of echocardiography videos represented as DICOM files with annotations of the heart states and heart failure times. Before training, data augmentation and feature extraction are applied in four steps: (1) Video sequence preprocessing, (2) Singular Value Decomposition (SVD), (3) Higher Order Dynamic Mode Decomposition (HODMD) applied on the reconstructions obtained with the SVD, and (4) SVD applied on the obtained HODMD modes.
+(b) Diagnosis and prognosis performed using the tool, based on Artificial Intelligence (AI), after being trained, on new video sequences of echocardiography images. Similarly, preprocessing and modal decomposition techniques are applied before the inference.
 
 Further details about the work explained in this section could be found in the following reference:
 
 [*Bell-Navas, Andrés, Garicano-Mena, J., Ausiello, A., Clainche, S. L., Villalba-Orero, M., & Lara-Pezzi, E., CardioMOD-Net: A Modal Decomposition-Neural Network Framework for Diagnosis and Prognosis of HFpEF from Echocardiography Cine Loops. arXiv preprint arXiv:2601.01176, 2026.*](https://arxiv.org/abs/2601.01176)
 
-Download the code for **Diagnosis and Prognosis** in Python version here.
-The pretrained weights can be downloaded here.
+Code for **Diagnosis and Prognosis** in Python in progress...
+Pretrained weights in progress...
 
 ## CFD Data
 The growing impact of cardiovascular disease (CVD) requires advances in diagnosis and treatment. Recent developments in medical research have introduced innovative methods for understanding and treating complex diseases such as CVDs. Among these, Computational Fluid Dynamics (CFD) has emerged as a key tool for modeling the intricate dynamics of intracardiac blood flow. This approach not only enhances our fundamental understanding of cardiac function, but also paves the way for innovative treatment strategies.
