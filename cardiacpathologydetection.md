@@ -14,11 +14,12 @@ ModelFLOWs-cardiac, a branch of the ModelFLOWs-app which contains an open source
 
 Content:
 
-1-  [Medical Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection#medical-data)
+1-  [Medical Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#medical-data)
 
   *  [Pattern Detection](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#pattern-medical)
   *  [Classification](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#classification)
   *  [Prediction](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#prediction)
+  *  [Diagnosis and Prognosis](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#diagnosis-and-prognosis)
 
 2-  [CFD Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#cfd-data)
 
@@ -53,7 +54,7 @@ The signals, which are regular and periodic, represent the heart rate and respir
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/ModelFlows_Cardiac_page-IMAGE02.jpg?raw=true)
 
-These results have already been published in :
+These results have already been published in:
 
 [*Groun, N., Villalba-Orero, M., Lara-Pezzi, E., Valero, E., Garicano-Mena, J. and Le Clainche, S., 2022. Higher order dynamic mode decomposition: From fluid dynamics to heart disease analysis. Computers in Biology and Medicine, 144, p.105384.*](https://doi.org/10.1016/j.compbiomed.2022.105384)
 
@@ -61,7 +62,7 @@ You can also see the explanation of this paper in the following video:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AOD1t533sd8?si=DS5swbHta_SDBqbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### Cardiac disease classification
+### Cardiac disease classification <a id="classification"></a>
 #### Hybrid ROM combining HODMD and CNNs
 
 In this application the HODMD algorithm is combined with convolutional neural networks (CNNs) to improve the classification accuracy of five different cardiac conditions. 
@@ -93,7 +94,7 @@ A comparison between the snapshot of the original 7th and the same snapshot from
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/ModelFloes_Cardiac_IMAGE06.png?raw=true)
 
 
-These results have already been published in :
+These results have already been published in:
 
 [*Groun, N., Villalba-Orero, M., Lara-Pezzi, E., Valero, E., Garicano-Mena, J. and Le Clainche, S., 2022. A novel data-driven method for the analysis and reconstruction of cardiac cine MRI. Computers in Biology and Medicine, 151, p.106317.*](https://doi.org/10.1016/j.compbiomed.2022.106317)
 
@@ -120,7 +121,7 @@ Further details about the work explained in this section could be found in the f
 Download the code for **Diagnosis** in Python version [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/medical-data/Diagnosis_scripts.zip).
 The pretrained weights can be downloaded [*here*](https://drive.google.com/file/d/1tO9dv1zjzObGCOOrsoJgYpPxQZYdi2BC/view?usp=drive_link). 
 
-### Prediction
+### Prediction <a id="prediction"></a>
 #### Masked Autoencoders
 <!-- Andres's work -->
 
@@ -139,6 +140,21 @@ Further details about the work explained in this section could be found in the f
 Download the code for **Prognosis** in Python version [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/medical-data/Prognosis_scripts.zip).
 The pretrained weights can be downloaded [*here*](https://drive.google.com/file/d/1tyi5j6bJfCB1OhXh6c36eDPT4D8E8dST/view?usp=drive_link).
 
+### Diagnosis and prognosis <a id="diagnosis-and-prognosis"></a>
+#### Masked Autoencoders
+
+CardioMOD-Net, an AI-based tool capable of addressing the two challenging aforementioned tasks, diagnosis and prognosis, is presented in this section. Specifically, CardioMOD-Net can recognize different heart states and estimate the precise time in which a heart failure will happen, becoming the first unified frmework which jointly addresses the challenges derived from each task. For this purpose, CardioMOD-Net combines Modal Decomposition techniques and state-of-the-art Deep Learning algorithms adapted to databases of video sequences of echocardiography images. In particular, the SVD and the HODMD algorithms are employed to each video sequence of echocardiography images for feature extraction and data augmentation, obtaining reconstructions and modes. After that, the AI-based tool based on Masked Autoencoders (MAE) is trained using all those data and combining Self-supervised learning (SSL) methods and Supervised Learning, to deal with scarce databases of echocardiograms. Finally, unseen video sequences of echocardiography images are preprocessed and analyzed with the Modal Decomposition techniques and the trained AI-based tool to perform diagnosis and prognosis.
+
+Graphical Abstract in process...      
+
+The results obtained show the potential of this unified framework to integrate diagnosis and prognosis in a single architecture. This offers more information about the heart state evolution of a patient, more effectively preventing from heart failures and improving customized medicine.
+
+Further details about the work explained in this section could be found in the following reference:
+
+[*Bell-Navas, Andrés, Garicano-Mena, J., Ausiello, A., Clainche, S. L., Villalba-Orero, M., & Lara-Pezzi, E., CardioMOD-Net: A Modal Decomposition-Neural Network Framework for Diagnosis and Prognosis of HFpEF from Echocardiography Cine Loops. arXiv preprint arXiv:2601.01176, 2026.*](https://arxiv.org/abs/2601.01176)
+
+Download the code for **Diagnosis and Prognosis** in Python version here.
+The pretrained weights can be downloaded here.
 
 ## CFD Data
 The growing impact of cardiovascular disease (CVD) requires advances in diagnosis and treatment. Recent developments in medical research have introduced innovative methods for understanding and treating complex diseases such as CVDs. Among these, Computational Fluid Dynamics (CFD) has emerged as a key tool for modeling the intricate dynamics of intracardiac blood flow. This approach not only enhances our fundamental understanding of cardiac function, but also paves the way for innovative treatment strategies.
