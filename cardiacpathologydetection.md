@@ -12,6 +12,12 @@ ModelFLOWs-cardiac, a branch of the ModelFLOWs-app which contains an open source
 
 *2022-2025. CardioAging (Mecanometabolismos de la insuficiencia cardíaca asociada a la edad). Líneas Estratégicas–Ministerio de Ciencia e Innovación, Spain, PLEC2022-009235.*
 
+ ***News related to the projects:***
+ 
+[Un doctorando de la ETSIAE investiga en EEUU en simulación de fluidos para mejorar la salud cardiovascular](https://www.upm.es/?id=CON10424&prefmt=articulo&fmt=detail)
+ 
+[Desarrollan un sistema para reconocer patologías cardíacas basado en IA](https://www.upm.es/UPM/SalaPrensa/Noticias_de_investigacion?fmt=detail&prefmt=articulo&id=CON18701)
+
 Content:
 
 1-  [Medical Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#medical-data)
