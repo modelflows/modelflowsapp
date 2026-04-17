@@ -139,12 +139,12 @@ The experiments performed demonstrate the efficacy of the modal decomposition al
 
 Further details about the work explained in this section could be found in the following reference:
 
-[*Bell-Navas, Andrés, Villalba-Orero, M., Lara-Pezzi, E., Garicano-Mena, J., & Clainche, S. L., Heart Failure Prediction using Modal Decomposition and Masked Autoencoders for Scarce Echocardiography Databases. arXiv preprint arXiv:2504.07606, 2025.*](https://arxiv.org/abs/2504.07606)
+[*Bell-Navas, A., Villalba-Orero, M., Lara-Pezzi, E., Garicano-Mena, J., & Clainche, S. L., Heart Failure Prediction using Modal Decomposition and Masked Autoencoders for Scarce Echocardiography Databases. arXiv preprint arXiv:2504.07606, 2025.*](https://arxiv.org/abs/2504.07606)
 
 <!-- The following video summarizes the developed system with the obtained results in the prognosis task:  -->
 
 Download the code for **Prognosis** in Python version [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/medical-data/Prognosis_scripts.zip).
-The pretrained weights can be downloaded [*here*](https://drive.google.com/file/d/1tyi5j6bJfCB1OhXh6c36eDPT4D8E8dST/view?usp=drive_link).
+The pretrained weights can be downloaded [*here*](https://drive.google.com/file/d/1tyi5j6bJfCB1OhXh6c36eDPT4D8E8dST/view?usp=drive_link). A fine-tuned version can be found at Hugging Face [*here*](https://huggingface.co/abellnav/heart-failure-prognosis-echo). 
 
 ### Diagnosis and prognosis <a id="diagnosis-and-prognosis"></a>
 #### Masked Autoencoders
@@ -160,7 +160,7 @@ The figure depicts an overview of the developed tool for heart disease recogniti
 
 Further details about the work explained in this section could be found in the following reference:
 
-[*Bell-Navas, Andrés, Garicano-Mena, J., Ausiello, A., Clainche, S. L., Villalba-Orero, M., & Lara-Pezzi, E., CardioMOD-Net: A Modal Decomposition-Neural Network Framework for Diagnosis and Prognosis of HFpEF from Echocardiography Cine Loops. arXiv preprint arXiv:2601.01176, 2026.*](https://arxiv.org/abs/2601.01176)
+[*Bell-Navas, A., Garicano-Mena, J., Ausiello, A., Clainche, S. L., Villalba-Orero, M., & Lara-Pezzi, E., CardioMOD-Net: A Modal Decomposition-Neural Network Framework for Diagnosis and Prognosis of HFpEF from Echocardiography Cine Loops. arXiv preprint arXiv:2601.01176, 2026.*](https://arxiv.org/abs/2601.01176)
 
 Code for **Diagnosis and Prognosis** in Python in progress...
 Pretrained weights in progress...
@@ -238,5 +238,19 @@ This analysis highlights the importance of CFD in advancing our understanding of
 
 
 ### Pattern detection <a id="pattern-cfd"></a>
-*Work in progress. Coming soon...*
+
+This section considers the combination of Proper Orthogonal Decomposition (POD) and Autoencoder (AE) architectures for early detection of cardiac deterioration. In this process, representative
+flow features characterizing different cardiovascular conditions are extracted from left ventricular flow fields obtained from fluid dynamics simulations. These features are contained in nearly orthogonal POD modes produced by the Autoencoders which capture a specified percentage of kinetic energy.
+
+![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2026_04Apr_Belletat_PODAEsOverview.png?raw=true)
+
+For small encoding dimensions, POD and Variational Autoencoders (VAE) can generate modes accurately representing the physics and flow features and latent variables corresponding to independent spatial
+structures and different frequency content. Moreover, VAEs are less sensible to the latent dimension and better preserve orthogonality between modes with respect to other AE architectures.
+
+Overall, AEs have the potential to reproduce POD-like coherent structures and to extract physically meaningful representations of cardiac flow dynamics, useful for several challenging clinical applications and contributing to clinical decision-making.
+
+Further details about the work explained in this section could be found in the following reference:
+
+[*Lazpita, E., Bell-Navas, A., Garicano-Mena, J., Koumoutsakos, P., Clainche, S. L., A Critical Assessment of Pattern Comparisons Between POD and Autoencoders in Intraventricular Flows. arXiv preprint arXiv:2512.19376, 2025.*](https://arxiv.org/abs/2512.19376)
+
 <!-- Introduce here the work in progress for pattern detection in CFD cardiac flows with SVD, HODMD, etc. -->
