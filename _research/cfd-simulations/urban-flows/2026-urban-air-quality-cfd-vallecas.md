@@ -1,6 +1,10 @@
 ---
 layout: page
-title: Urban Flows
+category: "CFD & High-Fidelity Simulations"
+topic: "Urban Flows Simulation"
+thumbnail: "assets/img/urban_flows/geo_scheme.png"
+tldr: "CFD simulations providing insights into traffic pollution dispersion across Madrid's urban landscape."
+title: High Fidelity Urban Flows Simulations
 subtitle: Our studies focused on urban flows
 published: true
 ---

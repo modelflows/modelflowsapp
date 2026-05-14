@@ -1,6 +1,10 @@
 ---
 layout: page
-title: Adaptive prediction
+category: "AI & Data-Driven Models"
+topic: "Adaptive Prediction"
+thumbnail: "assets/img/Adaptive_framework.png"
+tldr: "Adaptive prediction strategies coupling OpenFOAM with a POD-DL solver for robust long-term accuracy."
+title: Adaptive prediction [Placeholder name]
 subtitle: Our studies focused on adaptive prediction
 ---
 
