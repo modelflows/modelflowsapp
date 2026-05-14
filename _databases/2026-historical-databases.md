@@ -38,7 +38,7 @@ Databases available:
 ### 2D Laminar Flow <a id="cylinder-2d"></a>
 This database contains data from a two-dimensional CFD simulation of the flow past a circular cylinder. The flow is laminar, with six diferent Reynolds number of 50, 60, 85, 100, 130 and 160. The simulation was conducted using Nek5000.
 
-![cyl2D](/assets/img/Databases/cyl2D.png)
+![cyl2D]({{ '/assets/img/Databases/cyl2D.png' | relative_url }})
 
 If you use this dataset in your work, please cite:  
 
@@ -49,7 +49,7 @@ Database available [here](https://drive.google.com/drive/folders/1hP1ghrAtfQb7a-
 ### 2D Laminar Flow (with 2 small cylinders) <a id="cylinder-2d_2"></a>
 This database contains data from a two-dimensional CFD simulation of the flow past a circular cylinder with two small cylinders introduced in the wake of the main cylinder. The flow is laminar, with two diferent Reynolds number of 70 and 100. The simulation was conducted using Nek5000.
 
-![CJ](/assets/img/Databases/Cyl2D_2cyl.png)
+![CJ]({{ '/assets/img/Databases/Cyl2D_2cyl.png' | relative_url }})
 
 If you use this dataset in your work, please cite:  
 
@@ -62,7 +62,7 @@ Database available [here](https://drive.google.com/drive/folders/1ZSsYMPKdrGAs-S
 #### Long <a id="cylinder-3d-long"></a>
 This database contains data from a two-dimensional CFD simulation of the flow past a circular cylinder. The flow is laminar, with a Reynolds number of 280 and a spanwise longitude of Lz = 6.99. The simulation was conducted using Nek5000.
 
-![cyl3Dlong](/assets/img/Databases/cyl3Dlong.png)
+![cyl3Dlong]({{ '/assets/img/Databases/cyl3Dlong.png' | relative_url }})
 
 If you use this dataset in your work, please cite:  
 
@@ -73,7 +73,7 @@ Database available [here](https://drive.google.com/drive/folders/1_MkWVuWWoE3hGK
 #### Short <a id="cylinder-3d-short"></a>
 This database contains data from a two-dimensional CFD simulation of the flow past a circular cylinder. The flow is laminar, with a Reynolds number of 280 and a spanwise longitude of Lz = 1.67. The simulation was conducted using Nek5000.
 
-![cyl3Dshort](/assets/img/Databases/cyl3Dshort.png)
+![cyl3Dshort]({{ '/assets/img/Databases/cyl3Dshort.png' | relative_url }})
 
 If you use this dataset in your work, please cite:  
 
@@ -86,7 +86,7 @@ Database available [here](https://drive.google.com/drive/folders/1ykbsXhyrWVDBCy
 ### Plain <a id="channel-plain"></a>
 This database contains data from a two-dimensional CFD simulation of a turbulent channel flow.
 
-![channel](/assets/img/Databases/channel.png)
+![channel]({{ '/assets/img/Databases/channel.png' | relative_url }})
 
 If you use this dataset in your work, please cite:
 
@@ -97,7 +97,7 @@ Database available [here](https://drive.google.com/drive/folders/1lnNz172hU-DHKD
 ### Ribbed <a id="channel-rib"></a>
 This database contains data from a two-dimensional CFD simulation of a turbulent channel flow with a rib.
 
-![rib](/assets/img/Databases/channel_rib.png)
+![rib]({{ '/assets/img/Databases/channel_rib.png' | relative_url }})
 
 If you use this dataset in your work, please cite:
 
@@ -108,7 +108,7 @@ Database available [here](https://drive.google.com/drive/folders/1dR28lDsfkW3TYX
 ### Cavity <a id="channel-cavity"></a>
 This database contains data from a two-dimensional CFD simulation of a turbulent channel flow with a cavity.
 
-![cavity](/assets/img/Databases/channel_cav.png)
+![cavity]({{ '/assets/img/Databases/channel_cav.png' | relative_url }})
 
 If you use this dataset in your work, please cite:
 
@@ -121,7 +121,7 @@ Database available [here](https://drive.google.com/drive/folders/1-XvmUDFBQ5Iib6
 ### Concentric Jets <a id="jet-concentric"></a>
 This database contains data from a two-dimensional CFD simulation of the flow inside two axi-symmetric concentric jets with similar velocity ratio. The flow is laminar, with a Reynolds number of 1420. The simulation was conducted using Nek5000.
 
-![CJ](/assets/img/Databases/Concentricjets.png)
+![CJ]({{ '/assets/img/Databases/Concentricjets.png' | relative_url }})
 
 If you use this dataset in your work, please cite:
 
@@ -134,7 +134,7 @@ Database available [here](https://drive.google.com/drive/folders/1EzzCI9f58FwXU2
 ### Ideal Left Ventricle <a id="cardiac-ideal-lv"></a>
 This database contains data from a three-dimensional CFD simulation of incompressible, Newtonian blood flow inside an idealized left ventricular cavity. The flow is laminar, with a Reynolds number of 5500. The simulation was conducted using Ansys Fluent version 2024R2.
 
-![CJ](/assets/img/Databases/LV.png)
+![CJ]({{ '/assets/img/Databases/LV.png' | relative_url }})
 
 If you use this dataset in your work, please cite:  
 
@@ -148,7 +148,7 @@ Database available [here](https://drive.google.com/drive/folders/1WJOnLmLEolYZcJ
 ### Planar FDA Nozzle <a id="FDA"></a>
 This database contains data from a two-dimensional CFD simulation of the flow through a planar Food and Drug Administration (FDA) nozzle, starting from the exit of the nozzle. The flow is laminar, with a Reynolds number of 800. The simulation was conducted using Nek5000.
 
-![FDA](/assets/img/Databases/FDAnozzle.png)
+![FDA]({{ '/assets/img/Databases/FDAnozzle.png' | relative_url }})
 
 If you use this dataset in your work, please cite:
 
