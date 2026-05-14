@@ -7,7 +7,7 @@ subtitle: Welcome to ModelFLOWs
 <div class="mb-5 text-center">
   <img src="{{ 'assets/img/urban_flows/streamlines_sole3.png' | relative_url }}" class="img-fluid rounded shadow w-100 mb-4" alt="CFD streamlines">
   <div class="text-start" style="font-size: 1.1em;">
-    <p><strong>ModelFLOWs</strong> is a research group at <strong>Universidad Politécnica de Madrid</strong> (Spain), School of Aerospace Engineering, specializing in <strong>data analysis</strong>, <strong>reduced order modeling</strong>, <strong>machine learning</strong>, <strong>artificial intelligence</strong> and <strong>computational fluid dynamics (CFD)</strong>. Our mission is to develop innovative solutions with real-world impact, particularly in <strong>reducing air pollution</strong> and <strong>advancing personalized medicine</strong>.</p>
+    <p><strong>ModelFLOWs</strong> is a research group at <strong>Universidad Politécnica de Madrid</strong> (Spain), School of Aerospace Engineering, specializing in <strong>data analysis</strong>, <strong>reduced order modeling</strong>, <strong>machine learning</strong>, <strong>artificial intelligence</strong> and <strong>computational fluid dynamics (CFD)</strong>. Our mission is to develop innovative solutions with real-world impact, particularly in aerospace engineering, combustion, urban air pollution mitigation, and personalized medicine.</p>
     <p>We are committed to open science and education. Whether you're a Master’s or PhD student looking to deepen your knowledge or a senior researcher exploring new methodologies, our resources are designed to support you.</p>
   </div>
 </div>
