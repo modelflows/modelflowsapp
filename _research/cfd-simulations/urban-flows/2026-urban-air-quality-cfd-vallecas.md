@@ -1,17 +1,13 @@
 ---
 layout: page
-category: "CFD & High-Fidelity Simulations"
-topic: "Urban Flows Simulation"
-thumbnail: "assets/img/urban_flows/geo_scheme.png"
-tldr: "CFD simulations providing insights into traffic pollution dispersion across Madrid's urban landscape."
-title: High Fidelity Urban Flows Simulations
+title: Urban Flows
 subtitle: Our studies focused on urban flows
 published: true
 ---
 
 ***Main projects funding this research:***
 
-The MODELAIR project has received funding from the European Union’s Horizon Europe research and innovation programme under the Marie Sklodowska-Curie grant agreement No. 101072559. The results of this publication reflect only the author(s) view and do not necessarily reflect those of the European Union. The European Union can not be held responsible for them. The authors gratefully acknowledge the Universidad Politécnica de Madrid [Universidad Politécnica de Madrid](https://www.upm.es/) for providing computing resources on Magerit Supercomputer.
+The MODELAIR project has received funding from the European Union’s Horizon Europe research and innovation programme under the Marie Sklodowska-Curie grant agreement No. 101072559. The results of this publication reflect only the author(s) view and do not necessarily reflect those of the European Union. The European Union can not be held responsible for them. The authors gratefully acknowledge the Universidad Politécnica de Madrid [Universidad Politécnica de Madrid](https://www.upm.es/) for providing computing resources on Magerit Supercomputer. Paul Jeanney
 
 # Computational Fluid Dynamics assessment of Urban Air Quality
 
