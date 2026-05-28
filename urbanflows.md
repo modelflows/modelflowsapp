@@ -7,7 +7,7 @@ published: true
 
 ***Main projects funding this research:***
 
-The MODELAIR project has received funding from the European Union’s Horizon Europe research and innovation programme under the Marie Sklodowska-Curie grant agreement No. 101072559. The results of this publication reflect only the author(s) view and do not necessarily reflect those of the European Union. The European Union can not be held responsible for them. The authors gratefully acknowledge the Universidad Politécnica de Madrid [Universidad Politécnica de Madrid](https://www.upm.es/) for providing computing resources on Magerit Supercomputer. Paul
+The MODELAIR project has received funding from the European Union’s Horizon Europe research and innovation programme under the Marie Sklodowska-Curie grant agreement No. 101072559. The results of this publication reflect only the author(s) view and do not necessarily reflect those of the European Union. The European Union can not be held responsible for them. The authors gratefully acknowledge the Universidad Politécnica de Madrid [Universidad Politécnica de Madrid](https://www.upm.es/) for providing computing resources on Magerit Supercomputer. Paul Jeanney
 
 # Computational Fluid Dynamics assessment of Urban Air Quality
 
