@@ -51,7 +51,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 
   <!-- Member Structure -->
   <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/issaco.png' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Isacco Faglioni">
+    <img src="{{ '/assets/img/team/issaco.jpeg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Isacco Faglioni">
     <h4>[Isacco Faglioni]</h4>
     <p class="text-muted">PhD Candidate</p>
     <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
@@ -72,29 +72,27 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 
 
 ## Alumni
-
+<!-- Alumni 1 -->
 <div class="row mt-4 mb-5">
 <div class="col-md-10 offset-md-1">
 <ul class="list-group list-group-flush">
-<!-- Alumni 1 -->
 <li class="list-group-item d-flex justify-content-between align-items-center">
 <div>
-<h5 class="mb-0">[Ashton Ian Hetherington]</h5>
+<h5 class="mb-0 text-nowrap">[Ashton Ian Hetherington]</h5>
 <small class="text-muted">[PhD Candidate] (2022 &ndash; 2026)</small>
 </div>
-<div class="text-end">
-<span class="badge bg-secondary rounded-pill fw-normal" style="font-size: 0.9em;">Now: [Senior Data Scientist -- Boston Consulting Group (BCG)]</span>
+<div class="text-end ps-3">
+<span class="badge bg-info text-dark rounded-pill fw-normal" style="font-size: 0.9em;">Now: [Senior Data Scientist -- Boston Consulting Group (BCG)]</span>
 </div>
 </li>
-      
 <!-- Alumni 2 -->
 <li class="list-group-item d-flex justify-content-between align-items-center">
 <div>
-<h5 class="mb-0">[Rodrigo Abadia-Heredia]</h5>
+<h5 class="mb-0 text-nowrap">[Rodrigo Abadia-Heredia]</h5>
 <small class="text-muted">[PhD Candidate] (2020 &ndash; 2025)</small>
 </div>
-<div class="text-end">
-<span class="badge bg-secondary rounded-pill fw-normal" style="font-size: 0.9em;">Now: [AI R&D Engineer -- Openchip & Software Technologies]</span>
+<div class="text-end ps-3">
+<span class="badge bg-info text-dark rounded-pill fw-normal" style="font-size: 0.9em;">Now: [AI R&D Engineer -- Openchip & Software Technologies]</span>
 </div>
 </li>
       
