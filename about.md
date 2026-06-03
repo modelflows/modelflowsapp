@@ -100,7 +100,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
   <div class="col-md-4 mb-5">
     <img src="{{ '/assets/img/team/angel_escalante.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Ángel Escalante">
     <h4>Ángel Escalante</h4>
-    <p class="text-muted">PhD Candidate</p>
+    <p class="text-muted">MSc Student</p>
     <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
       <a href="https://linkedin.com/in/ángel-alonso-escalante-51a718266/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
       <a href="https://github.com/angelaloon" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
