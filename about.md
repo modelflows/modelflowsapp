@@ -72,6 +72,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 
 
 ## Alumni
+
 <!-- Alumni 1 -->
 <div class="row mt-4 mb-5">
 <div class="col-md-10 offset-md-1">
@@ -82,7 +83,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 <small class="text-muted">PhD Candidate (2022 &ndash; 2026)</small>
 </div>
 <div class="text-end ps-3">
-<span class="badge bg-info text-dark rounded-pill fw-normal" style="font-size: 0.9em;">Current position: Senior Data Scientist -- Boston Consulting Group (BCG)</span>
+<span class="badge bg-transparent text-muted fw-normal" style="font-size: 0.9em;">Current position: Senior Data Scientist -- Boston Consulting Group (BCG)</span>
 </div>
 </li>
 <!-- Alumni 2 -->
@@ -92,7 +93,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 <small class="text-muted">PhD Candidate (2020 &ndash; 2025)</small>
 </div>
 <div class="text-end ps-3">
-<span class="badge bg-info text-dark rounded-pill fw-normal" style="font-size: 0.9em;">Current position: AI R&D Engineer -- Openchip & Software Technologies</span>
+<span class="badge bg-transparent text-muted fw-normal" style="font-size: 0.9em;">urrent position: AI R&D Engineer -- Openchip & Software Technologies</span>
 </div>
 </li>
       
