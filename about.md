@@ -18,7 +18,6 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
       <a href="https://sites.google.com/view/soledadleclainche/" title="Website" target="_blank"><i class="fas fa-globe fa-lg" style="color: #333;"></i></a>
       <!-- Replace # with actual links -->
       <a href="https://scholar.google.com/citations?user=o8RuA0sAAAAJ&hl=en" title="Google Scholar" target="_blank"><img src="{{ '/assets/img/logos/scholar.svg' | relative_url }}" alt="Google Scholar" style="width: 24px;"></a>
-      <a href="https://linkedin.com/in/francisco-giral" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
     </div>
   </div>
 </div>
@@ -130,15 +129,14 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 <div class="text-end ps-3">
 <span class="badge bg-transparent text-muted fw-normal" style="font-size: 0.9em;">Current position: AI R&D Engineer -- Openchip & Software Technologies</span>
 </div>
-</li>
-      
+</li> 
 <!-- Alumni Eneko Lazpita -->
 <div class="row mt-4 mb-5">
 <div class="col-md-10 offset-md-1">
 <ul class="list-group list-group-flush">
 <li class="list-group-item d-flex justify-content-between align-items-center">
 <div>
-<h5 class="mb-0 text-nowrap">Ashton Ian Hetherington</h5>
+<h5 class="mb-0 text-nowrap">Eneko Lazpita</h5>
 <small class="text-muted">PhD Candidate (2022 &ndash; 2025)</small>
 </div>
 <div class="text-end ps-3">
