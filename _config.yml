@@ -13,7 +13,7 @@
 author: ModelFLOWs
 
 # Name of website
-title: ModelFLOWs-app
+title: ModelFLOWs
  
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -21,25 +21,9 @@ title: ModelFLOWs-app
 
 navbar-links:
 
-  Software:
-    - Download: "downloads"
-    - Tutorial: "tutorial"
-    - Advanced tutorials: "advanced"
+  Software: "software"
+  Research: "research"
 
-  Notebooks:
-    - Overview: "mainnotebooks"
-    - Modal Decomp.: "modaldecomposition"
-    - Deep Learning: "deeplearning"
-    - Other Codes: "others"
-    
-  Applications:
-    - Air Pollution: "airpollution"
-    - Cardiac pathology detection: "cardiacpathologydetection"
-    - Combustion: "combustion"
-    - Urban Flows: "urbanflows"
-
-  Databases: "databases"
-    
   Group:
     - Events: "workshops"
     - About us: "about"
@@ -309,3 +293,19 @@ plugins:
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
+
+################
+# --- Collections --- #
+################
+exclude: ['vendor', 'CHANGELOG.md', 'CNAME', 'Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md', 'screenshot.png', 'docs/']
+
+collections:
+  research:
+    output: true
+    permalink: /research/:slug/
+  notebooks:
+    output: true
+    permalink: /software/notebooks/:slug/
+  databases:
+    output: true
+    permalink: /software/databases/:slug/

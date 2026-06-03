@@ -1,5 +1,7 @@
 ---
 layout: page
+topic: "Other Codes"
+tldr: "Miscellaneous scripts and preprocessing algorithms."
 title: Other Useful Codes 
 subtitle: 
 ---

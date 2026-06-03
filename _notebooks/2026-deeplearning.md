@@ -1,7 +1,8 @@
 ---
-layout: page
-title: Deep Learning
-<!-- subtitle: Our codes focused on deep learning -->
+layout: post
+title: "Introduction to Deep Learning for Fluids"
+topic: "Deep Learning"
+tldr: "Neural Networks architectures and frameworks for data-driven modeling."
 ---
 
 Codes available:

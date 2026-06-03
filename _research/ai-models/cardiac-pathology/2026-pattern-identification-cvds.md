@@ -1,5 +1,9 @@
 ---
 layout: page
+category: "AI & Data-Driven Models"
+topic: "Cardiac Pathology"
+thumbnail: "assets/img/ModelFlows_Cardiac_IMAGE01.jpg"
+tldr: "Pattern identification, classification and prediction of cardiovascular diseases using modal decomposition and deep learning."
 title: ModelFLOWs-cardiac
 subtitle: Our studies focused on cardiovascular diseases
 ---

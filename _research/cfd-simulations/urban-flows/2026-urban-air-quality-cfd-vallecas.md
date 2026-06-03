@@ -1,13 +1,17 @@
 ---
 layout: page
-title: Urban Flows
+category: "CFD & High-Fidelity Simulations"
+topic: "Urban Flows Simulation"
+thumbnail: "assets/img/urban_flows/geo_scheme.png"
+tldr: "CFD simulations providing insights into traffic pollution dispersion across Madrid's urban landscape."
+title: High Fidelity Urban Flows Simulations
 subtitle: Our studies focused on urban flows
 published: true
 ---
 
 ***Main projects funding this research:***
 
-The MODELAIR project has received funding from the European Union’s Horizon Europe research and innovation programme under the Marie Sklodowska-Curie grant agreement No. 101072559. The results of this publication reflect only the author(s) view and do not necessarily reflect those of the European Union. The European Union can not be held responsible for them. The authors gratefully acknowledge the Universidad Politécnica de Madrid [Universidad Politécnica de Madrid](https://www.upm.es/) for providing computing resources on Magerit Supercomputer. Paul Jeanney
+The MODELAIR project has received funding from the European Union’s Horizon Europe research and innovation programme under the Marie Sklodowska-Curie grant agreement No. 101072559. The results of this publication reflect only the author(s) view and do not necessarily reflect those of the European Union. The European Union can not be held responsible for them. The authors gratefully acknowledge the Universidad Politécnica de Madrid [Universidad Politécnica de Madrid](https://www.upm.es/) for providing computing resources on Magerit Supercomputer.
 
 # Computational Fluid Dynamics assessment of Urban Air Quality
 
@@ -18,24 +22,24 @@ Within the urban canopy, the airflow is highly turbulent and strongly influenced
 
 Computational Fluid Dynamics (CFD) simulations provide crucial insights into traffic pollution dispersion across Madrid's urban landscape. By resolving street-level flow structures, including recirculation zones, canyon vortices, and stagnation areas—these simulations identify pollution hotspots that threaten public health in densely populated areas. The results directly inform evidence-based decisions for traffic regulation, traffic light re-timing, and urban planning interventions where emission sources and vulnerable populations (residents, students, pedestrians) are in close proximity. The Vallecas district has been identified by the municipal authority as a strategic intervention area due to the combination of major traffic corridors with residential, recreational and educational activities, including the development of a new green student-housing complex.
 
-![ZOI](assets/img/urban_flows/geo_scheme.png)
+![ZOI](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/urban_flows/geo_scheme.png?raw=true)
 
 These baseline simulations establish a foundation for evaluating both passive mitigation strategies (vegetation corridors, urban design modifications) and active control measures (traffic management, operational changes), enabling the municipal authority to target interventions where and when they will be most effective.
 The following picture represents a slice of the velocity magnitude U at 5m above the ground, with a inlet ABL velocity of 0.85 m/s at z0 = 10m. 
 
-![vel_plot](assets/img/urban_flows/tmp.png)
+![vel_plot](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/urban_flows/tmp.png?raw=true)
 
 ## Technical Methodology Overview
 
 ### Geometry Generation
 Urban geometry was created using [city4CFD](https://github.com/tudelft3d/City4CFD), an open-source tool that integrates polygons footprints datasets and point clouds from the Madrid city council ([geoportal](https://geoportal.madrid.es/IDEAM_WBGEOPORTAL/index.iam)) to generate CFD-ready 3D models. The detailed geometry captures buildings, vegetation, water zones, and critical street-canyon configurations across the Vallecas district, with the computational domain sized following Blocken (2015) guidelines: 15× maximum building height (=1705m) horizontally and 6-7× vertically (=390m).
 
-![geometry](assets/img/urban_flows/domain1.png)
+![geometry](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/urban_flows/domain1.png?raw=true)
 
 ### Computational Mesh
 A **polyhedral mesh with ~90 million cells** was generated using **snappyHexMesh** in [OpenFOAM](https://openfoam.org/version/8/) (v8). The hexahedral-dominant structure includes refined regions near surfaces and additional boundary layer cells to accurately resolve near-wall flow behavior and capture complex urban geometry details.
 
-![mesh](assets/img/urban_flows/mesh_med.png)
+![mesh](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/urban_flows/mesh_med.png?raw=true)
 
 ### Numerical Methods & Solver
 **Steady-State Flow Modeling**  
@@ -60,7 +64,7 @@ Surface roughness values were differentiated by terrain type. Turbulent kinetic 
 For pressure, solid surfaces received **zero-gradient conditions** (∂p/∂n=0), while lateral and top boundaries used **freestreamPressure** conditions that automatically switch between fixed values during inflow and zero-gradient during outflow.
 
 Near-wall turbulence was handled with **kqRWallFunction**, ensuring proper dissipation behavior and compatibility with wall-function RANS modeling.
-![Domain boundaries](assets/img/urban_flows/boundaries.png)
+![Domain boundaries](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/urban_flows/boundaries.png?raw=true)
 
 ### Meteorological Input Data
 Atmospheric data (wind speed and direction at 10m reference height) was sourced from the nearest meteorological monitoring station (from [geoportal](https://geoportal.madrid.es/IDEAM_WBGEOPORTAL/index.iam)). **24 hourly simulations** were performed for the most polluted day of 2024, capturing diurnal evolution of meteorology and traffic emissions under worst-case air quality conditions.
@@ -77,9 +81,9 @@ The simulations revealed characteristic urban atmospheric boundary layer feature
 - Street canyons aligned with wind act as preferential channels (Venturi effect), while perpendicular streets show weak channeling and dominant recirculation
 - Dense building clusters produce successive wake interactions, reducing ventilation efficiency and creating persistent low-velocity pockets
 
-![Streamlines over a building](assets/img/urban_flows/streamlines_sole3.png)
+![Streamlines over a building](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/urban_flows/streamlines_sole3.png?raw=true)
 
-![Topological slice at z = 5 m of velocity, CO, NOx, and PM fields, at different hours.](assets/img/urban_flows/ezgif.com-animated-gif-maker.gif)
+![Topological slice at z = 5 m of velocity, CO, NOx, and PM fields, at different hours.](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/urban_flows/ezgif.com-animated-gif-maker.gif?raw=true)
 
 
 ### Pollutant Dispersion Patterns
@@ -92,7 +96,7 @@ The simulations revealed characteristic urban atmospheric boundary layer feature
 
 **Case C (19:00, E wind):** A-6 plumes disperse more efficiently due to open upwind geometry, while M-40 plumes encounter denser urban layouts, resulting in slower dilution and longer residence times.
 
-![Pollutants fields at different slice heights](assets/img/urban_flows/Presentation1_01.png)
+![Pollutants fields at different slice heights](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/urban_flows/Presentation1_01.png?raw=true)
 
 **Key Finding:** Urban geometry, more than emission intensity, controls pollutant exposure at neighborhood scale. Recirculation cavities, horseshoe vortices, and wake zones act as pollutant traps, creating highly heterogeneous dispersion patterns that require high-resolution CFD analysis to identify and mitigate.
 

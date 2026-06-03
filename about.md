@@ -4,42 +4,105 @@ title: About us
 subtitle: Who are we?
 ---
 
-ModelFLOWs is a research group whose main promoter and tutor is [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche/) and was formed in the Dept. of Applied Mathematics at the School of Aerospace Engineering from Universidad Politécnica de Madrid (UPM). This team uses different data-driven methods, i.e. modal decompositions, machine learning architectures and data assimilation tools, to generate hybrid reduced order model grounded in physics. These models are suitable to study the physics of the dynamical systems, to reconstruct and repair databases and for temporal forecasting. The fact that these models are grounded in physics makes them robust and with strong generalization capabilities. They have been successfully tested for various applications including complex flows (turbulent, reactive, etc.) and any type of non-linear dynamical system. ModelFLOWs also have strong experience in comptational fluid dynamics (CFD), flow control and in the development of new tools and methods for data analysis.  
+ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche/). The group is based in the Department of Applied Mathematics at the School of Aerospace Engineering, Universidad Politécnica de Madrid (UPM). Our team employs diverse data-driven methods—such as modal decompositions, machine learning architectures, and data assimilation tools—to generate hybrid reduced order models grounded in physics. These models are designed to study the physics of complex dynamical systems, reconstruct and repair databases, and perform temporal forecasting. Because these models are physics-informed, they are highly robust and exhibit strong generalization capabilities. They have been successfully applied to a variety of complex flows (turbulent, reactive, etc.) and other non-linear dynamical systems. Additionally, the ModelFLOWs group has extensive expertise in computational fluid dynamics (CFD), flow control, and the development of novel tools and methodologies for data analysis.  
 
-## List of Developers
-The following members have contributed in the development of ModelFLOWs-app, an open sourced software for data post-processing, patterns identification and development of reduced order models:
+## Group Leader
 
-<div style="display: flex;">
-  <ul>
-    <strong>First Release:</strong>
-    <li> <a href="https://shorturl.at/FIoD3" target="_blank">Adrián Corrochano</a><sup>*</sup></li>
-    <li> <a href="https://sites.google.com/view/eneko-lazpita/" target="_blank">Eneko Lazpita</a><sup>*</sup></li>
-    <li> Ashton Ian Hetherington<sup>*</sup></li>
-    <li> Rodrigo Abadia-Heredia<sup>*</sup></li>
-    <li> Eva Muñoz Salamanca</li>
-    <li> Paula Díaz Morales</li>
-    <li> Egoitz Maiora</li>
-    <li><a href="https://sites.google.com/view/soledadleclainche/" target="_blank">Soledad Le Clainche</a><sup>*</sup></li> 
-  </ul>
-  <ul>
-    <strong>New Members:</strong>
-    <li> Andrés Bell-Navas</li>
-    <li> Xiangrui Zou</li>
-    <li> Guillermo Barragán</li>
-    <li> Han Chen</li>
-    <li> Francisco José García Soto</li>
-    <li> Iñaki Gutierrez Béjar</li>
-    <li> Paul Jeanney</li>
-    <li> Prajith Pillai</li>
-    <li> Arindam Sengupta</li>
-  </ul>
+<div class="row text-center mb-5 mt-4">
+  <div class="col-md-12">
+    <!-- Drop the image in assets/img/team/ and update the filename below -->
+    <img src="{{ '/assets/img/team/soledad_leclainche.png' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 180px; height: 180px; object-fit: cover; border: 3px solid #ddd;" alt="Soledad Le Clainche">
+    <h4>Soledad Le Clainche</h4>
+    <p class="text-muted">Full Professor</p>
+    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 15px;">
+      <a href="https://sites.google.com/view/soledadleclainche/" title="Website" target="_blank"><i class="fas fa-globe fa-lg" style="color: #333;"></i></a>
+      <!-- Replace # with actual links -->
+      <a href="https://scholar.google.com/citations?user=o8RuA0sAAAAJ&hl=en" title="Google Scholar" target="_blank"><img src="{{ '/assets/img/logos/scholar.svg' | relative_url }}" alt="Google Scholar" style="width: 24px;"></a>
+    </div>
+  </div>
 </div>
 
-<sup>*</sup> Main developers
+## Group Members
 
-<!-- ### List of Contributors
-- 
--->
+<div class="row text-center mt-4">
+  
+  <!-- Member Structure -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/francisco_giral.png' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Francisco Giral">
+    <h4>Francisco Giral</h4>
+    <p class="text-muted">PhD Candidate</p>
+    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
+      <a href="https://linkedin.com/in/francisco-giral" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+      <a href="https://github.com/fgiral000" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+      <a href="https://scholar.google.com/citations?user=AmMITbwAAAAJ&hl=en" title="Google Scholar" target="_blank"><img src="{{ '/assets/img/logos/scholar.svg' | relative_url }}" alt="Google Scholar" style="width: 20px;"></a>
+    </div>
+  </div>
 
-<!-- ## Projects
-Include projects related to the group. -->
+  <!-- Zhuoqun Zhao -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/Zhuoqun_Zhao.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Zhuoqun Zhao">
+    <h4>Zhuoqun Zhao</h4>
+    <p class="text-muted">PhD Candidate</p>
+    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
+      <a href="https://www.linkedin.com/in/zhuoqun-zhao-4075b2316/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+    </div>
+  </div>
+
+
+  <!-- Member Structure -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/issaco.jpeg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Isacco Faglioni">
+    <h4>Isacco Faglioni</h4>
+    <p class="text-muted">PhD Candidate</p>
+    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
+      <a href="https://github.com/Isi2000" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+      <a href="https://github.com/fgiral000" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+    </div>
+  </div>
+
+
+
+  <!-- Ángel Alonso Escalante -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/angel_escalante.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Ángel Alonso Escalante">
+    <h4>Ángel Alonso Escalante</h4>
+    <p class="text-muted">MSc Student</p>
+  </div>
+</div>
+
+
+## Alumni
+
+<!-- Alumni 1 -->
+<div class="row mt-4 mb-5">
+<div class="col-md-10 offset-md-1">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex justify-content-between align-items-center">
+<div>
+<h5 class="mb-0 text-nowrap">Ashton Ian Hetherington</h5>
+<small class="text-muted">PhD Candidate (2022 &ndash; 2026)</small>
+</div>
+<div class="text-end ps-3">
+<span class="badge bg-transparent text-muted fw-normal" style="font-size: 0.9em;">Current position: Senior Data Scientist -- Boston Consulting Group (BCG)</span>
+</div>
+</li>
+<!-- Alumni 2 -->
+<li class="list-group-item d-flex justify-content-between align-items-center">
+<div>
+<h5 class="mb-0 text-nowrap">Rodrigo Abadia-Heredia</h5>
+<small class="text-muted">PhD Candidate (2020 &ndash; 2025)</small>
+</div>
+<div class="text-end ps-3">
+<span class="badge bg-transparent text-muted fw-normal" style="font-size: 0.9em;">urrent position: AI R&D Engineer -- Openchip & Software Technologies</span>
+</div>
+</li>
+      
+<!-- Alumni 3 -->
+
+
+
+</ul>
+</div>
+</div>
+
+

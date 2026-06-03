@@ -1,6 +1,10 @@
 ---
 layout: page
-title: Combustion
+category: "CFD & High-Fidelity Simulations"
+topic: "Combustion"
+thumbnail: "assets/img/JHC_burner_geometry.jpg"
+tldr: "LES and predictive hybrid ROMs based on POD combined with deep learning architectures for turbulent jet flames."
+title: Combustion [Placeholder name]
 subtitle: Our studies focused on combustion
 ---
 
