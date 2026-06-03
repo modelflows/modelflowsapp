@@ -18,6 +18,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
       <a href="https://sites.google.com/view/soledadleclainche/" title="Website" target="_blank"><i class="fas fa-globe fa-lg" style="color: #333;"></i></a>
       <!-- Replace # with actual links -->
       <a href="https://scholar.google.com/citations?user=o8RuA0sAAAAJ&hl=en" title="Google Scholar" target="_blank"><img src="{{ '/assets/img/logos/scholar.svg' | relative_url }}" alt="Google Scholar" style="width: 24px;"></a>
+      <a href="https://linkedin.com/in/francisco-giral" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
     </div>
   </div>
 </div>
