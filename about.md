@@ -93,6 +93,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
     <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
       <a href="https://www.linkedin.com/in/ángel-alonso-escalante-51a718266" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
       <a href="https://github.com/angelaloon" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+    </div>
   </div>
 
   <!-- Mikel Navarro Huarte -->
@@ -103,6 +104,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
     <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
       <a href="https://www.linkedin.com/in/mikel-navarro-huarte-4694252a7" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
       <a href="https://github.com/mikelnavarrohuarte" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+    </div>
   </div>
 
 
