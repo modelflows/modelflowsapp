@@ -50,7 +50,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
   </div>
 
 
-  <!-- Member Structure -->
+  <!-- Issaco Faglioni -->
   <div class="col-md-4 mb-5">
     <img src="{{ '/assets/img/team/issaco.jpeg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Isacco Faglioni">
     <h4>Isacco Faglioni</h4>
@@ -71,7 +71,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
   </div>
 
 
-  <!-- Member Structure -->
+  <!-- Alvaro Manzano -->
   <div class="col-md-4 mb-5">
     <img src="{{ '/assets/img/team/alvaro_manzano.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Alvaro Manzano">
     <h4>Alvaro Manzano</h4>
@@ -82,6 +82,17 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
     </div>
   </div>
 
+
+<!-- Guillermo Barragan -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/guillermo_barragan.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Guillermo Barragán">
+    <h4>Guillermo Barragán</h4>
+    <p class="text-muted">PhD Candidate</p>
+    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
+      <a href="https://linkedin.com/in/guillermo-barragàn-a5706734a/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+      <a href="https://github.com/guillermobarraganm1-dotcom" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+    </div>
+  </div>
 
 
 
@@ -97,7 +108,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 
 ## Alumni
 
-<!-- Alumni 1 -->
+<!-- Alumni Ashton Ian Hetherington -->
 <div class="row mt-4 mb-5">
 <div class="col-md-10 offset-md-1">
 <ul class="list-group list-group-flush">
@@ -110,7 +121,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 <span class="badge bg-transparent text-muted fw-normal" style="font-size: 0.9em;">Current position: Senior Data Scientist -- Boston Consulting Group (BCG)</span>
 </div>
 </li>
-<!-- Alumni 2 -->
+<!-- Alumni Rodrigo Abadia-Heredia -->
 <li class="list-group-item d-flex justify-content-between align-items-center">
 <div>
 <h5 class="mb-0 text-nowrap">Rodrigo Abadia-Heredia</h5>
@@ -118,6 +129,33 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 </div>
 <div class="text-end ps-3">
 <span class="badge bg-transparent text-muted fw-normal" style="font-size: 0.9em;">Current position: AI R&D Engineer -- Openchip & Software Technologies</span>
+</div>
+</li>
+<!-- Alumni Eneko Lazpita -->
+<div class="row mt-4 mb-5">
+<div class="col-md-10 offset-md-1">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex justify-content-between align-items-center">
+<div>
+<h5 class="mb-0 text-nowrap">Eneko Lazpita</h5>
+<small class="text-muted">PhD Candidate (2022 &ndash; 2025)</small>
+</div>
+<div class="text-end ps-3">
+<span class="badge bg-transparent text-muted fw-normal" style="font-size: 0.9em;">Current position: Project Engineer -- Arup</span>
+</div>
+</li>
+<!-- Alumni Adrian Corrochano -->
+<div class="row mt-4 mb-5">
+<div class="col-md-10 offset-md-1">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex justify-content-between align-items-center">
+<div>
+<h5 class="mb-0 text-nowrap">Adrián Corrochano</h5>
+<small class="text-muted">PhD Candidate (2020 &ndash; 2025)</small>
+  <small class="text-muted">Post-doctoral Researcher (2025)</small>
+</div>
+<div class="text-end ps-3">
+<span class="badge bg-transparent text-muted fw-normal" style="font-size: 0.9em;">Current position: Project Engineer -- Innomerics</span>
 </div>
 </li>
       
