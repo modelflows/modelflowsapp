@@ -131,32 +131,20 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 <span class="badge bg-transparent text-muted fw-normal" style="font-size: 0.9em;">Current position: AI R&D Engineer -- Openchip & Software Technologies</span>
 </div>
 </li>
+      
 <!-- Alumni Eneko Lazpita -->
+<div class="row mt-4 mb-5">
+<div class="col-md-10 offset-md-1">
+<ul class="list-group list-group-flush">
 <li class="list-group-item d-flex justify-content-between align-items-center">
 <div>
-<h5 class="mb-0 text-nowrap">Eneko Lazpita</h5>
+<h5 class="mb-0 text-nowrap">Ashton Ian Hetherington</h5>
 <small class="text-muted">PhD Candidate (2022 &ndash; 2025)</small>
 </div>
 <div class="text-end ps-3">
 <span class="badge bg-transparent text-muted fw-normal" style="font-size: 0.9em;">Current position: CFD Engineer -- Arup</span>
 </div>
 </li>
-<!-- Alumni Adrian Corrochano -->
-<div class="row mt-4 mb-5">
-<div class="col-md-10 offset-md-1">
-<ul class="list-group list-group-flush">
-<li class="list-group-item d-flex justify-content-between align-items-center">
-<div>
-<h5 class="mb-0 text-nowrap">Adrián Corrochano</h5>
-<small class="text-muted">PhD Candidate (2020 &ndash; 2025)</small>
-</div>
-<div class="text-end ps-3">
-<span class="badge bg-transparent text-muted fw-normal" style="font-size: 0.9em;">Current position: Project Engineer -- Innomerics</span>
-</div>
-</li>
-      
-<!-- Alumni 3 -->
-
 
 </ul>
 </div>
