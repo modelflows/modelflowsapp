@@ -206,9 +206,24 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
     </div>
   </div>
 
+  <!-- Pablo López Salazar -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/wentai_deng.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Pablo López Salazar">
+    <h4>Pablo López Salazar</h4>
+    <p class="text-muted">PhD Candidate</p>
+    </div>
+  </div>
 
-
-
+  <!-- Mikel Navarro -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/mikel_navarro.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Mikel Navarro">
+    <h4>Mikel Navarro</h4>
+    <p class="text-muted">MSc student</p>
+    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
+      <a href="https://www.linkedin.com/in/mikel-navarro-huarte-4694252a7/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+      <a href="https://github.com/mikelnavarrohuarte" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+    </div>
+  </div>
 
 
 
