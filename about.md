@@ -235,7 +235,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 
   <!-- Ander Sánchez -->
   <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/mikel_navarro.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Ander Sánchez">
+    <img src="{{ '/assets/img/team/ander_sanchez.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Ander Sánchez">
     <h4>Ander Sánchez</h4>
     <p class="text-muted">MSc student</p>
     <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
@@ -246,7 +246,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 
   <!-- Carlos Sainz -->
   <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/mikel_navarro.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Carlos Sainz">
+    <img src="{{ '/assets/img/team/carlos_sainz.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Carlos Sainz">
     <h4>Carlos Sainz</h4>
     <p class="text-muted">MSc student</p>
     <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
