@@ -147,7 +147,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 
 <!-- Christian Amor -->
   <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/christian_amor.png' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Christian Amor">
+    <img src="{{ '/assets/img/team/christian_amor.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Christian Amor">
     <h4>Christian Amor</h4>
     <p class="text-muted">PhD Candidate</p>
     <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
