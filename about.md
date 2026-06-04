@@ -177,21 +177,10 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
     </div>
   </div>
 
-  <!-- Miguel Ríos -->
-  <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/miguel_rios.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Miguel Ríos">
-    <h4>Miguel Ríos</h4>
-    <p class="text-muted">PhD Candidate</p>
-    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
-      <a href="https://www.linkedin.com/in/miguel-rios-perez/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
-      <a href="https://github.com/magalrp" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
-    </div>
-  </div>
-
   
   <!-- Han Chen -->
   <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/miguel_rios.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Han Chen">
+    <img src="{{ '/assets/img/team/han_chen.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Han Chen">
     <h4>Han Chen</h4>
     <p class="text-muted">PhD Candidate</p>
     </div>
@@ -200,11 +189,29 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 
   <!-- Jiannan Li -->
   <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/miguel_rios.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Jiannan Li">
+    <img src="{{ '/assets/img/team/jiannan_li.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Jiannan Li">
     <h4>Jiannan Li</h4>
     <p class="text-muted">PhD Candidate</p>
     </div>
   </div>
+
+  <!-- Wentai Deng -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/wentai_deng.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Wentai Deng">
+    <h4>Wentai Deng</h4>
+    <p class="text-muted">PhD Candidate</p>
+    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
+      <a href="https://www.linkedin.com/in/paul-jeanney-9a0b7a180/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+      <a href="https://github.com/pauljeanney" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+    </div>
+  </div>
+
+
+
+
+
+
+
   
 
 </div>
