@@ -187,6 +187,15 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
       <a href="https://github.com/magalrp" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
     </div>
   </div>
+
+  
+  <!-- Han Chen -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/miguel_rios.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Han Chen">
+    <h4>Han Chen</h4>
+    <p class="text-muted">PhD Candidate</p>
+    </div>
+  </div>
   
 
 </div>
