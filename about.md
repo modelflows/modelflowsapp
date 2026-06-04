@@ -208,8 +208,16 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 
   <!-- Pablo López Salazar -->
   <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/wentai_deng.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Pablo López Salazar">
+    <img src="{{ '/assets/img/team/pablo_lopez_salazar.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Pablo López Salazar">
     <h4>Pablo López Salazar</h4>
+    <p class="text-muted">PhD Candidate</p>
+    </div>
+  </div>
+
+  <!-- Iñaki Gutierrez -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/iñaki_gutierrez.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Iñaki Gutierrez">
+    <h4>Iñaki Gutierrez</h4>
     <p class="text-muted">PhD Candidate</p>
     </div>
   </div>
