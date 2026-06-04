@@ -109,7 +109,7 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 
 <!-- Alberto Rodríguez -->
   <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/angel_escalante.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Alberto Rodríguez">
+    <img src="{{ '/assets/img/team/alberto_rodriguez.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Alberto Rodríguez">
     <h4>Alberto Rodríguez</h4>
     <p class="text-muted">PhD Candidate</p>
     <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
@@ -119,7 +119,28 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
   </div>
 
 
+<!-- Andrés Bell -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/andres_bell.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Andrés Bell">
+    <h4>Andrés Bell</h4>
+    <p class="text-muted">Assistan Professor</p>
+    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
+      <a href="https://linkedin.com/in/alberto-rodfer/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+      <a href="https://github.com/albertorodfer" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+    </div>
+  </div>
 
+<!-- Arindam Sengupta -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/arindam_sengupta.png' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Arindam Sengupta">
+    <h4>Arindam Sengupta</h4>
+    <p class="text-muted">Assistan Professor</p>
+    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
+      <a href="https://linkedin.com/in/arindam-sengupta/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+      <a href="https://github.com/Arindam032192" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+    </div>
+  </div>
+  
 
 </div>
 
