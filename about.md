@@ -160,8 +160,8 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
     <h4>Isacco Faglioni</h4>
     <p class="text-muted">PhD Candidate</p>
     <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
-      <a href="https://github.com/Isi2000" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
-      <a href="https://github.com/fgiral000" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+      <a href="https://www.linkedin.com/in/isacco-faglioni-89355529b/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+      <a href="https://github.com/Isi2000" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
     </div>
   </div>
 
