@@ -25,19 +25,6 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 ## Group Members
 
 <div class="row text-center mt-4">
-  
-  <!-- Francisco Giral -->
-  <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/francisco_giral.png' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Francisco Giral">
-    <h4>Francisco Giral</h4>
-    <p class="text-muted">PhD Candidate</p>
-    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
-      <a href="https://linkedin.com/in/francisco-giral" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
-      <a href="https://github.com/fgiral000" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
-      <a href="https://scholar.google.com/citations?user=AmMITbwAAAAJ&hl=en" title="Google Scholar" target="_blank"><img src="{{ '/assets/img/logos/scholar.svg' | relative_url }}" alt="Google Scholar" style="width: 20px;"></a>
-    </div>
-  </div>
-
 
 
   <!-- Andrés Bell -->
@@ -62,6 +49,19 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
       <a href="https://github.com/Ray-Zou-eng" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
     </div>
   </div>
+  
+  <!-- Francisco Giral -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/francisco_giral.png' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Francisco Giral">
+    <h4>Francisco Giral</h4>
+    <p class="text-muted">PhD Candidate</p>
+    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
+      <a href="https://linkedin.com/in/francisco-giral" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+      <a href="https://github.com/fgiral000" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+      <a href="https://scholar.google.com/citations?user=AmMITbwAAAAJ&hl=en" title="Google Scholar" target="_blank"><img src="{{ '/assets/img/logos/scholar.svg' | relative_url }}" alt="Google Scholar" style="width: 20px;"></a>
+    </div>
+  </div>
+
 
   <!-- Zhuoqun Zhao -->
   <div class="col-md-4 mb-5">
