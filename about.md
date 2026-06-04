@@ -315,6 +315,21 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
           <span class="badge bg-transparent text-muted fw-normal" style="font-size: 0.9em;">Current position: Project Engineer -- Innomerics</span>
         </div>
       </li>
+
+
+       <!-- SEPARATION Nourelhouda Groun -->
+      
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div>
+          <h5 class="mb-0 text-nowrap">Nourelhouda Groun</h5>
+          <small class="text-muted">Postdoctoral Researcher (2023)</small>
+        </div>
+        <div class="text-end ps-3">
+          <span class="badge bg-transparent text-muted fw-normal" style="font-size: 0.9em;">Current position: Associate Professor -- University Mohamed Khider Biskra</span>
+        </div>
+      </li>
+
+
        
        <!-- SEPARATION Mahesh Nagargoje -->
       
