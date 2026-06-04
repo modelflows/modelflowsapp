@@ -61,40 +61,15 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
       <a href="https://scholar.google.com/citations?user=AmMITbwAAAAJ&hl=en" title="Google Scholar" target="_blank"><img src="{{ '/assets/img/logos/scholar.svg' | relative_url }}" alt="Google Scholar" style="width: 20px;"></a>
     </div>
   </div>
-
-
-  <!-- Zhuoqun Zhao -->
-  <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/Zhuoqun_Zhao.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Zhuoqun Zhao">
-    <h4>Zhuoqun Zhao</h4>
-    <p class="text-muted">PhD Candidate</p>
-    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
-      <a href="https://www.linkedin.com/in/zhuoqun-zhao-4075b2316/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
-      <a href="https://github.com/zhuoqun" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
-    </div>
-  </div>
-
-
-  <!-- Issaco Faglioni -->
-  <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/issaco.jpeg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Isacco Faglioni">
-    <h4>Isacco Faglioni</h4>
-    <p class="text-muted">PhD Candidate</p>
-    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
-      <a href="https://github.com/Isi2000" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
-      <a href="https://github.com/fgiral000" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
-    </div>
-  </div>
  
-
-  <!-- Alvaro Manzano -->
+  <!-- Arindam Sengupta -->
   <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/alvaro_manzano.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Alvaro Manzano">
-    <h4>Alvaro Manzano</h4>
+    <img src="{{ '/assets/img/team/arindam_sengupta.png' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Arindam Sengupta">
+    <h4>Arindam Sengupta</h4>
     <p class="text-muted">PhD Candidate</p>
     <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
-      <a href="https://www.linkedin.com/in/alvaro-manzano-sevillano" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
-      <a href="https://github.com/AlvaroManzano" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+      <a href="https://linkedin.com/in/arindam-sengupta/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+      <a href="https://github.com/Arindam032192" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
     </div>
   </div>
 
@@ -110,7 +85,18 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
     </div>
   </div>
 
-<!-- Álvaro Río -->
+  <!-- Alvaro Manzano -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/alvaro_manzano.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Alvaro Manzano">
+    <h4>Alvaro Manzano</h4>
+    <p class="text-muted">PhD Candidate</p>
+    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
+      <a href="https://www.linkedin.com/in/alvaro-manzano-sevillano" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+      <a href="https://github.com/AlvaroManzano" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+    </div>
+  </div>
+
+  <!-- Álvaro Río -->
   <div class="col-md-4 mb-5">
     <img src="{{ '/assets/img/team/alvaro_rio.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Álvaro Río">
     <h4>Álvaro Río</h4>
@@ -144,17 +130,6 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
   </div>
 
 
-<!-- Arindam Sengupta -->
-  <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/arindam_sengupta.png' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Arindam Sengupta">
-    <h4>Arindam Sengupta</h4>
-    <p class="text-muted">PhD Candidate</p>
-    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
-      <a href="https://linkedin.com/in/arindam-sengupta/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
-      <a href="https://github.com/Arindam032192" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
-    </div>
-  </div>
-
 
 <!-- Christian Amor -->
   <div class="col-md-4 mb-5">
@@ -163,6 +138,30 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
     <p class="text-muted">PhD Candidate</p>
     <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
       <a href="https://linkedin.com/in/christian-amor/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+    </div>
+  </div>
+
+  
+  <!-- Zhuoqun Zhao -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/Zhuoqun_Zhao.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Zhuoqun Zhao">
+    <h4>Zhuoqun Zhao</h4>
+    <p class="text-muted">PhD Candidate</p>
+    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
+      <a href="https://www.linkedin.com/in/zhuoqun-zhao-4075b2316/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+      <a href="https://github.com/zhuoqun" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+    </div>
+  </div>
+
+
+  <!-- Issaco Faglioni -->
+  <div class="col-md-4 mb-5">
+    <img src="{{ '/assets/img/team/issaco.jpeg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Isacco Faglioni">
+    <h4>Isacco Faglioni</h4>
+    <p class="text-muted">PhD Candidate</p>
+    <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
+      <a href="https://github.com/Isi2000" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+      <a href="https://github.com/fgiral000" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
     </div>
   </div>
 
