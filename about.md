@@ -195,8 +195,8 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
     <h4>Wentai Deng</h4>
     <p class="text-muted">PhD Candidate</p>
     <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
-      <a href="https://www.linkedin.com/in/paul-jeanney-9a0b7a180/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
-      <a href="https://github.com/pauljeanney" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+      <a href="https://www.linkedin.com/in/wentai-deng-a08032414/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
+      <a href="https://github.com/Wentai926" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
     </div>
   </div>
 
