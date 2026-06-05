@@ -185,7 +185,9 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
     <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
       <a href="https://www.linkedin.com/in/jiannan-li-8b1829413/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
       <a href="https://github.com/jiannanli248" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
+    </div>
   </div>
+
 
   <!-- Wentai Deng -->
   <div class="col-md-4 mb-5">
