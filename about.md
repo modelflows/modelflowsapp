@@ -41,9 +41,9 @@ ModelFLOWs is a research group led by Full Professor [Soledad Le Clainche](https
 
   <!-- Xiangrui Zou -->
   <div class="col-md-4 mb-5">
-    <img src="{{ '/assets/img/team/Xiangrui_Zou.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Andrés Bell">
-    <h4>Andrés Bell</h4>
-    <p class="text-muted">Assistant Professor</p>
+    <img src="{{ '/assets/img/team/Xiangrui_Zou.jpg' | relative_url }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #eee;" alt="Xiangrui Zou">
+    <h4>Xiangrui Zou</h4>
+    <p class="text-muted">MSCA Postdoctoral Researcher</p>
     <div class="d-flex justify-content-center align-items-center mt-2" style="gap: 12px;">
       <a href="https://linkedin.com/in/ray-zou-353019306/" title="LinkedIn" target="_blank"><img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="LinkedIn" style="width: 20px;"></a>
       <a href="https://github.com/Ray-Zou-eng" title="GitHub" target="_blank"><img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="GitHub" style="width: 20px;"></a>
