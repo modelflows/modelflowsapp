@@ -6,6 +6,22 @@ subtitle: Step-by-step guides for CFD, AI/data-driven models, simulations and po
 
 Welcome to the ModelFLOWs Tutorials Hub.
 
+This section contains all tutorials developed within ModelFLOWs.
+
+Tutorials may be:
+
+- Short self-contained tutorials hosted directly on this website.
+- Extended tutorials linked to external repositories or Sphinx documentation.
+- CFD workflows.
+- AI & Data-Driven workflows.
+- Post-processing and analysis guides.
+
+Each tutorial should specify:
+- Application area.
+- Category.
+- Author(s).
+- Related notebooks, videos, datasets, and repositories.
+
 {% assign tutorials = site.tutorials | sort: "application" %}
 
 <div class="row mt-4">
