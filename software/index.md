@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Software
-subtitle: Open-source tools, interactive notebooks, and databases
+subtitle: Open-source tools, interactive notebooks, application workflows, and databases
 ---
 
 Welcome to the ModelFLOWs Software Hub. This is the main umbrella for all our open science engineering tools, models, and datasets.
@@ -33,6 +33,18 @@ Welcome to the ModelFLOWs Software Hub. This is the main umbrella for all our op
     </div>
   </div>
 
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body text-center">
+        <h3 class="card-title"><i class="fas fa-project-diagram"></i> Applications</h3>
+        <p class="card-text text-muted">End-to-end workflows combining CFD, high-fidelity simulations, reduced-order modelling, AI/data-driven methods, tutorials, videos and application resources.</p>
+        <hr>
+        <a href="{{ '/software/applications' | relative_url }}" class="btn btn-primary d-block">Browse Applications</a>
+      </div>
+    </div>
+  </div>
+
   <div class="col-md-4 mb-4">
     <div class="card h-100 shadow-sm">
       <div class="card-body text-center">
@@ -44,3 +56,4 @@ Welcome to the ModelFLOWs Software Hub. This is the main umbrella for all our op
     </div>
   </div>
 </div>
+
