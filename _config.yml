@@ -309,3 +309,8 @@ collections:
   databases:
     output: true
     permalink: /software/databases/:slug/
+  applications:
+    output: true
+    permalink: /software/applications/:slug/
+
+
