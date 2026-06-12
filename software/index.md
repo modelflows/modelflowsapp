@@ -7,7 +7,7 @@ subtitle: Open-source tools, interactive notebooks, application workflows, and d
 Welcome to the ModelFLOWs Software Hub. This is the main umbrella for all our open science engineering tools, models, and datasets.
 
 <div class="row mt-4">
-  <div class="col-md-3 mb-4">
+  <div class="col-md-4 mb-4">
     <div class="card h-100 shadow-sm">
       <div class="card-body text-center">
         <h3 class="card-title"><i class="fas fa-download"></i> ModelFLOWs-app</h3>
@@ -22,7 +22,7 @@ Welcome to the ModelFLOWs Software Hub. This is the main umbrella for all our op
     </div>
   </div>
 
-  <div class="col-md-3 mb-4">
+  <div class="col-md-4 mb-4">
     <div class="card h-100 shadow-sm">
       <div class="card-body text-center">
         <h3 class="card-title"><i class="fas fa-laptop-code"></i> Notebooks</h3>
@@ -34,7 +34,7 @@ Welcome to the ModelFLOWs Software Hub. This is the main umbrella for all our op
   </div>
 
 
-  <div class="col-md-3 mb-4">
+  <div class="col-md-4 mb-4">
     <div class="card h-100 shadow-sm">
       <div class="card-body text-center">
         <h3 class="card-title"><i class="fas fa-project-diagram"></i> Applications</h3>
@@ -45,7 +45,7 @@ Welcome to the ModelFLOWs Software Hub. This is the main umbrella for all our op
     </div>
   </div>
 
-  <div class="col-md-3 mb-4">
+  <div class="col-md-4 mb-4">
     <div class="card h-100 shadow-sm">
       <div class="card-body text-center">
         <h3 class="card-title"><i class="fas fa-database"></i> Databases</h3>
