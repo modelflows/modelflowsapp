@@ -19,8 +19,11 @@ Add here POD, DMD, HODMD, ROMs, machine learning, deep learning, prediction, rec
 
 # Tutorials
 
-- Tutorial 1:
+# AI & Data-Driven Models 
+- [Urban Sensors 3D Reconstruction]({{ "/software/tutorials/urban-sensors3drec/" | relative_url }})
 - Tutorial 2:
+# CFD & High-Fidelity Simulations
+-Tutorial 1:
 
 # Notebooks
 
