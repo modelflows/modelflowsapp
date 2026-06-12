@@ -312,5 +312,14 @@ collections:
   applications:
     output: true
     permalink: /software/applications/:slug/
+  tutorials:
+    output: true
+    permalink: /software/tutorials/:slug/
+  videos:
+    output: true
+    permalink: /software/videos/:slug/
+  resources:
+    output: true
+    permalink: /software/resources/:slug/
 
 
