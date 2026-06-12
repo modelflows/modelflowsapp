@@ -13,17 +13,18 @@ Briefly describe the application, motivation, physical problem, available data, 
 
 Add here geometry generation, meshing, boundary conditions, solver setup, OpenFOAM cases, post-processing workflows, and high-fidelity simulations.
 
+## Tutorials
+- [Urban CFD Workflow (Sphinx Tutorial)]({{ "/software/tutorials/urban-cfd/" | relative_url }})
+- Tutorial 2:
+
 # AI & Data-Driven Models
 
 Add here POD, DMD, HODMD, ROMs, machine learning, deep learning, prediction, reconstruction, classification, or data assimilation workflows.
 
-# Tutorials
-
-# AI & Data-Driven Models 
+## Tutorials
 - [Urban Sensors 3D Reconstruction]({{ "/software/tutorials/urban-sensors3drec/" | relative_url }})
 - Tutorial 2:
-# CFD & High-Fidelity Simulations
--Tutorial 1:
+
 
 # Notebooks
 
