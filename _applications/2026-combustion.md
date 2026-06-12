@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "Combustion"
-area: "Reactive Flow Modelling"
-tldr: "CFD simulations, combustion diagnostics, reduced-order modelling and AI-assisted analysis of reactive flows."
+area: "Combustion and Reactive Flow Modelling"
+tldr: "High-fidelity simulations, reduced-order models and data-driven approaches for combustion systems."
 ---
 
 # Overview
