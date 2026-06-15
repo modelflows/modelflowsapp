@@ -75,6 +75,28 @@ Please follow the contribution guidelines provided during the workshop.
 
 ---
 
+## Team
+
+### Principal Investigator
+
+**Soledad Le Clainche**
+
+Project Lead and Scientific Coordinator
+
+Website: [soledadleclainche.com](https://sites.google.com/view/soledadleclainche/)
+
+### Contributors
+
+The ModelFLOWs platform is developed and maintained through contributions from researchers, PhD students, collaborators, and alumni.
+
+For the current team and contributor information, please visit:
+
+https://modelflows.github.io/modelflowsapp/about/
+
+Individual tutorials, workflows, notebooks, and software repositories include detailed authorship and contributor information.
+
+---
+
 ## Mission
 
 ModelFLOWs is an open-science initiative focused on developing advanced modelling, simulation, reduced-order modelling, and data-driven methodologies for engineering and biomedical applications.
