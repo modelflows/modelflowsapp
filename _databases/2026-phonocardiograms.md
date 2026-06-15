@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Madrid Aerobiological Concentration Dataset 2026"
-type: "Experimental / Urban"
-tldr: "Timeseries and spatial distribution of pollen and pollutants in Vallecas."
+title: "PhysioNet - Phonocardiogram Dataset 2026"
+type: "Experimental / Cardiac"
+tldr: "A public dataset of phonocardiograms in .wav format"
 ---
 
 ## Database Overview
