@@ -23,7 +23,7 @@ Welcome to the ModelFLOWs Applications Hub. Each application collects CFD workfl
       <div class="card-body text-center">
         <h3 class="card-title">Combustion</h3>
         <p class="card-text text-muted">Reactive flows, CFD simulations, reduced-order models, and AI-based analysis.</p>
-        <a href="{{ '../_applications/2026-combustion' | relative_url }}" class="btn btn-primary d-block">Open Combustion</a>
+        <a href="{{ '/software/applications/2026-combustion' | relative_url }}" class="btn btn-primary d-block">Open Combustion</a>
       </div>
     </div>
   </div>
