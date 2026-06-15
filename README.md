@@ -19,6 +19,7 @@ The ModelFLOWs website provides open-source software, tutorials, workflows, note
 * Biomedical Applications
 * Combustion
 * Urban Flows and Air Pollution
+* Aerospace Engineering
 
 ---
 
@@ -45,6 +46,7 @@ Application-oriented workflows and tutorials, including:
 * Combustion
 * Cardiac Pathology
 * Air Pollution
+* Fluid Dynamics and Aerospace Engineering
 
 Each application provides access to:
 
