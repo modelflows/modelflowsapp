@@ -17,7 +17,7 @@ This page links to the Sphinx tutorial for reconstructing urban geometries from 
 
 The full tutorial is available in the Sphinx repository:
 
-- Repository:
+- Repository: https://github.com/modelflows/urban-cfd-workflow
 - TUTORIAL.md:
 - Documentation page:
 
