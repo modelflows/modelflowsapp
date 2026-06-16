@@ -1,1 +1,85 @@
+# AIJ Case C — Urban CFD Workflow
 
+## Overview
+
+This tutorial walks you through a complete CFD simulation of the **AIJ Case C** benchmark — a standard test case published by the Architectural Institute of Japan (AIJ) for validating pedestrian-level wind simulations around buildings.
+
+**What is AIJ Case C?**
+
+AIJ Case C represents a 3×3 array of low-rise buildings with a taller building at the center. It is widely used in the CFD community as a benchmark because wind tunnel experimental data is publicly available, making it possible to check how well a simulation reproduces real flow behaviour.
+
+<!-- IMAGE: schematic top-view diagram of the 3×3 building array, showing the taller
+     central building and labelling H (central height), h (surrounding height), W (street width) -->
+
+**What you will learn:**
+
+- How to build a simple urban geometry in Blender and export it for CFD
+- How to set up a RANS simulation in OpenFOAM 12 with realistic wind inlet conditions
+- How to visualise and interpret the results in ParaView
+
+**Tools required:**
+
+| Tool | Purpose | Version |
+|------|---------|---------|
+| [Blender](https://www.blender.org/) | Geometry generation | 3.x or later |
+| [OpenFOAM](https://openfoam.org/) | CFD solver | 12 |
+| [ParaView](https://www.paraview.org/) | Post-processing | 5.x or later |
+
+---
+
+## Workflow
+
+The simulation follows five steps in sequence:
+
+<!-- IMAGE: horizontal workflow diagram with five boxes connected by arrows:
+     1. Geometry (Blender) → 2. Mesh (blockMesh + snappyHexMesh) →
+     3. Boundary Conditions → 4. Solver (foamRun) → 5. Post-processing (ParaView) -->
+
+---
+
+## Step 1 — Geometry Generation
+
+**What this step does:** We build the 3×3 building array in Blender and export it as an STL file, which OpenFOAM will use to cut the buildings out of the computational mesh.
+
+### Building layout
+
+The AIJ Case C geometry uses a uniform grid of buildings. All dimensions are defined relative to the height of the surrounding buildings **h**:
+
+| Element | Dimension |
+|---------|-----------|
+| Surrounding buildings (8×) | Height = h, Footprint = h × h |
+| Central building | Height = 2h |
+| Street width between buildings | W = h |
+
+> In the wind tunnel experiment, h = 0.04 m (model scale). You can use these exact values in Blender.
+
+### Building the geometry in Blender
+
+1. Open Blender. Delete the default cube: press `X` → **Delete**
+
+2. Add the first building: `Shift+A → Mesh → Cube`
+
+3. In the **Item** panel (press `N` to open), set the dimensions to `0.04 m × 0.04 m × 0.04 m`
+
+4. To create the full 3×3 grid efficiently, use the **Array Modifier**:
+   - Select the building
+   - Go to **Properties → Modifier → Add Modifier → Array**
+   - Set **Count = 3**, **Relative Offset X = 2.0** (this spaces buildings 1 building-width apart)
+   - Apply the modifier, then add a second Array modifier for the Y direction with the same settings
+
+5. Add the central building separately: `Shift+A → Mesh → Cube`, set dimensions to `0.04 m × 0.04 m × 0.08 m`, and position it at the center of the grid
+
+<!-- IMAGE: Blender viewport showing the completed 3×3 array from an isometric view,
+     with the taller central building clearly visible -->
+
+6. Select all objects: `A`
+
+7. Export as STL: **File → Export → Stl (.stl)**
+   - Enable **Selection Only**
+   - Enable **Apply Modifiers**
+   - Set **Scale = 1.0**
+   - Save as `buildings.stl`
+
+<!-- IMAGE: Blender STL export dialog with the correct settings highlighted -->
+
+8. Place the exported file in your OpenFOAM case directory:
