@@ -53,7 +53,7 @@ Case C represents a **3×3 array of cubic buildings** with a variable-height bui
 | Case 1H | Same height as surrounding buildings |
 | Case 2H | Twice the height of surrounding buildings |
 
-![vel_plot](https://github.com/modelflows/modelflowsapp/assets/img/tutorial-aij/1.png?raw=true)
+![AIJ Case C](https://github.com/modelflows/modelflowsapp/tree/software/Apps/Urban/assets/img/tutorial-aij/1.png?raw=true)
 
 Wind tunnel measurements of pedestrian-level wind speed are available for **9 scenarios**: 3 configurations × 3 wind directions (0°, 22.5°, 45°). Measurement points are located at z = 0.1D above the ground — the standard pedestrian reference height used in wind comfort assessments.
 
