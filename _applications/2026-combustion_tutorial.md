@@ -38,26 +38,26 @@ The reference case is the DLR turbulent non-premixed jet flame. The burner consi
 
 The fuel composition is given in volumetric fractions as
 
-\[
+$$
 X_{\mathrm{CH_4}}=0.221,\qquad
 X_{\mathrm{H_2}}=0.332,\qquad
 X_{\mathrm{N_2}}=0.447.
-\]
+$$
 
 OpenFOAM species fields are prescribed as mass fractions. After conversion, the fuel-inlet mass fractions are
 
-\[
+$$
 Y_{\mathrm{CH_4}}=0.2118,\qquad
 Y_{\mathrm{H_2}}=0.0400,\qquad
 Y_{\mathrm{N_2}}=0.7482.
-\]
+$$
 
 The coflow and ambient streams are treated as dry air:
 
-\[
+$$
 Y_{\mathrm{O_2}}=0.233,\qquad
 Y_{\mathrm{N_2}}=0.767.
-\]
+$$
 
 The fuel and air streams are initialized at 292 K and atmospheric pressure.
 
@@ -498,9 +498,9 @@ For open boundaries such as `outlet` and `leftside`, the scalar fields use `inle
 
 The turbulent kinetic energy is estimated from the turbulence intensity `I`:
 
-\[
+$$
 k=\frac{3}{2}(I U)^2.
-\]
+$$
 
 The dissipation rate is estimated using a mixing length `l`, which is typically defined as `l = 0.07 Lc`, where `Lc` is the characteristic length of the corresponding inlet region.
 
@@ -583,9 +583,9 @@ RAS
 
 The turbulent viscosity is computed from the turbulent kinetic energy and dissipation rate:
 
-\[
+$$
 \mu_t=\rho C_\mu\frac{k^2}{\varepsilon}.
-\]
+$$
 
 In this tutorial case, the model coefficient `C1` is set to 1.6 instead of the default value 1.44. This empirical adjustment is used to improve the predicted jet spreading and flame development for the present RANS calculation.
 
