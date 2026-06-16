@@ -13,7 +13,13 @@ As industrialisation and urbanisation continue to advance, energy consumption—
 
 ## Study Area
 The selection of 280 prefecture-level cities in China as the research subjects was primarily based on the following considerations. 
-![vel_plot](https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/2026-workshop-li-urban-1.jpg?raw=true)
+<p align="center">
+  <a href="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/2026-workshop-li-urban-1.jpg?raw=true">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/2026-workshop-li-urban-1.jpg?raw=true"
+         alt="vel_plot"
+         width="650">
+  </a>
+</p>
 
 ## Research Methodology
 
