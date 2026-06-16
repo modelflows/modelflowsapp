@@ -3,7 +3,7 @@ layout: post
 title: "From Sensors to 3D Reconstruction"
 category: "AI & Data-Driven Models"
 topic: "AI for Urban Flows"
-thumbnail: "/assets/img/urban-flows/reconstruction/methodology_scheme.png"
+thumbnail: "/assets/img/urban-flows/methodology_scheme.png"
 tldr: "Low-cost reconstruction of full 3D urban flow and pollutant fields from sparse sensor information using lcSVD and lcHOSVD."
 ---
 
@@ -32,7 +32,7 @@ Together, these methods provide a path from sparse sensors to full-field reconst
 The reconstruction workflow starts from a high-fidelity CFD dataset. The full 3D field is sampled at a reduced number of sensor locations, and these sparse measurements are used to build a low-cost reduced-order representation. The reconstructed solution is then recovered over the complete computational domain.
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/reconstruction/methodology_scheme.png' | relative_url }}" alt="Methodology for sparse-sensor 3D reconstruction" width="850"/>
+  <img src="{{ 'assets/img/urban-flows/methodology_scheme.png' | relative_url }}" alt="Methodology for sparse-sensor 3D reconstruction" width="850"/>
 </p>
 
 <p align="center">
@@ -61,16 +61,10 @@ The pipeline follows four main steps:
 
 The first method is based on singular value decomposition. The original 3D field is unfolded into a two-dimensional matrix, where the spatial information is arranged along one dimension and the variables or snapshots are arranged along the other.
 
-A reduced matrix is then built using only the selected sensor locations. The SVD of this sparse matrix is written as:
-
-\[
-\bar{V} = \bar{U}\bar{\Sigma}\bar{T}^{T},
-\]
-
-where \(\bar{U}\) contains the reduced spatial modes, \(\bar{\Sigma}\) contains the singular values, and \(\bar{T}\) contains the corresponding coefficients.
+A reduced matrix is then built using only the selected sensor locations. Singular value decomposition is applied to this reduced matrix to extract the dominant spatial patterns of the flow or pollutant field.
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/reconstruction/lcsvd_scheme.png' | relative_url }}" alt="Low-cost SVD reconstruction scheme" width="850"/>
+  <img src="{{ 'assets/img/urban-flows/lcsvd_scheme.png' | relative_url }}" alt="Low-cost SVD reconstruction scheme" width="850"/>
 </p>
 
 <p align="center">
@@ -97,21 +91,10 @@ Because of its low computational cost, lcSVD is useful for rapid reconstruction 
 
 The second method is based on higher-order singular value decomposition. Unlike lcSVD, the lcHOSVD approach keeps the natural tensor structure of the 3D field.
 
-Instead of unfolding the full domain into a single matrix, the decomposition is performed along the spatial directions separately. The reconstructed field is represented using directional modes in the \(x\), \(y\), and \(z\) directions, together with a compact core tensor.
-
-This can be written conceptually as:
-
-\[
-\mathcal{V} \approx \mathcal{S}
-\times_1 U_x
-\times_2 U_y
-\times_3 U_z,
-\]
-
-where \(U_x\), \(U_y\), and \(U_z\) are the spatial modes in each direction, and \(\mathcal{S}\) is the core tensor that stores the interaction between these modes.
+Instead of unfolding the full domain into a single matrix, the decomposition is performed along the spatial directions separately. The reconstructed field is represented using directional modes in the x, y, and z directions, together with a compact core tensor.
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/reconstruction/lchosvd_scheme.png' | relative_url }}" alt="Low-cost HOSVD reconstruction scheme" width="850"/>
+  <img src="{{ 'assets/img/urban-flows/lchosvd_scheme.png' | relative_url }}" alt="Low-cost HOSVD reconstruction scheme" width="850"/>
 </p>
 
 <p align="center">
@@ -137,7 +120,7 @@ Compared with lcSVD, lcHOSVD generally requires more computational work, but it 
 The sensor grid is selected to provide a reduced but representative sampling of the full domain. The number and distribution of sensors control the balance between cost and reconstruction accuracy.
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/reconstruction/sensors_distribution.png' | relative_url }}" alt="Sparse sensor distribution" width="850"/>
+  <img src="{{ 'assets/img/urban-flows/sensors_distribution.png' | relative_url }}" alt="Sparse sensor distribution" width="850"/>
 </p>
 
 <p align="center">
@@ -155,7 +138,7 @@ A denser sensor grid usually improves the reconstruction because more spatial in
 The reconstruction quality is assessed by comparing the original CFD field with the reconstructed solutions. The relative root mean square error is used to quantify the difference between the full-order solution and the low-cost approximation.
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/reconstruction/ground_truth_fields.png' | relative_url }}" alt="Ground truth CFD fields" width="850"/>
+  <img src="{{ 'assets/img/urban-flows/ground_truth_fields.png' | relative_url }}" alt="Ground truth CFD fields" width="850"/>
 </p>
 
 <p align="center">
@@ -165,7 +148,7 @@ The reconstruction quality is assessed by comparing the original CFD field with 
 </p>
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/reconstruction/reconstruction_comparison.png' | relative_url }}" alt="Comparison between CFD, lcSVD and lcHOSVD reconstructions" width="900"/>
+  <img src="{{ 'assets/img/urban-flows/reconstruction_comparison.png' | relative_url }}" alt="Comparison between CFD, lcSVD and lcHOSVD reconstructions" width="900"/>
 </p>
 
 <p align="center">
@@ -183,7 +166,7 @@ The comparison shows how the low-cost methods recover the main spatial distribut
 The accuracy and computational performance of the methods are compared using reconstruction error, execution time, and compression. This provides a direct way to evaluate the balance between cost and accuracy.
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/reconstruction/error_comparison.png' | relative_url }}" alt="RRMSE and computational cost comparison" width="850"/>
+  <img src="{{ 'assets/img/urban-flows/error_comparison.png' | relative_url }}" alt="RRMSE and computational cost comparison" width="850"/>
 </p>
 
 <p align="center">
@@ -192,7 +175,7 @@ The accuracy and computational performance of the methods are compared using rec
   </em>
 </p>
 
-In general, lcSVD is faster because it requires a single matrix decomposition. lcHOSVD is usually more accurate for complex three-dimensional fields because it preserves the spatial tensor structure and captures interactions between the \(x\), \(y\), and \(z\) directions.
+In general, lcSVD is faster because it requires a single matrix decomposition. lcHOSVD is usually more accurate for complex three-dimensional fields because it preserves the spatial tensor structure and captures interactions between the x, y, and z directions.
 
 ---
 
@@ -201,7 +184,7 @@ In general, lcSVD is faster because it requires a single matrix decomposition. l
 Beyond pointwise error, the reconstructed fields are also evaluated using flow-structure indicators. This helps assess whether the reduced reconstruction preserves coherent vortices, recirculation regions, and wake structures around buildings.
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/reconstruction/qcriterion_comparison.png' | relative_url }}" alt="Q-criterion comparison for original and reconstructed fields" width="900"/>
+  <img src="{{ 'assets/img/urban-flows/qcriterion_comparison.png' | relative_url }}" alt="Q-criterion comparison for original and reconstructed fields" width="900"/>
 </p>
 
 <p align="center">
