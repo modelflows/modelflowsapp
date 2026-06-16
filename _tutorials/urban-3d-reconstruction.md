@@ -19,10 +19,11 @@ The tutorial includes three reconstruction methods:
 
 lcSVD and lcHOSVD are mainly used for spatial 3D reconstruction. lcHODMD is used for dynamic reconstruction, where the objective is to recover time-resolved flow structures from reduced information.
 
-# Learning Objectives
+# Summary of Steps
 
 - Load and prepare 3D urban CFD data.
 - Select sparse sensor locations from the full computational domain.
+- Choose modes for both lcSVD and lcHOSVD.
 - Reconstruct full 3D fields using lcSVD.
 - Reconstruct full 3D fields using lcHOSVD.
 - Apply lcHODMD for dynamic reconstruction.
