@@ -27,6 +27,8 @@ The reference case is the DLR turbulent non-premixed jet flame. The burner consi
     <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/DLR_burner_Geometry.png?raw=true" alt="DLR burner geometry" width="70%">
 </p>
 
+![vel_plot](https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/2026-workshop-li-urban-1.jpg?raw=true)
+
 | Quantity | Description |
 |---|---|
 | Fuel stream | CH4/H2/N2 mixture |
