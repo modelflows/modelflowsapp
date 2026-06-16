@@ -1,7 +1,7 @@
 ---
 layout: page
 topic: "Data Assimilation"
-tldr: "Miscellaneous scripts and preprocessing algorithms."
+tldr: "Tools to combine experimental data with numerical models to refine predictions."
 title: Data Assimilation 
 subtitle: 
 ---
