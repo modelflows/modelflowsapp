@@ -1,43 +1,45 @@
 ---
 layout: post
-title: "Low-Cost Sensor Calibration for Air Pollution"
+title: "Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors"
 category: "AI & Data-Driven Models"
 topic: "Air Pollution"
 thumbnail: "/assets/img/air-pollution/calibration_methodology.png"
-tldr: "Deep-learning-based calibration of low-cost air-quality sensors using reference measurements, meteorological variables, temporal features, and autoregressive correction."
+tldr: "LSTM-based temporal calibration of low-cost air-quality sensors for PM2.5, PM10, and NO2 using OxAria co-located reference data."
 ---
 
 ---
 
-# Low-Cost Sensor Calibration for Air Pollution Monitoring
+# Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors
 
-Low-cost sensors provide an affordable way to increase the spatial density of air-quality monitoring networks. They can be deployed across urban areas at a much lower cost than reference-grade stations, making them useful for local pollution mapping, exposure assessment, and sensor-informed urban studies.
+Low-cost air-quality sensors provide a practical way to increase the spatial density of urban monitoring networks. They are cheaper and easier to deploy than regulatory-grade instruments, making them useful for local pollution mapping, exposure assessment, and real-time environmental monitoring.
 
-However, low-cost sensors are also affected by drift, environmental conditions, cross-sensitivity, seasonal variability, and local site effects. Their raw measurements often deviate from reference instruments, especially when temperature, humidity, traffic patterns, or background pollution levels change.
+However, low-cost sensors are affected by sensor drift, environmental cross-sensitivity, device-to-device variability, and changing field conditions. Their raw measurements can therefore deviate strongly from reference-grade instruments, especially under variations in temperature, humidity, traffic activity, and seasonal conditions.
 
-In this project, we develop **data-driven calibration methods for low-cost air-quality sensors**. The aim is to correct low-cost sensor readings using co-located reference measurements, meteorological variables, and temporal information.
+In this project, we develop a **temporal deep learning framework for calibrating low-cost air-quality sensors**. The method is designed for PM2.5, PM10, and NO2, and is trained using co-located reference data from the OxAria sensor network in Oxford, UK.
 
-We organize the calibration workflow into the following steps:
+Unlike static calibration models such as Random Forest, which treat each observation independently, the proposed framework uses a Long Short-Term Memory network to learn temporal dependencies, delayed environmental effects, and evolving sensor behaviour.
 
-1. **Data preparation and cleaning**  
-   Alignment of low-cost sensor data, reference measurements, and meteorological variables.
+The work is organized around four main steps:
 
-2. **Feature engineering**  
-   Construction of lagged variables, temporal features, environmental indicators, and interaction terms.
+1. **Baseline-corrected sensor data preparation**  
+   Low-cost sensor measurements are combined with co-located reference observations and meteorological variables.
 
-3. **Deep-learning calibration**  
-   Training of temporal models such as LSTM, GRU, and TCN-based networks.
+2. **Feature engineering and preprocessing**  
+   Lagged variables, temporal features, harmonic encodings, and interaction terms are constructed.
 
-4. **Autoregressive correction**  
-   Use of previous calibrated values to improve temporal consistency during unseen-data prediction.
+3. **LSTM-based temporal calibration**  
+   Fixed-length rolling windows are used to train a sequence-based calibration model.
 
-Together, these steps provide a complete calibration framework for improving the reliability of low-cost air-pollution sensors.
+4. **Validation and regulatory assessment**  
+   Calibrated outputs are evaluated using standard regression metrics and the Equivalence Spreadsheet Tool.
+
+Together, these steps provide a calibration pipeline that improves the reliability of low-cost air-quality sensor measurements under real urban conditions.
 
 ---
 
 ## Methodology
 
-The calibration workflow starts from raw low-cost sensor measurements and reference-grade monitoring data. The two data sources are cleaned, synchronized, and transformed into a supervised learning problem. A deep-learning model is then trained to learn the correction between the low-cost sensor signal and the reference measurement.
+The calibration workflow starts from time-stamped low-cost sensor measurements, meteorological data, and co-located reference observations. The data are first cleaned and structured, then enriched with temporal and environmental features. A rolling-window sequence is passed to the LSTM model, which predicts the calibrated pollutant concentration.
 
 <p align="center">
   <img src="{{ 'assets/img/air-pollution/calibration_methodology.png' | relative_url }}" alt="Low-cost sensor calibration methodology" width="850"/>
@@ -45,42 +47,61 @@ The calibration workflow starts from raw low-cost sensor measurements and refere
 
 <p align="center">
   <em>
-  General methodology for calibrating low-cost air-quality sensors using reference data, meteorological variables, temporal features, and deep-learning models.
+  Overview of the calibration methodology: raw sensor data input, feature engineering and preprocessing, LSTM calibration model, and calibrated output evaluation.
   </em>
 </p>
 
 The pipeline follows four main stages:
 
-1. **Raw data collection**  
-   Low-cost sensor readings, reference measurements, and meteorological variables are collected over the same time period.
+1. **Raw sensor data input**  
+   Measurements from low-cost sensors are combined with meteorological variables and co-located reference data.
 
-2. **Pre-processing and filtering**  
-   Missing values, abnormal readings, duplicated timestamps, and inconsistent records are removed or corrected.
+2. **Feature engineering and preprocessing**  
+   Temporal lags, harmonic encodings, interaction terms, and pollutant-specific variables are constructed.
 
-3. **Temporal modelling**  
-   The cleaned dataset is transformed into sequences so that the model can learn the time-dependent behaviour of the sensor.
+3. **LSTM calibration model**  
+   A hypertuned LSTM network processes fixed-length input sequences to capture temporal sensor behaviour.
 
-4. **Calibrated output generation**  
-   The trained model predicts the corrected pollutant concentration for unseen data.
+4. **Calibrated output evaluation**  
+   The calibrated output is compared against reference-grade measurements using statistical metrics and regulatory equivalence assessment.
 
 ---
 
-## Data Preparation
+## Dataset and Test Case
 
-The calibration dataset combines low-cost sensor readings with reference measurements and meteorological information. The data are first aligned in time so that each sensor measurement corresponds to the correct reference value and environmental condition.
+The dataset used in this work comes from the OxAria project, a low-cost air-quality sensor network deployed across Oxford, UK. The study focuses on a Praxis Urban sensor co-located with the AURN reference station at Oxford St. Ebbe’s.
 
-Typical input variables include:
+The sensor platform measures particulate matter and nitrogen dioxide using:
 
-- raw low-cost sensor concentration;
-- reference pollutant concentration;
-- temperature;
-- relative humidity;
-- pressure;
-- wind speed;
-- wind direction;
-- time of day;
-- day of week;
-- seasonal indicators.
+- an Alphasense NO2-A43F electrochemical sensor for NO2;
+- an Alphasense N3 optical particle counter for PM10 and PM2.5;
+- meteorological and auxiliary variables such as temperature, relative humidity, sample flow rate, and time-of-flight metrics.
+
+The reference measurements are obtained from regulatory-grade instruments at the co-located AURN site. This co-location is important because both the low-cost sensor and the reference instrument experience the same atmospheric conditions.
+
+<p align="center">
+  <img src="{{ 'assets/img/air-pollution/oxaria_test_case.png' | relative_url }}" alt="OxAria test case and co-located reference station" width="850"/>
+</p>
+
+<p align="center">
+  <em>
+  OxAria test case used for calibration experiments, with low-cost sensor measurements co-located with reference-grade observations at Oxford St. Ebbe’s.
+  </em>
+</p>
+
+The calibration is performed for three pollutants:
+
+- PM2.5;
+- PM10;
+- NO2.
+
+The data are available at 15-minute resolution, allowing the model to learn short-term pollutant dynamics and sensor response behaviour.
+
+---
+
+## Data Preparation and Baseline Correction
+
+Low-cost sensors often contain drift, offsets, and short-term artefacts. In this work, the model is trained using baseline-corrected data. This allows the deep-learning framework to focus on temporal calibration rather than raw signal correction.
 
 <p align="center">
   <img src="{{ 'assets/img/air-pollution/data_preparation.png' | relative_url }}" alt="Data preparation for low-cost sensor calibration" width="850"/>
@@ -88,252 +109,291 @@ Typical input variables include:
 
 <p align="center">
   <em>
-  Data preparation stage, where low-cost sensor readings, reference measurements, and meteorological variables are cleaned and synchronized.
+  Data preparation stage, where baseline-corrected low-cost sensor signals, meteorological variables, and reference observations are synchronized.
   </em>
 </p>
 
-This step is important because low-cost sensor calibration is highly sensitive to data quality. Incorrect timestamps, missing intervals, or abnormal peaks can strongly affect the final model.
+The cleaned dataset contains pollutant-specific input variables. For NO2, the model uses electrochemical sensor variables such as working and auxiliary electrode voltages. For particulate matter, the model uses variables related to the optical particle counter, such as sample flow rate and sample time of flight.
+
+Temperature and relative humidity are included for all pollutants because they strongly affect low-cost sensor behaviour.
+
+---
+
+## Meteorological and Sensor Signals
+
+The calibration model must account for environmental variability because low-cost sensors respond not only to pollutant concentration, but also to field conditions such as temperature and humidity.
+
+<p align="center">
+  <img src="{{ 'assets/img/air-pollution/meteorology_timeseries.png' | relative_url }}" alt="Meteorological variables used for sensor calibration" width="850"/>
+</p>
+
+<p align="center">
+  <em>
+  Time series of meteorological variables used in the calibration framework, including relative humidity and temperature.
+  </em>
+</p>
+
+The raw low-cost sensor signals are compared with the reference observations before calibration. This comparison shows the need for a dedicated calibration model, especially when the sensor signal contains peaks, offsets, or drift that do not match the reference instrument.
+
+<p align="center">
+  <img src="{{ 'assets/img/air-pollution/sensor_reference_timeseries.png' | relative_url }}" alt="Low-cost sensor measurements compared with AURN reference data" width="850"/>
+</p>
+
+<p align="center">
+  <em>
+  Comparison of low-cost sensor measurements with AURN reference data for PM2.5, PM10, and NO2.
+  </em>
+</p>
 
 ---
 
 ## Feature Engineering
 
-After cleaning, additional features are created to help the model capture the behaviour of the sensor under changing environmental and temporal conditions.
+The feature set is designed to represent sensor behaviour, environmental effects, and temporal structure. Instead of relying only on the instantaneous sensor reading, the model is given additional information that helps it distinguish true pollution changes from sensor artefacts.
 
-These features may include:
+<p align="center">
+  <img src="{{ 'assets/img/air-pollution/feature_engineering.png' | relative_url }}" alt="Feature engineering for low-cost sensor calibration" width="850"/>
+</p>
 
-- lagged sensor values;
-- lagged meteorological variables;
-- rolling averages;
+<p align="center">
+  <em>
+  Feature engineering stage used to include raw sensor signals, temporal changes, harmonic encodings, lagged variables, and interaction terms.
+  </em>
+</p>
+
+The engineered features include:
+
+- raw sensor values;
+- lagged pollutant and meteorological variables;
+- short-term percentage changes;
+- hour, day, month, and seasonal encodings;
 - rush-hour indicators;
-- weekday and weekend indicators;
-- sinusoidal time encodings;
-- interaction terms between pollutant and meteorological variables.
+- interaction terms between sensor and environmental variables;
+- pollutant-specific auxiliary variables.
 
-<p align="center">
-  <img src="{{ 'assets/img/air-pollution/feature_engineering.png' | relative_url }}" alt="Feature engineering for air pollution sensor calibration" width="850"/>
-</p>
-
-<p align="center">
-  <em>
-  Feature engineering stage used to include temporal memory, environmental effects, and recurring daily or weekly patterns.
-  </em>
-</p>
-
-The purpose of this step is to give the model enough information to distinguish between true pollution changes and sensor artefacts caused by environmental or operational effects.
+This feature design allows the model to learn daily cycles, weekly patterns, seasonal effects, delayed environmental responses, and short-term pollutant persistence.
 
 ---
 
-## Sequence Generation
+## Sequence Construction
 
-The calibration problem is treated as a temporal modelling task. Instead of predicting each point independently, the model receives a short sequence of previous observations and uses this history to estimate the calibrated value at the next time step.
+The calibration problem is treated as a temporal modelling task. Instead of calibrating each observation independently, the model receives a short history of previous observations and uses that sequence to predict the calibrated concentration at the next time step.
 
 <p align="center">
-  <img src="{{ 'assets/img/air-pollution/sequence_generation.png' | relative_url }}" alt="Sequence generation for temporal calibration" width="850"/>
+  <img src="{{ 'assets/img/air-pollution/sequence_generation.png' | relative_url }}" alt="Sequence construction for LSTM calibration" width="850"/>
 </p>
 
 <p align="center">
   <em>
-  Sequence generation for temporal calibration. Past observations are used to predict the corrected pollutant concentration at the next time step.
+  Rolling-window sequence construction used to convert the calibrated sensor problem into a sequence-to-one learning task.
   </em>
 </p>
 
-This approach allows the model to learn sensor memory effects, gradual drift, delayed response, and short-term pollution dynamics.
+This sequence-based structure is central to the framework. It allows the LSTM model to capture persistence in pollutant concentrations, delayed sensor responses, and gradual changes in sensor behaviour.
 
 ---
 
-## Method 1: LSTM-Based Calibration
+## LSTM Calibration Model
 
-The first calibration model is based on Long Short-Term Memory networks. LSTM models are well suited for time-series calibration because they can learn dependencies across previous time steps.
-
-The model receives a sequence of input features and predicts the calibrated pollutant concentration. Depending on the calibration setup, the model can be trained either to predict the absolute reference value or to predict the correction between the raw sensor and the reference measurement.
+The calibration model is based on a Long Short-Term Memory network. The LSTM receives a fixed-length sequence of engineered features and predicts the calibrated pollutant concentration.
 
 <p align="center">
-  <img src="{{ 'assets/img/air-pollution/lstm_calibration.png' | relative_url }}" alt="LSTM calibration architecture" width="850"/>
+  <img src="{{ 'assets/img/air-pollution/lstm_calibration_model.png' | relative_url }}" alt="LSTM calibration model architecture" width="850"/>
 </p>
 
 <p align="center">
   <em>
-  LSTM-based calibration model for correcting low-cost sensor measurements using temporal and environmental information.
+  LSTM-based temporal calibration model used to correct low-cost sensor measurements for PM2.5, PM10, and NO2.
   </em>
 </p>
 
-### Main Features
+The final model uses:
 
-- The model uses temporal sequences instead of isolated measurements.
-- Past sensor behaviour is included in the prediction.
-- Meteorological variables help correct environmental sensitivity.
-- The calibrated output is compared against the reference station.
-- The approach can be applied to pollutants such as PM10, PM2.5, NOx, and NO₂.
+- a fixed rolling-window input;
+- an LSTM layer to capture temporal dependencies;
+- a dense layer with nonlinear activation;
+- dropout to reduce overfitting;
+- a final linear output for calibrated concentration;
+- early stopping during training.
 
----
-
-## Method 2: GRU and TCN Calibration Models
-
-In addition to LSTM models, alternative temporal architectures can be used for calibration. GRU models provide a lighter recurrent structure, while Temporal Convolutional Networks use causal convolutions to model time-dependent patterns.
-
-<p align="center">
-  <img src="{{ 'assets/img/air-pollution/gru_tcn_calibration.png' | relative_url }}" alt="GRU and TCN calibration models" width="850"/>
-</p>
-
-<p align="center">
-  <em>
-  Alternative temporal calibration models based on GRU and TCN architectures.
-  </em>
-</p>
-
-These models are useful for comparing accuracy, training cost, stability, and generalization across different monitoring sites.
-
-### Main Features
-
-- GRU models are computationally lighter than LSTM models.
-- TCN models can capture temporal patterns through causal convolutions.
-- Different model types can be compared for each pollutant and site.
-- The best-performing architecture can then be selected for deployment.
-
----
-
-## Autoregressive Calibration
-
-For unseen data, the calibrated output can be used autoregressively. This means that the previous calibrated value is included as part of the input when predicting the next calibrated value.
-
-<p align="center">
-  <img src="{{ 'assets/img/air-pollution/autoregressive_calibration.png' | relative_url }}" alt="Autoregressive low-cost sensor calibration" width="850"/>
-</p>
-
-<p align="center">
-  <em>
-  Autoregressive calibration strategy, where previous calibrated values are used to improve the next prediction.
-  </em>
-</p>
-
-This helps improve temporal consistency, especially when the sensor signal is noisy or when the calibration model is applied to continuous unseen periods.
-
-The autoregressive step is particularly useful when the objective is to generate a corrected time series rather than isolated calibrated points.
-
----
-
-## Ground Truth and Calibrated Measurements
-
-The calibration quality is assessed by comparing the raw low-cost sensor signal, the calibrated model output, and the reference-grade measurement.
-
-<p align="center">
-  <img src="{{ 'assets/img/air-pollution/ground_truth_calibration.png' | relative_url }}" alt="Ground truth and calibrated air pollution measurements" width="850"/>
-</p>
-
-<p align="center">
-  <em>
-  Comparison between raw low-cost sensor measurements, reference observations, and calibrated model predictions.
-  </em>
-</p>
-
-The calibrated signal should follow the reference measurement more closely than the raw sensor signal. This includes both the background concentration level and short-term pollution peaks.
+The model is trained separately for each pollutant. This pollutant-wise setup is useful because PM2.5, PM10, and NO2 have different sensor responses, noise characteristics, and environmental sensitivities.
 
 ---
 
 ## Calibration Results
 
-The performance of the calibration model is evaluated using standard regression metrics. These metrics compare the calibrated output against the reference measurement.
+The calibrated predictions are first evaluated using scatter plots against the reference observations. For each pollutant, the calibrated values are compared with the reference values across validation and test datasets.
 
 <p align="center">
-  <img src="{{ 'assets/img/air-pollution/calibration_results.png' | relative_url }}" alt="Calibration results for low-cost air pollution sensors" width="900"/>
+  <img src="{{ 'assets/img/air-pollution/scatter_calibration.png' | relative_url }}" alt="Calibrated versus reference concentrations" width="900"/>
 </p>
 
 <p align="center">
   <em>
-  Calibration results showing the improvement from raw low-cost sensor measurements to corrected model predictions.
+  Calibrated versus reference concentrations for PM2.5, PM10, and NO2 across validation and test datasets.
   </em>
 </p>
 
-The main goal is not only to reduce the numerical error but also to preserve the temporal behaviour of the pollutant signal. A good calibration model should correct the sensor bias while keeping the important pollution peaks and daily patterns.
+The scatter plots show that the calibrated predictions follow the reference concentrations closely. PM2.5 gives the strongest performance, followed by PM10. NO2 is more challenging because of stronger short-term variability and traffic-driven fluctuations, but the calibrated output still captures the main concentration patterns.
 
 ---
 
-## Error and Performance Comparison
+## Performance Metrics
 
-The calibration methods are compared using error metrics, temporal stability, and generalization across test periods or monitoring sites.
+The model is evaluated using R2, MAE, and RMSE. These metrics assess how well the calibrated output agrees with the reference measurement.
 
 <p align="center">
-  <img src="{{ 'assets/img/air-pollution/error_comparison.png' | relative_url }}" alt="Error comparison for low-cost sensor calibration" width="850"/>
+  <img src="{{ 'assets/img/air-pollution/metrics_comparison.png' | relative_url }}" alt="Calibration performance metrics" width="850"/>
 </p>
 
 <p align="center">
   <em>
-  Error comparison between raw sensor measurements and calibrated model outputs.
+  Performance metrics for PM2.5, PM10, and NO2 across training, validation, and test datasets.
   </em>
 </p>
 
-The calibrated model is expected to reduce the difference between the low-cost sensor and the reference instrument. The improvement can be assessed through metrics such as RMSE, MAE, correlation, bias reduction, and error distribution.
+The test performance obtained in the study is summarized below:
+
+| Pollutant | Test R2 | Test MAE | Test RMSE |
+|---|---:|---:|---:|
+| PM2.5 | 0.97 | 0.97 µg/m³ | 1.45 µg/m³ |
+| PM10 | 0.91 | 1.16 µg/m³ | 2.07 µg/m³ |
+| NO2 | 0.88 | 1.16 ppb | 1.80 ppb |
+
+These results show that the LSTM framework provides strong calibration performance for all three pollutants, with particularly high accuracy for particulate matter.
 
 ---
 
-## Pollutants and Monitoring Sites
+## Generalization to Unseen Data
 
-The calibration framework can be applied to different pollutants and monitoring sites. The same general pipeline can be reused while adjusting the input variables, time window, and model architecture for each case.
+The trained model is also evaluated on unseen temporal periods that were not used during training, validation, or testing. This is important because a useful calibration model must remain reliable when applied to new field conditions.
+
+For PM2.5 and PM10, the unseen evaluation uses data from 23 to 30 September 2021. For NO2, the unseen evaluation uses data from 23 to 30 May 2021.
 
 <p align="center">
-  <img src="{{ 'assets/img/air-pollution/site_pollutant_overview.png' | relative_url }}" alt="Pollutants and monitoring sites for calibration" width="850"/>
+  <img src="{{ 'assets/img/air-pollution/unseen_pm25.png' | relative_url }}" alt="PM2.5 unseen calibration results" width="850"/>
 </p>
 
 <p align="center">
   <em>
-  Overview of pollutants and monitoring sites used for developing and testing the calibration framework.
+  PM2.5 unseen-data calibration results at 15-minute and hourly resolutions.
   </em>
 </p>
 
-This structure makes the method flexible for both single-site calibration and future multi-site generalization.
+<p align="center">
+  <img src="{{ 'assets/img/air-pollution/unseen_pm10.png' | relative_url }}" alt="PM10 unseen calibration results" width="850"/>
+</p>
+
+<p align="center">
+  <em>
+  PM10 unseen-data calibration results at 15-minute and hourly resolutions.
+  </em>
+</p>
+
+<p align="center">
+  <img src="{{ 'assets/img/air-pollution/unseen_no2.png' | relative_url }}" alt="NO2 unseen calibration results" width="850"/>
+</p>
+
+<p align="center">
+  <em>
+  NO2 unseen-data calibration results at 15-minute and hourly resolutions.
+  </em>
+</p>
+
+The unseen-data results show that the model remains stable under new temporal conditions. Hourly averaging generally improves performance because it reduces short-term noise and makes the comparison with the reference signal smoother.
+
+| Pollutant | Resolution | R2 | MAE | RMSE |
+|---|---|---:|---:|---:|
+| PM2.5 | 15-min | 0.75 | 1.63 µg/m³ | 2.37 µg/m³ |
+| PM2.5 | 1H avg | 0.77 | 1.56 µg/m³ | 2.25 µg/m³ |
+| PM10 | 15-min | 0.71 | 2.08 µg/m³ | 2.77 µg/m³ |
+| PM10 | 1H avg | 0.74 | 1.90 µg/m³ | 2.53 µg/m³ |
+| NO2 | 15-min | 0.63 | 2.21 ppb | 2.86 ppb |
+| NO2 | 1H avg | 0.71 | 1.90 ppb | 2.44 ppb |
+
+---
+
+## Regulatory Equivalence Assessment
+
+In addition to standard regression metrics, the calibrated outputs are evaluated using the Equivalence Spreadsheet Tool 3.1. This assessment checks whether the calibrated low-cost sensor output satisfies the uncertainty requirements used for air-quality measurement equivalence.
+
+<p align="center">
+  <img src="{{ 'assets/img/air-pollution/equivalence_uncertainty.png' | relative_url }}" alt="Equivalence assessment for calibrated low-cost sensors" width="850"/>
+</p>
+
+<p align="center">
+  <em>
+  Equivalence assessment of the LSTM-calibrated sensor output using expanded uncertainty values for PM2.5, PM10, and NO2.
+  </em>
+</p>
+
+The expanded uncertainties obtained after LSTM calibration are:
+
+| Pollutant | Expanded uncertainty | Requirement |
+|---|---:|---:|
+| NO2 | 22.11% | ≤ 25% |
+| PM10 | 12.42% | ≤ 50% |
+| PM2.5 | 9.10% | ≤ 50% |
+
+These results show that the calibrated low-cost sensor measurements satisfy the required data-quality objectives for objective air-quality estimation.
+
+---
+
+## Why Temporal Calibration Matters
+
+The main advantage of the LSTM framework is that it treats calibration as a time-dependent problem. This is important because low-cost sensor behaviour evolves with environmental conditions, sensor drift, and recent pollutant history.
+
+Static models such as Random Forest can correct nonlinear relationships, but they do not explicitly remember previous observations. The LSTM model uses recent temporal context, allowing it to better capture persistence, delayed environmental effects, and slowly evolving sensor response.
+
+This makes the framework suitable for practical urban air-quality monitoring, where pollutant levels can change rapidly and sensor behaviour can vary over long deployment periods.
 
 ---
 
 ## Applications
 
-These methods can support:
+This calibration framework can support:
 
-- calibration of low-cost air-quality sensors;
-- correction of PM10, PM2.5, NOx, and NO₂ measurements;
-- dense urban air-quality monitoring;
+- correction of PM2.5, PM10, and NO2 low-cost sensor measurements;
+- dense urban air-quality monitoring networks;
 - sensor-informed pollution mapping;
-- long-term sensor deployment studies;
-- air-quality data quality improvement;
-- urban exposure assessment;
-- integration of low-cost sensors into digital-twin workflows.
+- long-term low-cost sensor deployment;
+- quality improvement of environmental sensor datasets;
+- real-time or near-real-time air-quality analysis;
+- integration of calibrated sensors into digital-twin workflows;
+- regulatory screening and objective estimation studies.
 
 ---
 
 ## Code and Data Availability
 
-**Code and tutorials:** coming soon.  
-**Data:** coming soon.  
-**Example notebooks:** coming soon.
+**Code and tutorials:**  
+[https://modelflows.github.io/modelflowsapp/](https://modelflows.github.io/modelflowsapp/)
 
----
-
-## Related Papers
-
-Arindam Sengupta, Soledad Le Clainche, and collaborators.  
-**Deep-Learning Calibration of Low-Cost Air-Quality Sensors Using Temporal and Meteorological Features.**  
-Manuscript in preparation.
+**Data:**  
+[http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408](http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408)
 
 ---
 
 ## References
 
-Spinelle, L., Gerboles, M., Aleixandre, M.  
-**Performance Evaluation of Amperometric Sensors for the Monitoring of Ozone and Nitrogen Dioxide in Ambient Air at ppb Level.**  
-Procedia Engineering, 120, 480–483, 2015.
+Arindam Sengupta, Tony Bush, Ben Marner, Jose Miguel Pérez, and Soledad Le Clainche.  
+**A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors.**  
+arXiv:2604.21527 [cs.LG], 2026.  
+[https://doi.org/10.48550/arXiv.2604.21527](https://doi.org/10.48550/arXiv.2604.21527)
 
-Zimmerman, N., Presto, A. A., Kumar, S. P. N., Gu, J., Hauryliuk, A., Robinson, E. S., Robinson, A. L., Subramanian, R.  
+Tony Bush, Nikolaos Papaioannou, Felix Leach, Francis D. Pope, Ajit Singh, G. Neil Thomas, Ben Stacey, and Sarah Bartington.  
+**Machine Learning Techniques to Improve the Field Performance of Low-Cost Air Quality Sensors.**  
+Atmospheric Measurement Techniques Discussions, 2021.  
+[https://doi.org/10.5194/amt-2021-282](https://doi.org/10.5194/amt-2021-282)
+
+L. Liang.  
+**Calibrating Low-Cost Sensors for Ambient Air Monitoring: Techniques, Trends, and Challenges.**  
+Environmental Research, 197, 111163, 2021.
+
+N. Zimmerman, A. A. Presto, S. P. N. Kumar, J. Gu, A. Hauryliuk, E. S. Robinson, A. L. Robinson, and R. Subramanian.  
 **A Machine Learning Calibration Model Using Random Forests to Improve Sensor Performance for Lower-Cost Air Quality Monitoring.**  
 Atmospheric Measurement Techniques, 11, 291–313, 2018.
 
-Malings, C., Tanzer, R., Hauryliuk, A., Saha, P. K., Robinson, A. L., Presto, A. A., Subramanian, R.  
-**Development of a General Calibration Model and Long-Term Performance Evaluation of Low-Cost Sensors for Air Pollutant Gas Monitoring.**  
-Atmospheric Measurement Techniques, 12, 903–920, 2019.
-
-Bigi, A., Mueller, M., Grange, S. K., Ghermandi, G., Hueglin, C.  
-**Performance of NO, NO₂ Low Cost Sensors and Three Calibration Approaches within a Real World Application.**  
-Atmospheric Measurement Techniques, 11, 3717–3735, 2018.
-
-Karagulian, F., Barbiere, M., Kotsev, A., Spinelle, L., Gerboles, M., Lagler, F., Redon, N., Crunaire, S., Borowiak, A.  
-**Review of the Performance of Low-Cost Sensors for Air Quality Monitoring.**  
-Atmosphere, 10(9), 506, 2019.
+D. Park, G.-W. Yoo, S.-H. Park, and J.-H. Lee.  
+**Assessment and Calibration of a Low-Cost PM2.5 Sensor Using Machine Learning: Hybrid LSTM Neural Network.**  
+Atmosphere, 12, 1306, 2021.
