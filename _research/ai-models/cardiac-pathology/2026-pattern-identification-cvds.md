@@ -1,11 +1,11 @@
 ---
 layout: page
 category: "AI & Data-Driven Models"
-topic: "Cardiac Pathology"
+topic: "Cardiac Pathology Recognition"
 thumbnail: "assets/img/ModelFlows_Cardiac_IMAGE01.jpg"
 tldr: "Pattern identification, classification and prediction of cardiovascular diseases using modal decomposition and deep learning."
-title: ModelFLOWs-cardiac
-subtitle: Our studies focused on cardiovascular diseases
+title: ModelFLOWs-cardiac AI
+subtitle: Our studies based on AI focused on cardiovascular diseases
 ---
 
 ModelFLOWs-cardiac, a branch of the ModelFLOWs-app which contains an open source Software for pattern identification, classification and prediction of cardiovascular diseases (CVDs) using modal decomposition and deep learning architectures, together with CFD databases and codes for obtention of cardiac flow simulations. 
@@ -22,24 +22,25 @@ ModelFLOWs-cardiac, a branch of the ModelFLOWs-app which contains an open source
  
 [Desarrollan un sistema para reconocer patologías cardíacas basado en IA](https://www.upm.es/UPM/SalaPrensa/Noticias_de_investigacion?fmt=detail&prefmt=articulo&id=CON18701)
 
+[Tres proyectos liderados por investigadores de la ETSIAE, elegidos como las mejores tecnologías del programa UPM2T 2025](https://www.upm.es/investigacion?id=CON28327&prefmt=articulo&fmt=detail)
+
 Content:
 
-1-  [Medical Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#medical-data)
+1-  [Medical Data](https://modelflows.github.io/modelflowsapp/research/2026-pattern-identification-cvds/#medical-data)
 
-  *  [Pattern Detection](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#pattern-medical)
-  *  [Classification](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#classification)
-  *  [Prediction](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#prediction)
-  *  [Diagnosis and Prognosis](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#diagnosis-and-prognosis)
+  *  [Pattern Detection](https://modelflows.github.io/modelflowsapp/research/2026-pattern-identification-cvds/#pattern-medical)
+  *  [Classification](https://modelflows.github.io/modelflowsapp/research/2026-pattern-identification-cvds/#classification)
+  *  [Prediction](https://modelflows.github.io/modelflowsapp/research/2026-pattern-identification-cvds/#prediction)
+  *  [Diagnosis and Prognosis](https://modelflows.github.io/modelflowsapp/research/2026-pattern-identification-cvds/#diagnosis-and-prognosis)
 
-2-  [CFD Data](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#cfd-data)
+2-  [CFD Data](https://modelflows.github.io/modelflowsapp/research/2026-pattern-identification-cvds/#cfd-data)
 
-  *  [Tutorials](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#tutorials)
-  *  [Pattern Detection](https://modelflows.github.io/modelflowsapp/cardiacpathologydetection/#pattern-cfd)
+  *  [Pattern Detection](https://modelflows.github.io/modelflowsapp/research/2026-pattern-identification-cvds/#pattern-cfd)
 
 
-This data-driven application consists of two modules: **Medical data** and **CFD data**. The first one contains three blocks: *Pattern detection*, *Classification* and *Prediction*. The latter one contains two blocks: *Codes and simulations* and *Pattern detection*.
+This data-driven application consists of two modules: **Medical data** and **CFD data**. The first one contains three blocks: *Pattern detection*, *Classification* and *Prediction*. The latter one contains one block: *Pattern detection*.
 
-## Medical data
+## Medical data <a medical-data"></a>
 The medical imaging datasets used for this first application are echocardiography video loops and magnetic resonance imaging (MRI): 
 1.	The echocardiography videos are taken with respect to two views: long axis and shorts axis views (LAX and SAX respectively). The images are taken from mice with different cardiac conditions including healthy, diabetic cardiomyopathy, myocardial infarction, obesity, TAC hypertrophy). Each video consists of ~120 frames (snapshots).
 2.	The MRI dataset consists of 10 MRI sequences, representing 10 different slices of the heart.  In particular, 20 images (snapshots) of 128 × 128 × 1 resolution were acquired for each slice, resulting a total number of 200 snapshot per dataset. 
@@ -86,7 +87,9 @@ The following sketch summarizes the main steps of the application carried in thi
 
 The results obtained from all testcases, and experiments showed a clear improvement in the performance when augmenting the original images using the DMD modes, as it increased the prediction accuracy by 4% - 22%. These results have proved the efficiency of the proposed hybrid tool, which merges model decomposition tools and machine learning approaches, and its ability to enhance classification models and improve predictions on new unseen data.
 
-This work has been used to produce a journal paper, which has been subbmited and currently under review in the journal of Artificial Intelligence In Medicine.
+These results have already been published in:
+
+[*Groun, N., Villalba-Orero, M., Casado-Martín, L., Lara-Pezzi, E., Valero, E., Garicano-Mena, J. and Le Clainche, S., 2025. A novel data augmentation tool for enhancing machine learning classification: A new application of the higher order dynamic mode decomposition for improved cardiac disease identification. Results in Engineering, 25, p.104143.*](https://doi.org/10.1016/j.rineng.2025.104143)
 
 #### HODMD-based reduced order model for cardiac MRI analysis
 
@@ -167,9 +170,10 @@ Further details about the work explained in this section could be found in the f
 [*Bell-Navas, A., Garicano-Mena, J., Ausiello, A., Clainche, S. L., Villalba-Orero, M., & Lara-Pezzi, E., CardioMOD-Net: A Modal Decomposition-Neural Network Framework for Diagnosis and Prognosis of HFpEF from Echocardiography Cine Loops. arXiv preprint arXiv:2601.01176, 2026.*](https://arxiv.org/abs/2601.01176)
 
 Code for **Diagnosis and Prognosis** in Python in progress...
+
 Pretrained weights in progress...
 
-## CFD Data
+## CFD Data <a id="cfd-data"></a>
 The growing impact of cardiovascular disease (CVD) requires advances in diagnosis and treatment. Recent developments in medical research have introduced innovative methods for understanding and treating complex diseases such as CVDs. Among these, Computational Fluid Dynamics (CFD) has emerged as a key tool for modeling the intricate dynamics of intracardiac blood flow. This approach not only enhances our fundamental understanding of cardiac function, but also paves the way for innovative treatment strategies.
 
 For validation purposes, we base our study on the work of Zheng et al. and Vedula et al:
@@ -181,70 +185,9 @@ For validation purposes, we base our study on the work of Zheng et al. and Vedul
 You can also see the explanation of this project in the following video:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XHdfQc7LLgA?si=jY4mia541q-MqgtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
-### Tutorials
-Explore our step-by-step video tutorials on setting up CFD simulations of the left ventricle. These resources include all necessary files to replicate our results, offering a comprehensive guide for anyone aiming to deepen their understanding or reproduce our findings. 
-
-#### Geometry Pre-Processing
-This section provides our MATLAB codes for generating STL file sequences that define ventricular wall motion for CFD simulations. The workflow is based on integrating ventricular volume variation from a flow rate chart that describes the quantity of blood coming in and out of the left ventricle.
-
-We offer two approaches:
-* Idealized Geometry: Where the wall motion is defined analytically, and STL files are generated accordingly. 
-* Patient-Specific Geometry: Requires code adjustments since analytical expressions are unavailable. This process includes extracting the left ventricle model from cardiotomography data to ensure accurate patient-specific simulations.
-
-Download the necessary files [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/CFD/generateSTLFiles.zip).
-
-Download the slides [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/CFD/Slides_Tutorial_GeometryPreprocessing.pptx).
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Bzd_ZniGGG0?si=UvRmu9_2Qd7QxDWJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-#### CFD with Star-CCM+
-This section provides a complete guide on replicating our blood flow simulations inside the left ventricle using STAR-CCM+. From loading the geometry and meshing to configuring the simulation settings, we walk you through each step to ensure accurate reproduction of our results.
-
-Download the necessary files [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/CFD/Tutorial_Star-CCM+.zip).
-
-Download the slides [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/CFD/Slides_Tutorial_StarccmCFD.pptx).
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8YjVIamKzhY?si=U5s0zgmYVJ2fAl5a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-#### CFD with Ansys Fluent
-In this section, we outline the entire process of setting up blood flow simulations within the left ventricle using Ansys Fluent. From importing the geometry and generating the mesh to configuring the simulation parameters, this guide covers everything needed to successfully replicate our results.
-
-Download the necessary files [*here*](https://drive.upm.es/s/A8EuWtjSuMAetHc).
-
-Download the slides [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/CFD/Slides_Tutorial_FluentCFD.pptx).
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zkAAioOEVDE?si=VAc7JBNCvohALkOS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-You can obtain the necessary tools and softwares here:
-* [Matlab](https://es.mathworks.com/products/matlab.html)
-* [Spyder](https://www.spyder-ide.org/)
-* [Star-CCM+](https://plm.sw.siemens.com/en-US/simcenter/fluids-thermal-simulation/star-ccm/?srsltid=AfmBOoqvQTHcTwcvPnM1Fc9M8LCw2NWBRd50mWwnrLL_ZBjIjw5h8dR0)
-* [Ansys Fluent](https://www.ansys.com/products/fluids/ansys-fluent)
-* [3D Slicer](https://www.slicer.org/)
-* [MeshLab](https://www.meshlab.net/)
-* [ParaView](https://www.paraview.org/)
-* [CT Scans](https://figshare.com/s/2a5de3a2b89a3fb87932?file=5011837)
-
-### Results
-The ideal models of the left ventricle (LV) for our simulations are taken directly from these references and are shown in the following figure. These models essentially represent an idealization of the ventricular cavity with two tubes attached to simulate inflow and outflow through the mitral and aortic valves, respectively.
-
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/geometry_ideal.png?raw=true)
-
-The computational framework used in this study is designed to solve the Navier-Stokes equations, assuming that blood behaves as an incompressible non-Newtonian fluid. We choose laminar flow conditions that are particularly effective in capturing the vortical features of the diastolic phase of the cardiac cycle. Boundary conditions are a critical aspect; therefore, wall motion, inflow and outflow are set to match the ventricular flow rate curve extracted from references. A grid convergence study was performed to ensure that the simulations were fine-tuned.
-
-The primary objective of this study is to examine the formation and evolution of the vortex ring, a prominent flow feature during the E-wave of diastole. The vortex ring plays a pivotal role in cardiac hemodynamics and has been extensively studied in the literature. The vortex ring emerges from the mitral valve during the E-wave of diastole, with its axis aligned with the mitral valve axis. The initial shape of the vortex ring is that of a donut, although it is asymmetric, with a thinner profile closer to the wall. This indicates a healthy heart. As the vortex ring traverses the ventricle, it gradually tilts due to the reduction in inflow velocity. Interactions between the vortex ring and the ventricular walls result in the formation of secondary vortex tubes. These vortex tubes exhibit complex instabilities, which ultimately result in their interaction with the vortex ring and its subsequent destabilization. The evolution of this flow structure is depicted in Figures X and Y for the geometries used by Zheng et al. and Vedula et al., respectively.
-
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/Zheng_vorticity.png?raw=true)
-![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/Vedula_vorticity.png?raw=true)
-
-This analysis highlights the importance of CFD in advancing our understanding of intracardiac flow dynamics and developing improved diagnostic and therapeutic strategies for cardiovascular diseases.
-
-
 ### Pattern detection <a id="pattern-cfd"></a>
 
-This section considers the combination of Proper Orthogonal Decomposition (POD) and Autoencoder (AE) architectures for early detection of cardiac deterioration. In this process, representative
-flow features characterizing different cardiovascular conditions are extracted from left ventricular flow fields obtained from fluid dynamics simulations. These features are contained in nearly orthogonal POD modes produced by the Autoencoders which capture a specified percentage of kinetic energy.
+This section considers the combination of Proper Orthogonal Decomposition (POD) and Autoencoder (AE) architectures for early detection of cardiac deterioration. In this process, representative flow features characterizing different cardiovascular conditions are extracted from left ventricular flow fields obtained from fluid dynamics simulations. These features are contained in nearly orthogonal POD modes produced by the Autoencoders which capture a specified percentage of kinetic energy.
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2026_04Apr_Belletat_PODAEsOverview.png?raw=true)
 
