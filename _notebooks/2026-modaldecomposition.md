@@ -23,7 +23,7 @@ Codes available:
    * [Passive Flow Control with HODMD](#passive-flow-control-with-hodmd)
    * [Passive Flow Control with Resolvent Analysis](#passive-flow-control-with-resolvent-analysis)
 
-
+4. [Spatio Temporal Koopman Decomposition (STKD)](#STKD)
 
 ## Pattern Detection <a id="pattern-detection"></a>
 
@@ -183,3 +183,18 @@ The following video explains how this algorithm is applied and the previous pape
 Download the code for **Passive Flow Control with Resolvent Analysis**  in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/ra.zip), or the version including HODMD [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/ra-hodmd.zip).
 
 For a proper usage of the algorithm, it is recommended to first calibrate the HODMD algorithm, following the [Advanced Tutorial](https://modelflows.github.io/modelflowsapp/advanced/) in our website.
+
+## Spatio Temporal Koopman Decomposition (STKD) <a id="STKD"></a>
+The Spatio-Temporal Koopman Decomposition (STKD) extends the High-Order Dynamic Mode Decomposition (HODMD) by enabling spatio-temporal analysis of multidimensional data. It represents spatio-temporal fields as combinations of traveling wave modes, each characterized by specific wavenumbers and spatial growth rates, forming intricate standing or propagating patterns. STKD accommodates expansions along multiple spatial dimensions, allowing complex dynamics to be captured across directions such as spanwise and streamwise.In the context of traveling waves, this decomposition allows us to describe how spatial patterns evolve over time in terms of their fundamental modes.STKD analysis helps us understand
+
+a) Dominant Wavenumbers and Frequencies: Identifying which spatial wavenumbers and temporal frequencies dominate the dynamics.
+b) Growth and Decay: Modes with positive/negative growth rates  indicate whether a wave pattern is amplifying or decaying over time.
+
+![Flowchart1](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_pillai_stkd.png?raw=true)
+
+[Le Clainche, S., Vega, J.M., ‘Spatio-Temporal Koopman Decomposition’, J. of Nonlin. Sci. Vol. 28 (3), 1-50, 2018 ](https://link.springer.com/article/10.1007/s00332-018-9464-z)
+
+Application to identify flow instabilitites:
+[Le Clainche, S., Izbassarov, D., Rosti, M., Brandt, L., & Tammisola, O. (2020). Coherent structures in the turbulent channel flow of an elastoviscoplastic fluid. Journal of Fluid Mechanics, 888, A5.](https://www.researchgate.net/publication/338544827_Coherent_structures_in_the_turbulent_channel_flow_of_an_elastoviscoplastic_fluid)
+
+Download the code for **STKD** in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/stkd.zip).
