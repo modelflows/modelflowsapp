@@ -47,7 +47,7 @@ Add here POD, DMD, HODMD, ROMs, machine learning, deep learning, prediction, rec
 
 # Tutorials
 
-- Tutorial 1:
+- [Tutorial 1: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame](./2026-combustion_tutorial.md)
 - Tutorial 2:
 
 # Notebooks
@@ -74,3 +74,7 @@ Add here POD, DMD, HODMD, ROMs, machine learning, deep learning, prediction, rec
 # Contributors
 
 - Name:
+
+# References
+<!-- REFERENCES -->
+[*Bergmann, V., Meier, W., Wolff, D., & Stricker, W. (1998). Application of spontaneous Raman and Rayleigh scattering and 2D LIF for the characterization of a turbulent CH4/H2/N2 jet diffusion flame. Applied Physics B, 66(4), 489-502.*](https://doi.org/10.1007/s003400050424)
