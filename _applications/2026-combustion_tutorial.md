@@ -24,10 +24,10 @@ The reference case is the DLR turbulent non-premixed jet flame. The burner consi
 
 <!-- IMAGES -->
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/DLR_burner_Geometry.png?raw=true" alt="DLR burner geometry" width="70%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/DLR_burner_Geometry.png?raw=true" alt="DLR burner geometry" width="70%">
 </p>
 
-![vel_plot](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/DLR_burner_Geometry.png?raw=true)
+![vel_plot](https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/2026-workshop-li-urban-1.jpg?raw=true)
 
 | Quantity | Description |
 |---|---|
