@@ -27,6 +27,16 @@ Here is a showcase of the ongoing projects by the ModelFLOWs group members. Choo
       </div>
     </div>
   </div>
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title">Cardiac Pathology Recognition</h4>
+        <p class="card-text">ModelFLOWs-cardiac CFD & High-Fidelity Simulations for dynamics of blood flow in the left ventricle of the heart.</p>
+        <a href="{{ '/research/cfd-cardiac' | relative_url }}" class="btn btn-primary btn-sm">View Projects</a>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 ## AI & Data-Driven Models
@@ -44,9 +54,9 @@ Here is a showcase of the ongoing projects by the ModelFLOWs group members. Choo
   <div class="col-md-4 mb-4">
     <div class="card h-100">
       <div class="card-body">
-        <h4 class="card-title">Cardiac Pathology</h4>
-        <p class="card-text">ModelFLOWs-cardiac: Pattern identification and CVDs prediction using hybrid architecture.</p>
-        <a href="{{ '/research/cardiac-pathology' | relative_url }}" class="btn btn-primary btn-sm">View Projects</a>
+        <h4 class="card-title">Cardiac Pathology Recognition</h4>
+        <p class="card-text">ModelFLOWs-cardiac AI: Pattern identification and CVDs prediction using hybrid architecture.</p>
+        <a href="{{ '/research/ai-cardiac' | relative_url }}" class="btn btn-primary btn-sm">View Projects</a>
       </div>
     </div>
   </div>
