@@ -100,8 +100,6 @@ The 3×3 array consists of identical cubic buildings (0.2 m × 0.2 m × 0.2 m) o
    - Scale = 1.0
    - Save as `buildings.stl`
 
-<!-- IMAGE NEEDED: Blender STL export dialog with the correct options highlighted -->
-
 8. Place the exported file in your OpenFOAM case:
      constant/triSurface/buildings.stl
 ---
