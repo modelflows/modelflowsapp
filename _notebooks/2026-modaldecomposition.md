@@ -107,19 +107,37 @@ Low-cost singular value decomposition (LC-SVD) is a modal decomposition-based da
 Download the code for **low-cost SVD** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/Low-cost-singular-value-decomposition.zip),
 or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/modal-decomposition/python/Low-cost-singular-value-decomposition.ipynb).
 
-#### Low-cost HODMD <a id="low-cost-hodmd"></a>
-Large and complex datasets often present computational challenges, particularly when using standard Singular Value Decomposition (SVD). As dataset sizes grow, the scalability of conventional SVD becomes a major bottleneck, especially in applications requiring repeated computations.
+#### Low-cost HOSVD <a id="low-cost-hosvd"></a>
 
-To address this, Low-cost Higher Order Dynamic Mode Decomposition (lcHODMD) extends standard HODMD with a more efficient approach that reduces both memory usage and computational time. This method leverages either Low-cost Singular Value Decomposition (lcSVD) or Low-cost Higher Order Singular Value Decomposition (lcHOSVD) to enhance scalability and performance.
+Low-cost High Order Singular Value Decomposition (LC-HOSVD) extends the low-cost modal reconstruction idea to multidimensional tensor databases. Unlike standard SVD, where the dataset is reshaped into a matrix, LC-HOSVD preserves the natural tensor structure of the data. This is especially useful for flow databases arranged in several dimensions, such as spatial directions, physical variables, parameters, and time. The method first selects a reduced set of representative sensor locations from the original high-resolution database. These sparse measurements are then used to build a reduced tensor. HOSVD is applied along the relevant tensor directions, producing compact mode matrices and a core tensor. The retained modes are finally used to reconstruct the high-resolution database while keeping the multidimensional structure of the original problem. LC-HOSVD is particularly suitable for large 3D, 4D, and 5D databases, where preserving directional information is important. In urban flow applications, this allows the reconstruction of velocity, pressure, turbulence quantities, and pollutant concentration fields from a reduced number of sensor points. Compared with matrix-based LC-SVD, LC-HOSVD can better capture directional dependencies and localized three-dimensional structures, although it generally requires a higher computational cost.
 
+<!-- ![Low-cost Higher Order Singular Value Decomposition methodology summary](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/LC-HOSVD.jpg?raw=true) -->
+
+*Figure in progress. Coming soon...*
 
 Reference us with:
 
 ModelFLOWs (2023). *ModelFLOWs-app*. Retrieved [date], from [https://modelflows.github.io/modelflowsapp/](https://modelflows.github.io/modelflowsapp/)
 
-<!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) --> 
+*Reference in progress. Coming soon...*
+
 *Code in progress. Coming soon...*
 
+#### Low-cost HODMD <a id="low-cost-hodmd"></a>
+
+Low-cost Higher Order Dynamic Mode Decomposition (LC-HODMD) is a dynamic reconstruction method designed for large time-resolved databases. It combines the low-cost reconstruction philosophy with Higher Order Dynamic Mode Decomposition, allowing the temporal behaviour of complex flow fields to be recovered from reduced or sparsely sampled data. The method first reduces the size of the original database using either LC-SVD or LC-HOSVD. This reduced representation is then used as the input for HODMD. The HODMD step requires the selection of key parameters, such as the delay dimension \(d\), the truncation tolerance \(\epsilon\), and the number of retained modes. These parameters control how much temporal memory is included and how many weak or noisy modes are discarded. After the reduced dynamic system is built, LC-HODMD extracts the dynamic modes, amplitudes, frequencies, and growth rates of the database. These quantities are then used to reconstruct the time-resolved flow field. In urban flow applications, LC-HODMD can be used to recover the temporal evolution of velocity, pressure, turbulent variables, and pollutant concentration fields while reducing memory usage and computational cost. This method is useful when the objective is not only to reconstruct a spatial field, but also to preserve its temporal dynamics. By combining low-cost reduction with HODMD, large time-dependent CFD datasets can be analysed more efficiently than with standard full-order HODMD.
+
+<!-- ![Low-cost Higher Order Dynamic Mode Decomposition methodology summary](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/LC-HODMD.jpg?raw=true) -->
+
+*Figure in progress. Coming soon...*
+
+Reference us with:
+
+ModelFLOWs (2023). *ModelFLOWs-app*. Retrieved [date], from [https://modelflows.github.io/modelflowsapp/](https://modelflows.github.io/modelflowsapp/)
+
+*Reference in progress. Coming soon...*
+
+*Code in progress. Coming soon...*
 
 
 ## Spatial Resolution Enhancement <a id="spatial-resolution-enhancement"></a>
