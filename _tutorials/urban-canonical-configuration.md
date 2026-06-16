@@ -122,12 +122,12 @@ and the solver type is specified in `system/controlDict` as `incompressibleFluid
 ### Case directory structure
 
 An OpenFOAM case is a folder with three subdirectories:
-     case/
-     ├── 0/          ← initial and boundary conditions
-     
-     ├── constant/   ← mesh, geometry, physical properties
-     
-     └── system/     ← solver settings, numerical schemes
+```
+case/
+├── 0/          ← initial and boundary conditions
+├── constant/   ← mesh, geometry, physical properties
+└── system/     ← solver settings, numerical schemes
+```
 ---
 
 ### The `0/` directory — Boundary and Initial Conditions
