@@ -26,7 +26,7 @@ The workflow includes:
 - reconstruction of the predicted physical fields;
 - comparison with the ground truth.
 
-# Summary of steps 
+# Learning Objectives
 
 - Load time-resolved urban flow data.
 - Prepare multidimensional data for mdHODMD.
