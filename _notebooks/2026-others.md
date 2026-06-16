@@ -2,14 +2,14 @@
 layout: page
 topic: "Other Codes"
 tldr: "Miscellaneous scripts and preprocessing algorithms."
-title: Other Useful Codes 
+title: Data Assimilation 
 subtitle: 
 ---
 
 Codes available:
-1. [Data Assimilation](https://modelflows.github.io/modelflowsapp/others/#DA)
+1. [Data Assimilation](#DA)
 
-2. [LcSVD-Data Assimilation](https://modelflows.github.io/modelflowsapp/others/#lcSVD_DA)
+2. [LcSVD-Data Assimilation](#lcSVD_DA)
 
 3. [Spatio Temporal Koopman Decomposition (STKD)](https://modelflows.github.io/modelflowsapp/others/#STKD)
 

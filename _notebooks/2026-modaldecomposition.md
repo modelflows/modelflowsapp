@@ -7,21 +7,21 @@ title: Modal Decomposition
 ---
 
 Codes available:
-1. [Pattern Detection](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-detection)
-    * [HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd)
-    * [HODMD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hodmd)
-    * [Low-cost Algorithms](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hodmd)
-        - [Low-cost SVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-svd)
-        - [Low-cost HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-hosvd)
-        - [Low-cost HODMD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-hodmd)
+1. [Pattern Detection](#pattern-detection)
+    * [HOSVD](#pattern-hosvd)
+    * [HODMD](#pattern-hodmd)
+    * [Low-cost Algorithms](#low-cost)
+        - [Low-cost SVD](#low-cost-svd)
+        - [Low-cost HOSVD](#low-cost-hosvd)
+        - [Low-cost HODMD](#low-cost-hodmd)
 
-2. [Spatial Resolution Enhancement](https://modelflows.github.io/modelflowsapp/modaldecomposition/#spatial-resolution-enhancement)
-    * [Gap Filling Tool](https://modelflows.github.io/modelflowsapp/modaldecomposition/#gap-filling-tool)
-    * [Superresolution Tool](https://modelflows.github.io/modelflowsapp/modaldecomposition/#superresolution-tool)
+2. [Spatial Resolution Enhancement](#spatial-resolution-enhancement)
+    * [Gap Filling Tool](#gap-filling-tool)
+    * [Superresolution Tool](#superresolution-tool)
 
-3. [Control](https://modelflows.github.io/modelflowsapp/modaldecomposition/#control)
-   * [Passive Flow Control with HODMD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#passive-flow-control-with-hodmd)
-   * [Passive Flow Control with Resolvent Analysis](https://modelflows.github.io/modelflowsapp/modaldecomposition/#passive-flow-control-with-resolvent-analysis)
+3. [Control](#control)
+   * [Passive Flow Control with HODMD](#passive-flow-control-with-hodmd)
+   * [Passive Flow Control with Resolvent Analysis](#passive-flow-control-with-resolvent-analysis)
 
 
 
