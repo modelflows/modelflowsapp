@@ -110,7 +110,7 @@ Compared with lcSVD, lcHOSVD generally requires more computational work, but it 
 The sensor grid is selected to provide a reduced but representative sampling of the full domain. The number and distribution of sensors control the balance between cost and reconstruction accuracy.
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/sensors_distribution.png' | relative_url }}" alt="Sparse sensor distribution" width="850"/>
+  <img src="{{ 'assets/img/urban-flows/Sensors.png' | relative_url }}" alt="Sparse sensor distribution" width="850"/>
 </p>
 
 <p align="center">
@@ -128,23 +128,22 @@ A denser sensor grid usually improves the reconstruction because more spatial in
 The reconstruction quality is assessed by comparing the original CFD field with the reconstructed solutions. The relative root mean square error is used to quantify the difference between the full-order solution and the low-cost approximation.
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/ground_truth_fields.png' | relative_url }}" alt="Ground truth CFD fields" width="850"/>
+  <img src="{{ 'assets/img/urban-flows/GT+RE_k.png' | relative_url }}" alt="Ground truth CFD fields" width="850"/>
 </p>
 
 <p align="center">
   <em>
-  Ground truth CFD fields used as the reference solution for the reconstruction analysis.
+  Comparison between ground truth, low-cost input and reconstructed fields using HOSVD and SVD, along with their low-cost counterparts for Turbulent Kinetic Energy (k).
   </em>
 </p>
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/reconstruction_comparison.png' | relative_url }}" alt="Comparison between CFD, lcSVD and lcHOSVD reconstructions" width="900"/>
+  <img src="{{ 'assets/img/urban-flows/GT+RE_CO.png' | relative_url }}" alt="Comparison between CFD, lcSVD and lcHOSVD reconstructions" width="900"/>
 </p>
 
 <p align="center">
   <em>
-  Comparison between the original CFD solution and the reconstructed fields obtained using lcSVD and lcHOSVD.
-  </em>
+  Comparison between ground truth, low-cost input and reconstructed fields using HOSVD and SVD, along with their low-cost counterparts for carbon monoxide (CO).
 </p>
 
 The comparison shows how the low-cost methods recover the main spatial distribution of the field while using only sparse sensor information. lcSVD provides a fast reconstruction based on global modes, while lcHOSVD gives a more structured tensor representation of the 3D field.
@@ -156,7 +155,7 @@ The comparison shows how the low-cost methods recover the main spatial distribut
 Beyond pointwise error, the reconstructed fields are also evaluated using flow-structure indicators. This helps assess whether the reduced reconstruction preserves coherent vortices, recirculation regions, and wake structures around buildings.
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/qcriterion_comparison.png' | relative_url }}" alt="Q-criterion comparison for original and reconstructed fields" width="900"/>
+  <img src="{{ 'assets/img/urban-flows/qcriterion.png' | relative_url }}" alt="Q-criterion comparison for original and reconstructed fields" width="900"/>
 </p>
 
 <p align="center">
