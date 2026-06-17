@@ -3,7 +3,7 @@ layout: post
 title: "Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors"
 category: "AI & Data-Driven Models"
 topic: "Air Pollution"
-thumbnail: "/assets/img/air-pollution/calibration_methodology.png"
+thumbnail: "/assets/img/met_cal.png"
 tldr: "LSTM-based temporal calibration of low-cost air-quality sensors for PM2.5, PM10, and NO2 using OxAria co-located reference data."
 ---
 
