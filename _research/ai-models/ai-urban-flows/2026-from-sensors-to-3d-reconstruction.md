@@ -176,7 +176,19 @@ The two methods follow the same low-cost philosophy, but they behave differently
 
 **lcHOSVD** is more structured because it separates the spatial directions and stores their interaction through a core tensor. This usually improves the reconstruction of complex 3D structures, especially when the field contains localized vortices, sharp gradients, or directional dependencies.
 
-In simple terms, **lcSVD is usually faster**, while **lcHOSVD is usually more accurate for complex 3D urban fields**.
+In simple terms, **lcSVD is usually faster**, while **lcHOSVD is usually more accurate for complex 3D urban fields**. This behaviour is more evident in the two-building test case, where the flow contains strong wake interactions, recirculation zones, and localized vortical structures between and downstream of the buildings.
+
+In this case, the Q-criterion comparison shows that lcHOSVD preserves the main coherent structures more clearly, while lcSVD provides a faster but more globally smoothed reconstruction. The difference becomes visible around the near-building wake region, where the tensor structure used by lcHOSVD helps retain directional spatial interactions.
+
+<p align="center">
+  <img src="{{ '/assets/img/urban-flows/qcriterion_2bldg.png' | relative_url }}" alt="Q-criterion comparison for the two-building reconstruction case" width="900"/>
+</p>
+
+<p align="center">
+  <em>
+  Q-criterion comparison for the two-building test case. 
+  </em>
+</p>
 
 ---
 
