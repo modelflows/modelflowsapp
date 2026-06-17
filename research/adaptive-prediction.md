@@ -9,10 +9,6 @@ subtitle: Closed-loop OpenFOAM and POD-DL coupling for long-horizon unsteady-flo
 published: true
 ---
 
-***Main projects funding this research:***
-
-This research is developed within the ModelFLOWs group at Universidad Politécnica de Madrid. The work focuses on adaptive methodologies for accelerating CFD simulations by coupling high-fidelity OpenFOAM solvers with reduced-order deep-learning prediction models.
-
 
 # Divergence-aware Adaptive CFD-Surrogate Prediction
 
@@ -124,23 +120,37 @@ The first test evaluates the original POD-DL surrogate without adaptive correcti
 
 At Re = 200, the wake exhibits an organized periodic vortex-shedding pattern. The leading POD modes capture the dominant coherent structures, and the predicted probe signals reproduce the main oscillatory behavior of velocity and pressure. The predicted amplitude and phase remain reasonable over a finite prediction window.
 
+<p style="text-align: center;">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/research/CFD/Accelerate_CFD/assets/img/Adaptive_Comparison_Re200.png?raw=true" alt="Comparison for Re=200 baseline POD-DL prediction" width="60%">
+</p>
+
+<p style="text-align: center;"><em>Figure 4. Comparison between prediction and CFD ground truth at probe location (0.5D, 0.5D, 0) for the flow past a circular cylinder at Re=200.</em></p>
+
 However, the RMSE gradually increases as the prediction horizon extends. The error growth is especially visible for the streamwise and cross-stream velocity components. This confirms that even for a relatively regular wake regime, small autoregressive errors accumulate over time.
 
 <p style="text-align: center;">
     <img src="https://github.com/modelflows/modelflowsapp/blob/research/CFD/Accelerate_CFD/assets/img/Adaptive_RMSE_Re200.png?raw=true" alt="RMSE for Re=200 baseline POD-DL prediction" width="60%">
 </p>
 
-<p style="text-align: center;"><em>Figure 4. RMSE evolution for the baseline POD-DL prediction at Re = 200. The model captures the main periodic dynamics, but the error gradually increases during long-horizon autoregressive forecasting.</em></p>
+<p style="text-align: center;"><em>Figure 5. RMSE evolution for the baseline POD-DL prediction at Re = 200. The model captures the main periodic dynamics, but the error gradually increases during long-horizon autoregressive forecasting.</em></p>
 
 ## Case Re = 300
 
-At Re = 300, the wake becomes more complex. The energetic content is distributed over more POD modes, especially for the spanwise velocity component. The prediction still captures the dominant oscillatory behavior, but the mismatch grows faster than in the Re = 200 case.
+At Re = 300, the wake becomes more complex. The prediction still captures the dominant oscillatory behavior, but the mismatch grows faster than in the Re = 200 case.
+
+<p style="text-align: center;">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/research/CFD/Accelerate_CFD/assets/img/Adaptive_Comparison_Re300.png?raw=true" alt="Comparison for Re=200 baseline POD-DL prediction" width="60%">
+</p>
+
+<p style="text-align: center;"><em>Figure 6. Comparison between prediction and CFD ground truth at probe location (0.5D, 0.5D, 0) for the flow past a circular cylinder at Re=300.</em></p>
+
+The RMSE also increases as the prediction horizon extends, and the error increases in comparison to Case Re=200.
 
 <p style="text-align: center;">
     <img src="https://github.com/modelflows/modelflowsapp/blob/research/CFD/Accelerate_CFD/assets/img/Adaptive_RMSE_Re300.png?raw=true" alt="RMSE for Re=300 baseline POD-DL prediction" width="60%">
 </p>
 
-<p style="text-align: center;"><em>Figure 5. RMSE evolution for the baseline POD-DL prediction at Re = 300. Compared with Re = 200, the prediction mismatch grows more rapidly because the wake dynamics are less regular and more modal content is required.</em></p>
+<p style="text-align: center;"><em>Figure 7. RMSE evolution for the baseline POD-DL prediction at Re = 300. Compared with Re = 200, the prediction mismatch grows more rapidly because the wake dynamics are less regular and more modal content is required.</em></p>
 
 These results show that a purely offline POD-DL surrogate is not sufficiently robust for extended forecasts when the wake dynamics become more complex.
 
@@ -151,6 +161,13 @@ The scheduled adaptive strategy recalls CFD after a fixed number of predicted sn
 
 The updated model significantly reduces the RMSE in the second prediction stage compared with the non-adaptive baseline. In particular, the errors of the main velocity components are effectively reset after retraining and then evolve again from a lower baseline.
 
+<p style="text-align: center;">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/research/CFD/Accelerate_CFD/assets/img/Adaptive_RMSE_Re300_adaptive.png?raw=true" alt="RMSE for scheduled adaptive prediction at Re=300" width="60%">
+</p>
+
+<p style="text-align: center;"><em>Figure 8. RMSE evolution for scheduled adaptive prediction at Re = 300. The transparent curves indicate the non-adaptive baseline, while the highlighted curves show the adaptive prediction. After CFD recall and retraining, the prediction error is reduced in the second forecast stage.</em></p>
+
+
 The method also preserves key wake statistics, including:
 
 - mean and fluctuation level of turbulent kinetic energy,
@@ -158,12 +175,6 @@ The method also preserves key wake statistics, including:
 - overall evolution of the wake dynamics.
 
 For a representative **200-snapshot** interval, the CFD computation requires 15906.9 s using 60 CPU cores, while the surrogate workflow requires 2591.7 s using 4 CPU cores. After normalizing by CPU core count, the effective speed-up is approximately **92 times** relative to CFD.
-
-<p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/research/CFD/Accelerate_CFD/assets/img/Adaptive_RMSE_Re300_adaptive.png?raw=true" alt="RMSE for scheduled adaptive prediction at Re=300" width="60%">
-</p>
-
-<p style="text-align: center;"><em>Figure 6. RMSE evolution for scheduled adaptive prediction at Re = 300. The transparent curves indicate the non-adaptive baseline, while the highlighted curves show the adaptive prediction. After CFD recall and retraining, the prediction error is reduced in the second forecast stage.</em></p>
 
 
 # Event-triggered Divergence Detection
@@ -178,7 +189,7 @@ The results show that the uncertainty trigger is consistent with physically mean
     <img src="https://github.com/modelflows/modelflowsapp/blob/research/CFD/Accelerate_CFD/assets/img/Adaptive_Event_Triggered_Prediction.png?raw=true" alt="Event-triggered uncertainty monitoring" width="90%">
 </p>
 
-<p style="text-align: center;"><em>Figure 7. Event-triggered divergence detection based on ensemble uncertainty. The dashed green curves show raw uncertainty, the solid green curves show smoothed uncertainty, and the dashed yellow curves show the dynamic threshold. CFD is recalled when the uncertainty exceeds the threshold persistently.</em></p>
+<p style="text-align: center;"><em>Figure 9. Event-triggered divergence detection based on ensemble uncertainty. The dashed green curves show raw uncertainty, the solid green curves show smoothed uncertainty, and the dashed yellow curves show the dynamic threshold. CFD is recalled when the uncertainty exceeds the threshold persistently.</em></p>
 
 This strategy provides a practical online solution when future CFD reference data are unavailable. It allows the surrogate to continue when the prediction is stable, and automatically switches back to CFD when the reduced-order forecast becomes unreliable.
 
@@ -201,7 +212,7 @@ After retraining, the predicted drag and lift histories recover physically expec
     <img src="https://github.com/modelflows/modelflowsapp/blob/research/CFD/Accelerate_CFD/assets/img/Adaptive_Inlet_Variation.png?raw=true" alt="Adaptive prediction under varying inlet velocity" width="90%">
 </p>
 
-<p style="text-align: center;"><em>Figure 8. Adaptive prediction under varying inlet velocity. The inlet velocity changes from 1 to 2, then to 0.8 and 1.5 m/s. The uncertainty indicator rises after each regime change, triggering CFD recall and surrogate retraining.</em></p>
+<p style="text-align: center;"><em>Figure 10. Adaptive prediction under varying inlet velocity. The inlet velocity changes from 1 to 2, then to 0.8 and 1.5 m/s. The uncertainty indicator rises after each regime change, triggering CFD recall and surrogate retraining.</em></p>
 
 
 # Key Findings
