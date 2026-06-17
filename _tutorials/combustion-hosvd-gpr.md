@@ -40,3 +40,62 @@ For combustion phoenomena preprocessing is extremely important. Quantities span 
 $$\tilde{\mathcal{T}}_{i,j,p,q,k} = \frac{\mathcal{T}_{i,j,p,q,k} - \mu_k}{\sigma_k}$$
 
 For what concern the input parameters (Re and $X_{\mathrm{H_2}}$) are normalized to the range $[0, 1]$ via min-max scaling before being fed into the regression model.
+
+## **Methods**
+
+The algorithm works in two stages: 
+
+1. Data is decomposed using HOSVD
+2. Gaussian Process Regression is used to interpolate
+
+The intuitive idea is that HOSVD decomposes data as linear combination of eigenvectors. This means that instead of requiring all "pixels" the data is rewritten as a weighted sum of only a few pictures. The GPR is used to find out how much of each of these pictures is contained in new points that has not been used to build the basis.
+
+### **Higher Order Singular Value Decomposition (HOSVD)**
+
+HOSVD is a generalization of SVD to tensorial data. Rather than flattening the data into a matrix, it extracts dominant patterns along each dimension of the tensor simultaneously. Applied to the dataset tensor:
+
+$$\mathcal{T} \in \mathbb{R}^{N_{\mathrm{Re}} \times N_{X_{\mathrm{H_2}}} \times N_{\mathrm{variables}} \times N_{x} \times N_{y}}$$
+
+HOSVD decomposes it into a core tensor $\mathcal{G}$ and a set of orthogonal factor matrices $\mathbf{U}^{(n)}$, one per dimension:
+
+$$\mathcal{T} = \mathcal{G} \times_{\mathrm{Re}} \mathbf{U}^{\mathrm{Re}} \times_{X_{\mathrm{H_2}}} \mathbf{U}^{X_{\mathrm{H_2}}} \times_{\mathrm{var}} \mathbf{U}^{\mathrm{var}} \times_{x} \mathbf{U}^{x} \times_{y} \mathbf{U}^{y}$$
+
+The factor matrices along the parameter dimensions ($\mathbf{U}^{\mathrm{Re}}$ and $\mathbf{U}^{X_{\mathrm{H_2}}}$) play the role of coefficient matrices, encoding how the flow fields vary with each operating condition independently. 
+
+The information about both the singular values and modes is contained for each dimension in teh core tensor $\mathcal{G}$. By contracting the core tensor along the species axis and mapping the resulting dominant patterns back to  physical space through the spatial factor matrices $U_x$ and $U_y$.
+The figure below shows the leading HOSVD spatial modes extracted for the temperature field.
+![HOSVD spatial modes for temperature](assets/img/Tutorial/Combustion/hosvd_gpr/modes_hosvd_temperature.png)
+
+### **Gaussian Process Regression (GPR)**
+
+GPR is a non-parametric Bayesian regression algorithm. Given training points, it updates a prior distribution with the observed data and produces predictions in the form of a Gaussian distribution — yielding both a mean prediction and an associated uncertainty. The covariance between points is measured by a kernel function; here the absolute exponential kernel is used:
+
+$$k(x, x') = \sigma_f^2 \exp\left(-\frac{|x - x'|}{\ell}\right)$$
+
+For a new unseen point $x^*$, the predicted mean and variance are:
+
+$$\mu_* = \mathbf{k}_*^{\top} \mathbf{K}^{-1} \mathbf{y}, \qquad \sigma_*^2 = k(x^*, x^*) - \mathbf{k}_*^{\top} \mathbf{K}^{-1} \mathbf{k}_*$$
+
+### **HOSVD + GPR Framework**
+
+A key advantage of HOSVD is that its separable structure allows the two operating parameters (Re and $X_{\mathrm{H_2}}$) to be treated independently. Two separate 1D GPR models are trained, one per parameter axis:
+
+$$\hat{\mathbf{u}}_{\mathrm{Re}} = f_{\mathrm{Re}}\!\left(\mathrm{Re}\right), \qquad \hat{\mathbf{u}}_{X_{\mathrm{H_2}}} = f_{X_{\mathrm{H_2}}}\!\left(X_{\mathrm{H_2}}\right)$$
+
+The interpolated field for a new operating condition is then reconstructed by contracting the core tensor with the predicted factor vectors and rescaling:
+
+$$\hat{\mathcal{T}} = \mathcal{G} \times_{\mathrm{Re}} \hat{\mathbf{u}}_{\mathrm{Re}} \times_{X_{\mathrm{H_2}}} \hat{\mathbf{u}}_{X_{\mathrm{H_2}}} \times_{\mathrm{var}} \mathbf{U}^{\mathrm{var}} \times_{x} \mathbf{U}^{x} \times_{y} \mathbf{U}^{y}$$
+
+$$\hat{\mathbf{m}} = \hat{\mathcal{T}} \cdot \boldsymbol{\sigma} + \boldsymbol{\mu}$$
+
+### **Results**
+
+
+For each operating parameter, the corresponding HOSVD coefficients are interpolated independently with a 1D GPR. The plot below shows the GPR fit (mean ± 2σ) along the Reynolds number axis for the first four modes: black dots are the training coefficients, the gold diamond is the true coefficient at an unseen Re = 13,000, and the red marker is the GPR prediction with its uncertainty.
+
+![GPR interpolation of HOSVD coefficients along the Re axis](assets/img/Tutorial/Combustion/hosvd_gpr/gpr_interpolation_Re_axis.png)
+
+Combining the interpolated coefficients with the core tensor and rescaling gives the reconstructed field for the unseen condition. The bar chart below reports the relative $L_2$ reconstruction error per species for the test case Re = 13,000, $X_{\mathrm{H_2}}$ = 8%, together with the overall mean error $\bar{e}$.
+
+![Reconstruction error per species for Re=13000, mf=0.08](assets/img/Tutorial/Combustion/hosvd_gpr/relative_error_per_feat_Re13000_mf008.png)
+
