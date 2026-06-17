@@ -32,7 +32,7 @@ Together, these methods provide a path from sparse sensors to full-field reconst
 The reconstruction workflow starts from a high-fidelity CFD dataset. The full 3D field is sampled at a reduced number of sensor locations, and these sparse measurements are used to build a low-cost reduced-order representation. The reconstructed solution is then recovered over the complete computational domain.
 
 <p align="center">
-  <img src="{{ '/assets/img/urban-flows/Methodology_scheme.png' | relative_url }}" alt="Methodology for sparse-sensor 3D reconstruction" width="850"/>
+  <img src="{{ '/assets/img/urban-flows/methodology_scheme.png' | relative_url }}" alt="Methodology for sparse-sensor 3D reconstruction" width="850"/>
 </p>
 
 <p align="center">
