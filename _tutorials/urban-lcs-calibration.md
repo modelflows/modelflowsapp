@@ -33,23 +33,31 @@ The workflow focuses on LSTM-based calibration of pollutant measurements such as
 
 # Requirements
 
-- Python
-- NumPy
-- Pandas
-- Matplotlib
-- scikit-learn
-- TensorFlow / Keras
-- Jupyter Notebook
+- Python: 3.9.18
+- NumPy: 1.26.4
+- Pandas:
+- Matplotlib: 3.9.0
+- scikit-learn: 1.5.0
+- TensorFlow / Keras : 2.10.0
+
 
 # Input Data
 
-- Low-cost sensor measurements:
-- Reference air-quality measurements:
-- Meteorological variables:
-- Pollutant-specific sensor variables:
-- Time stamps:
-- Preprocessed calibration files:
-- Baseline-corrected sensor data:
+- Low-cost sensor measurements
+- Reference air-quality measurements
+- Meteorological variables
+- Pollutant-specific sensor variables
+- Baseline-corrected sensor data
+
+  <p align="center">
+  <img src="{{ '/assets/img/met_cal.png' | relative_url }}" alt="Calibration methodology" width="850"/>
+</p>
+
+<p align="center">
+  <em>
+  Methodology for the temporal calibration of low-cost air-quality sensors.
+  </em>
+</p>
 
 # Step-by-Step Tutorial
 
