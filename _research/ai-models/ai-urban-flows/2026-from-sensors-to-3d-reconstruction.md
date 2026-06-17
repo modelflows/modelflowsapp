@@ -119,13 +119,15 @@ The sensor grid is selected to provide a reduced but representative sampling of 
   </em>
 </p>
 
-A denser sensor grid usually improves the reconstruction because more spatial information is available. However, the objective of the low-cost approach is to keep the number of sensors as small as possible while still preserving the main flow and pollutant structures. In this work, the decomposition was applied to two datasets and only 1-4% of the total spatial locations were used as sensors (Compression = 150x & 25x).
+A denser sensor grid usually improves the reconstruction because more spatial information is available. However, the objective of the low-cost approach is to keep the number of sensors as small as possible while still preserving the main flow and pollutant structures. In this work, the decomposition was applied to two datasets and only 1-4% of the total spatial locations were used as sensors (Compression = 150x & 25x). The first dataset corresponds to a realistic urban-flow case from Vallecas, where the reconstruction is performed over a large computational domain containing several buildings and pollutant fields. The second dataset is a two-building LES case, used to test the methods on a more controlled flow with strong wake interactions and coherent vortical structures.
+
 
 ---
 
 ## Ground Truth and Reconstructed Fields
 
-The reconstruction quality is assessed by comparing the original CFD field with the reconstructed solutions.
+The reconstruction quality is assessed by comparing the original CFD field with the reconstructed solutions. Representative results are shown for turbulent kinetic energy (k) and carbon monoxide (CO), which are selected from the Vallecas test case to illustrate the behaviour of the low-cost methods for both flow-related and pollutant-concentration fields.
+
 
 <p align="center">
   <img src="{{ 'assets/img/urban-flows/GT+RE_k.png' | relative_url }}" alt="Ground truth comparison k" width="850"/>
