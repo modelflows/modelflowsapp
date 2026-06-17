@@ -214,27 +214,13 @@ These methods can support:
 
 ---
 
-## Related Papers
+## References
 
 Arindam Sengupta, Soledad Le Clainche, and collaborators.  
 **Low-Cost Reconstruction of Three-Dimensional Urban Flow and Pollutant Fields from Sparse Sensors.**  
 Manuscript in preparation.
 
----
 
-## References
-
-L. R. Tucker.  
-**Some mathematical notes on three-mode factor analysis.**  
-Psychometrika, 31, 279–311, 1966.
-
-Gene H. Golub and Christian Reinsch.  
-**Singular Value Decomposition and Least Squares Solutions.**  
-Numerische Mathematik, 14, 403–420, 1970.
-
-L. De Lathauwer, B. De Moor, and J. Vandewalle.  
-**A Multilinear Singular Value Decomposition.**  
-SIAM Journal on Matrix Analysis and Applications, 21(4), 1253–1278, 2000.
 
 Soledad Le Clainche and José M. Vega.  
 **Higher Order Dynamic Mode Decomposition.**  
