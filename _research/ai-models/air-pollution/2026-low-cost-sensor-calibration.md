@@ -269,11 +269,9 @@ This calibration framework can support:
 
 ## Code and Data Availability
 
-**Code and tutorials:**  
-Coming soon
-
-**Data:**  
-[http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408](http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408)
+**Code and tutorials:** coming soon.  
+**Data:**
+[http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408](http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408) 
 
 ---
 
