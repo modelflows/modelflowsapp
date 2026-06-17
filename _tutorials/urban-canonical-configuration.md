@@ -90,8 +90,9 @@ The 3×3 array consists of identical cubic buildings (0.2 m × 0.2 m × 0.2 m) o
 
 5. Add the central building separately (`Shift+A → Mesh → Cube`) and set its height according to the configuration (Case 1H: 0.2 m, Case 2H: 0.4 m). Position it at the center of the grid.
 
-<!-- IMAGE NEEDED: Blender viewport showing the completed 3×3 array (Case 2H) from an
-     isometric view, with the taller central building visible -->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/modelflows/modelflowsapp/software/Apps/Urban/assets/img/tutorial-aij/2.png" alt="Viewport Screenshot" width="600">
+</div>
 
 6. Select all: `A`
 
@@ -227,9 +228,9 @@ We use the standard **k-ε model**, which is the reference turbulence model for 
 
 For urban CFD, a **cylindrical computational domain** is strongly preferred over a rectangular box.
 
-<!-- IMAGE NEEDED: side-by-side diagram comparing rectangular vs cylindrical domain,
-     both with wind direction arrows. Show how rectangular requires a different
-     mesh orientation for each wind angle, while cylindrical uses the same mesh -->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/modelflows/modelflowsapp/software/Apps/Urban/assets/img/tutorial-aij/3.png" alt="Cylindrical Computational Domain" width="600">
+</div>
 
 **Why cylindrical?**
 
@@ -372,10 +373,6 @@ Loose tolerances may stop the solver before the solution has truly stabilised, e
 
 If deviations are too large, adjust the inlet roughness length z₀ or friction velocity u*.
 
-<!-- IMAGE NEEDED: plot showing two overlaid vertical profiles of U/Uref vs z/H:
-     solid line = inlet profile, dashed line = profile at 15H downstream.
-     They should nearly overlap, demonstrating ABL self-preservation -->
-
 ---
 
 ### Best Practice 5 — Mesh Convergence Analysis
@@ -386,9 +383,9 @@ If deviations are too large, adjust the inlet roughness length z₀ or friction 
 
 The windward profile is in the undisturbed approach flow, where mesh requirements are modest. The leeward profile is in the building wake, where the flow is more complex and mesh-sensitive. Checking both ensures the mesh is adequate in the most demanding region.
 
-<!-- IMAGE NEEDED: top-view diagram of the cylindrical domain showing the building array
-     at center, with two vertical sampling lines marked:
-     Y = -0.8 m (windward, upstream) and Y = 1.0 m (leeward, downstream of central building) -->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/modelflows/modelflowsapp/software/Apps/Urban/assets/img/tutorial-aij/4.png" alt="Sampling Line locations" width="600">
+</div>
 
 **How to extract profiles with `sampleLines`**
 
@@ -436,10 +433,6 @@ $$GCI = F_s \frac{|e|}{r^p - 1}$$
 
 where e is the relative error between meshes, r is the refinement ratio, p is the observed order of convergence, and F_s = 1.25 is a safety factor. GCI values below 10% indicate the solution is mesh-independent.
 
-<!-- IMAGE NEEDED: bar chart or table graphic showing GCI values for the three mesh pairs
-     (Coarse/Medium, Medium/Fine, Coarse/Fine) for both windward and leeward lines,
-     all bars below the 10% threshold line -->
-
 ---
 
 ### Running the simulation
@@ -475,9 +468,6 @@ Replace `8` with the number of available CPU cores, and set `numberOfSubdomains 
 ```bash
 foamToVTK
 ```
-
-<!-- IMAGE NEEDED: residual convergence plot showing U, k, epsilon on a log scale
-     vs iteration number, all reaching the 1e-5 target -->
 
 ---
 
@@ -515,8 +505,5 @@ Repeat for the leeward line `(0, 1.0, 0)` → `(0, 1.0, 1.2)`.
 1. **Filters → Common → Stream Tracer**
 2. Seed type: **Line**, placed across the inlet
 3. **Apply**, colour by `U` magnitude
-
-<!-- IMAGE NEEDED: ParaView streamline visualisation coloured by velocity magnitude,
-     showing flow deflection over and around the building array (3D perspective view) -->
 
 ---
