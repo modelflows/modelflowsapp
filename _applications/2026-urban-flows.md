@@ -33,6 +33,13 @@ The AI/ROM part is organized into:
 ### Tutorials
 
 - [Urban Sensors 3D Reconstruction]({{ "/software/tutorials/urban-3d-reconstruction/" | relative_url }})
+## Related Research Page
+
+- <a href="{{ '/research/ai-models/ai-urban-flows/2026-from-sensors-to-3d-reconstruction/' | relative_url }}">From Sensors to 3D Reconstruction</a>
+
+## Tutorials
+
+- <a href="{{ '/software/tutorials/urban-3d-reconstruction/' | relative_url }}">Urban Sensors 3D Reconstruction</a>
 ### Notebooks
 
 - Notebook 1: coming soon
