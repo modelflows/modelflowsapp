@@ -44,25 +44,21 @@ lcSVD and lcHOSVD are mainly used for spatial 3D reconstruction. lcHODMD is used
 
 # Requirements
 
-- Python
-- NumPy
-- SciPy
-- Matplotlib
-- scikit-learn
-- PyVista
-- ParaView
-- Jupyter Notebook
-- Processed CFD tensor or snapshot data
+- Python: 3.9.18
+- NumPy: 1.26.4
+- SciPy: 1.13.1
+- Matplotlib: 3.9.0
+- scikit-learn: 1.5.0
 
 # Input Data
 
-- Urban CFD dataset:
-- Sparse sensor locations:
-- Ground-truth 3D fields:
-- Velocity components:
-- Pressure field:
-- Pollutant concentration fields:
-- Time-resolved snapshots:
+- Urban CFD dataset 
+- Sparse sensor locations
+- Ground-truth 3D fields
+- Velocity components
+- Pressure field
+- Pollutant concentration fields
+- Time-resolved snapshots
 
 # Step-by-Step Tutorial
 
