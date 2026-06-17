@@ -16,7 +16,7 @@ Add here geometry generation, meshing, boundary conditions, solver setup, OpenFO
 ## Tutorials
 - [Urban CFD Workflow (Sphinx Tutorial)]({{ "/software/tutorials/urban-cfd/" | relative_url }})
 - [Urban CFD Workflow]({{ "/software/tutorials/urban-cfd/" | relative_url }})
-- Tutorial 3:
+- [Urban CFD with OpenFOAM: AIJ Case C]({{ "/tutorials/urban-canonical-configuration/" | relative_url }})
 
 # AI, ROM & Data-Driven Models
 
