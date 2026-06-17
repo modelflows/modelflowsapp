@@ -219,9 +219,3 @@ These methods can support:
 Arindam Sengupta, Soledad Le Clainche, and collaborators.  
 **Low-Cost Reconstruction of Three-Dimensional Urban Flow and Pollutant Fields from Sparse Sensors.**  
 Manuscript in preparation.
-
-
-
-Soledad Le Clainche and José M. Vega.  
-**Higher Order Dynamic Mode Decomposition.**  
-SIAM Journal on Applied Dynamical Systems, 16(2), 882–925, 2017.
