@@ -144,6 +144,7 @@ The reconstruction quality is assessed by comparing the original CFD field with 
 <p align="center">
   <em>
   Comparison between ground truth, low-cost input and reconstructed fields using HOSVD and SVD, along with their low-cost counterparts for carbon monoxide (CO).
+  </em>
 </p>
 
 The comparison shows how the low-cost methods recover the main spatial distribution of the field while using only sparse sensor information. lcSVD provides a fast reconstruction based on global modes, while lcHOSVD gives a more structured tensor representation of the 3D field.
