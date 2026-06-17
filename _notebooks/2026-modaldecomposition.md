@@ -112,7 +112,7 @@ or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/modal-
 Low-cost High Order Singular Value Decomposition (LC-HOSVD) extends the low-cost modal reconstruction idea to multidimensional tensor databases. Unlike standard SVD, where the dataset is reshaped into a matrix, LC-HOSVD preserves the natural tensor structure of the data. This is especially useful for flow databases arranged in several dimensions, such as spatial directions, physical variables, parameters, and time. The method first selects a reduced set of representative sensor locations from the original high-resolution database. These sparse measurements are then used to build a reduced tensor. HOSVD is applied along the relevant tensor directions, producing compact mode matrices and a core tensor. The retained modes are finally used to reconstruct the high-resolution database while keeping the multidimensional structure of the original problem. LC-HOSVD is particularly suitable for large databases, where preserving directional information is important. In urban flow applications, this allows the reconstruction of velocity, pressure, turbulence quantities, and pollutant concentration fields from a reduced number of sensor points. Compared with matrix-based LC-SVD, LC-HOSVD can better capture directional dependencies and localized three-dimensional structures.
 
 <p align="center">
-  <img src="{{ '/assets/img/LC-HOSVD.png' | relative_url }}" alt="Low-cost HOSVD methodology summary" width="850"/>
+  <img src="https://github.com/modelflows/modelflowsapp/blob/software/assets/img/LC-HOSVD.png?raw=true" alt="Low-cost HOSVD methodology summary" width="850"/>
 </p>
 
 <p align="center">
