@@ -1,3 +1,0 @@
-firstCellHeight/firstCellHeight.C
-
-LIB = $(FOAM_USER_LIBBIN)/libUserfieldFunctionObjects
