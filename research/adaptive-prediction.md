@@ -53,7 +53,7 @@ The workflow starts with a short CFD simulation. The generated snapshots are use
 When the scheduled update time is reached, or when prediction divergence is detected, the workflow switches back to CFD. New snapshots are generated, the POD-DL model is retrained or updated, and surrogate prediction then resumes. In this way, the framework alternates between **expensive but accurate CFD simulation** and **fast but monitored POD-DL prediction**.
 
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/adaptive_prediction/Adaptive_Framework.png?raw=true" alt="Adaptive CFD-POD-DL framework" width="85%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/adaptive_prediction/Adaptive_Framework.png?raw=true" alt="Adaptive CFD-POD-DL framework" width="85%">
 </p>
 
 <p style="text-align: center;"><em>Figure 1. Closed-loop adaptive framework coupling online CFD simulation and POD-DL prediction. CFD snapshots are compressed by POD, the reduced coefficients are predicted by a deep-learning model, and the monitoring module decides whether the forecast can continue or whether CFD should be recalled.</em></p>
@@ -94,7 +94,7 @@ The CFD simulations are performed using **OpenFOAM** with the `pimpleFoam` solve
 The mesh contains approximately **741 thousand cells**, with refinement near the cylinder and in the wake region. The spanwise boundaries are periodic. The inlet velocity and kinematic viscosity are adjusted to obtain different Reynolds numbers while keeping the same geometry. Probe points are placed in the wake region to evaluate the temporal evolution of velocity and pressure predicted by the surrogate.
 
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/adaptive_prediction/Adaptive_Geometry_Mesh.png?raw=true" alt="Computational geometry and mesh" width="90%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/adaptive_prediction/Adaptive_Geometry_Mesh.png?raw=true" alt="Computational geometry and mesh" width="90%">
 </p>
 
 <p style="text-align: center;"><em>Figure 2. Computational geometry and mesh for the circular-cylinder wake. The domain extends 10D upstream and 20D downstream of the cylinder, with a 20D cross-stream height. The mesh is refined around the cylinder and in the wake region where vortex shedding develops.</em></p>
@@ -110,7 +110,7 @@ Before training the surrogate model, the CFD setup is validated using standard i
 The numerical results follow the experimental trends over the investigated Reynolds-number range. The mean drag coefficient decreases gradually with Reynolds number. The base-pressure coefficient remains close to the experimental values and captures the expected tendency. The Strouhal number remains around the characteristic vortex-shedding range for cylinder wakes. This validation confirms that the generated CFD snapshots provide a reliable basis for POD-DL training and adaptive prediction.
 
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/adaptive_prediction/Adaptive_CFD_Validation.png?raw=true" alt="Validation of drag coefficient, base-pressure coefficient and Strouhal number" width="55%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/adaptive_prediction/Adaptive_CFD_Validation.png?raw=true" alt="Validation of drag coefficient, base-pressure coefficient and Strouhal number" width="55%">
 </p>
 
 <p style="text-align: center;"><em>Figure 3. Validation of the OpenFOAM setup using mean drag coefficient, mean base-pressure coefficient and Strouhal number. The simulated values are consistent with experimental trends over Re = 200-400.</em></p>
@@ -127,7 +127,7 @@ At Re = 200, the wake exhibits an organized periodic vortex-shedding pattern. Th
 However, the RMSE gradually increases as the prediction horizon extends. The error growth is especially visible for the streamwise and cross-stream velocity components. This confirms that even for a relatively regular wake regime, small autoregressive errors accumulate over time.
 
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/adaptive_prediction/Adaptive_RMSE_Re200.png?raw=true" alt="RMSE for Re=200 baseline POD-DL prediction" width="60%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/adaptive_prediction/Adaptive_RMSE_Re200.png?raw=true" alt="RMSE for Re=200 baseline POD-DL prediction" width="60%">
 </p>
 
 <p style="text-align: center;"><em>Figure 4. RMSE evolution for the baseline POD-DL prediction at Re = 200. The model captures the main periodic dynamics, but the error gradually increases during long-horizon autoregressive forecasting.</em></p>
@@ -137,7 +137,7 @@ However, the RMSE gradually increases as the prediction horizon extends. The err
 At Re = 300, the wake becomes more complex. The energetic content is distributed over more POD modes, especially for the spanwise velocity component. The prediction still captures the dominant oscillatory behavior, but the mismatch grows faster than in the Re = 200 case.
 
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/adaptive_prediction/Adaptive_RMSE_Re300.png?raw=true" alt="RMSE for Re=300 baseline POD-DL prediction" width="60%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/adaptive_prediction/Adaptive_RMSE_Re300.png?raw=true" alt="RMSE for Re=300 baseline POD-DL prediction" width="60%">
 </p>
 
 <p style="text-align: center;"><em>Figure 5. RMSE evolution for the baseline POD-DL prediction at Re = 300. Compared with Re = 200, the prediction mismatch grows more rapidly because the wake dynamics are less regular and more modal content is required.</em></p>
@@ -160,7 +160,7 @@ The method also preserves key wake statistics, including:
 For a representative **200-snapshot** interval, the CFD computation requires 15906.9 s using 60 CPU cores, while the surrogate workflow requires 2591.7 s using 4 CPU cores. After normalizing by CPU core count, the effective speed-up is approximately **92 times** relative to CFD.
 
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/adaptive_prediction/Adaptive_RMSE_Re300_adaptive.png?raw=true" alt="RMSE for scheduled adaptive prediction at Re=300" width="60%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/adaptive_prediction/Adaptive_RMSE_Re300_adaptive.png?raw=true" alt="RMSE for scheduled adaptive prediction at Re=300" width="60%">
 </p>
 
 <p style="text-align: center;"><em>Figure 6. RMSE evolution for scheduled adaptive prediction at Re = 300. The transparent curves indicate the non-adaptive baseline, while the highlighted curves show the adaptive prediction. After CFD recall and retraining, the prediction error is reduced in the second forecast stage.</em></p>
@@ -175,7 +175,7 @@ In this mode, three POD-DL predictors are trained with different random seeds. T
 The results show that the uncertainty trigger is consistent with physically meaningful degradation. The raw uncertainty signal is noisy, so a smoothed signal is used to identify robust trends. When the smoothed ensemble uncertainty rises above the dynamic threshold, the forecast is terminated and CFD is recalled. This avoids the need for future CFD ground-truth data during online prediction.
 
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/adaptive_prediction/Adaptive_Event_Triggered_Prediction.png?raw=true" alt="Event-triggered uncertainty monitoring" width="90%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/adaptive_prediction/Adaptive_Event_Triggered_Prediction.png?raw=true" alt="Event-triggered uncertainty monitoring" width="90%">
 </p>
 
 <p style="text-align: center;"><em>Figure 7. Event-triggered divergence detection based on ensemble uncertainty. The dashed green curves show raw uncertainty, the solid green curves show smoothed uncertainty, and the dashed yellow curves show the dynamic threshold. CFD is recalled when the uncertainty exceeds the threshold persistently.</em></p>
@@ -198,7 +198,7 @@ The ensemble uncertainty increases sharply after each inlet-velocity change. Thi
 After retraining, the predicted drag and lift histories recover physically expected trends. This demonstrates that the adaptive framework can track regime changes and maintain predictive reliability under evolving operating conditions.
 
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/master/assets/img/adaptive_prediction/Adaptive_Inlet_Variation.png?raw=true" alt="Adaptive prediction under varying inlet velocity" width="90%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/adaptive_prediction/Adaptive_Inlet_Variation.png?raw=true" alt="Adaptive prediction under varying inlet velocity" width="90%">
 </p>
 
 <p style="text-align: center;"><em>Figure 8. Adaptive prediction under varying inlet velocity. The inlet velocity changes from 1 to 2, then to 0.8 and 1.5 m/s. The uncertainty indicator rises after each regime change, triggering CFD recall and surrogate retraining.</em></p>
@@ -248,3 +248,4 @@ This research can be organized as a reproducible workflow for adaptive predictio
 Xiangrui Zou, Zhuoqun Zhao, Guillermo Barragán, Soledad Le Clainche.  
 Divergence-aware adaptive prediction framework for accelerating CFD simulations of unsteady flows.  
 [https://doi.org/10.48550/arXiv.2605.24150](https://doi.org/10.48550/arXiv.2605.24150)
+
