@@ -44,13 +44,13 @@ The AI/ROM part is organized into three main directions:
 
 ### Resources & Databases
 
-- Dataset:coming soon
-- Case files:coming soon
+- Dataset: coming soon
+- Case files: coming soon
 
 
 ### Publications
 
-- Paper / preprint / related post:coming soon
+- Paper / preprint / related post: coming soon
 
 ### Contributors
 
@@ -69,33 +69,33 @@ The AI/ROM part is organized into three main directions:
 ### Tutorials
 
 -[Predictions]({{ "/software/tutorials/urban-mdhodmd-forecasting/" | relative_url }})
-# Notebooks
+### Notebooks
 
 - Notebook 1:coming soon
 
 
-# Videos
+### Videos
 
 - Video 1:coming soon
 
 
-# Resources & Databases
+### Resources & Databases
 
 - Dataset:coming soon
 - Case files:coming soon
 
-# Publications
+### Publications
 
 - Paper / preprint / related post:coming soon
 
-# Contributors
+### Contributors
 
 - Arindam Sengupta
 - José Miguel Pérez
 - Soledad Le Clainche
 
 
-3. **Calibration of low-cost air-quality sensors**  
+# 3. **Calibration of low-cost air-quality sensors**  
    Correction of low-cost sensor measurements using temporal deep learning models trained with reference-grade observations.
 ### Related Research Page
 
@@ -105,27 +105,27 @@ The AI/ROM part is organized into three main directions:
 
 - Low-cost sensor calibration tutorial: [Urban Sensors 3D Reconstruction]({{ "/software/tutorials/urban-lcs-calibration/" | relative_url }})
 
-# Notebooks
+### Notebooks
 
 - Notebook 1: coming soon
 
-# Videos
+### Videos
 
 - Video 1:
 
 
-# Resources & Databases
+### Resources & Databases
 
 - Dataset:coming soon
 - Case files:coming soon
 
-# Publications
+### Publications
 
 - Paper / preprint / related post: 
 
-# Contributors
+### Contributors
 
-# Contributors
+### Contributors
 
 - Arindam Sengupta
 - Tony Bush
