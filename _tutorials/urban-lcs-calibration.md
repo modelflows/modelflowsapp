@@ -214,17 +214,14 @@ The calibrated output should be compared with the reference measurement and the 
 
 - Notebook: coming soon
 - Video: coming soon
-- Dataset: coming soon
+- Dataset: <a href="http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408">OxAria low-cost air-quality sensor dataset</a>
 - Repository: coming soon
-- Research page: [Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors]({{ "/research/ai-models/air-pollution/2026-temporal-deep-learning-calibration-low-cost-sensors/" | relative_url }})
-- Application page: [Urban Flows]({{ "/software/applications/2026-urban-flows/" | relative_url }})
+- Research page: <a href="{{ '/research/ai-models/air-pollution/2026-temporal-deep-learning-calibration-low-cost-sensors/' | relative_url }}">Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors</a>
+- Application page: <a href="{{ '/software/applications/2026-urban-flows/' | relative_url }}">Urban Flows</a>
 
 # Publications
 
-- Arindam Sengupta, Tony Bush, Ben Marner, Jose Miguel Pérez, and Soledad Le Clainche.  
-  **A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors.**  
-  arXiv:2604.21527 [cs.LG], 2026.  
-  [https://doi.org/10.48550/arXiv.2604.21527](https://doi.org/10.48550/arXiv.2604.21527)
+- <a href="https://doi.org/10.48550/arXiv.2604.21527">A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors</a>
 
 # Contributors
 
@@ -233,5 +230,4 @@ The calibrated output should be compared with the reference measurement and the 
 - Ben Marner
 - Jose Miguel Pérez
 - Soledad Le Clainche
-- Air Quality Consultants Ltd.
-- Universidad Politécnica de Madrid
+
