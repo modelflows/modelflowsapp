@@ -358,10 +358,6 @@ Loose tolerances may stop the solver before the solution has truly stabilised, e
 
 **Before running any simulation with buildings, always run an empty domain simulation first.**
 
-<!-- IMAGE NEEDED: diagram of the empty cylindrical domain (no buildings) with the
-     ABL inlet profile shown on one side, and two vertical monitoring lines marked:
-     one at the inlet and one 15H downstream -->
-
 **Why?** The ABL inlet profile can be distorted as it travels through the domain due to numerical diffusion and wall boundary conditions. If the profile changes significantly before reaching the buildings, the wind conditions acting on them are not what you intended.
 
 **How to run it:** Remove the buildings STL, run `blockMesh` only (skip `snappyHexMesh`), then run `foamRun`.
@@ -488,9 +484,9 @@ foamToVTK
 3. **Apply**
 4. Set colour variable to `U` magnitude and click **Rescale**
 
-<!-- IMAGE NEEDED: ParaView velocity magnitude contour map at z = 0.02 m, top view,
-     0° wind direction. Annotate: acceleration corridors between buildings,
-     recirculation zone behind the central building -->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/modelflows/modelflowsapp/software/Apps/Urban/assets/img/tutorial-aij/5.png" alt="Velocity Contour Map" width="600">
+</div>
 
 ### Extracting velocity profiles
 
