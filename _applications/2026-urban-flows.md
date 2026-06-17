@@ -24,7 +24,7 @@ This part collects the reduced-order modelling and data-driven workflows develop
 
 The AI/ROM part is organized into three main directions:
 
-1. ###**3D reconstruction from sparse sensors**  
+### 1. **3D reconstruction from sparse sensors**  
    Reconstruction of full 3D urban flow and pollutant fields from a reduced number of sensor locations using low-cost modal decomposition methods.
 # Related Research Page
 
