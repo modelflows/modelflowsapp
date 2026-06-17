@@ -89,7 +89,7 @@ Instead of unfolding the full domain into a single matrix, the decomposition is 
 
 <p align="center">
   <em>
-  lcHOSVD reconstruction strategy. The tensor structure of the field is preserved by decomposing the data along the spatial directions and storing their interaction in a compact core tensor.
+  lcSVD and lcHOSVD reconstruction strategy. 
   </em>
 </p>
 
@@ -148,24 +148,6 @@ The reconstruction quality is assessed by comparing the original CFD field with 
 </p>
 
 The comparison shows how the low-cost methods recover the main spatial distribution of the field while using only sparse sensor information. lcSVD provides a fast reconstruction based on global modes, while lcHOSVD gives a more structured tensor representation of the 3D field.
-
----
-
-## Error and Performance Comparison
-
-The accuracy and computational performance of the methods are compared using reconstruction error, execution time, and compression. This provides a direct way to evaluate the balance between cost and accuracy.
-
-<p align="center">
-  <img src="{{ 'assets/img/urban-flows/error_comparison.png' | relative_url }}" alt="RRMSE and computational cost comparison" width="850"/>
-</p>
-
-<p align="center">
-  <em>
-  Reconstruction error and computational cost comparison between lcSVD and lcHOSVD.
-  </em>
-</p>
-
-In general, lcSVD is faster because it requires a single matrix decomposition. lcHOSVD is usually more accurate for complex three-dimensional fields because it preserves the spatial tensor structure and captures interactions between the x, y, and z directions.
 
 ---
 
