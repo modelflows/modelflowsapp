@@ -127,6 +127,7 @@ The AI/ROM part is organized into:
 **A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors.**  
 arXiv:2604.21527 [cs.LG], 2026.  
 [https://doi.org/10.48550/arXiv.2604.21527](https://doi.org/10.48550/arXiv.2604.21527)
+- - <a href="https://doi.org/10.48550/arXiv.2604.21527">A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors</a>
 
 
 ### Contributors
