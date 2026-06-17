@@ -19,6 +19,16 @@ The tutorial includes three reconstruction methods:
 
 lcSVD and lcHOSVD are mainly used for spatial 3D reconstruction. lcHODMD is used for dynamic reconstruction, where the objective is to recover time-resolved flow structures from reduced information.
 
+<p align="center">
+  <img src="{{ '/assets/img/lcROM.png' | relative_url }}" alt="General low-cost ROM methodology" width="850"/>
+</p>
+
+<p align="center">
+  <em>
+  General low-cost reduced-order modelling workflow for reconstructing high-dimensional flow databases from sparse sensor information.
+  </em>
+</p>
+
 # Learning Objectives
 
 - Load and prepare 3D urban CFD data.
@@ -75,7 +85,7 @@ The data should be arranged so that the 3D structure of the domain is preserved.
 
 Choose the variable to reconstruct.
 
-Each variable can be reconstructed independently or together at once (depends on the user). For example, one can first reconstruct `u`, then repeat the same workflow for `v`, `w`, pressure, or pollutant concentration.
+Each variable can be reconstructed independently or together at once. For example, one can first reconstruct `u`, then repeat the same workflow for `v`, `w`, pressure, or pollutant concentration.
 
 ## Step 3. Define the full-order reference field
 
@@ -102,6 +112,16 @@ Apply low-cost SVD to reconstruct the full 3D field from sparse sensor informati
 
 In lcSVD, the 3D field is reshaped into a matrix. The sparse sensor matrix is then decomposed, and a selected number of modes is retained.
 
+<p align="center">
+  <img src="{{ '/assets/img/LC-SVD.png' | relative_url }}" alt="Low-cost SVD reconstruction methodology" width="850"/>
+</p>
+
+<p align="center">
+  <em>
+  Low-cost SVD workflow for reconstructing the full field from a reduced matrix built using sparse sensor locations.
+  </em>
+</p>
+
 The main steps are:
 
 1. reshape the 3D field into matrix form;
@@ -126,6 +146,16 @@ Apply low-cost HOSVD to reconstruct the field while preserving the tensor struct
 
 Unlike lcSVD, lcHOSVD keeps the spatial directions separated. This is useful when the flow has directional structures in the `x`, `y`, and `z` directions.
 
+<p align="center">
+  <img src="{{ '/assets/img/LC-HOSVD.png' | relative_url }}" alt="Low-cost HOSVD reconstruction methodology" width="850"/>
+</p>
+
+<p align="center">
+  <em>
+  Low-cost HOSVD workflow for tensor-based reconstruction, where spatial directions are treated separately and coupled through a compact core tensor.
+  </em>
+</p>
+
 The main steps are:
 
 1. arrange the field as a tensor;
@@ -149,6 +179,16 @@ The main outputs are:
 Apply low-cost HODMD to reconstruct the time-resolved flow field from reduced information.
 
 lcHODMD is useful when the dataset contains temporal evolution. Instead of reconstructing only one static field, the method reconstructs a sequence of snapshots by extracting dynamic modes and temporal behaviour.
+
+<p align="center">
+  <img src="{{ '/assets/img/LC-HODMD.png' | relative_url }}" alt="Low-cost HODMD reconstruction methodology" width="850"/>
+</p>
+
+<p align="center">
+  <em>
+  Low-cost HODMD workflow for recovering time-resolved flow structures from a reduced dynamic representation.
+  </em>
+</p>
 
 The important HODMD parameters are:
 
@@ -197,8 +237,6 @@ Use the retained dynamic modes and temporal coefficients to reconstruct the flow
 
 The reconstructed snapshots are then compared with the reference CFD data.
 
-
-
 # Expected Outputs
 
 - lcSVD reconstructed 3D fields.
@@ -211,19 +249,16 @@ The reconstructed snapshots are then compared with the reference CFD data.
 - Ground-truth versus reconstructed visualizations.
 - Computational time and compression comparison.
 
-
 # Related Links
 
 - Notebook: coming soon
 - Video: coming soon
 - Dataset: coming soon
 - Repository: coming soon
-- Research page: [From Sensors to 3D Reconstruction]({{ "/research/ai-models/ai-urban-flows/2026-from-sensors-to-3d-reconstruction/" | relative_url }})
-- Application page: [Urban Flows]({{ "/software/applications/2026-urban-flows/" | relative_url }})
+- Research page: <a href="{{ '/research/ai-models/ai-urban-flows/2026-from-sensors-to-3d-reconstruction/' | relative_url }}">From Sensors to 3D Reconstruction</a>
+- Application page: <a href="{{ '/software/applications/2026-urban-flows/' | relative_url }}">Urban Flows</a>
 
 # Contributors
 
 - Arindam Sengupta
 - Soledad Le Clainche
-- Jose Miguel Pérez
-- MODELAIR / MODELFLOWS collaborators
