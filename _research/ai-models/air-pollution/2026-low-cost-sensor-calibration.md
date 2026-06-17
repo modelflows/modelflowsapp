@@ -42,11 +42,7 @@ Together, these steps provide a calibration pipeline that improves the reliabili
 The calibration workflow starts from time-stamped low-cost sensor measurements, meteorological data, and co-located reference observations. The data are first cleaned and structured, then enriched with temporal and environmental features. A rolling-window sequence is passed to the LSTM model, which predicts the calibrated pollutant concentration.
 
 <p align="center">
-  <a href="https://github.com/modelflows/modelflowsapp/blob/software/application/assets/img/met_cal.png?raw=true">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/software/application/assets/img/met_cal.png?raw=true"
-         alt="Low-cost sensor calibration methodology"
-         width="850">
-  </a>
+  <img src="{{ '/assets/img/met_cal.png' | relative_url }}" alt="Low-cost sensor calibration methodology" width="850"/>
 </p>
 
 <p align="center">
