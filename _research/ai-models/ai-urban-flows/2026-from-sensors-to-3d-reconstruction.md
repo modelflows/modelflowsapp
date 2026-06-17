@@ -224,7 +224,6 @@ These methods can support:
 
 **Code and tutorials:** coming soon.  
 **Data:** coming soon.  
-**Example notebooks:** coming soon.
 
 ---
 
