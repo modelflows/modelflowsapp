@@ -128,7 +128,6 @@ The AI/ROM part is organized into:
 arXiv:2604.21527 [cs.LG], 2026.  
 [https://doi.org/10.48550/arXiv.2604.21527](https://doi.org/10.48550/arXiv.2604.21527)
 
-### Contributors
 
 ### Contributors
 
