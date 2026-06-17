@@ -188,7 +188,7 @@ For the two-building LES dataset, the comparison is made relative to the HOSVD r
 | Two-building LES dataset | lcHOSVD | 0.28%–2.82% ΔRRMSE | ≈2.4× |
 | Two-building LES dataset | lcSVD | 1.47%–10.54% ΔRRMSE | ≈31× |
 
-In simple terms, **lcSVD is usually faster**, while **lcHOSVD is usually more accurate for complex urban flow fields**. This behaviour is more evident in the two-building test case, where the flow contains strong wake interactions, recirculation zones, and localized vortical structures between and downstream of the buildings.
+In simple terms, **lcSVD is usually faster**, while **lcHOSVD is usually more accurate for complex urban flow fields**. This behaviour is more evident in the turbulent two-building test case, where the flow contains strong wake interactions, recirculation zones, and localized vortical structures between and downstream of the buildings.
 
 In this case, the Q-criterion comparison shows that lcHOSVD preserves the main coherent structures more clearly, while lcSVD provides a faster but more globally smoothed reconstruction. The difference becomes visible around the near-building wake region, where the tensor structure used by lcHOSVD helps retain directional spatial interactions.
 
@@ -198,7 +198,7 @@ In this case, the Q-criterion comparison shows that lcHOSVD preserves the main c
 
 <p align="center">
   <em>
-  Q-criterion comparison for the two-building LES case, showing the coherent vortical structures reconstructed by the low-cost methods.
+  Q-criterion comparison for the two-building LES case.
   </em>
 </p>
 
