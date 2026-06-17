@@ -11,9 +11,9 @@ tldr: "Low-cost reconstruction of full 3D urban flow and pollutant fields from s
 
 # From Sensors to 3D Reconstruction of Urban Flow and Pollutant Fields
 
-Urban flow and pollutant fields are highly three-dimensional, especially in dense city environments where buildings, street canyons, and local recirculation zones create complex spatial patterns. High-fidelity CFD simulations can resolve these structures, but they also generate very large datasets. This makes storage, post-processing, and repeated analysis expensive.
+Urban flow and pollutant dispersion in dense city environments are shaped by the interaction between buildings, street canyons, wake regions, and local recirculation zones. These effects create complex spatial patterns that can be accurately resolved using high-fidelity CFD simulations. However, such simulations also produce very large datasets, making storage, post-processing, and repeated analysis computationally expensive.
 
-In this project, we develop **low-cost reconstruction methods for urban flows and pollutant fields**. The main idea is to reconstruct the full 3D solution using information from a sparse set of sensor locations.
+To address this, low-cost reconstruction methods are developed to recover full urban flow and pollutant fields from a reduced set of sensor locations. The aim is to retain the main physical structures of the original CFD solution while significantly reducing the amount of data required for reconstruction.
 
 We organize the work into two complementary methods:
 
@@ -119,13 +119,13 @@ The sensor grid is selected to provide a reduced but representative sampling of 
   </em>
 </p>
 
-A denser sensor grid usually improves the reconstruction because more spatial information is available. However, the objective of the low-cost approach is to keep the number of sensors as small as possible while still preserving the main flow and pollutant structures.
+A denser sensor grid usually improves the reconstruction because more spatial information is available. However, the objective of the low-cost approach is to keep the number of sensors as small as possible while still preserving the main flow and pollutant structures. In this work, the decomposition was applied to two datasets and only 1-4% of the total spatial locations were used as sensors (Compression = 150x & 25x).
 
 ---
 
 ## Ground Truth and Reconstructed Fields
 
-The reconstruction quality is assessed by comparing the original CFD field with the reconstructed solutions. The relative root mean square error is used to quantify the difference between the full-order solution and the low-cost approximation.
+The reconstruction quality is assessed by comparing the original CFD field with the reconstructed solutions.
 
 <p align="center">
   <img src="{{ 'assets/img/urban-flows/GT+RE_k.png' | relative_url }}" alt="Ground truth comparison k" width="850"/>
@@ -173,11 +173,22 @@ Such comparisons are important because a low numerical error does not always gua
 
 The two methods follow the same low-cost philosophy, but they behave differently.
 
-**lcSVD** is faster because it applies a single SVD to a reduced matrix. It stores the field using a small number of global modes. This makes it attractive for rapid reconstruction and fast visualization.
+**lcSVD** is faster because it applies a single SVD to a reduced matrix. It stores the field using a small number of global modes, which makes it attractive for rapid reconstruction and fast visualization.
 
-**lcHOSVD** is more structured because it separates the spatial directions and stores their interaction through a core tensor. This usually improves the reconstruction of complex 3D structures, especially when the field contains localized vortices, sharp gradients, or directional dependencies.
+**lcHOSVD** is more structured because it separates the spatial directions and stores their interaction through a core tensor. This usually improves the reconstruction of complex urban flow fields, especially when the field contains localized vortices, sharp gradients, or directional dependencies.
 
-In simple terms, **lcSVD is usually faster**, while **lcHOSVD is usually more accurate for complex 3D urban fields**. This behaviour is more evident in the two-building test case, where the flow contains strong wake interactions, recirculation zones, and localized vortical structures between and downstream of the buildings.
+The trade-off between accuracy and computational cost is observed in both datasets. For the Vallecas urban-flow dataset, lcHOSVD gives lower reconstruction errors for all variables, with RRMSE values ranging from **4.63% to 34.91%**. The corresponding lcSVD values range from **5.38% to 39.22%**. However, lcSVD is significantly faster, reaching speed-ups of approximately **51× to 73×**, compared with **3.6× to 4.0×** for lcHOSVD.
+
+For the two-building LES dataset, the comparison is made relative to the HOSVD reconstruction. In this case, lcHOSVD increases the RRMSE by only **0.28%**, **2.82%**, and **1.37%** for the \(u\), \(v\), and \(w\) velocity components, respectively. The corresponding lcSVD increases are **1.47%**, **8.84%**, and **10.54%**. This shows that lcHOSVD preserves the transverse and vertical flow structures more accurately, while lcSVD remains much faster, with an average speed-up of about **31×**, compared with about **2.4×** for lcHOSVD.
+
+| Dataset | Method | Error | Speed-up |
+|---|---|---:|---:|
+| Vallecas urban-flow dataset | lcHOSVD | 4.63%–34.91% RRMSE | 3.6×–4.0× |
+| Vallecas urban-flow dataset | lcSVD | 5.38%–39.22% RRMSE | 51×–73× |
+| Two-building LES dataset | lcHOSVD | 0.28%–2.82% ΔRRMSE | ≈2.4× |
+| Two-building LES dataset | lcSVD | 1.47%–10.54% ΔRRMSE | ≈31× |
+
+In simple terms, **lcSVD is usually faster**, while **lcHOSVD is usually more accurate for complex urban flow fields**. This behaviour is more evident in the two-building test case, where the flow contains strong wake interactions, recirculation zones, and localized vortical structures between and downstream of the buildings.
 
 In this case, the Q-criterion comparison shows that lcHOSVD preserves the main coherent structures more clearly, while lcSVD provides a faster but more globally smoothed reconstruction. The difference becomes visible around the near-building wake region, where the tensor structure used by lcHOSVD helps retain directional spatial interactions.
 
@@ -187,7 +198,7 @@ In this case, the Q-criterion comparison shows that lcHOSVD preserves the main c
 
 <p align="center">
   <em>
-  Q-criterion comparison for the two-building test case. 
+  Q-criterion comparison for the two-building LES case, showing the coherent vortical structures reconstructed by the low-cost methods.
   </em>
 </p>
 
