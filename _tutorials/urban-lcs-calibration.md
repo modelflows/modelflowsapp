@@ -35,7 +35,7 @@ The workflow focuses on LSTM-based calibration of pollutant measurements such as
 
 - Python: 3.9.18
 - NumPy: 1.26.4
-- Pandas:
+- Pandas: 2.2.2
 - Matplotlib: 3.9.0
 - scikit-learn: 1.5.0
 - TensorFlow / Keras : 2.10.0
