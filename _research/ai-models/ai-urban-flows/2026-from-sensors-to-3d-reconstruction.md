@@ -63,17 +63,7 @@ The first method is based on singular value decomposition. The original 3D field
 
 A reduced matrix is then built using only the selected sensor locations. Singular value decomposition is applied to this reduced matrix to extract the dominant spatial patterns of the flow or pollutant field.
 
-<p align="center">
-  <img src="{{ 'assets/img/urban-flows/lcsvd_scheme.png' | relative_url }}" alt="Low-cost SVD reconstruction scheme" width="850"/>
-</p>
-
-<p align="center">
-  <em>
-  lcSVD reconstruction strategy. The sparse sensor matrix is decomposed using SVD, and the retained modes are used to reconstruct the full 3D field.
-  </em>
-</p>
-
-Each retained SVD mode represents a global spatial structure of the field. The reconstructed solution is obtained by combining a small number of these modes.
+Each retained SVD mode represents a global spatial structure of the field. The reconstructed solution is obtained by using a small number of these modes.
 
 ### Main Features
 
