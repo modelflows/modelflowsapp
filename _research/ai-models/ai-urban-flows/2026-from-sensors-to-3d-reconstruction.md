@@ -94,7 +94,7 @@ Instead of unfolding the full domain into a single matrix, the decomposition is 
 Compared with lcSVD, lcHOSVD generally requires more computational work, but it can provide a more structured and accurate representation of complex 3D urban flow fields.
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/lchosvd_scheme.png' | relative_url }}" alt="Low-cost HOSVD reconstruction scheme" width="850"/>
+  <img src="{{ 'assets/img/urban-flows/lchosvd_scheme.png' | relative_url }}" alt="Low-cost SVD & HOSVD reconstruction scheme" width="850"/>
 </p>
 
 <p align="center">
@@ -128,7 +128,7 @@ A denser sensor grid usually improves the reconstruction because more spatial in
 The reconstruction quality is assessed by comparing the original CFD field with the reconstructed solutions. The relative root mean square error is used to quantify the difference between the full-order solution and the low-cost approximation.
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/GT+RE_k.png' | relative_url }}" alt="Ground truth CFD fields" width="850"/>
+  <img src="{{ 'assets/img/urban-flows/GT+RE_k.png' | relative_url }}" alt="Ground truth comparison k" width="850"/>
 </p>
 
 <p align="center">
@@ -138,7 +138,7 @@ The reconstruction quality is assessed by comparing the original CFD field with 
 </p>
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/GT+RE_CO.png' | relative_url }}" alt="Comparison between CFD, lcSVD and lcHOSVD reconstructions" width="900"/>
+  <img src="{{ 'assets/img/urban-flows/GT+RE_CO.png' | relative_url }}" alt="Ground truth comparison CO" width="900"/>
 </p>
 
 <p align="center">
@@ -160,7 +160,7 @@ Beyond pointwise error, the reconstructed fields are also evaluated using flow-s
 
 <p align="center">
   <em>
-  Q-criterion comparison showing how the reconstructed fields preserve coherent vortical structures in the urban domain.
+  Q-criterion comparison of the ground truth with lcSVD and lcHOSVD.
   </em>
 </p>
 
