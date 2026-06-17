@@ -22,7 +22,7 @@ Add here geometry generation, meshing, boundary conditions, solver setup, OpenFO
 
 This part collects the reduced-order modelling and data-driven workflows developed for urban flow and air-pollution applications. The objective is to connect sparse sensor information, high-fidelity CFD data, reduced-order models, temporal prediction methods, and low-cost sensor calibration into a common scientific workflow.
 
-The AI/ROM part is organized into three main directions:
+The AI/ROM part is organized into:
 
 # 1. **3D reconstruction from sparse sensors**  
    Reconstruction of full 3D urban flow and pollutant fields from a reduced number of sensor locations using low-cost modal decomposition methods.
