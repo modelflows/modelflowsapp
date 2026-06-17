@@ -26,18 +26,12 @@ The AI/ROM part is organized into:
 
 # 1. **3D reconstruction from sparse sensors**  
    Reconstruction of full 3D urban flow and pollutant fields from a reduced number of sensor locations using low-cost modal decomposition methods.
+
 ### Related Research Page
-
-- [From Sensors to 3D Reconstruction]({{ "/research/ai-models/ai-urban-flows/2026-from-sensors-to-3d-reconstruction/" | relative_url }})
-
-### Tutorials
-
-- [Urban Sensors 3D Reconstruction]({{ "/software/tutorials/urban-3d-reconstruction/" | relative_url }})
-## Related Research Page
 
 - <a href="{{ '/research/ai-models/ai-urban-flows/2026-from-sensors-to-3d-reconstruction/' | relative_url }}">From Sensors to 3D Reconstruction</a>
 
-## Tutorials
+### Tutorials
 
 - <a href="{{ '/software/tutorials/urban-3d-reconstruction/' | relative_url }}">Urban Sensors 3D Reconstruction</a>
 ### Notebooks
@@ -75,7 +69,8 @@ The AI/ROM part is organized into:
 
 ### Tutorials
 
--[Predictions]({{ "/software/tutorials/urban-mdhodmd-forecasting/" | relative_url }})
+- <a href="{{ '/software/tutorials/urban-mdhodmd-forecasting/' | relative_url }}">Predictions</a>
+
 ### Notebooks
 
 - Notebook 1:coming soon
@@ -106,11 +101,11 @@ The AI/ROM part is organized into:
    Correction of low-cost sensor measurements using temporal deep learning models trained with reference-grade observations.
 ### Related Research Page
 
-- [Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors]({{ "/research/ai-models/air-pollution/2026-temporal-deep-learning-calibration-low-cost-sensors/" | relative_url }})
+- <a href="{{ '/research/ai-models/air-pollution/2026-temporal-deep-learning-calibration-low-cost-sensors/' | relative_url }}">Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors</a>
 
 ### Tutorials
 
-- Low-cost sensor calibration tutorial: [Urban Sensors 3D Reconstruction]({{ "/software/tutorials/urban-lcs-calibration/" | relative_url }})
+- <a href="{{ '/software/tutorials/urban-lcs-calibration/' | relative_url }}">Low-cost sensor calibration tutorial</a>
 
 ### Notebooks
 
