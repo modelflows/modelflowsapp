@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 category: "Data-driven & Urban Sustainability"
 topic: "Air Pollution"
 thumbnail: "assets/img/Gappy.png"
