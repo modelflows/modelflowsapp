@@ -47,7 +47,7 @@ The calibration workflow starts from time-stamped low-cost sensor measurements, 
 
 <p align="center">
   <em>
-  Overview of the calibration methodology: raw sensor data input, feature engineering and preprocessing, LSTM calibration model, and calibrated output evaluation.
+  Overview of the calibration methodology: raw sensor data input, feature engineering and preprocessing, LSTM calibration model, and calibrated output.
   </em>
 </p>
 ---
