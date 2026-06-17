@@ -83,16 +83,6 @@ The second method is based on higher-order singular value decomposition. Unlike 
 
 Instead of unfolding the full domain into a single matrix, the decomposition is performed along the spatial directions separately. The reconstructed field is represented using directional modes in the x, y, and z directions, together with a compact core tensor.
 
-<p align="center">
-  <img src="{{ 'assets/img/urban-flows/lchosvd_scheme.png' | relative_url }}" alt="Low-cost HOSVD reconstruction scheme" width="850"/>
-</p>
-
-<p align="center">
-  <em>
-  lcSVD and lcHOSVD reconstruction strategy. 
-  </em>
-</p>
-
 ### Main Features
 
 - lcHOSVD preserves the tensor form of the 3D field.
@@ -102,6 +92,16 @@ Instead of unfolding the full domain into a single matrix, the decomposition is 
 - It is useful for complex flows with directional dependencies and localized features.
 
 Compared with lcSVD, lcHOSVD generally requires more computational work, but it can provide a more structured and accurate representation of complex 3D urban flow fields.
+
+<p align="center">
+  <img src="{{ 'assets/img/urban-flows/lchosvd_scheme.png' | relative_url }}" alt="Low-cost HOSVD reconstruction scheme" width="850"/>
+</p>
+
+<p align="center">
+  <em>
+  lcSVD and lcHOSVD reconstruction strategy. 
+  </em>
+</p>
 
 ---
 
