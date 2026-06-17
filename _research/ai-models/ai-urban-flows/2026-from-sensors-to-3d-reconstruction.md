@@ -179,16 +179,16 @@ The two methods follow the same low-cost philosophy, but they behave differently
 
 **lcHOSVD** is more structured because it separates the spatial directions and stores their interaction through a core tensor. This usually improves the reconstruction of complex urban flow fields, especially when the field contains localized vortices, sharp gradients, or directional dependencies.
 
-The trade-off between accuracy and computational cost is observed in both datasets. For the Vallecas urban-flow dataset, lcHOSVD gives lower reconstruction errors for all variables, with RRMSE values ranging from **4.63% to 34.91%**. The corresponding lcSVD values range from **5.38% to 39.22%**. However, lcSVD is significantly faster, reaching speed-ups of approximately **51× to 73×**, compared with **3.6× to 4.0×** for lcHOSVD.
+The trade-off between accuracy and computational cost is observed in both datasets. For the Vallecas urban-flow dataset, lcHOSVD gives lower reconstruction errors for all variables, with RRMSE values ranging from **4.63% to 34.91%** for different variables. The corresponding lcSVD values range from **5.38% to 39.22%**. However, lcSVD is significantly faster, reaching speed-ups of approximately **51× to 73×**, compared with **3.6× to 4.0×** for lcHOSVD.
 
 For the two-building LES dataset, the comparison is made relative to the HOSVD reconstruction. In this case, lcHOSVD increases the RRMSE by only **0.28%**, **2.82%**, and **1.37%** for the \(u\), \(v\), and \(w\) velocity components, respectively. The corresponding lcSVD increases are **1.47%**, **8.84%**, and **10.54%**. This shows that lcHOSVD preserves the transverse and vertical flow structures more accurately, while lcSVD remains much faster, with an average speed-up of about **31×**, compared with about **2.4×** for lcHOSVD.
 
 | Dataset | Method | Error | Speed-up |
 |---|---|---:|---:|
-| Vallecas urban-flow dataset | lcHOSVD | 4.63%–34.91% RRMSE | 3.6×–4.0× |
-| Vallecas urban-flow dataset | lcSVD | 5.38%–39.22% RRMSE | 51×–73× |
-| Two-building LES dataset | lcHOSVD | 0.28%–2.82% ΔRRMSE | ≈2.4× |
-| Two-building LES dataset | lcSVD | 1.47%–10.54% ΔRRMSE | ≈31× |
+| Vallecas urban-flow dataset | lcHOSVD | 4.63%–34.91% (RRMSE) | 3.6×–4.0× |
+| Vallecas urban-flow dataset | lcSVD | 5.38%–39.22% (RRMSE) | 51×–73× |
+| Two-building LES dataset | lcHOSVD | 0.28%–2.82% (ΔRRMSE) | ≈2.4× |
+| Two-building LES dataset | lcSVD | 1.47%–10.54% (ΔRRMSE) | ≈31× |
 
 In simple terms, **lcSVD is usually faster**, while **lcHOSVD is usually more accurate for complex urban flow fields**. This behaviour is more evident in the turbulent two-building test case, where the flow contains strong wake interactions, recirculation zones, and localized vortical structures between and downstream of the buildings.
 
