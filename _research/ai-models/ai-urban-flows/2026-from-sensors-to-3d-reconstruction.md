@@ -3,7 +3,7 @@ layout: post
 title: "From Sensors to 3D Reconstruction"
 category: "AI & Data-Driven Models"
 topic: "AI for Urban Flows"
-thumbnail: "/assets/img/urban-flows/methodology_scheme.png"
+thumbnail: "/assets/img/urban-flows/Sensors.png"
 tldr: "Low-cost reconstruction of full 3D urban flow and pollutant fields from sparse sensor information using lcSVD and lcHOSVD."
 ---
 
