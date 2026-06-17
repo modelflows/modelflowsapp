@@ -33,3 +33,9 @@ From a spatial perspective, there are significant differences in energy utilizat
 ![vel_plot](https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/2026-workshop-li-urban-3.png?raw=true)
 ![vel_plot](https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/2026-workshop-li-urban-4.png?raw=true)
 ![vel_plot](https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/2026-workshop-li-urban-5.png?raw=true)
+
+### Other Relevant References
+
+[*Yang, Z., & Wei, X., 2019. The measurement and influences of China's urban total factor energy efficiency under environmental pollution: Based on the game cross-efficiency DEA. Journal of cleaner production, 209, 439-450.*](https://doi.org/10.1016/j.jclepro.2018.10.271)
+
+[*Wang, R., Wang, Q., & Yao, S., 2021. Evaluation and difference analysis of regional energy efficiency in China under the carbon neutrality targets: Insights from DEA and Theil models. Journal of environmental management, 293, 112958.*](https://doi.org/10.1016/j.jenvman.2021.112958)
