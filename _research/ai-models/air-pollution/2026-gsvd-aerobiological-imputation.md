@@ -4,8 +4,6 @@ category: "AI & Data-Driven Models"
 topic: "Air Pollution"
 thumbnail: "assets/img/Gappy.png"
 tldr: "Evaluation of Gappy Singular Value Decomposition for imputing aerobiological datasets compared with statistical methods."
-title: Air pollution [Gappy Singular Value Decomposition]
-subtitle: Our studies focused on air pollution
 ---
 
 ## Introduction
