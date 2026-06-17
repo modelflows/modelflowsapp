@@ -37,7 +37,7 @@ The reconstruction workflow starts from a high-fidelity CFD dataset. The full 3D
 
 <p align="center">
   <em>
-  General methodology for reconstructing full 3D urban flow and pollutant fields from sparse sensor information.
+  Methodology for reconstructing full 3D urban flow and pollutant fields from sparse sensor information.
   </em>
 </p>
 
