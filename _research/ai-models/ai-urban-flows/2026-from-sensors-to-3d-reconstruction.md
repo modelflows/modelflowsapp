@@ -130,7 +130,7 @@ The reconstruction quality is assessed by comparing the original CFD field with 
 
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/GT+RE_k.png' | relative_url }}" alt="Ground truth comparison k" width="850"/>
+  <img src="{{ 'assets/img/urban-flows/GT+RE_k1.png' | relative_url }}" alt="Ground truth comparison k" width="850"/>
 </p>
 
 <p align="center">
@@ -140,7 +140,7 @@ The reconstruction quality is assessed by comparing the original CFD field with 
 </p>
 
 <p align="center">
-  <img src="{{ 'assets/img/urban-flows/GT+RE_CO.png' | relative_url }}" alt="Ground truth comparison CO" width="900"/>
+  <img src="{{ 'assets/img/urban-flows/GT+RE_CO1.png' | relative_url }}" alt="Ground truth comparison CO" width="900"/>
 </p>
 
 <p align="center">
