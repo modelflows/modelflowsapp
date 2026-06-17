@@ -113,13 +113,13 @@ The AI/ROM part is organized into:
 
 ### Videos
 
-- Video 1:
+- Video 1: coming soon
 
 
 ### Resources & Databases
 
-- Dataset:coming soon
-- Case files:coming soon
+- Dataset: coming soon
+- Case files: coming soon
 
 ### Publications
 
