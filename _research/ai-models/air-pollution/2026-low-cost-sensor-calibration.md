@@ -277,12 +277,4 @@ This calibration framework can support:
 
 ## References
 
-Arindam Sengupta, Tony Bush, Ben Marner, Jose Miguel Pérez, and Soledad Le Clainche.  
-**A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors.**  
-arXiv:2604.21527 [cs.LG], 2026.  
-[https://doi.org/10.48550/arXiv.2604.21527](https://doi.org/10.48550/arXiv.2604.21527)
-
-Tony Bush, Nikolaos Papaioannou, Felix Leach, Francis D. Pope, Ajit Singh, G. Neil Thomas, Ben Stacey, and Sarah Bartington.  
-**Machine Learning Techniques to Improve the Field Performance of Low-Cost Air Quality Sensors.**  
-Atmospheric Measurement Techniques Discussions, 2021.  
-[https://doi.org/10.5194/amt-2021-282](https://doi.org/10.5194/amt-2021-282)
+- <a href="https://doi.org/10.48550/arXiv.2604.21527">A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors</a>
