@@ -32,32 +32,33 @@ The AI/ROM part is organized into three main directions:
 
 ### Tutorials
 
-- [Urban Sensors 3D Reconstruction]({{ "/software/tutorials/urban-sensors3drec/" | relative_url }})
-- lcROMs reconstruction tutorial: coming soon
+- [Urban Sensors 3D Reconstruction]({{ "/software/tutorials/urban-3d-reconstruction/" | relative_url }})
 # Notebooks
 
-- Notebook 1:
-- Notebook 2:
+- Notebook 1: coming soon
 
 # Videos
 
-- Video 1:
-- Video 2:
+- Video 1: coming soon
+
 
 # Resources & Databases
 
-- Dataset:
-- Case files:
-- Mesh:
-- Simulation outputs:
+- Dataset:coming soon
+- Case files:coming soon
+
 
 # Publications
 
-- Paper / preprint / related post:
+- Paper / preprint / related post:coming soon
 
 # Contributors
 
-- Name:
+- Arindam Sengupta
+- Paul Jeanney
+- José Miguel Pérez
+- Soledad Le Clainche
+  
 
 2. **Temporal prediction of urban flow fields**  
    Forecasting of future flow and pollutant states using multidimensional modal decomposition and data-driven temporal models.
@@ -67,31 +68,32 @@ The AI/ROM part is organized into three main directions:
 
 ### Tutorials
 
-- mdHODMD prediction tutorial: coming soon
+-[Predictions]({{ "/software/tutorials/urban-mdhodmd-forecasting/" | relative_url }})
 # Notebooks
 
-- Notebook 1:
-- Notebook 2:
+- Notebook 1:coming soon
+
 
 # Videos
 
-- Video 1:
-- Video 2:
+- Video 1:coming soon
+
 
 # Resources & Databases
 
-- Dataset:
-- Case files:
-- Mesh:
-- Simulation outputs:
+- Dataset:coming soon
+- Case files:coming soon
 
 # Publications
 
-- Paper / preprint / related post:
+- Paper / preprint / related post:coming soon
 
 # Contributors
 
-- Name:
+- Arindam Sengupta
+- José Miguel Pérez
+- Soledad Le Clainche
+
 
 3. **Calibration of low-cost air-quality sensors**  
    Correction of low-cost sensor measurements using temporal deep learning models trained with reference-grade observations.
@@ -101,38 +103,35 @@ The AI/ROM part is organized into three main directions:
 
 ### Tutorials
 
-- Low-cost sensor calibration tutorial: coming soon
-- LSTM calibration notebook: coming soon
-
-## Tutorials
-- [Urban Sensors 3D Reconstruction]({{ "/software/tutorials/urban-sensors3drec/" | relative_url }})
-- Tutorial 2:
-
+- Low-cost sensor calibration tutorial: [Urban Sensors 3D Reconstruction]({{ "/software/tutorials/urban-lcs-calibration/" | relative_url }})
 
 # Notebooks
 
-- Notebook 1:
-- Notebook 2:
+- Notebook 1: coming soon
 
 # Videos
 
 - Video 1:
-- Video 2:
+
 
 # Resources & Databases
 
-- Dataset:
-- Case files:
-- Mesh:
-- Simulation outputs:
+- Dataset:coming soon
+- Case files:coming soon
 
 # Publications
 
-- Paper / preprint / related post:
+- Paper / preprint / related post: 
 
 # Contributors
 
-- Name:
+# Contributors
+
+- Arindam Sengupta
+- Tony Bush
+- Ben Marner
+- José Miguel Pérez
+- Soledad Le Clainche
 
 ---
 
