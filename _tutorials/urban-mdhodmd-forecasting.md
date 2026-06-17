@@ -52,14 +52,19 @@ The workflow includes:
 
 # Input Data
 
-- Time-resolved urban CFD snapshots:
-- Velocity components:
-- Pressure field:
-- Pollutant concentration fields:
-- Time vector:
-- Grid or mesh information:
-- Training time window:
-- Prediction time window:
+- Time-resolved urban CFD snapshots
+- Velocity components
+
+
+<p align="center">
+  <img src="{{ '/assets/img/mdHODMDit.png' | relative_url }}" alt="mdHODMD iterative methodology" width="850"/>
+</p>
+
+<p align="center">
+  <em>
+  Iterative mdHODMD methodology for forecasting time-resolved urban flow and pollutant fields.
+  </em>
+</p>
 
 # Step-by-Step Tutorial
 
@@ -229,5 +234,4 @@ The comparison may include:
 
 - Arindam Sengupta
 - Soledad Le Clainche
-- Jose Miguel Pérez
-- MODELAIR / MODELFLOWS collaborators
+
