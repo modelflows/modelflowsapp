@@ -43,7 +43,7 @@ This data-driven application consists of two modules: **Medical data** and **CFD
 ## Medical data <a medical-data"></a>
 The medical imaging datasets used for this first application are echocardiography video loops and magnetic resonance imaging (MRI): 
 1.	The echocardiography videos are taken with respect to two views: long axis and shorts axis views (LAX and SAX respectively). The images are taken from mice with different cardiac conditions including healthy, diabetic cardiomyopathy, myocardial infarction, obesity, TAC hypertrophy). Each video consists of ~120 frames (snapshots).
-2.	The MRI dataset consists of 10 MRI sequences, representing 10 different slices of the heart.  In particular, 20 images (snapshots) of 128 × 128 × 1 resolution were acquired for each slice, resulting a total number of 200 snapshot per dataset. 
+2.	The MRI dataset consists of 10 MRI sequences, representing 10 different slices of the heart. In particular, 20 images (snapshots) of 128 × 128 × 1 resolution were acquired for each slice, resulting a total number of 200 snapshot per dataset. 
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/ModelFloes_Cardiac_IMAGE00.png?raw=true)
 
@@ -131,7 +131,7 @@ Further details about the work explained in this section could be found in the f
 
 <!-- The following video summarizes the developed system and shows the obtained results in the diagnosis task: -->
 
-Download the code for **Diagnosis** in Python version [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/medical-data/Diagnosis_scripts.zip).
+Download the code for **Diagnosis** in Python version [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/legacy-medical-data-tutorials/Diagnosis_scripts.zip).
 The pretrained weights can be downloaded [*here*](https://drive.google.com/file/d/1tO9dv1zjzObGCOOrsoJgYpPxQZYdi2BC/view?usp=drive_link). 
 
 ### Prediction <a id="prediction"></a>
@@ -150,7 +150,7 @@ Further details about the work explained in this section could be found in the f
 
 <!-- The following video summarizes the developed system with the obtained results in the prognosis task:  -->
 
-Download the code for **Prognosis** in Python version [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/medical-data/Prognosis_scripts.zip).
+Download the code for **Prognosis** in Python version [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/legacy-medical-data-tutorials/Prognosis_scripts.zip).
 The pretrained weights can be downloaded [*here*](https://drive.google.com/file/d/1tyi5j6bJfCB1OhXh6c36eDPT4D8E8dST/view?usp=drive_link). A fine-tuned version can be found at Hugging Face [*here*](https://huggingface.co/abellnav/heart-failure-prognosis-echo). 
 
 ### Diagnosis and prognosis <a id="diagnosis-and-prognosis"></a>
