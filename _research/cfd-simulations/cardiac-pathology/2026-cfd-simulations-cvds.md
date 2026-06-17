@@ -56,18 +56,18 @@ We offer two approaches:
 * Idealized Geometry: Where the wall motion is defined analytically, and STL files are generated accordingly. 
 * Patient-Specific Geometry: Requires code adjustments since analytical expressions are unavailable. This process includes extracting the left ventricle model from cardiotomography data to ensure accurate patient-specific simulations.
 
-Download the necessary files [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/CFD/generateSTLFiles.zip).
+Download the necessary files [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/CFD_tutorial/generateSTLFiles.zip).
 
-Download the slides [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/CFD/Slides_Tutorial_GeometryPreprocessing.pptx).
+Download the slides [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/CFD_tutorial/Slides_Tutorial_GeometryPreprocessing.pptx).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Bzd_ZniGGG0?si=UvRmu9_2Qd7QxDWJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### CFD with Star-CCM+
 This section provides a complete guide on replicating our blood flow simulations inside the left ventricle using STAR-CCM+. From loading the geometry and meshing to configuring the simulation settings, we walk you through each step to ensure accurate reproduction of our results.
 
-Download the necessary files [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/CFD/Tutorial_Star-CCM+.zip).
+Download the necessary files [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/CFD_tutorial/Tutorial_Star-CCM+.zip).
 
-Download the slides [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/CFD/Slides_Tutorial_StarccmCFD.pptx).
+Download the slides [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/CFD_tutorial/Slides_Tutorial_StarccmCFD.pptx).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8YjVIamKzhY?si=U5s0zgmYVJ2fAl5a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -76,7 +76,7 @@ In this section, we outline the entire process of setting up blood flow simulati
 
 Download the necessary files [*here*](https://drive.upm.es/s/A8EuWtjSuMAetHc).
 
-Download the slides [*here*](https://github.com/modelflows/ModelFLOWSs-cardiac/raw/refs/heads/main/CFD/Slides_Tutorial_FluentCFD.pptx).
+Download the slides [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/CFD_tutorial/Slides_Tutorial_FluentCFD.pptx).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zkAAioOEVDE?si=VAc7JBNCvohALkOS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
