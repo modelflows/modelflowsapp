@@ -123,11 +123,7 @@ The AI/ROM part is organized into:
 
 ### Publications
 
-- Paper / preprint / related post: Arindam Sengupta, Tony Bush, Ben Marner, Jose Miguel Pérez, and Soledad Le Clainche.  
-**A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors.**  
-arXiv:2604.21527 [cs.LG], 2026.  
-[https://doi.org/10.48550/arXiv.2604.21527](https://doi.org/10.48550/arXiv.2604.21527)
-- - <a href="https://doi.org/10.48550/arXiv.2604.21527">A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors</a>
+- Paper / preprint / related post: <a href="https://doi.org/10.48550/arXiv.2604.21527">A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors</a>
 
 
 ### Contributors
