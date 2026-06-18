@@ -66,8 +66,8 @@ The algorithm works in two stages:
 The intuitive idea is that HOSVD decomposes data as linear combination of eigenvectors. This means that instead of requiring all "pixels" the data is rewritten as a weighted sum of only a few pictures. The GPR is used to find out how much of each of these pictures is contained in new points that has not been used to build the basis.
 
 The research post explain the mathematical aspects, while the tutorial provide all the details about how to implement the algorithm for the dataset described in the previous seciton. 
-- [Tutorial 2: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
-- [Post: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR](/_posts/combustion-hosvd-gpr.md)
+- [Tutorial 2: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR]({{ '/software/tutorials/combustion-hosvd-gpr-tutorial/' | relative_url }})
+- [Post: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR]({{ '/research/ai-combustion/' | relative_url }})
 
 Below a sample of the reoconstruction of the Temperature field for the flame used in the tutorial:
 ![Reconstruction of Temperature field for Re=13000, mf=0.08](/assets/img/Tutorial/Combustion/hosvd_gpr/field_T.png)
@@ -76,7 +76,7 @@ Below a sample of the reoconstruction of the Temperature field for the flame use
 # Tutorials
 
 - [Tutorial 1: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame]({{ '/software/tutorials/2026-combustion-tutorial/' | relative_url }})
-- [Tutorial 2: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
+- [Tutorial 2: Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR]({{ '/software/tutorials/combustion-hosvd-gpr-tutorial/' | relative_url }})
 
 # Contributors
 

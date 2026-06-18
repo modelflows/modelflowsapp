@@ -5,6 +5,7 @@ category: "AI & Data-Driven Models"
 topic: "Combustion"
 tldr: "Parametric interpolation of the DLR turbulent jet diffusion flame using Higher-Order SVD and Gaussian Process Regression to predict full combustion fields at unseen operating conditions."
 thumbnail: "assets/img/Tutorial/Combustion/hosvd_gpr/Re16000_mf012.png"
+permalink: /research/ai-combustion/
 ---
 
 # Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR
