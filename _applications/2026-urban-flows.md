@@ -7,139 +7,65 @@ tldr: "CFD simulations, air-quality analysis, reduced-order modelling and data-d
 
 # Overview
 
-Briefly describe the application, motivation, physical problem, available data, and expected learning outcomes.
+This application page collects the main workflows developed for urban flow and air-quality applications within ModelFLOWs. The objective is to provide a common entry point for CFD simulations, high-fidelity data generation, reduced-order modelling, temporal prediction, sparse-sensor reconstruction, and low-cost air-quality sensor calibration.
+
+The page is organized as an index. Each topic below links to the corresponding tutorial or research page, where the detailed methodology, notebooks, datasets, videos, and additional resources are provided.
+
+# Index
+
+- [CFD & High-Fidelity Simulations](#cfd--high-fidelity-simulations)
+  - [Urban CFD with OpenFOAM: AIJ Case C](#urban-cfd-with-openfoam-aij-case-c)
+
+- [AI, ROM & Data-Driven Models](#ai-rom--data-driven-models)
+  - [3D reconstruction from sparse sensors](#1-3d-reconstruction-from-sparse-sensors)
+  - [Temporal prediction of urban flow fields](#2-temporal-prediction-of-urban-flow-fields)
+  - [Calibration of low-cost air-quality sensors](#3-calibration-of-low-cost-air-quality-sensors)
+
+- [Publications](#publications)
+- [Contributors](#contributors)
 
 # CFD & High-Fidelity Simulations
 
-Add here geometry generation, meshing, boundary conditions, solver setup, OpenFOAM cases, post-processing workflows, and high-fidelity simulations.
+This section includes workflows related to geometry generation, meshing, boundary conditions, solver setup, OpenFOAM cases, and post-processing for high-fidelity urban flow simulations.
 
-## Tutorials
-- [Urban CFD Workflow (Sphinx Tutorial)]({{ "/software/tutorials/urban-cfd/" | relative_url }})
-- [Urban CFD Workflow]({{ "/software/tutorials/urban-cfd/" | relative_url }})
-- [Urban CFD with OpenFOAM: AIJ Case C]({{ "/tutorials/urban-canonical-configuration/" | relative_url }})
+## Urban CFD with OpenFOAM: AIJ Case C
+
+- <a href="{{ '/tutorials/urban-canonical-configuration/' | relative_url }}">Urban CFD with OpenFOAM: AIJ Case C</a>
 
 # AI, ROM & Data-Driven Models
 
-This part collects the reduced-order modelling and data-driven workflows developed for urban flow and air-pollution applications. The objective is to connect sparse sensor information, high-fidelity CFD data, reduced-order models, temporal prediction methods, and low-cost sensor calibration into a common scientific workflow.
+This section collects the reduced-order modelling and data-driven workflows developed for urban flow and air-pollution applications. The objective is to connect sparse sensor information, high-fidelity CFD data, reduced-order models, temporal prediction methods, and low-cost sensor calibration into a common scientific workflow.
 
-The AI/ROM part is organized into:
+## 1. 3D reconstruction from sparse sensors
 
-# 1. **3D reconstruction from sparse sensors**  
-   Reconstruction of full 3D urban flow and pollutant fields from a reduced number of sensor locations using low-cost modal decomposition methods.
+Reconstruction of full 3D urban flow and pollutant fields from a reduced number of sensor locations using low-cost modal decomposition methods.
 
-### Related Research Page
+- Research page: <a href="{{ '/research/ai-models/ai-urban-flows/2026-from-sensors-to-3d-reconstruction/' | relative_url }}">From Sensors to 3D Reconstruction</a>
+- Tutorial: <a href="{{ '/software/tutorials/urban-3d-reconstruction/' | relative_url }}">Urban Sensors 3D Reconstruction</a>
 
-- <a href="{{ '/research/ai-models/ai-urban-flows/2026-from-sensors-to-3d-reconstruction/' | relative_url }}">From Sensors to 3D Reconstruction</a>
+## 2. Temporal prediction of urban flow fields
 
-### Tutorials
+Forecasting of future urban flow and pollutant states using multidimensional modal decomposition and data-driven temporal models.
 
-- <a href="{{ '/software/tutorials/urban-3d-reconstruction/' | relative_url }}">Urban Sensors 3D Reconstruction</a>
-### Notebooks
+- Research page: coming soon
+- Tutorial: <a href="{{ '/software/tutorials/urban-mdhodmd-forecasting/' | relative_url }}">Predictions</a>
 
-- Notebook 1: coming soon
+## 3. Calibration of low-cost air-quality sensors
 
-### Videos
+Correction of low-cost air-quality sensor measurements using temporal deep learning models trained with reference-grade observations.
 
-- Video 1: coming soon
+- Research page: <a href="{{ '/research/ai-models/air-pollution/2026-temporal-deep-learning-calibration-low-cost-sensors/' | relative_url }}">Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors</a>
+- Tutorial: <a href="{{ '/software/tutorials/urban-lcs-calibration/' | relative_url }}">Low-cost sensor calibration tutorial</a>
 
+# Publications
 
-### Resources & Databases
+- <a href="https://doi.org/10.48550/arXiv.2604.21527">Sengupta, A., Bush, T., Marner, B., Pérez, J. M., & Le Clainche, S. (2026). A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors. arXiv:2604.21527 [cs.LG].</a>
 
-- Dataset: coming soon
-- Case files: coming soon
-
-
-### Publications
-
-- Paper / preprint / related post: coming soon
-
-### Contributors
+# Contributors
 
 - Arindam Sengupta
 - Paul Jeanney
-- José Miguel Pérez
-- Soledad Le Clainche
-  
-
-# 2. **Temporal prediction of urban flow fields**  
-   Forecasting of future flow and pollutant states using multidimensional modal decomposition and data-driven temporal models.
-### Related Research Page
-
-- mdHODMD-based urban flow prediction: coming soon
-
-### Tutorials
-
-- <a href="{{ '/software/tutorials/urban-mdhodmd-forecasting/' | relative_url }}">Predictions</a>
-
-### Notebooks
-
-- Notebook 1: coming soon
-
-
-### Videos
-
-- Video 1: coming soon
-
-
-### Resources & Databases
-
-- Dataset: coming soon
-
-
-### Publications
-
-- Paper / preprint / related post: coming soon
-
-### Contributors
-
-- Arindam Sengupta
-- José Miguel Pérez
-- Soledad Le Clainche
-
-
-# 3. **Calibration of low-cost air-quality sensors**  
-   Correction of low-cost sensor measurements using temporal deep learning models trained with reference-grade observations.
-### Related Research Page
-
-- <a href="{{ '/research/ai-models/air-pollution/2026-temporal-deep-learning-calibration-low-cost-sensors/' | relative_url }}">Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors</a>
-
-### Tutorials
-
-- <a href="{{ '/software/tutorials/urban-lcs-calibration/' | relative_url }}">Low-cost sensor calibration tutorial</a>
-
-### Notebooks
-
-- Notebook 1: <a href="https://github.com/modelflows/notebooks/tree/main/LCS%20calibration">LCS calibration</a>
-
-### Videos
-
-- Video 1: coming soon
-
-
-### Resources & Databases
-
-- Dataset: <a href="http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408">OxAria low-cost air-quality sensor dataset</a>
-
-
-
-### Publications
-
-- Paper / preprint / related post: [*Sengupta, A., Bush, T., Marner, B., Pérez, J. M., & Le Clainche, S. (2026). A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors. arXiv:2604.21527 [cs.LG].*](https://doi.org/10.48550/arXiv.2604.21527)
-
-
-### Contributors
-
-- Arindam Sengupta
 - Tony Bush
 - Ben Marner
 - José Miguel Pérez
 - Soledad Le Clainche
-
----
-
-
-
-
-
-
-
