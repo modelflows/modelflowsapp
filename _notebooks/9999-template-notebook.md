@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Template: Your Notebook Title Here"
+published: false
 topic: "Topic Name (e.g. Deep Learning, Data Imputation)"
 tldr: "A short, 1-2 sentence description of what your notebook does so people know what to expect."
 ---
