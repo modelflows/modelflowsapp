@@ -71,7 +71,7 @@ Below a sample of the reoconstruction of the Temperature field for the flame use
 - [Tutorial 1: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame](../_tutorials/2026-combustion_tutorial.md)
 - [Tutorial 2: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
 
-
+# Contributors
 - Name: Isacco Faglioni
 - Name: Xiangrui Zou
 
