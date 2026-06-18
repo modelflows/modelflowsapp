@@ -91,5 +91,6 @@ The full tutorial is available in the Sphinx repository [*here*](https://github.
 # Contributors
 
 - Andrés Bell-Navas
-- Ander Sánchez
+- Ander Sánchez Muñoz
 - Zhuoqun Zhao
+- Eneko Lazpita Suinaga
