@@ -946,7 +946,7 @@ For each case, the fuel velocity and mass flow rate are updated according to the
 
 The retained variables for ROM/AI can include:
 
-- velocity components;
+- velocity components; 
 - temperature;
 - pressure;
 - species mass fractions;
