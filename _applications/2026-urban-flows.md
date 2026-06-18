@@ -73,22 +73,22 @@ The AI/ROM part is organized into:
 
 ### Notebooks
 
-- Notebook 1:coming soon
+- Notebook 1: coming soon
 
 
 ### Videos
 
-- Video 1:coming soon
+- Video 1: coming soon
 
 
 ### Resources & Databases
 
-- Dataset:coming soon
-- Case files:coming soon
+- Dataset: coming soon
+
 
 ### Publications
 
-- Paper / preprint / related post:coming soon
+- Paper / preprint / related post: coming soon
 
 ### Contributors
 
