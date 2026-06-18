@@ -69,7 +69,7 @@ The research post explain the mathematical aspects, while the tutorial provide a
 - [Post: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR](/_posts/combustion-hosvd-gpr.md)
 
 Below a sample of the reoconstruction of the Temperature field for the flame used in the tutorial:
-![Reconstruction of Temperature field for Re=13000, mf=0.08](assets/img/Tutorial/Combustion/hosvd_gpr/field_T.png)
+![Reconstruction of Temperature field for Re=13000, mf=0.08](/assets/img/Tutorial/Combustion/hosvd_gpr/field_T.png)
 
 
 # Tutorials
