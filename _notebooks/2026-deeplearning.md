@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Introduction to Deep Learning for Fluids"
+title: "Reduced-Order Deep Learning"
 topic: "Deep Learning"
-tldr: "Neural Networks architectures and frameworks for data-driven modeling."
+tldr: "Hybrid POD-DL and latent-space learning approaches for complex dynamical systems."
 order: 2
 ---
 
