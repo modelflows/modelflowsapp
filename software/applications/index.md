@@ -38,14 +38,4 @@ Welcome to the ModelFLOWs Applications Hub. Each application collects CFD workfl
     </div>
   </div>
 
-  <div class="col-md-4 mb-4">
-    <div class="card h-100 shadow-sm">
-      <div class="card-body text-center">
-        <h3 class="card-title">Acclerate CFD</h3>
-        <p class="card-text text-muted">Cylinder CFD, data workflows and hybrid models.</p>
-        <a href="{{ '/software/applications/2026-accelerate-cfd' | relative_url }}" class="btn btn-primary d-block">Open Accelerate CFD</a>
-      </div>
-    </div>
-  </div>
-
 </div>
