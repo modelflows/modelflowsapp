@@ -43,7 +43,7 @@ Welcome to the ModelFLOWs Applications Hub. Each application collects CFD workfl
       <div class="card-body text-center">
         <h3 class="card-title">Acclerate CFD</h3>
         <p class="card-text text-muted">Cylinder CFD, data workflows and hybrid models.</p>
-        <a href="{{ '/software/applications/2026-accelerate-cfd' | relative_url }}" class="btn btn-primary d-block">Open Cardiac Pathology</a>
+        <a href="{{ '/software/applications/2026-accelerate-cfd' | relative_url }}" class="btn btn-primary d-block">Open Accelerate CFD</a>
       </div>
     </div>
   </div>
