@@ -9,8 +9,8 @@ Welcome to our Notebooks gallery. Here group members have provided interactive c
 <div class="row">
   {% assign all_notebooks = site.notebooks | sort: "order" %}
   {% for nb in all_notebooks %}
-  <div class="col-md-12 mb-4">
-    <div class="card flex-row" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; padding: 15px;">
+  <div class="col-md-4 mb-4">
+    <div class="card h-100" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; padding: 15px;">
       <div class="card-body">
         <h3 style="margin-top: 0;"><a href="{{ nb.url | relative_url }}">{{ nb.title }}</a></h3>
         <p style="color: #666; font-size: 0.9em; margin-bottom: 5px;">Topic: <strong>{{ nb.topic }}</strong></p>
