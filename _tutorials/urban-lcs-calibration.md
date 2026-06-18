@@ -212,7 +212,7 @@ The calibrated output should be compared with the reference measurement and the 
 
 # Related Links
 
-- Notebook: coming soon
+- Notebook:<a href="https://github.com/modelflows/notebooks/tree/main/LCS%20calibration">LCS calibration</a>
 - Video: coming soon
 - Dataset: <a href="http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408">OxAria low-cost air-quality sensor dataset</a>
 - Repository: coming soon
