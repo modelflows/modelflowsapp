@@ -254,6 +254,12 @@ This research can be organized as a reproducible workflow for adaptive predictio
    - Restart OpenFOAM from the accepted predicted state or updated operating condition.
    - Generate new high-fidelity snapshots and retrain the surrogate.
 
+# Tutorials
+
+The tutorial of this adaptive predicion is as follows:
+- [Tutorial: Adaptive CFD–POD–LSTM Pipeline](../../../_tutorials/2026-accelerateCFD-tutorial.md)
+
+
 # Related Publication
 
 Xiangrui Zou, Zhuoqun Zhao, Guillermo Barragán, Soledad Le Clainche.  
