@@ -50,6 +50,9 @@ This tool has been validated on datasets obtained from numerical simulations at 
 
 ![Multi-parametric tool - Methodology](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_multipar.png?raw=true)
 
+[Barragán, G., Hetherington, A., Sengupta, A., Abadía-Heredia, R., Garicano-Mena, J., Le Clainche, S., MoTIF: A Mode-Structured Tensor Framework for Multi-Parametric Approximation, Super-Resolution and Forecasting of Unsteady Systems, arXiv:2510.25625, 2025.](https://arxiv.org/abs/2510.25625)
+
+
 Download the code [*here*](https://github.com/modelflows/notebooks/raw/main/deep-learning/Multiparametric.zip) or the Jupyter notebook [*here*](https://github.com/modelflows/notebooks/raw/main/deep-learning/Multiparametric.zip)
 
 Download the databases [*here*]()
@@ -66,7 +69,7 @@ In order to overcome the limitations of conventional numerical solvers, a fully 
 [Barragán, G., Hetherington, A., Abadía-Heredia, R., Garicano-Mena, J., Le Clainche, S., HOSVD-SR: A Physics-Based Deep Learning Framework for Super-Resolution in Fluid Dynamics, arXiv:2504.17994, 2025.](https://arxiv.org/abs/2504.17994)
 
 
-Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/SUPERRESOLUTION.zip).  -->
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/SRtool.zip).  -->
 
 ## Temporal Forecasting <a id="temporal-forecasting"></a>
 
