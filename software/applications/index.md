@@ -11,7 +11,7 @@ Welcome to the ModelFLOWs Applications Hub. Each application collects CFD workfl
   <div class="col-md-4 mb-4">
     <div class="card h-100 shadow-sm">
       <div class="card-body text-center">
-        <h3 class="card-title">Urban Flows</h3>
+        <h3 class="card-title">Urban Flows and Air Pollution</h3>
         <p class="card-text text-muted">Urban CFD, air-quality modelling, post-processing, ROMs, and data-driven prediction.</p>
         <a href="{{ '/software/applications/2026-urban-flows' | relative_url }}" class="btn btn-primary d-block">Open Urban Flows</a>
       </div>
@@ -34,6 +34,16 @@ Welcome to the ModelFLOWs Applications Hub. Each application collects CFD workfl
         <h3 class="card-title">Cardiac Pathology</h3>
         <p class="card-text text-muted">Cardiac CFD, medical data workflows, pathology identification, and hybrid models.</p>
         <a href="{{ '/software/applications/2026-cardiac-pathology' | relative_url }}" class="btn btn-primary d-block">Open Cardiac Pathology</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body text-center">
+        <h3 class="card-title">Acclerate CFD</h3>
+        <p class="card-text text-muted">Cylinder CFD, data workflows and hybrid models.</p>
+        <a href="{{ '/software/applications/2026-accelerate-cfd' | relative_url }}" class="btn btn-primary d-block">Open Accelerate CFD</a>
       </div>
     </div>
   </div>

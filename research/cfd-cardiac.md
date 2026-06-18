@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Adaptive Prediction
-subtitle: Synergy of fluid dynamics and deep learning models
+title: CFD for cardiovascular diseases (CVD)
+subtitle: ModelFLOWs-cardiac CFD & High Fidelity Simulations
 ---
 
-This section collects all the research done by our group regarding adaptive prediction frameworks coupling solvers with DL models.
+This section collects all the research done by our group regarding simulations for dynamics of the blood flow in the left ventricle of the heart.
 
 <div class="row">
-  {% assign current_posts = site.research | where: "topic", "Adaptive Prediction" %}
+  {% assign current_posts = site.research | where: "topic", "Cardiac Pathology CFD" %}
   {% for post in current_posts %}
   <div class="col-md-12 mb-4">
     <div class="card flex-row" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; padding: 15px;">
