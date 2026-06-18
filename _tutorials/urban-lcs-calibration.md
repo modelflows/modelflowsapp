@@ -221,7 +221,7 @@ The calibrated output should be compared with the reference measurement and the 
 
 # Publications
 
-- <a href="https://doi.org/10.48550/arXiv.2604.21527">A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors</a>
+- [*Sengupta, A., Bush, T., Marner, B., Pérez, J. M., & Le Clainche, S. (2026). A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors. arXiv:2604.21527 [cs.LG].*](https://doi.org/10.48550/arXiv.2604.21527)
 
 # Contributors
 
