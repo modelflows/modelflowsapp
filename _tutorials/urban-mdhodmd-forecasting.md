@@ -226,7 +226,7 @@ The comparison may include:
 - Video: coming soon
 - Dataset: coming soon
 - Repository: coming soon
-- Application page: [Urban Flows]({{ "/software/applications/2026-urban-flows/" | relative_url }})
+- Application page: <a href="{{ '/software/applications/2026-urban-flows/' | relative_url }}">Urban Flows</a>
 
 # Contributors
 
