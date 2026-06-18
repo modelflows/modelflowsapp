@@ -45,22 +45,38 @@ The full tutorial is available here:
   
 # AI & Data-Driven Models
 
-Add here POD, DMD, HODMD, ROMs, machine learning, deep learning, prediction, reconstruction, classification, or data assimilation workflows.
+## Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR
+
+Fast predictions of thermochemical variables is one of the necessary steps in making a functional digital twin for reactive flowsystems. The framework is to use Higher Order Singular Value Decomposition to reduce the dimensionality of the simulations and Gaussian Process Regression to interpolate the behaviour for new combinations of operating parameters. High fidelity CFD simulations are at the core of the study and design of combustion systems, but are often too slow and expensive to generate a full spectrum of the behaviour of the system for a wide spectrum of operating conditions. 
+
+The algorithm works in two stages: 
+
+1. Data is decomposed using HOSVD
+2. Gaussian Process Regression is used to interpolate
+
+The intuitive idea is that HOSVD decomposes data as linear combination of eigenvectors. This means that instead of requiring all "pixels" the data is rewritten as a weighted sum of only a few pictures. The GPR is used to find out how much of each of these pictures is contained in new points that has not been used to build the basis.
+
+The research post explain the mathematical aspects, while the tutorial provide all the details about how to implement the algorithm for the dataset described in the previous seciton. 
+- [Tutorial 2: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
+- [Post: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR](/_posts/combustion-hosvd-gpr.md)
+
+Below a sample of the reoconstruction of the Temperature field for the flame used in the tutorial:
+![Reconstruction error per species for Re=13000, mf=0.08](assets/img/Tutorial/Combustion/hosvd_gpr/T.png)
+
 
 # Tutorials
 
 - [Tutorial 1: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame](./2026-combustion_tutorial.md)
-- Tutorial 2:
+- [Tutorial 2: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
+
 
 # Notebooks
 
-- Notebook 1:
-- Notebook 2:
+Coming soon
 
 # Videos
 
-- Video 1:
-- Video 2:
+Coming soon
 
 # Resources & Databases
 
@@ -75,7 +91,8 @@ Add here POD, DMD, HODMD, ROMs, machine learning, deep learning, prediction, rec
 
 # Contributors
 
-- Name:
+- Name: Isacco Faglioni
+- Name: Zou Xiangrui
 
 
 <!-- REFERENCES -->
