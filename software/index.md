@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Software
-subtitle: Interactive notebooks, application workflows, databases, and open-source tools 
+subtitle: An open-source ecosystem of software, applications, datasets, and tutorials for complex dynamical systems. 
 ---
 
 Welcome to the ModelFLOWs Software Hub. This is the main umbrella for all our open science engineering tools, models, and datasets.
