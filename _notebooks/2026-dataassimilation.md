@@ -36,5 +36,5 @@ One of the primary challenge associated with the industrial datasets is their he
 [Pillai, P., Hetherington, A., Saavedra, L., Le Clainche, S., A low cost singular value decomposition based data assimilation technique for analysis of heterogeneous combustion data, Phys. Fluids, 37, 087207, 2025.](https://arxiv.org/abs/2503.24064)
 
 <!-- *Code in progress. Coming soon...* -->
-Download the code for the **lcSVD DA** [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/ROM_data_assimilation/lcsvd_da.zip). -->
+Download the code for the **lcSVD DA** [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/ROM_data_assimilation/lcsvd_da.zip).
 
