@@ -6,6 +6,9 @@ category: "AI & Data-Driven Models"
 tldr: "Tutorial for calibrating low-cost air-quality sensor measurements using temporal deep learning and reference-grade observations."
 author: "Arindam Sengupta"
 ---
+<p class="post-meta">
+  Posted on 18 June 2026
+</p>
 
 # Overview
 
