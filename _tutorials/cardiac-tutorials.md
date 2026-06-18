@@ -22,6 +22,7 @@ Content:
 *  [Diagnosis tutorial](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/#diagnosis-tutorial)
 *  [Prognosis tutorial](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/#prognosis-tutorial)
 *  [Interface tutorial](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/#interface-tutorial)
+*  [LV segmentation and EF estimation tutorial](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/#lv-seg-ef-tutorial)
 *  [CFD tutorial](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/#cfd-tutorial)
 
 ## Diagnosis tutorial <a id="diagnosis-tutorial"></a>
@@ -78,6 +79,29 @@ CardioView is the clinical desktop interface that bridges the technical environm
 
 > #### Codes <a id="interface-codes-private"></a>
 > This repository is currently **private** and not yet publicly available. If you are interested in accessing the code, please contact us at [soledad.leclainche@upm.es](mailto:soledad.leclainche@upm.es).
+
+
+## LV segmentation and EF estimation tutorial <a id="lv-seg-ef-tutorial"></a>
+
+The full tutorial is available in the Sphinx repository [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/segmentation%26EFprediction_tutorial):
+
+- Repository: EchoNet Cardiac Analysis Tutorial
+- [*LV segmentation and EF estimation Tutorial*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/segmentation%26EFprediction_tutorial/README.md)
+- [*Online tutorial*](https://zhuoqun.github.io/Segmentation-and-EF-prediction/)
+
+### What the tutorial covers
+
+- How to prepare the data.
+- How to run normalisation.
+- How to perform Left-Ventricle (LV) Segmentation.
+- How to perform Ejection Fraction Prediction.
+- How to validate the obtained results.
+
+### Related links
+
+- [*Scripts*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/segmentation%26EFprediction_tutorial/EchoNet-dynamic/scripts)
+- [Medical data](https://modelflows.github.io/modelflowsapp/software/databases/medical-data)
+- Application hub: [Cardiac Pathology]({{ "/software/applications/2026-cardiac-pathology/" | relative_url }})
 
 ## CFD & High-Fidelity Simulations tutorial <a id="cfd-tutorial"></a>
 

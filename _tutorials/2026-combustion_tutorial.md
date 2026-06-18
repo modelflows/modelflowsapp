@@ -1,3 +1,9 @@
+---
+layout: page
+title: "OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame"
+permalink: /software/tutorials/2026-combustion-tutorial/
+---
+
 # OpenFOAM RANS Simulation of the DLR CH4/H2/N2 Turbulent Diffusion Flame
 
 ## Overview

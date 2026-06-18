@@ -3,6 +3,7 @@ layout: page
 title: "Combustion"
 area: "Combustion and reactive flows"
 tldr: "Physics-based CFD, reduced-order modelling, and AI-driven prediction for turbulent combustion and reactive flows"
+permalink: /software/applications/2026-combustion/
 ---
 
 # Overview
@@ -15,7 +16,7 @@ The application focuses on the DLR methane/hydrogen/nitrogen turbulent diffusion
 
 This section provides a reproducible CFD workflow for the DLR turbulent non-premixed jet flame [1]. The burner consists of a central fuel jet containing CH4/H2/N2 and a surrounding dry-air coflow. The fuel is injected through an 8 mm nozzle, while the coflow air is supplied through a 140 mm coaxial nozzle. The geometry is given as follows. An axisymmetric wedge domain is used to reduce the computational cost while preserving the main flame structure and the external ambient region for air entrainment.
 
-<!-- IMAGES -->
+<!-- IMAGES  -->
 <p style="text-align: center;">
     <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/DLR_burner_Geometry.png?raw=true" alt="DLR burner geometry" width="60%">
 </p>
@@ -65,8 +66,8 @@ The algorithm works in two stages:
 The intuitive idea is that HOSVD decomposes data as linear combination of eigenvectors. This means that instead of requiring all "pixels" the data is rewritten as a weighted sum of only a few pictures. The GPR is used to find out how much of each of these pictures is contained in new points that has not been used to build the basis.
 
 The research post explain the mathematical aspects, while the tutorial provide all the details about how to implement the algorithm for the dataset described in the previous seciton. 
-- [Tutorial 2: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
-- [Post: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR](/_posts/combustion-hosvd-gpr.md)
+- [Tutorial 2: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR]({{ '/software/tutorials/combustion-hosvd-gpr-tutorial/' | relative_url }})
+- [Post: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR]({{ '/research/ai-combustion/' | relative_url }})
 
 Below a sample of the reoconstruction of the Temperature field for the flame used in the tutorial:
 ![Reconstruction of Temperature field for Re=13000, mf=0.08](/assets/img/Tutorial/Combustion/hosvd_gpr/field_T.png)
@@ -74,10 +75,8 @@ Below a sample of the reoconstruction of the Temperature field for the flame use
 
 # Tutorials
 
-- [Tutorial 1: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame](../_tutorials/2026-combustion_tutorial.md)
-- [Tutorial 2: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
-
-# Contributors
+- [Tutorial 1: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame]({{ '/software/tutorials/2026-combustion-tutorial/' | relative_url }})
+- [Tutorial 2: Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR]({{ '/software/tutorials/combustion-hosvd-gpr-tutorial/' | relative_url }})
 
 # Contributors
 - Name: Isacco Faglioni

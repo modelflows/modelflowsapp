@@ -50,6 +50,9 @@ This tool has been validated on datasets obtained from numerical simulations at 
 
 ![Multi-parametric tool - Methodology](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_multipar.png?raw=true)
 
+[Barragán, G., Hetherington, A., Sengupta, A., Abadía-Heredia, R., Garicano-Mena, J., Le Clainche, S., MoTIF: A Mode-Structured Tensor Framework for Multi-Parametric Approximation, Super-Resolution and Forecasting of Unsteady Systems, arXiv:2510.25625, 2025.](https://arxiv.org/abs/2510.25625)
+
+
 Download the code [*here*](https://github.com/modelflows/notebooks/raw/main/deep-learning/Multiparametric.zip) or the Jupyter notebook [*here*](https://github.com/modelflows/notebooks/raw/main/deep-learning/Multiparametric.zip)
 
 Download the databases [*here*]()
@@ -63,7 +66,10 @@ In order to overcome the limitations of conventional numerical solvers, a fully 
 
 ![Super resolution tool - Methodology ](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_superresolution.png?raw=true)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/SUPERRESOLUTION.zip).  -->
+[Barragán, G., Hetherington, A., Abadía-Heredia, R., Garicano-Mena, J., Le Clainche, S., HOSVD-SR: A Physics-Based Deep Learning Framework for Super-Resolution in Fluid Dynamics, arXiv:2504.17994, 2025.](https://arxiv.org/abs/2504.17994)
+
+
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/SRtool.zip).  -->
 
 ## Temporal Forecasting <a id="temporal-forecasting"></a>
 
@@ -107,7 +113,7 @@ LC-SVD-DLinear (and LC-HOSVD-DLinear) are two hybrid machine learning models tha
 
 ![LC-SVD-DLinear architecture summary](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/LC-SVD-DLinear.jpg?raw=true) 
 
-[Hetherington, A., Leonés, J. L., & Clainche, S. L. (2024). LC-SVD-DLinear: A low-cost physics-based hybrid machine learning model for data forecasting using sparse measurements. arXiv preprint arXiv:2411.17433.](https://arxiv.org/abs/2411.17433)
+[Hetherington, A., López-Leones, J., Le Clainche, S., LC-SVD-DLinear: A low-cost physics-based hybrid machine learning model for data forecasting using sparse measurements , Exp. Syst. Appl., 307, 131009, 2026.](https://arxiv.org/abs/2411.17433)
 
 Download the code for **SVD-DLinear** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/SVD-DLinear.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/SVD-DLinear.ipynb).  
 Download the code for **LC-SVD-DLinear** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/LC-SVD-DLinear.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/LC-SVD-DLinear.ipynb).  

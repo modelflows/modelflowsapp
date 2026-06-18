@@ -17,6 +17,7 @@ This section concerns methods addressing several tasks related with the study of
 * [AI & Data-Driven Models](#ai)
   * [Diagnosis & Prognosis Tutorial](#ai-tutorials)
   * [Interface Tutorial](#ai-interface)
+  * [Segmentation and Ejection Fraction Estimation Tutorial](#ai-seg-ef)
   * [Notebooks](#ai-notebooks)
   * [Resources & Databases](#ai-resources)
 * [Publications](#publications)
@@ -55,14 +56,21 @@ CardioView is a clinical desktop interface that bridges the technical modelling 
 
 The complete tutorial is available in the [*Interface tutorial*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/#interface-tutorial) section of the [*Cardiac tutorials*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/) page.
 
+## Segmentation and Ejection Fraction Estimation Tutorial <a id="ai-seg-ef"></a>
+
+The tutorial of the developed framework based on deep learning for automated left-ventricle (LV) segmentation and ejection-fraction (EF) prediction from echocardiograms is available in the [*LV Segmentation and EF estimation tutorial*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/#lv-seg-ef-tutorial) section of the [*Cardiac tutorials*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/).
+
+
 ## Notebooks <a id="ai-notebooks"></a>
 
 - [*Diagnosis Notebooks*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/diagnosis_tutorial/notebooks): this link goes to the source files and to the guide of how to use the codes implementing the training and testing of models for the diagnosis of cardiovascular diseases (CVD).
 - [*Prognosis Notebooks*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/prognosis_tutorial/notebooks): this link goes to the source files and to the guide of how to use the codes implementing the training and testing of models for the prognosis of heart failures.
+- [*LV segmentation and EF prediction*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/segmentation%26EFprediction_tutorial/EchoNet-dynamic/scripts): this link goes to the source files necessary to perform the left-ventricle (LV) segmentation and the ejection fraction (EF) estimation from echocardiography images.
 
 ## Resources & Databases <a id="ai-resources"></a>
 
-- Dataset: confidential CNIC datasets.
+- Confidential CNIC datasets.
+- [Medical data](https://modelflows.github.io/modelflowsapp/software/databases/medical-data).
 
 # Publications <a id="publications"></a>
 
