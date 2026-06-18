@@ -75,8 +75,7 @@ $$k(x, x') = \sigma_f^2 \exp\left(-\frac{|x - x'|}{\ell}\right)$$
 For a new unseen point $x^*$, the predicted mean and variance are:
 
 $$
-\mu_{*} = \mathbf{k}_{*}^{\top} \mathbf{K}^{-1} \mathbf{y},
-\qquad
+\mu_{*} = \mathbf{k}_{*}^{\top} \mathbf{K}^{-1} \mathbf{y}, \qquad
 \sigma_{*}^{2} = k(x^{*}, x^{*}) - \mathbf{k}_{*}^{\top} \mathbf{K}^{-1} \mathbf{k}_{*}
 $$
 ### **HOSVD + GPR Framework**
