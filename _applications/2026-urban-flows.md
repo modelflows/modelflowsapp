@@ -109,7 +109,7 @@ The AI/ROM part is organized into:
 
 ### Notebooks
 
-- Notebook 1: coming soon
+- Notebook 1: <a href="https://github.com/modelflows/notebooks/tree/main/LCS%20calibration">LCS calibration</a>
 
 ### Videos
 
