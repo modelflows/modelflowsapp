@@ -1,13 +1,4 @@
----
-layout: page
-title: "HOSVD + GPR: Parametric Surrogate for Turbulent Jet Flames"
-category: "AI & Data-Driven Models"
-topic: "Combustion"
-tldr: "Parametric interpolation of the DLR turbulent jet diffusion flame using Higher-Order SVD and Gaussian Process Regression to predict full combustion fields at unseen operating conditions."
-thumbnail: "assets/img/Tutorial/Combustion/hosvd_gpr/Re16000_mf012.png"
----
-
-# Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR
+# Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR
 
 ## **Introduction**
 
@@ -38,7 +29,7 @@ where each dimension corresponds respectively to the Reynolds number samples, hy
 
 An example of the dataset is shown below for Re = 16,000 and H₂ mass fraction of 8%. The figure displays the spatial distribution of temperature (T), methane (CH₄), oxygen (O₂), carbon monoxide (CO), carbon dioxide (CO₂), and water vapor (H₂O) mass fractions over the axial (z) and radial (r) coordinates. The flame structure is clearly visible: peak temperatures and combustion products are concentrated along the reaction zone near the jet axis, while reactants (CH₄ and O₂) are consumed as the flame develops downstream.
 
-![CFD snapshot for Re=16000 and H₂ mass fraction 8%]({{ '/assets/img/Tutorial/Combustion/hosvd_gpr/Re16000_mf012.png' | relative_url }})
+![CFD snapshot for Re=16000 and H₂ mass fraction 8%](/assets/img/Tutorial/Combustion/hosvd_gpr/Re16000_mf012.png)
 
 The whole dataset can be dowloaded from our Server at: LINK
 
@@ -73,8 +64,7 @@ The factor matrices along the parameter dimensions ($\mathbf{U}^{\mathrm{Re}}$ a
 
 The information about both the singular values and modes is contained for each dimension in teh core tensor $\mathcal{G}$. By contracting the core tensor along the species axis and mapping the resulting dominant patterns back to  physical space through the spatial factor matrices $U_x$ and $U_y$.
 The figure below shows the leading HOSVD spatial modes extracted for the temperature field.
-
-![HOSVD spatial modes for temperature]({{ '/assets/img/Tutorial/Combustion/hosvd_gpr/modes_hosvd_temperature.png' | relative_url }})
+![HOSVD spatial modes for temperature](/assets/img/Tutorial/Combustion/hosvd_gpr/modes_hosvd_temperature.png)
 
 ### **Gaussian Process Regression (GPR)**
 
@@ -84,8 +74,9 @@ $$k(x, x') = \sigma_f^2 \exp\left(-\frac{|x - x'|}{\ell}\right)$$
 
 For a new unseen point $x^*$, the predicted mean and variance are:
 
-$$\mu_{*} = \mathbf{k}_{*}^{\top} \mathbf{K}^{-1} \mathbf{y}, \qquad \sigma_{*}^2 = k(x^{*}, x^{*}) - \mathbf{k}_{*}^{\top} \mathbf{K}^{-1} \mathbf{k}_{*}$$
-
+  $$\mu_{*} = \mathbf{k}_{*}^{\top} \mathbf{K}^{-1} \mathbf{y}, \qquad
+  \sigma_{*}^2 = k(x^{*}, x^{*}) - \mathbf{k}_{*}^{\top} \mathbf{K}^{-1}
+  \mathbf{k}_{*}$$
 ### **HOSVD + GPR Framework**
 
 A key advantage of HOSVD is that its separable structure allows the two operating parameters (Re and $X_{\mathrm{H_2}}$) to be treated independently. Two separate 1D GPR models are trained, one per parameter axis:
@@ -100,13 +91,14 @@ $$\hat{\mathbf{m}} = \hat{\mathcal{T}} \cdot \boldsymbol{\sigma} + \boldsymbol{\
 
 ### **Results**
 
+
 For each operating parameter, the corresponding HOSVD coefficients are interpolated independently with a 1D GPR. The plot below shows the GPR fit (mean ± 2σ) along the Reynolds number axis for the first four modes: black dots are the training coefficients, the gold diamond is the true coefficient at an unseen Re = 13,000, and the red marker is the GPR prediction with its uncertainty.
 
-![GPR interpolation of HOSVD coefficients along the Re axis]({{ '/assets/img/Tutorial/Combustion/hosvd_gpr/tutorial/coeffs.png' | relative_url }})
+![GPR interpolation of HOSVD coefficients along the Re axis](/assets/img/Tutorial/Combustion/hosvd_gpr/tutorial/coeffs.png)
 
 Combining the interpolated coefficients with the core tensor and rescaling gives the reconstructed field for the unseen condition. The bar chart below reports the relative $L_2$ reconstruction error per species for the test case Re = 13,000, $X_{\mathrm{H_2}}$ = 8%, together with the overall mean error $\bar{e}$.
 
-![Reconstruction error per species for Re=13000, mf=0.08]({{ '/assets/img/Tutorial/Combustion/hosvd_gpr/relative_error_per_feat_Re13000_mf008.png' | relative_url }})
+![Reconstruction error per species for Re=13000, mf=0.08](/assets/img/Tutorial/Combustion/hosvd_gpr/relative_error_per_feat_Re13000_mf008.png)
 
 ## **Conferences**
 
@@ -115,6 +107,7 @@ The first version and the current version of work has been presented at the foll
 | Year | Conference | Location | Type |
 |---|---|---|---|
 | 2026 | [Cypher 3rd meeting](https://cypher.ulb.be/event/cypher-3rd-general-meeting/) | Istambul, Turkey | Poster-Oral |
-| 2026 | [Princeton-Combustion Institute Summer School on Combustion and the Environment](https://cefrc.princeton.edu/combustion-summer-school) | Princeton, US | Poster |
+| 2026 | [Princeton-Combustion Institute Summer School on Combustion and the Environment ](https://cefrc.princeton.edu/combustion-summer-school) | Princeton, US | Poster|
 
-![Conference photo]({{ '/assets/img/Tutorial/Combustion/hosvd_gpr/poster_presentation_istambul.jpeg' | relative_url }})
+![Conference photo](/assets/img/Tutorial/Combustion/hosvd_gpr/poster_presentation_istambul.jpeg)
+

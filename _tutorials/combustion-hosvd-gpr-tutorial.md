@@ -1,0 +1,399 @@
+---
+layout: page
+title: "HOSVD + GPR: Parametric Surrogate for Turbulent Jet Flames"
+application: "Reactive Flows"
+category: "AI & Data-Driven Models"
+tldr: "Build a fast surrogate model for a 10×10 parametric CFD database of the DLR turbulent jet diffusion flame using Higher-Order SVD and Gaussian Process Regression."
+author: "Isacco Faglioni"
+---
+
+# Overview
+
+This tutorial shows how to combine **Higher-Order Singular Value Decomposition (HOSVD)** with **Gaussian Process Regression (GPR)** to interpolate full multi-species combustion fields at unseen operating conditions. The dataset consists of 100 CFD snapshots of the DLR turbulent jet diffusion flame spanning a 10×10 grid of Reynolds numbers and fuel mass-flow rates. The surrogate is trained on an 81-case (9×9) subset and evaluated at two held-out test points.
+
+---
+
+# Learning Objectives
+
+- Build and query a 5-D tensor from a parametric CFD database.
+- Apply HOSVD to extract a compact Tucker decomposition, retaining 99% of the singular-value energy in each mode.
+- Train independent 1-D GPR models on the parameter-mode factor matrices.
+- Reconstruct full flow fields at unseen operating conditions and quantify the error.
+
+---
+
+# Requirements
+
+- Python 3.9+
+- `numpy`, `matplotlib`, `tensorly`, `scikit-learn`
+- A local copy of the DLR dataset (`.xy` files)
+- `utils.py` (included in the repository) — thin I/O wrapper for `.xy` files
+
+---
+
+# Input Data
+
+- **Dataset**: DLR turbulent jet diffusion flame, 100 cases (`Re` ∈ {11000, …, 20000}, `mf` ∈ {0.04, …, 0.22}).
+- **Format**: `.xy` files, each containing a structured grid of 201 × 79 points × 29 scalar fields.
+- **Fields**: temperature, 8 species mass fractions (CH₄, O₂, CO₂, H₂O, CO, OH, O, CH), velocity components, turbulence quantities.
+
+---
+
+# Step-by-Step Tutorial
+
+## Step 1. Initialisation
+
+All parameters, paths, and imports in one place. Edit `CASES_DIR` to point to your local copy of the dataset. The training grid is a 9×9 subset that excludes `Re = 15000` and `mf = 0.14` (the test points).
+
+```python
+import warnings
+from pathlib import Path
+
+import numpy as np
+import tensorly as tl
+import tensorly.tenalg
+from sklearn.gaussian_process import GaussianProcessRegressor
+from sklearn.gaussian_process.kernels import Matern, RBF, RationalQuadratic, ConstantKernel
+from sklearn.multioutput import MultiOutputRegressor
+from sklearn.exceptions import ConvergenceWarning
+
+warnings.filterwarnings('ignore', category=ConvergenceWarning)
+
+from utils import load_case   # reads .xy files → (grid, x_vals, z_vals)
+
+CASES_DIR = Path('/path/to/your/dataset')
+
+# Full 10×10 parameter grid
+RE_VALS = [11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20000]
+MF_VALS = [0.04,  0.06,  0.08,  0.10,  0.12,  0.14,  0.16,  0.18,  0.20,  0.22]
+
+# 9×9 training subset — one Re and one mf held out for testing
+RE_TRAIN_VALS = [11000, 12000, 13000, 14000, 16000, 17000, 18000, 19000, 20000]
+MF_TRAIN_VALS = [0.04,  0.06,  0.08,  0.10,  0.12,  0.16,  0.18,  0.20,  0.22]
+
+RE_FIXED = 15000   # unseen Re
+MF_FIXED = 0.14    # unseen mf
+
+IMPORTANT_FIELDS = ['T', 'CH4', 'O2', 'CO2', 'H2O', 'CO', 'OH', 'O']
+E_THRESHOLD = 0.99   # retain 99% of singular-value energy
+KERNEL_1D_NAME = 'Matern-0.5'
+KERNEL_1D_LS   = 0.5
+
+COLS = [
+    'point_x', 'point_y', 'point_z', 'alphat',
+    'CH', 'CH2', 'CH2O', 'CH3', 'CH4',
+    'CO', 'CO2', 'epsilon',
+    'H', 'H2', 'H2O', 'H2O2',
+    'HCO', 'HO2', 'k', 'N2', 'nut',
+    'O', 'O2', 'OH', 'p', 'T',
+    'U_x', 'U_y', 'U_z',
+]
+COL_IDX = {name: i for i, name in enumerate(COLS)}
+```
+
+**Expected output:**
+```
+Training cases : 9 Re × 9 mf = 81 cases
+Sweep A test   : Re=15000 (unseen), mf varies over all MF_VALS
+Sweep B test   : mf=0.14 (unseen), Re varies over all RE_VALS
+```
+
+---
+
+## Step 2. Load Dataset
+
+Read all 100 CFD snapshots from disk into a flat array `tensor_flat_all` of shape `(N_cases, Nz, Nx, Nsp)`.
+
+```python
+sample_grid, x_vals, z_vals = load_case(sorted(CASES_DIR.glob('*.xy'))[0])
+Nz, Nx, Nsp = sample_grid.shape
+x_min, x_max = x_vals.min(), x_vals.max()
+z_min, z_max = z_vals.min(), z_vals.max()
+
+params_all      = np.array([[re, mf] for re in RE_VALS for mf in MF_VALS])
+tensor_flat_all = np.empty((len(params_all), Nz, Nx, Nsp), dtype=np.float32)
+
+for k, (re, mf) in enumerate(params_all):
+    path = next(CASES_DIR.glob(f'*_mfH2_{mf:.2f}_Re_{int(re)}.xy'))
+    tensor_flat_all[k], _, _ = load_case(path)
+```
+
+**Expected output:**
+```
+Loaded 100 cases  shape=(100, 201, 79, 29)
+  Grid: Nz=201, Nx=79, Nsp=29
+  Domain: x=[0.0000, 0.1898]  z=[0.0000, 1.0000]
+```
+
+---
+
+## Step 3. Visualise the Dataset
+
+The figure below shows the spatial distribution of key species for a representative snapshot at Re = 16000, ṁ_f = 0.08. The flame structure is clearly visible: peak temperature and combustion products concentrate along the reaction zone near the jet axis, while fuel (CH₄) and oxidiser (O₂) are consumed downstream.
+
+![CFD snapshot — six key species for Re=16000, mf=0.08](/assets/img/Tutorial/Combustion/hosvd_gpr/tutorial/data.png)
+
+---
+
+## Step 4. Train / Test Split
+
+```python
+mf_train_set = {round(v, 2) for v in MF_TRAIN_VALS}
+
+train_mask   = np.array([(re in RE_TRAIN_VALS) and (round(mf, 2) in mf_train_set)
+                          for re, mf in params_all])
+params_train = params_all[train_mask]
+T_train      = tensor_flat_all[train_mask]   # shape: (81, Nz, Nx, Nsp)
+```
+
+---
+
+## Step 5. Standard Scaling
+
+Combustion fields span several orders of magnitude. Without per-species scaling, the decomposition is dominated by temperature and fine structure in minor species is lost.
+
+Each species $k$ is centred and scaled to unit variance:
+
+$$\tilde{\mathcal{T}}_{i,j,p,q,k} = \frac{\mathcal{T}_{i,j,p,q,k} - \mu_k}{\sigma_k}$$
+
+where $\mu_k$ and $\sigma_k$ are computed over all training cases and spatial points.
+
+```python
+mu  = T_train.mean(axis=(0, 1, 2), keepdims=True)   # shape (1, 1, 1, Nsp)
+std = T_train.std( axis=(0, 1, 2), keepdims=True)
+std = np.where(std < 1e-12, 1.0, std)                # guard against constant fields
+
+T_train_s = (T_train - mu) / std
+```
+
+---
+
+## Step 6. Reshape into 5-D Parameter Grid
+
+HOSVD operates on a tensor indexed by `(Re, mf, z, x, species)`.
+
+```python
+n_re_tr = len(RE_TRAIN_VALS)
+n_mf_tr = len(MF_TRAIN_VALS)
+re_to_idx_tr = {v: i for i, v in enumerate(RE_TRAIN_VALS)}
+mf_to_idx_tr = {round(v, 2): j for j, v in enumerate(MF_TRAIN_VALS)}
+
+T_grid_s = np.zeros((n_re_tr, n_mf_tr, Nz, Nx, Nsp), dtype=np.float32)
+for k, (re, mf) in enumerate(params_train):
+    i = re_to_idx_tr[int(re)]
+    j = mf_to_idx_tr[round(mf, 2)]
+    T_grid_s[i, j] = T_train_s[k]
+```
+
+**Expected output:**
+```
+Training tensor shape: (9, 9, 201, 79, 29)  →  (Re, mf, z, x, species)
+```
+
+---
+
+## Step 7. HOSVD — Higher-Order Singular Value Decomposition
+
+For each tensor mode: unfold → SVD → truncate to `E_THRESHOLD` energy → store factor matrix. The Tucker core is obtained by projecting the tensor onto all factor matrices. The factor matrices for modes 0 and 1 (Re and mf axes) will be the targets for GPR.
+
+```python
+factors, sv_list = [], []
+for mode in range(T_grid_s.ndim):
+    unfolded = tl.unfold(T_grid_s, mode)
+    U, S, _  = np.linalg.svd(unfolded, full_matrices=False)
+    cumE = np.cumsum(S)
+    r    = int(np.searchsorted(cumE, E_THRESHOLD * cumE[-1])) + 1
+    r    = min(r, len(S))
+    factors.append(U[:, :r])
+    sv_list.append(S)
+    print(f'  mode {mode}: dim={unfolded.shape[0]}  kept r={r}')
+
+core = tl.tenalg.multi_mode_dot(
+    T_grid_s, [f.T for f in factors], modes=list(range(T_grid_s.ndim))
+)
+
+U_re, U_mf = factors[0], factors[1]
+r_re, r_mf = U_re.shape[1], U_mf.shape[1]
+```
+
+**Expected output:**
+```
+  mode 0: dim=9  kept r=9
+  mode 1: dim=9  kept r=9
+  mode 2: dim=201  kept r=102
+  mode 3: dim=79  kept r=37
+  mode 4: dim=29  kept r=24
+
+Core shape : (9, 9, 102, 37, 24)
+U_re       : (9, 9)
+U_mf       : (9, 9)
+```
+
+---
+
+## Step 8. Singular Value Decay
+
+The plot below shows the singular value spectrum for each mode, normalised to the leading singular value. The red dashed line marks the chosen truncation rank $r$. The spatial modes (z and x) decay slowly, reflecting the complex structure of the flame; the parameter modes (Re, mf) and species mode retain all 9 and 24 directions respectively.
+
+![Singular value decay across all 5 tensor modes](/assets/img/Tutorial/Combustion/hosvd_gpr/tutorial/sv_decay.png)
+
+---
+
+## Step 9. Kernel and GPR Setup
+
+```python
+def parse_kernel_1d(name, ls):
+    if name.startswith('Matern'):
+        nu   = float(name.split('-')[1])
+        base = Matern(length_scale=ls, length_scale_bounds='fixed', nu=nu)
+    elif name == 'RBF':
+        base = RBF(length_scale=ls, length_scale_bounds='fixed')
+    elif name.startswith('RatQuad'):
+        a    = float(name.split('-a')[1])
+        base = RationalQuadratic(length_scale=ls, alpha=a,
+                                 length_scale_bounds='fixed', alpha_bounds='fixed')
+    else:
+        raise ValueError(f'Unknown kernel: {name}')
+    return ConstantKernel(1.0) * base
+
+KERNEL_1D = parse_kernel_1d(KERNEL_1D_NAME, KERNEL_1D_LS)
+```
+
+---
+
+## Step 10. Fit 1-D GPR Models
+
+Two independent GPRs — one per parameter axis. Inputs are min-max normalised to $[0,1]$ before fitting.
+
+```python
+Re_min, Re_max = float(min(RE_TRAIN_VALS)), float(max(RE_TRAIN_VALS))
+Mf_min, Mf_max = float(min(MF_TRAIN_VALS)), float(max(MF_TRAIN_VALS))
+
+Re_tr_nm = (np.array(RE_TRAIN_VALS, float) - Re_min) / (Re_max - Re_min)
+Mf_tr_nm = (np.array(MF_TRAIN_VALS, float) - Mf_min) / (Mf_max - Mf_min)
+
+def make_gpr():
+    return MultiOutputRegressor(
+        GaussianProcessRegressor(kernel=KERNEL_1D, normalize_y=True,
+                                 alpha=1e-6, n_restarts_optimizer=5)
+    )
+
+gpr_re = make_gpr()
+gpr_re.fit(Re_tr_nm.reshape(-1, 1), U_re)
+
+gpr_mf = make_gpr()
+gpr_mf.fit(Mf_tr_nm.reshape(-1, 1), U_mf)
+```
+
+---
+
+## Step 11. Ground-Truth Factor Rows
+
+Run HOSVD on all 100 cases to extract the "true" factor vectors at the test points, for benchmarking against the GPR prediction. A sign-alignment step ensures the factor columns are consistent between the training-only and full-tensor decompositions.
+
+```python
+T_full_grid_s = np.zeros((len(RE_VALS), len(MF_VALS), Nz, Nx, Nsp), dtype=np.float32)
+re_to_idx_full = {v: i for i, v in enumerate(RE_VALS)}
+mf_to_idx_full = {round(v, 2): j for j, v in enumerate(MF_VALS)}
+mf_vals_r      = [round(v, 2) for v in MF_VALS]
+
+for k, (re, mf) in enumerate(params_all):
+    T_full_grid_s[re_to_idx_full[int(re)], mf_to_idx_full[round(mf, 2)]] = (
+        (tensor_flat_all[k] - mu.squeeze()) / std.squeeze()
+    )
+
+factors_full = []
+for mode in range(T_full_grid_s.ndim):
+    unfolded = tl.unfold(T_full_grid_s, mode)
+    U, S, _  = np.linalg.svd(unfolded, full_matrices=False)
+    cumE = np.cumsum(S)
+    r    = int(np.searchsorted(cumE, E_THRESHOLD * cumE[-1])) + 1
+    factors_full.append(U[:, :min(r, len(S))])
+
+U_re_full, U_mf_full = factors_full[0], factors_full[1]
+r_re_full, r_mf_full = U_re_full.shape[1], U_mf_full.shape[1]
+
+# Sign-align columns so training and full-tensor factors are consistent
+train_rows_re = [RE_VALS.index(re) for re in RE_TRAIN_VALS]
+for j in range(min(r_re, r_re_full)):
+    if np.dot(U_re_full[train_rows_re, j], U_re[:, j]) < 0:
+        U_re_full[:, j] *= -1
+
+train_rows_mf = [mf_vals_r.index(round(mf, 2)) for mf in MF_TRAIN_VALS]
+for j in range(min(r_mf, r_mf_full)):
+    if np.dot(U_mf_full[train_rows_mf, j], U_mf[:, j]) < 0:
+        U_mf_full[:, j] *= -1
+
+alpha_Re_true = U_re_full[RE_VALS.index(RE_FIXED)]
+alpha_mf_true = U_mf_full[mf_vals_r.index(round(MF_FIXED, 2))]
+```
+
+---
+
+## Steps 12–13. GPR Interpolation — Re and mf Axes
+
+The GPR is queried at the unseen test values and returns both a mean prediction and a 2σ confidence interval. The plots below show the GPR fit along each axis: training coefficients (black dots), GPR mean ± 2σ (blue ribbon), GPR prediction (red star), and the ground-truth coefficient from the full-tensor HOSVD (gold diamond).
+
+```python
+Re_fixed_nm   = (RE_FIXED - Re_min) / (Re_max - Re_min)
+Mf_fixed_nm   = (MF_FIXED - Mf_min) / (Mf_max - Mf_min)
+
+preds_re = [est.predict([[Re_fixed_nm]], return_std=True) for est in gpr_re.estimators_]
+preds_mf = [est.predict([[Mf_fixed_nm]], return_std=True) for est in gpr_mf.estimators_]
+
+alpha_Re_pred = np.array([p[0].item() for p in preds_re])
+alpha_mf_pred = np.array([p[0].item() for p in preds_mf])
+```
+
+![GPR interpolation of factor coefficients along the Re and mf axes](/assets/img/Tutorial/Combustion/hosvd_gpr/tutorial/coeffs.png)
+
+---
+
+## Step 14. Reconstruct at the Test Point
+
+The core of the surrogate: contract the Tucker core with the two predicted factor vectors to recover the full 3-D field, then undo the standard-scaling.
+
+```python
+def reconstruct(alpha_re, alpha_mf):
+    Z       = tl.tenalg.mode_dot(core, alpha_re, mode=0)
+    Z       = tl.tenalg.mode_dot(Z,   alpha_mf, mode=0)
+    recon_s = tl.tenalg.multi_mode_dot(Z, [factors[2], factors[3], factors[4]], modes=[0, 1, 2])
+    return recon_s * std.squeeze() + mu.squeeze()   # shape: (Nz, Nx, Nsp)
+
+recon = reconstruct(alpha_Re_pred, alpha_mf_pred)
+```
+
+The figure below compares the reference CFD field with the HOSVD + GPR reconstruction at the unseen test point Re = 15000, ṁ_f = 0.14, and shows the pointwise error for each species.
+
+![Reconstruction comparison and per-species relative L2 error](/assets/img/Tutorial/Combustion/hosvd_gpr/tutorial/res.png)
+
+---
+
+# Expected Outputs
+
+| File | Description |
+|------|-------------|
+| `data.png` | Contourf grid of key species for one CFD snapshot |
+| `sv_decay.png` | Singular value decay across all 5 tensor modes |
+| `coeffs.png` | GPR fits for each factor column along Re and mf axes |
+| `res.png` | Reference / prediction / error panels + per-species $L_2$ bar chart |
+
+---
+
+# Full Notebook
+
+The complete, self-contained notebook with all code, plots, and extended sweep analysis is available here:
+
+**[Download hosvd-gpr-tutorial.ipynb](#)** *(link coming soon)*
+
+---
+
+# Related Links
+
+- Dataset: DLR turbulent jet diffusion flame (available on request)
+
+---
+
+# Contributors
+
+- Isacco Faglioni
