@@ -139,7 +139,7 @@ However, the RMSE gradually increases as the prediction horizon extends. The err
 At Re = 300, the wake becomes more complex. The prediction still captures the dominant oscillatory behavior, but the mismatch grows faster than in the Re = 200 case.
 
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/research/CFD/Accelerate_CFD/assets/img/Adaptive_Comparison_Re300.png?raw=true" alt="Comparison for Re=200 baseline POD-DL prediction" width="60%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/research/CFD/Accelerate_CFD/assets/img/Adaptive_Comparison_Re300.png?raw=true" alt="Comparison for Re=200 baseline POD-DL prediction" width="30%">
 </p>
 
 <p style="text-align: center;"><em>Figure 6. Comparison between prediction and CFD ground truth at probe location (0.5D, 0.5D, 0) for the flow past a circular cylinder at Re=300.</em></p>
