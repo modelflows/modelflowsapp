@@ -35,7 +35,7 @@ The representive results are given as follows.
 
 <!-- IMAGES -->
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/DLR_burner_T_H2_H2O.png?raw=true" alt="Temperature and Mass fractions of H2O and H2" width="60%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/DLR_burner_T_H2_H2O.png?raw=true" alt="Temperature and Mass fractions of H2O and H2" width="80%">
 </p>
 
 The objective is not only to obtain one flame simulation, but also to provide a reusable workflow for generating CFD datasets. In the current dataset-generation plan, the Reynolds number is varied from 11000 to 20000, and the hydrogen mass fraction is varied from 4% to 22%, producing 100 parametric CFD cases. These solutions can be used to build structured datasets for reduced-order models and data-driven models.
