@@ -9,16 +9,6 @@ sphinx_repository: "https://github.com/modelflows/adaptive-cfd"
 tutorial_file: "2026-accelerateCFD-tutorial.md"
 ---
 
-<script>
-MathJax = {
-  tex: {
-    inlineMath:  [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']]
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
-
 # Overview
 
 This tutorial explains how to use the generalized **adaptive CFD–POD–LSTM pipeline** developed at ETSIAE–UPM. The pipeline couples an OpenFOAM CFD solver with a data-driven surrogate model (Proper Orthogonal Decomposition + Long Short-Term Memory network) in a closed loop. At each iteration, OpenFOAM generates a block of flow snapshots, the LSTM is trained on them and predicts the next block, and the solver restarts — keeping prediction accuracy controlled over arbitrarily long horizons.
