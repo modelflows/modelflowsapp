@@ -37,7 +37,7 @@ Here is a showcase of the ongoing projects by the ModelFLOWs group members. Choo
       <div class="card-body">
         <h4 class="card-title">RANS</h4>
         <p class="card-text">.</p>
-        <a href="{{ '/research/adaptive-prediction' | relative_url }}" class="btn btn-primary btn-sm">View Projects</a>
+        <a href="{{ '/research/RANS' | relative_url }}" class="btn btn-primary btn-sm">View Projects</a>
       </div>
     </div>
   </div>
@@ -47,7 +47,7 @@ Here is a showcase of the ongoing projects by the ModelFLOWs group members. Choo
       <div class="card-body">
         <h4 class="card-title">Unsteady solutions</h4>
         <p class="card-text">Divergence-aware adaptive CFD-surrogate prediction using OpenFOAM, POD, and deep learning.</p>
-        <a href="{{ '/research/acc-xxxxxx' | relative_url }}" class="btn btn-primary btn-sm">View Projects</a>
+        <a href="{{ '/research/adaptive-prediction' | relative_url }}" class="btn btn-primary btn-sm">View Projects</a>
       </div>
     </div>
   </div>
