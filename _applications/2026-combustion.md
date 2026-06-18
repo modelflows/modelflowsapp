@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Combustion"
+area: "Combustion and reactive flows"
+tldr: "Physics-based CFD, reduced-order modelling, and AI-driven prediction for turbulent combustion and reactive flows"
+---
 
 # Overview
 
@@ -71,12 +77,20 @@ Below a sample of the reoconstruction of the Temperature field for the flame use
 - [Tutorial 1: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame](../_tutorials/2026-combustion_tutorial.md)
 - [Tutorial 2: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
 
+# Contributors
 
 # Contributors
 - Name: Isacco Faglioni
-- Name: Xiangrui Zou
+- Name: Xiangrui Zou 
 
 
 <!-- REFERENCES -->
-[*Bergmann, V., Meier, W., Wolff, D., & Stricker, W. (1998). Application of spontaneous Raman and Rayleigh scattering and 2D LIF for the characterization of a turbulent CH4/H2/N2 jet diffusion flame. Applied Physics B, 66(4), 489-502.*](https://doi.org/10.1007/s003400050424)
+[*Bergmann, V., Meier, W., Wolff, D., & Stricker, W. (1998). Application of spontaneous Raman and Rayleigh scattering and 2D LIF for the characterization of a turbulent CH4/H2/N2 jet diffusion flame. Applied Physics B, 66(4), 489–502.*](https://doi.org/10.1007/s003400050424)
 
+[*De Lathauwer, L., De Moor, B., & Vandewalle, J. (2000). A multilinear singular value decomposition. SIAM Journal on Matrix Analysis and Applications, 21(4), 1253–1278.*](https://doi.org/10.1137/S0895479896305696)
+
+[*Williams, C. K. I., & Rasmussen, C. E. (1995). Gaussian processes for regression. Advances in Neural Information Processing Systems, 8.*](https://proceedings.neurips.cc/paper/1995/hash/7cce53cf90577442771720a370c3c723-Abstract.html)
+
+[*Barragán, A., et al. (2025). HOSVD-SR: A Physics-Based Deep Learning Framework for Super-Resolution in Fluid Dynamics.*](https://arxiv.org/abs/2504.17994)
+
+[*Sengupta, A., et al. (2025). Hybrid machine learning models based on physical patterns to accelerate CFD simulations: a short guide on autoregressive models.*](https://arxiv.org/abs/2504.06774)
