@@ -40,3 +40,20 @@ subtitle: Welcome to ModelFLOWs
   <br><br>
   <p>Join us in pushing the boundaries of computational modeling and data-driven science!</p>
 </div>
+
+<hr class="mt-5">
+
+<section class="mt-5 mb-5">
+  <h3>Citation</h3>
+
+  <p>If you use <strong>ModelFLOWs-app</strong> in your research, please cite:</p>
+
+  <blockquote class="blockquote border-start ps-3">
+    <p class="mb-0">
+      A. Hetherington, A. Corrochano, R. Abadía-Heredia, E. Lazpita,
+      E. Muñoz, E. Díaz, E. Maiora, M. López-Martín, S. Le Clainche.
+      <em>ModelFLOWs-app: data-driven post-processing and reduced order modelling tools.</em>
+      Computer Physics Communications, 301, 109217, 2024.
+    </p>
+  </blockquote>
+</section>
