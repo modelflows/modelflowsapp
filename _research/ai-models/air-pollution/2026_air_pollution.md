@@ -2,7 +2,7 @@
 layout: post
 category: "Data-driven & Urban Sustainability"
 topic: "Air Pollution"
-thumbnail: "assets/img/Gappy.png"
+thumbnail: "[https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/2026-workshop-li-urban-1.jpg]"
 tldr: "Urban Energy Efficiency Assessment under Uncertainty."
 title: Sustainable Cities & Energy Systems 
 subtitle: Our studies focused on urban sustainability
@@ -34,8 +34,10 @@ Data Envelopment Analysis (DEA) is a widely used non-parametric approach for eva
 To overcome this limitation, this work integrates Robust Optimization (RO) into the DEA framework through the Robust Data Envelopment Analysis (RDEA) methodology.
 By introducing uncertainty sets and protection levels, RDEA evaluates efficiency under worst-case scenarios, producing more reliable and stable efficiency estimates.
 Two robust formulations are considered:
-CU-RDEA (Conservative Uncertainty Robust DEA)
-CEU-RDEA (Conservative Extended Uncertainty Robust DEA)
+
+- CU-RDEA (Conservative Uncertainty Robust DEA)
+- CEU-RDEA (Conservative Extended Uncertainty Robust DEA)
+
 This approach allows the assessment of how uncertainty affects urban energy efficiency rankings and regional performance.
 <p align="center">
   <a href="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/2026-workshop-li-urban-7.png?raw=true">
@@ -44,7 +46,7 @@ This approach allows the assessment of how uncertainty affects urban energy effi
          width="700">
   </a>
 </p>
-FOR THIS FIGURE Create a simplified workflow figure highlighting the main methodological contribution of the paper.
+
 The diagram should show how urban energy data are processed through DEA and Robust Optimization to build the CU-RDEA and CEU-RDEA models. The goal is to communicate the novelty of the methodology rather than reproduce the mathematical formulation presented in the article.
 
 ## Main Findings
@@ -52,9 +54,11 @@ The diagram should show how urban energy data are processed through DEA and Robu
 The results reveal that urban energy efficiency is highly sensitive to data uncertainty.
 As the perturbation level (Γ) increases, both CU-RDEA and CEU-RDEA efficiency scores show a systematic decline, demonstrating the importance of incorporating uncertainty into efficiency assessments.
 The analysis also highlights substantial regional disparities across China:
-East China exhibits the highest overall efficiency levels.
-Northwest and Southwest China show comparatively lower efficiency performance.
-Significant spatial heterogeneity exists among cities within the same region.
+
+- East China exhibits the highest overall efficiency levels.
+- Northwest and Southwest China show comparatively lower efficiency performance.
+- Significant spatial heterogeneity exists among cities within the same region.
+- 
 Furthermore, the results indicate a progressive transition from traditional resource-driven development models toward growth supported by technological innovation, industrial upgrading, and green low-carbon strategies.
 <p align="center">
   <a href="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/2026-workshop-li-urban-8.png?raw=true">
@@ -63,7 +67,7 @@ Furthermore, the results indicate a progressive transition from traditional reso
          width="8500">
   </a>
 </p>
-FOR THIS FIGURE Replace the multiple regional efficiency plots with a single summary figure showing the main findings of the paper. 
+
 The figure should clearly illustrate (i) regional differences in urban energy efficiency and (ii) the impact of uncertainty levels (Γ) on efficiency scores. A China efficiency map combined with a regional comparison chart would communicate the results more effectively for a web audience than the full set of detailed regional plots
 
 ## Scientific Contribution
@@ -82,9 +86,11 @@ The framework can support policy evaluation, urban planning, energy management, 
 This research illustrates the application of advanced data-driven methodologies to large-scale urban systems.
 Beyond traditional engineering applications, ModelFLOWs methodologies can be used to analyze complex socio-economic and environmental datasets, enabling robust decision-support tools for sustainability, smart cities, and energy planning.
 
-### Other Relevant References
+## References
 
-[*Yang, Z., & Wei, X., 2019. The measurement and influences of China's urban total factor energy efficiency under environmental pollution: Based on the game cross-efficiency DEA. Journal of cleaner production, 209, 439-450.*](https://doi.org/10.1016/j.jclepro.2018.10.271)
+Jian Li, Soledad Le Clainche, and collaborators.
+A Robust Cross-Efficiency DEA Model with Undesirable Outputs for Urban Energy Efficiency Evaluation.
+Manuscript in preparation.
 
-[*Wang, R., Wang, Q., & Yao, S., 2021. Evaluation and difference analysis of regional energy efficiency in China under the carbon neutrality targets: Insights from DEA and Theil models. Journal of environmental management, 293, 112958.*](https://doi.org/10.1016/j.jenvman.2021.112958)
+
 
