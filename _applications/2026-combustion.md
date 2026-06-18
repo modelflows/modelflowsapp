@@ -80,7 +80,7 @@ Below a sample of the reoconstruction of the Temperature field for the flame use
 # Contributors
 
 - Name: Isacco Faglioni
-- Name: Xiangrui Zou
+- Name: Xiangrui Zou 
 
 
 <!-- REFERENCES -->
