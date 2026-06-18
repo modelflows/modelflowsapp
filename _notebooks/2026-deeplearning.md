@@ -3,6 +3,7 @@ layout: post
 title: "Introduction to Deep Learning for Fluids"
 topic: "Deep Learning"
 tldr: "Neural Networks architectures and frameworks for data-driven modeling."
+order: 2
 ---
 
 Codes available:
