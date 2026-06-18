@@ -64,7 +64,7 @@ The factor matrices along the parameter dimensions ($\mathbf{U}^{\mathrm{Re}}$ a
 
 The information about both the singular values and modes is contained for each dimension in teh core tensor $\mathcal{G}$. By contracting the core tensor along the species axis and mapping the resulting dominant patterns back to  physical space through the spatial factor matrices $U_x$ and $U_y$.
 The figure below shows the leading HOSVD spatial modes extracted for the temperature field.
-![HOSVD spatial modes for temperature](assets/img/Tutorial/Combustion/hosvd_gpr/modes_hosvd_temperature.png)
+![HOSVD spatial modes for temperature](/assets/img/Tutorial/Combustion/hosvd_gpr/modes_hosvd_temperature.png)
 
 ### **Gaussian Process Regression (GPR)**
 
@@ -93,9 +93,20 @@ $$\hat{\mathbf{m}} = \hat{\mathcal{T}} \cdot \boldsymbol{\sigma} + \boldsymbol{\
 
 For each operating parameter, the corresponding HOSVD coefficients are interpolated independently with a 1D GPR. The plot below shows the GPR fit (mean ± 2σ) along the Reynolds number axis for the first four modes: black dots are the training coefficients, the gold diamond is the true coefficient at an unseen Re = 13,000, and the red marker is the GPR prediction with its uncertainty.
 
-![GPR interpolation of HOSVD coefficients along the Re axis](assets/img/Tutorial/Combustion/hosvd_gpr/gpr_interpolation_Re_axis.png)
+![GPR interpolation of HOSVD coefficients along the Re axis](/assets/img/Tutorial/Combustion/hosvd_gpr/tutorial/coeffs.png)
 
 Combining the interpolated coefficients with the core tensor and rescaling gives the reconstructed field for the unseen condition. The bar chart below reports the relative $L_2$ reconstruction error per species for the test case Re = 13,000, $X_{\mathrm{H_2}}$ = 8%, together with the overall mean error $\bar{e}$.
 
-![Reconstruction error per species for Re=13000, mf=0.08](assets/img/Tutorial/Combustion/hosvd_gpr/relative_error_per_feat_Re13000_mf008.png)
+![Reconstruction error per species for Re=13000, mf=0.08](/assets/img/Tutorial/Combustion/hosvd_gpr/relative_error_per_feat_Re13000_mf008.png)
+
+## **Conferences**
+
+The first version and the current version of work has been presented at the following international venues:
+
+| Year | Conference | Location | Type |
+|---|---|---|---|
+| 2026 | [Cypher 3rd meeting](https://cypher.ulb.be/event/cypher-3rd-general-meeting/) | Istambul, Turkey | Poster-Oral |
+| 2026 | [Princeton-Combustion Institute Summer School on Combustion and the Environment ](https://cefrc.princeton.edu/combustion-summer-school) | Princeton, US | Poster|
+
+![Conference photo](/assets/img/Tutorial/Combustion/hosvd_gpr/poster_presentation_istambul.jpeg)
 
