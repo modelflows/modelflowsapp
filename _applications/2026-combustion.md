@@ -72,6 +72,7 @@ Below a sample of the reoconstruction of the Temperature field for the flame use
 - [Tutorial 2: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
 
 
+# Contributors
 - Name: Isacco Faglioni
 - Name: Xiangrui Zou
 
