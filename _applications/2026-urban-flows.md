@@ -16,38 +16,130 @@ Add here geometry generation, meshing, boundary conditions, solver setup, OpenFO
 ## Tutorials
 - [Urban CFD Workflow (Sphinx Tutorial)]({{ "/software/tutorials/urban-cfd/" | relative_url }})
 - [Urban CFD Workflow]({{ "/software/tutorials/urban-cfd/" | relative_url }})
-- Tutorial 3:
+- [Urban CFD with OpenFOAM: AIJ Case C]({{ "/tutorials/urban-canonical-configuration/" | relative_url }})
 
-# AI & Data-Driven Models
+# AI, ROM & Data-Driven Models
 
-Add here POD, DMD, HODMD, ROMs, machine learning, deep learning, prediction, reconstruction, classification, or data assimilation workflows.
+This part collects the reduced-order modelling and data-driven workflows developed for urban flow and air-pollution applications. The objective is to connect sparse sensor information, high-fidelity CFD data, reduced-order models, temporal prediction methods, and low-cost sensor calibration into a common scientific workflow.
 
-## Tutorials
-- [Urban Sensors 3D Reconstruction]({{ "/software/tutorials/urban-sensors3drec/" | relative_url }})
-- Tutorial 2:
+The AI/ROM part is organized into:
+
+# 1. **3D reconstruction from sparse sensors**  
+   Reconstruction of full 3D urban flow and pollutant fields from a reduced number of sensor locations using low-cost modal decomposition methods.
+
+### Related Research Page
+
+- <a href="{{ '/research/ai-models/ai-urban-flows/2026-from-sensors-to-3d-reconstruction/' | relative_url }}">From Sensors to 3D Reconstruction</a>
+
+### Tutorials
+
+- <a href="{{ '/software/tutorials/urban-3d-reconstruction/' | relative_url }}">Urban Sensors 3D Reconstruction</a>
+### Notebooks
+
+- Notebook 1: coming soon
+
+### Videos
+
+- Video 1: coming soon
 
 
-# Notebooks
+### Resources & Databases
 
-- Notebook 1:
-- Notebook 2:
+- Dataset: coming soon
+- Case files: coming soon
 
-# Videos
 
-- Video 1:
-- Video 2:
+### Publications
 
-# Resources & Databases
+- Paper / preprint / related post: coming soon
 
-- Dataset:
-- Case files:
-- Mesh:
-- Simulation outputs:
+### Contributors
 
-# Publications
+- Arindam Sengupta
+- Paul Jeanney
+- José Miguel Pérez
+- Soledad Le Clainche
+  
 
-- Paper / preprint / related post:
+# 2. **Temporal prediction of urban flow fields**  
+   Forecasting of future flow and pollutant states using multidimensional modal decomposition and data-driven temporal models.
+### Related Research Page
 
-# Contributors
+- mdHODMD-based urban flow prediction: coming soon
 
-- Name:
+### Tutorials
+
+- <a href="{{ '/software/tutorials/urban-mdhodmd-forecasting/' | relative_url }}">Predictions</a>
+
+### Notebooks
+
+- Notebook 1: coming soon
+
+
+### Videos
+
+- Video 1: coming soon
+
+
+### Resources & Databases
+
+- Dataset: coming soon
+
+
+### Publications
+
+- Paper / preprint / related post: coming soon
+
+### Contributors
+
+- Arindam Sengupta
+- José Miguel Pérez
+- Soledad Le Clainche
+
+
+# 3. **Calibration of low-cost air-quality sensors**  
+   Correction of low-cost sensor measurements using temporal deep learning models trained with reference-grade observations.
+### Related Research Page
+
+- <a href="{{ '/research/ai-models/air-pollution/2026-temporal-deep-learning-calibration-low-cost-sensors/' | relative_url }}">Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors</a>
+
+### Tutorials
+
+- <a href="{{ '/software/tutorials/urban-lcs-calibration/' | relative_url }}">Low-cost sensor calibration tutorial</a>
+
+### Notebooks
+
+- Notebook 1: <a href="https://github.com/modelflows/notebooks/tree/main/LCS%20calibration">LCS calibration</a>
+
+### Videos
+
+- Video 1: coming soon
+
+
+### Resources & Databases
+
+- Dataset: <a href="http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408">OxAria low-cost air-quality sensor dataset</a>
+
+
+
+### Publications
+
+- Paper / preprint / related post: [*Sengupta, A., Bush, T., Marner, B., Pérez, J. M., & Le Clainche, S. (2026). A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors. arXiv:2604.21527 [cs.LG].*](https://doi.org/10.48550/arXiv.2604.21527)
+
+
+### Contributors
+
+- Arindam Sengupta
+- Tony Bush
+- Ben Marner
+- José Miguel Pérez
+- Soledad Le Clainche
+
+---
+
+
+
+
+
+
+
