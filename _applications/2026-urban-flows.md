@@ -118,8 +118,9 @@ The AI/ROM part is organized into:
 
 ### Resources & Databases
 
-- Dataset: coming soon
-- Case files: coming soon
+- Dataset: <a href="http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408">OxAria low-cost air-quality sensor dataset</a>
+
+
 
 ### Publications
 
