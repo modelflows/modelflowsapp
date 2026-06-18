@@ -3,7 +3,7 @@ layout: page
 category: "Adaptive Methodologies"
 topic: "RANS acceleration"
 tldr: "A divergence-aware adaptive CFD-surrogate framework that alternates between fast POD-DL forecasting and targeted OpenFOAM recalls for robust long-horizon prediction of unsteady flows."
-title: ROMIA: A methodology to accelerate RANS
+title: "ROMIA: A methodology to accelerate RANS"
 author: "Ángel Alonso, Miguel Rios"
 ---
 
