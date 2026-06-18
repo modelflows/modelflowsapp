@@ -1,10 +1,10 @@
 ---
 layout: page
 category: "Adaptive Methodologies"
-topic: "CFD-Surrogate Prediction"
+topic: "Adaptive prediction"
 thumbnail: "assets/img/Adaptive_Framework.png"
 tldr: "A divergence-aware adaptive CFD-surrogate framework that alternates between fast POD-DL forecasting and targeted OpenFOAM recalls for robust long-horizon prediction of unsteady flows."
-title: Divergence-aware Adaptive Prediction Framework for Accelerating CFD Simulations
+title: Divergence-aware Adaptive Prediction Framework
 subtitle: Closed-loop OpenFOAM and POD-DL coupling for long-horizon unsteady-flow prediction
 published: true
 ---
@@ -106,7 +106,7 @@ Before training the surrogate model, the CFD setup is validated using standard i
 The numerical results follow the experimental trends over the investigated Reynolds-number range. The mean drag coefficient decreases gradually with Reynolds number. The base-pressure coefficient remains close to the experimental values and captures the expected tendency. The Strouhal number remains around the characteristic vortex-shedding range for cylinder wakes. This validation confirms that the generated CFD snapshots provide a reliable basis for POD-DL training and adaptive prediction.
 
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/research/CFD/Accelerate_CFD/assets/img/Adaptive_CFD_Validation.png?raw=true" alt="Validation of drag coefficient, base-pressure coefficient and Strouhal number" width="55%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/research/CFD/Accelerate_CFD/assets/img/Adaptive_CFD_Validation.png?raw=true" alt="Validation of drag coefficient, base-pressure coefficient and Strouhal number" width="40%">
 </p>
 
 <p style="text-align: center;"><em>Figure 3. Validation of the OpenFOAM setup using mean drag coefficient, mean base-pressure coefficient and Strouhal number. The simulated values are consistent with experimental trends over Re = 200-400.</em></p>
@@ -139,7 +139,7 @@ However, the RMSE gradually increases as the prediction horizon extends. The err
 At Re = 300, the wake becomes more complex. The prediction still captures the dominant oscillatory behavior, but the mismatch grows faster than in the Re = 200 case.
 
 <p style="text-align: center;">
-    <img src="https://github.com/modelflows/modelflowsapp/blob/research/CFD/Accelerate_CFD/assets/img/Adaptive_Comparison_Re300.png?raw=true" alt="Comparison for Re=200 baseline POD-DL prediction" width="60%">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/research/CFD/Accelerate_CFD/assets/img/Adaptive_Comparison_Re300.png?raw=true" alt="Comparison for Re=200 baseline POD-DL prediction" width="30%">
 </p>
 
 <p style="text-align: center;"><em>Figure 6. Comparison between prediction and CFD ground truth at probe location (0.5D, 0.5D, 0) for the flow past a circular cylinder at Re=300.</em></p>
