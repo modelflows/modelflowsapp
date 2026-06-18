@@ -42,7 +42,7 @@ Together, these steps provide a calibration pipeline that improves the reliabili
 The calibration workflow starts from time-stamped low-cost sensor measurements, meteorological data, and co-located reference observations. The data are first cleaned and structured, then enriched with temporal and environmental features. A rolling-window sequence is passed to the LSTM model, which predicts the calibrated pollutant concentration.
 
 <p align="center">
-  <img src="{{ '/assets/img/met_cal.png' | relative_url }}" alt="Low-cost sensor calibration methodology" width="850"/>
+  <img src="{{ '/assets/img/post_LCS/met_cal.png' | relative_url }}" alt="Low-cost sensor calibration methodology" width="850"/>
 </p>
 
 <p align="center">
@@ -89,7 +89,7 @@ Temperature and relative humidity are included for all pollutants because they s
 The calibration model must account for environmental variability because low-cost sensors respond not only to pollutant concentration, but also to field conditions such as temperature and humidity.
 
 <p align="center">
-  <img src="{{ 'assets/img/meteo_cal.png' | relative_url }}" alt="Meteorological variables used for sensor calibration" width="850"/>
+  <img src="{{ 'assets/img/post_LCS/meteo_cal.png' | relative_url }}" alt="Meteorological variables used for sensor calibration" width="850"/>
 </p>
 
 <p align="center">
@@ -101,7 +101,7 @@ The calibration model must account for environmental variability because low-cos
 The comparison between raw low-cost sensor signals with the reference are shown in the figure below. This comparison shows the need for a dedicated calibration model, especially when the sensor signal contains peaks, offsets, or drift that do not match the reference instrument.
 
 <p align="center">
-  <img src="{{ 'assets/img/raw_cal.png' | relative_url }}" alt="Low-cost sensor measurements compared with AURN reference data" width="850"/>
+  <img src="{{ 'assets/img/post_LCS/raw_cal.png' | relative_url }}" alt="Low-cost sensor measurements compared with AURN reference data" width="850"/>
 </p>
 
 <p align="center">
@@ -158,7 +158,7 @@ The model is trained separately for each pollutant. This pollutant-wise setup is
 The calibrated predictions are first evaluated using scatter plots against the reference observations. For each pollutant, the calibrated values are compared with the reference values across validation and test datasets. The figure shows the scatter plots for the various pollutants across the test sets.
 
 <p align="center">
-  <img src="{{ 'assets/img/test_cal.png' | relative_url }}" alt="Calibrated versus reference concentrations" width="900"/>
+  <img src="{{ 'assets/img/post_LCS/test_cal.png' | relative_url }}" alt="Calibrated versus reference concentrations" width="900"/>
 </p>
 
 <p align="center">
@@ -194,7 +194,7 @@ The trained model is also evaluated on unseen temporal periods that were not use
 For PM2.5 and PM10, the unseen evaluation uses data from 23 to 30 September 2021. For NO2, the unseen evaluation uses data from 23 to 30 May 2021.
 
 <p align="center">
-  <img src="{{ 'assets/img/PM2.5_cal.png' | relative_url }}" alt="PM2.5 unseen calibration results" width="850"/>
+  <img src="{{ 'assets/img/post_LCS/PM2.5_cal.png' | relative_url }}" alt="PM2.5 unseen calibration results" width="850"/>
 </p>
 
 <p align="center">
@@ -204,7 +204,7 @@ For PM2.5 and PM10, the unseen evaluation uses data from 23 to 30 September 2021
 </p>
 
 <p align="center">
-  <img src="{{ 'assets/img/PM10_cal.png' | relative_url }}" alt="PM10 unseen calibration results" width="850"/>
+  <img src="{{ 'assets/img/post_LCS/PM10_cal.png' | relative_url }}" alt="PM10 unseen calibration results" width="850"/>
 </p>
 
 <p align="center">
@@ -214,7 +214,7 @@ For PM2.5 and PM10, the unseen evaluation uses data from 23 to 30 September 2021
 </p>
 
 <p align="center">
-  <img src="{{ 'assets/img/NO_cal.png' | relative_url }}" alt="NO2 unseen calibration results" width="850"/>
+  <img src="{{ 'assets/img/post_LCS/NO_cal.png' | relative_url }}" alt="NO2 unseen calibration results" width="850"/>
 </p>
 
 <p align="center">
