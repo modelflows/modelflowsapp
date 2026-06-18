@@ -67,6 +67,7 @@ This topic focuses on the correction of low-cost air-quality sensor measurements
 
 - Arindam Sengupta
 - Paul Jeanney
+- Alberto Rodriguez Fernanadez
 - Tony Bush
 - Ben Marner
 - José Miguel Pérez
