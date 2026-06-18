@@ -8,7 +8,7 @@ Welcome to our Databases index. Open science is core to our research. Below you 
 
 
 <div class="row">
-  {% assign all_db = site.databases %}
+  {% assign all_db = site.databases | sort: "order" %}
   {% for db in all_db %}
   <div class="col-md-12 mb-4">
     <div class="card flex-row" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; padding: 15px;">
