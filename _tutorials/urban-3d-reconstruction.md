@@ -6,6 +6,9 @@ category: "AI & Data-Driven Models"
 tldr: "Tutorial for reconstructing 3D urban flow and pollutant fields from sparse sensors using lcSVD, lcHOSVD, and lcHODMD."
 author: "Arindam Sengupta"
 ---
+<p class="post-meta">
+  Posted on 18 June 2026
+</p>
 
 # Overview
 
