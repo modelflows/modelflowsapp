@@ -9,7 +9,17 @@ tldr: "Patient-specific CFD, medical data analysis, reduced-order modelling and 
 
 This section concerns methods addressing several tasks related with the study of cardiovascular diseases (CVDs): pattern identification, diagnosis and prognosis Modal decomposition and deep learning architectures are used, and also cardiac flow simulations are generated. For this purpose, medical data and CFD databases are used.
 
+# TODO: poner índice de esta página aquí
+
 # CFD & High-Fidelity Simulations
+
+This section presents the tutorials for the simulations based on Computational Fluid Dynamics (CFD) for modeling the intricate dynamics of intracardiac blood flow.
+
+## Tutorials <a id="cfd-tutorials"></a>
+
+- [*Cardiac tutorials*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/): inside this page showing the tutorials, 'CFD tutorial' concerns to the specific one related with this section.
+
+
 
 Computational Fluid Dynamics (CFD) has emerged as a key tool for modeling the intricate dynamics of intracardiac blood flow. This approach not only enhances our fundamental understanding of cardiac function, but also paves the way for innovative treatment strategies.
 
@@ -101,12 +111,12 @@ This section presents the tutorials to use the methods combining Artificial Inte
 
 ## Tutorials <a id="ai-tutorials"></a>
 
-- [*Cardiac tutorials*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/).
+- [*Cardiac tutorials*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/): : inside this page showing the tutorials, 'Diagnosis tutorial' and 'Prognosis tutorial' concern to the specific ones related with this section.
 
 ## Notebooks
 
-- [*Diagnosis notebooks*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/diagnosis_tutorial/notebooks).
-- [*Notebooks*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/prognosis_tutorial/notebooks).
+- [*Diagnosis Notebooks*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/diagnosis_tutorial/notebooks): this link goes to the source files and to the guide of how to use the codes implementing the training and testing of models for the diagnosis of cardiovascular diseases (CVD).
+- [*Prognosis Notebooks*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/prognosis_tutorial/notebooks): this link goes to the source files and to the guide of how to use the codes implementing the training and testing of models for the prognosis of heart failures.
 
 ## Resources & Databases
 
@@ -130,5 +140,6 @@ For validation of the CFD simulations, we base our study on the work of Zheng et
 
 - Andrés Bell-Navas
 - Zhuoqun Zhao
-- Ander Sánchez
+- Ander Sánchez Muñoz
+- Eneko Lazpita Suinaga
 
