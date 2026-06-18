@@ -3,6 +3,7 @@ layout: page
 title: "Combustion"
 area: "Combustion and reactive flows"
 tldr: "Physics-based CFD, reduced-order modelling, and AI-driven prediction for turbulent combustion and reactive flows"
+permalink: /software/applications/2026-combustion/
 ---
 
 # Overview
