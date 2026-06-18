@@ -63,6 +63,9 @@ In order to overcome the limitations of conventional numerical solvers, a fully 
 
 ![Super resolution tool - Methodology ](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_superresolution.png?raw=true)
 
+[Barragán, G., Hetherington, A., Abadía-Heredia, R., Garicano-Mena, J., Le Clainche, S., HOSVD-SR: A Physics-Based Deep Learning Framework for Super-Resolution in Fluid Dynamics, arXiv:2504.17994, 2025.](https://arxiv.org/abs/2504.17994)
+
+
 Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/SUPERRESOLUTION.zip).  -->
 
 ## Temporal Forecasting <a id="temporal-forecasting"></a>
