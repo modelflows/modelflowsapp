@@ -7,6 +7,7 @@ tldr: "Step-by-step tutorial to run the generalized adaptive prediction pipeline
 author: "Xiangrui Zou, Carlos Sainz García, Mikel Navarro Huarte"
 sphinx_repository: "https://github.com/modelflows/adaptive-cfd"
 tutorial_file: "2026-accelerateCFD-tutorial.md"
+order: 4
 ---
 
 # Overview
