@@ -16,7 +16,7 @@ The application focuses on the DLR methane/hydrogen/nitrogen turbulent diffusion
 
 This section provides a reproducible CFD workflow for the DLR turbulent non-premixed jet flame [1]. The burner consists of a central fuel jet containing CH4/H2/N2 and a surrounding dry-air coflow. The fuel is injected through an 8 mm nozzle, while the coflow air is supplied through a 140 mm coaxial nozzle. The geometry is given as follows. An axisymmetric wedge domain is used to reduce the computational cost while preserving the main flame structure and the external ambient region for air entrainment.
 
-<!-- IMAGES -->
+<!-- IMAGES  -->
 <p style="text-align: center;">
     <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/DLR_burner_Geometry.png?raw=true" alt="DLR burner geometry" width="60%">
 </p>
