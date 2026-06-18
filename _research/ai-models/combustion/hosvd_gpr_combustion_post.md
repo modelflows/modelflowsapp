@@ -117,4 +117,4 @@ The first version and the current version of work has been presented at the foll
 | 2026 | [Cypher 3rd meeting](https://cypher.ulb.be/event/cypher-3rd-general-meeting/) | Istambul, Turkey | Poster-Oral |
 | 2026 | [Princeton-Combustion Institute Summer School on Combustion and the Environment](https://cefrc.princeton.edu/combustion-summer-school) | Princeton, US | Poster |
 
-![Conference photo]({{ '/assets/img/Tutorial/Combustion/hosvd_gpr/poster_presentation_istambul.jpeg' | relative_url }})
+
