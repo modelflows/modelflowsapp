@@ -10,7 +10,7 @@ subtitle: Our studies focused on urban sustainability
 <p class="post-meta">
   Posted on 18 June 2026
 </p>
----
+
 ## Introduction
 As industrialisation and urbanisation continue to advance, energy consumption—whilst driving economic growth and social development—has also given rise to severe resource constraints and environmental pollution. For a long time, fossil fuels, primarily coal, oil and natural gas, have underpinned the rapid expansion of China’s urban economies; however, issues such as carbon dioxide emissions, smog pollution and ecological degradation caused by high levels of energy consumption have become increasingly prominent. Particularly against the backdrop of the ‘dual carbon’ goals, achieving a balanced development between economic growth, energy utilisation and environmental protection has become a critical issue for the sustainable development of Chinese cities. As the primary vehicles for energy consumption and pollution emissions, the energy efficiency levels of cities not only relate to high-quality regional economic development but also directly impact the achievement of national energy conservation and emission reduction targets. Therefore, scientifically evaluating urban energy efficiency and revealing its patterns of change under conditions of uncertainty holds significant practical importance for promoting sustainable development.
 
