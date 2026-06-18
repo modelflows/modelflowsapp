@@ -9,7 +9,7 @@ Welcome to our collection of Jupyter notebooks, research codes, and reference im
 <div class="row">
   {% assign all_notebooks = site.notebooks | sort: "order" %}
   {% for nb in all_notebooks %}
-  <div class="col-md-6 mb-4">
+  <div class="col-12 col-md-6 mb-4">
     <div class="card h-100" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
       <div class="card-body d-flex flex-column" style="padding: 30px;">
         <h3 style="margin-top: 0; word-break: normal; overflow-wrap: normal;"><a href="{{ nb.url | relative_url }}">{{ nb.title }}</a></h3>
