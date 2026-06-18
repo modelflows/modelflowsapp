@@ -87,7 +87,7 @@ Further publications related to urban flow reconstruction and temporal predictio
 
 - Arindam Sengupta
 - Paul Jeanney
-- Tony Bush
-- Ben Marner
-- José Miguel Pérez
-- Soledad Le Clainche
+- Guillermo Enrique Barragan Montalvo
+- Alberto Rodriguez Fernandez
+- Wentai Deng
+  
