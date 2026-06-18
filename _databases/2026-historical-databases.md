@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Historical Databases"
+title: "Fluid Dynamics Benchmark Datasets"
 type: "Simulation / Legacy"
-tldr: "Archive of historical databases including flow past cylinder, channel, jet flow, and others."
+tldr: "Archive of fluid dynamics datasets including flow past cylinder, channel, jet flow, and others."
 ---
 
 If you use our databases for your studies, please reference our website with:
@@ -11,26 +11,26 @@ ModelFLOWs (2023). *ModelFLOWs-app*. Retrieved [date], from [https://modelflows.
 
 
 Databases available:
-1. [Flow Past a Cylinder](https://modelflows.github.io/modelflowsapp/databases/#cylinder)
-    * [2D Laminar Flow](https://modelflows.github.io/modelflowsapp/databases/#cylinder-2d)
-    * [2D Laminar Flow (with 2 small cylinders)](https://modelflows.github.io/modelflowsapp/databases/#cylinder-2d_2)
-    * [3D Laminar Flow](https://modelflows.github.io/modelflowsapp/databases/#cylinder-3d)
-         - [Long](https://modelflows.github.io/modelflowsapp/databases/#cylinder-3d-long)
-         - [Short](https://modelflows.github.io/modelflowsapp/databases/#cylinder-3d-short)
+1. [Flow Past a Cylinder](#cylinder)
+    * [2D Laminar Flow](#cylinder-2d)
+    * [2D Laminar Flow (with 2 small cylinders)](#cylinder-2d_2)
+    * [3D Laminar Flow](#cylinder-3d)
+         - [Long](#cylinder-3d-long)
+         - [Short](#cylinder-3d-short)
 
-2. [Channel Flow](https://modelflows.github.io/modelflowsapp/databases/#channel)
-    * [Plain](https://modelflows.github.io/modelflowsapp/databases/#channel-plain)
-    * [Ribbed](https://modelflows.github.io/modelflowsapp/databases/#channel-rib)
-    * [Cavity](https://modelflows.github.io/modelflowsapp/databases/#channel-cavity)
+2. [Channel Flow](#channel)
+    * [Plain](#channel-plain)
+    * [Ribbed](#channel-rib)
+    * [Cavity](#channel-cavity)
 
-3. [Jet Flow](https://modelflows.github.io/modelflowsapp/databases/#jet)
-   * [Concentric Jets](https://modelflows.github.io/modelflowsapp/databases/#jet-concentric)
+3. [Jet Flow](#jet)
+   * [Concentric Jets](#jet-concentric)
 
-4. [Cardiac Flow](https://modelflows.github.io/modelflowsapp/databases/#cardiac)
-   * [Ideal Left Ventricle](https://modelflows.github.io/modelflowsapp/databases/#cardiac-ideal-lv)
+4. [Cardiac Flow](#cardiac)
+   * [Ideal Left Ventricle](#cardiac-ideal-lv)
   
-5. [Other Geometries](https://modelflows.github.io/modelflowsapp/databases/#other)
-   * [Planar FDA Nozzle](https://modelflows.github.io/modelflowsapp/databases/#FDA)
+5. [Other Geometries](#other)
+   * [Planar FDA Nozzle](#FDA)
 
 
 ## Flow Past a Cylinder <a id="cylinder"></a>
