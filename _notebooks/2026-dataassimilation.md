@@ -23,9 +23,9 @@ Our research introduces a novel **Reduced-Order Model (ROM)** that merges experi
 
 More details about the implementation:
 
-[Jeanney, P., Hetherington, A., Ahmed, S. E., Lanceta, D., Saiz, S., Perez, J. M. & Le Clainche, S. (2025). Ensemble Kalman Filter for Data Assimilation coupled with low-resolution computations techniques applied in Fluid Dynamics, arXiv:2507.00539, 2025.](https://arxiv.org/abs/2507.00539)
+[Jeanney, P., Hetherington, A., Ahmed, S. E., Lanceta, D., Saiz, S., Pérez, J.M., Le Clainche, S., Ensemble Kalman Filter for Data Assimilation coupled with low-resolution computations techniques applied in Fluid Dynamics, Appl. Math. and Comp., 531, 130184, 2026.](https://arxiv.org/abs/2507.00539)
 
-Download the code for the **ROM DA** in [*here*](https://github.com/modelflows/notebooks/tree/main/ROM_data_assimilation).
+Download the code for the **ROM DA** in [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/ROM_data_assimilation/ROM_DA.zip).
 <!-- Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/ZIPNAME.zip). -->
 
 ## LcSVD-Data Assimilation <a id="lcSVD_DA"></a>
@@ -33,8 +33,8 @@ One of the primary challenge associated with the industrial datasets is their he
 
 ![Flowchart](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_pillai_lcsvd-da.png?raw=true)
 
-[Pillai, P., Hetherington, A., Saavedra, L., Le Clainche, S., A low cost singular value decomposition based data assimilation technique for analysis of heterogeneous combustion data, arXiv:2503.24064, 2025.](https://arxiv.org/abs/2503.24064)
+[Pillai, P., Hetherington, A., Saavedra, L., Le Clainche, S., A low cost singular value decomposition based data assimilation technique for analysis of heterogeneous combustion data, Phys. Fluids, 37, 087207, 2025.](https://arxiv.org/abs/2503.24064)
 
-*Code in progress. Coming soon...*
-<!-- Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/ZIPNAME.zip). -->
+<!-- *Code in progress. Coming soon...* -->
+Download the code for the **lcSVD DA** [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/ROM_data_assimilation/lcsvd_da.zip). -->
 
