@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "AI-Accelerated CFD for Unsteady Flows"
-topic: "Hybrid AI-CFD
+topic: "Hybrid AI-CFD"
 application: "Urban Flows"
 category: "AI & Data-Driven Models"
 tldr: "Accelerate computational fluid dynamics simulations using hybrid POD–Deep Learning reduced-order models."
