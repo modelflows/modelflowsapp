@@ -13,7 +13,7 @@ In this research, a simulation study was conducted to evaluate, for the first ti
 
 [*Tagilaferro, S., Corrochano, A., Marchetti, P., Marcon, A., Le Clainche, S., A new method based on physical patterns to impute aerobiological datasets, PLoS ONE 19(11): e0314005, 2024.*](https://doi.org/10.1371/journal.pone.0314005)
 
-Further details on the GSVDcode can be found here: <a href="{{ '/software/notebooks/#spatial-resolution-enhancement' | relative_url }}">GSVD</a> Gappy POD reconstructs missing or incomplete data by fitting the available measurements to a reduced POD basis. The estimated modal coefficients are then used to recover the full field, filling the missing regions while preserving the dominant flow structures.
+Further details on the GSVDcode can be found here: <a href="{{ '/software/notebooks/#spatial-resolution-enhancement' | relative_url }}">GSVD</a>. Gappy POD reconstructs missing or incomplete data by fitting the available measurements to a reduced POD basis. The estimated modal coefficients are then used to recover the full field, filling the missing regions while preserving the dominant flow structures.
 
 
 ## Aerobiological data
