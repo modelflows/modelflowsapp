@@ -65,7 +65,7 @@ The related research page is available here: <a href="{{ '/research/ai-models/ai
 
 ## Notebooks
 
-- <a href="https://github.com/modelflows/notebooks/tree/main/LCS%20calibration">Low-Cost Sensor Calibration Notebook</a>: this link goes to the source files and notebooks implementing the temporal deep learning calibration framework for low-cost air-quality sensors.
+- <a href="https://github.com/modelflows/notebooks/tree/main/LCS%20calibration">Low-Cost Sensor Calibration Notebook</a>: this link goes to the notebook implementing the temporal deep learning calibration framework for low-cost air-quality sensors.
 - 3D Reconstruction Notebook: coming soon.
 - Temporal Prediction Notebook: coming soon.
 
