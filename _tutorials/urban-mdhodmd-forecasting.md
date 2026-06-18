@@ -6,6 +6,9 @@ category: "AI & Data-Driven Models"
 tldr: "Tutorial for forecasting urban flow fields using multidimensional iterrative HODMD , sequence generation, and autoregressive prediction."
 author: "Arindam Sengupta"
 ---
+<p class="post-meta">
+  Posted on 18 June 2026
+</p>
 
 # Overview
 
