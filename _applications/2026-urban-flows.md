@@ -32,7 +32,7 @@ This section includes workflows related to geometry generation, meshing, boundar
 
 This topic covers the canonical urban CFD workflow, including geometry preparation, OpenFOAM case setup, simulation, and post-processing.
 
-- Tutorial: <a href="{{ '/tutorials/urban-canonical-configuration/' | relative_url }}">Urban CFD with OpenFOAM: AIJ Case C</a>
+- Tutorial: <a href="https://modelflows.github.io/Urban_CFD_Canonical_9buildings/">Urban CFD with OpenFOAM: AIJ Case C</a>
 
 
 # AI, ROM & Data-Driven Models
