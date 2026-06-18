@@ -11,7 +11,7 @@ Welcome to the ModelFLOWs Applications Hub. Each application collects CFD workfl
   <div class="col-md-4 mb-4">
     <div class="card h-100 shadow-sm">
       <div class="card-body text-center">
-        <h3 class="card-title">Urban Flows</h3>
+        <h3 class="card-title">Urban Flows and Air Pollution</h3>
         <p class="card-text text-muted">Urban CFD, air-quality modelling, post-processing, ROMs, and data-driven prediction.</p>
         <a href="{{ '/software/applications/2026-urban-flows' | relative_url }}" class="btn btn-primary d-block">Open Urban Flows</a>
       </div>

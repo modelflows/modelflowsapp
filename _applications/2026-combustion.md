@@ -1,9 +1,3 @@
----
-layout: page
-title: "Combustion"
-area: "Combustion and Reactive Flow Modelling"
-tldr: "High-fidelity simulations, reduced-order models and data-driven approaches for combustion systems."
----
 
 # Overview
 

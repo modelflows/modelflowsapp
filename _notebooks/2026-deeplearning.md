@@ -1,29 +1,30 @@
 ---
 layout: post
-title: "Introduction to Deep Learning for Fluids"
+title: "Reduced-Order Deep Learning"
 topic: "Deep Learning"
-tldr: "Neural Networks architectures and frameworks for data-driven modeling."
+tldr: "Hybrid POD-DL and latent-space learning approaches for complex dynamical systems."
+order: 2
 ---
 
 Codes available:
-1. [Parametric Study](https://modelflows.github.io/modelflowsapp/deeplearning/#parametric-study)
-    * [Multiparametric Tool](https://modelflows.github.io/modelflowsapp/deeplearning/#multiparametric-tool)
+1. [Parametric Study](#parametric-study)
+    * [Multiparametric Tool](#multiparametric-tool)
 
-2. [Spatial Resolution Enhancement](https://modelflows.github.io/modelflowsapp/deeplearning/#spatial-resolution-enhancement)
-    * [Superresolution Tool](https://modelflows.github.io/modelflowsapp/deeplearning/#superresolution-tool)
+2. [Spatial Resolution Enhancement](#spatial-resolution-enhancement)
+    * [Superresolution Tool](#superresolution-tool)
 
-3. [Temporal Forecasting](https://modelflows.github.io/modelflowsapp/deeplearning/#temporal-forecasting)
-    * [Hybrid Predictive Model: POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model)
-        - [POD-DL: Fixed temporal horizon](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-fixed-h)
-        - [POD-DL: Autoregressive](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-ar)
-   * [Hybrid Predictive Model: HOSVD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model)
-        - [HOSVD-DL: Autoregressive](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-ar)
-    * [Remote Sensing and DLinear](https://modelflows.github.io/modelflowsapp/deeplearning/#dlinear)
-    * [Deep Learning Models](https://modelflows.github.io/modelflowsapp/deeplearning/#full-dl-generative-model)
-        - [Residual Autoencoder (point forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-residual)
-        - [Variational Autoencoder (probabilistic forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-variational)
-4. [Adaptive Methodology](https://modelflows.github.io/modelflowsapp/deeplearning/#adaptive-methodology)
-5. [Control](https://modelflows.github.io/modelflowsapp/deeplearning/#control)
+3. [Temporal Forecasting](#temporal-forecasting)
+    * [Hybrid Predictive Model: POD-DL](#hybrid-predictive-model)
+        - [POD-DL: Fixed temporal horizon](#hybrid-predictive-model-fixed-h)
+        - [POD-DL: Autoregressive](#hybrid-predictive-model-ar)
+   * [Hybrid Predictive Model: HOSVD-DL](#hybrid-predictive-model)
+        - [HOSVD-DL: Autoregressive](#hybrid-predictive-model-ar)
+    * [Remote Sensing and DLinear](#dlinear)
+    * [Deep Learning Models](#full-dl-generative-model)
+        - [Residual Autoencoder (point forecasting)](#full-generative-residual)
+        - [Variational Autoencoder (probabilistic forecasting)](#full-generative-variational)
+4. [Adaptive Methodology](#adaptive-methodology)
+5. [Control](#control)
 
 ## Parametric Study <a id="parametric-study"></a>
 
