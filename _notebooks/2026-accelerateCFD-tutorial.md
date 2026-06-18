@@ -1,9 +1,10 @@
 ---
 layout: page
-title: "Adaptive CFD–POD–LSTM Pipeline"
+title: "AI-Accelerated CFD for Unsteady Flows"
+topic: "Hybrid AI-CFD
 application: "Urban Flows"
 category: "AI & Data-Driven Models"
-tldr: "Step-by-step tutorial to run the generalized adaptive prediction pipeline combining OpenFOAM (CFD) and a POD+LSTM surrogate model. All parameters controlled from a single config.yaml file."
+tldr: "Accelerate computational fluid dynamics simulations using hybrid POD–Deep Learning reduced-order models."
 author: "Xiangrui Zou, Carlos Sainz García, Mikel Navarro Huarte"
 sphinx_repository: "https://github.com/modelflows/adaptive-cfd"
 tutorial_file: "2026-accelerateCFD-tutorial.md"
