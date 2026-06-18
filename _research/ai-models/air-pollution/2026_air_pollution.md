@@ -2,7 +2,7 @@
 layout: post
 category: "Data-driven & Urban Sustainability"
 topic: "Air Pollution"
-thumbnail: "[https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/2026-workshop-li-urban-1.jpg]"
+thumbnail: "assets/img/2026-workshop-li-urban-1.jpg"
 tldr: "Urban Energy Efficiency Assessment under Uncertainty."
 title: Sustainable Cities & Energy Systems 
 subtitle: Our studies focused on urban sustainability
@@ -58,7 +58,7 @@ The analysis also highlights substantial regional disparities across China:
 - East China exhibits the highest overall efficiency levels.
 - Northwest and Southwest China show comparatively lower efficiency performance.
 - Significant spatial heterogeneity exists among cities within the same region.
-- 
+ 
 Furthermore, the results indicate a progressive transition from traditional resource-driven development models toward growth supported by technological innovation, industrial upgrading, and green low-carbon strategies.
 <p align="center">
   <a href="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/2026-workshop-li-urban-8.png?raw=true">
@@ -88,9 +88,7 @@ Beyond traditional engineering applications, ModelFLOWs methodologies can be use
 
 ## References
 
-Jian Li, Soledad Le Clainche, and collaborators.
+Jiannan Li, Soledad Le Clainche, and collaborators.
 A Robust Cross-Efficiency DEA Model with Undesirable Outputs for Urban Energy Efficiency Evaluation.
 Manuscript in preparation.
-
-
 
