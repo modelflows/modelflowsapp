@@ -29,6 +29,30 @@ Here is a showcase of the ongoing projects by the ModelFLOWs group members. Choo
   </div>
 </div>
 
+### Accelerating CFD
+
+<div class="row">
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title">Adaptive Prediction</h4>
+        <p class="card-text">Divergence-aware adaptive CFD-surrogate prediction using OpenFOAM, POD, and deep learning.</p>
+        <a href="{{ '/research/adaptive-prediction' | relative_url }}" class="btn btn-primary btn-sm">View Projects</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title">Acc_xxxxxx</h4>
+        <p class="card-text">Additional CFD acceleration methodologies, surrogate workflows, and high-fidelity simulation speed-up strategies.</p>
+        <a href="{{ '/research/acc-xxxxxx' | relative_url }}" class="btn btn-primary btn-sm">View Projects</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 ## AI & Data-Driven Models
 
 <div class="row">
