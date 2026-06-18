@@ -9,13 +9,16 @@ tldr: "High-fidelity simulations, reduced-order models and data-driven approache
 
 Combustion and reactive-flow modelling combines physics-based simulation, reduced-order modelling, and data-driven prediction to analyse complex reacting systems. This page collects reusable workflows for combustion applications, including OpenFOAM cases, numerical setup guidelines, post-processing scripts, validation examples, and datasets for reduced-order modelling.
 
-The first example focuses on the DLR methane/hydrogen/nitrogen turbulent diffusion flame. The workflow shows how to set up and run a RANS combustion simulation with OpenFOAM `reactingFoam`, validate the temperature field against experimental data, and generate a structured CFD database for tensor-based reduced-order modelling.
+The application focuses on the DLR methane/hydrogen/nitrogen turbulent diffusion flame. The workflow shows how to set up and run a RANS combustion simulation with OpenFOAM `reactingFoam`, validate the temperature field against experimental data, and generate a structured CFD database for reduced-order modelling.
 
 # CFD & High-Fidelity Simulations
 
-## DLR CH4/H2/N2 turbulent diffusion flame with OpenFOAM
+This section provides a reproducible CFD workflow for the DLR turbulent non-premixed jet flame [1]. The burner consists of a central fuel jet containing CH4/H2/N2 and a surrounding dry-air coflow. The fuel is injected through an 8 mm nozzle, while the coflow air is supplied through a 140 mm coaxial nozzle. The geometry is given as follows. An axisymmetric wedge domain is used to reduce the computational cost while preserving the main flame structure and the external ambient region for air entrainment.
 
-This example provides a reproducible CFD workflow for the DLR turbulent non-premixed jet flame [1]. The burner consists of a central fuel jet containing CH4/H2/N2 and a surrounding dry-air coflow. The fuel is injected through an 8 mm nozzle, while the coflow air is supplied through a 140 mm coaxial nozzle. An axisymmetric wedge domain is used to reduce the computational cost while preserving the main flame structure and the external ambient region for air entrainment.
+<!-- IMAGES -->
+<p style="text-align: center;">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/DLR_burner_Geometry.png?raw=true" alt="DLR burner geometry" width="60%">
+</p>
 
 The simulation is performed with OpenFOAM-v10 using the `reactingFoam` solver. The case uses:
 
@@ -26,6 +29,13 @@ The simulation is performed with OpenFOAM-v10 using the `reactingFoam` solver. T
 - ODE chemistry integration with `seulex`;
 - TDAC acceleration with CH4 and H2 as initiating species;
 - blockMesh-based mesh generation and ParaView/OpenFOAM post-processing.
+
+The representive results are given as follows.
+
+<!-- IMAGES -->
+<p style="text-align: center;">
+    <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/DLR_burner_T_H2_H2O.png?raw=true" alt="Temperature and Mass fractions of H2O and H2" width="60%">
+</p>
 
 The objective is not only to obtain one flame simulation, but also to provide a reusable workflow for generating CFD datasets. In the current dataset-generation plan, the Reynolds number is varied from 11000 to 20000, and the hydrogen mass fraction is varied from 4% to 22%, producing 100 parametric CFD cases. These solutions can be used to build structured datasets for reduced-order models and data-driven models.
 
@@ -39,9 +49,7 @@ The OpenFOAM workflow covers:
 6. validation through radial temperature profiles;
 7. organization of CFD outputs for reduced-order modelling.
 
-The full tutorial is available here:
-
-- [Tutorial 1: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame](./2026-combustion_tutorial.md)
+The full tutorial is available in the following section.
   
 # AI & Data-Driven Models
 
@@ -66,33 +74,12 @@ Below a sample of the reoconstruction of the Temperature field for the flame use
 
 # Tutorials
 
-- [Tutorial 1: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame](./2026-combustion_tutorial.md)
+- [Tutorial 1: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame](../_tutorials/2026-combustion_tutorial.md)
 - [Tutorial 2: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
 
 
-# Notebooks
-
-Coming soon
-
-# Videos
-
-Coming soon
-
-# Resources & Databases
-
-- Dataset:
-- Case files:
-- Mesh:
-- Simulation outputs:
-
-# Publications
-
-- Paper / preprint / related post:
-
-# Contributors
-
 - Name: Isacco Faglioni
-- Name: Zou Xiangrui
+- Name: Xiangrui Zou
 
 
 <!-- REFERENCES -->
