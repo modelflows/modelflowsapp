@@ -269,10 +269,11 @@ This calibration framework can support:
 
 ## Code and Data Availability
 
-**Code and tutorials:** coming soon.  
-**Data:**
-[http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408](http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408) 
+**Code:** <a href="https://github.com/modelflows/notebooks/tree/main/LCS%20calibration">LCS calibration code folder</a>  
 
+**Tutorial:** <a href="{{ '/software/tutorials/urban-lcs-calibration/' | relative_url }}">Low-cost sensor calibration tutorial</a>  
+
+**Data:** <a href="http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408">OxAria low-cost air-quality sensor dataset</a>
 ---
 
 ## References
