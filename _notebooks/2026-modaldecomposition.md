@@ -1,7 +1,7 @@
 ---
 layout: page
 topic: "Modal Decomposition"
-tldr: "Tools to identify coherent structures and patterns in fluid dynamics."
+tldr: "Modal decomposition of complex dynamical systems."
 title: Modal Decomposition
 <!--subtitle: GENERAL SUBTITLE -->
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Interactive Notebooks
+title: Notebooks & Codes
 subtitle: Browse our Python Jupyter Notebooks
 ---
 
