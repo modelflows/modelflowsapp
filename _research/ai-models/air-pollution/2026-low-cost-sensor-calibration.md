@@ -6,7 +6,9 @@ topic: "Air Pollution"
 thumbnail: "/assets/img/met_cal.png"
 tldr: "LSTM-based temporal calibration of low-cost air-quality sensors for PM2.5, PM10, and NO2 using OxAria co-located reference data."
 ---
-
+<p class="post-meta">
+  Posted on 18 June 2026
+</p>
 ---
 
 # Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors
@@ -42,7 +44,7 @@ Together, these steps provide a calibration pipeline that improves the reliabili
 The calibration workflow starts from time-stamped low-cost sensor measurements, meteorological data, and co-located reference observations. The data are first cleaned and structured, then enriched with temporal and environmental features. A rolling-window sequence is passed to the LSTM model, which predicts the calibrated pollutant concentration.
 
 <p align="center">
-  <img src="{{ 'assets/img/met_cal.png' | relative_url }}" alt="Low-cost sensor calibration methodology" width="850"/>
+  <img src="{{ '/assets/img/post_LCS/met_cal.png' | relative_url }}" alt="Low-cost sensor calibration methodology" width="850"/>
 </p>
 
 <p align="center">
@@ -89,7 +91,7 @@ Temperature and relative humidity are included for all pollutants because they s
 The calibration model must account for environmental variability because low-cost sensors respond not only to pollutant concentration, but also to field conditions such as temperature and humidity.
 
 <p align="center">
-  <img src="{{ 'assets/img/meteo_cal.png' | relative_url }}" alt="Meteorological variables used for sensor calibration" width="850"/>
+  <img src="{{ 'assets/img/post_LCS/meteo_cal.png' | relative_url }}" alt="Meteorological variables used for sensor calibration" width="850"/>
 </p>
 
 <p align="center">
@@ -101,7 +103,7 @@ The calibration model must account for environmental variability because low-cos
 The comparison between raw low-cost sensor signals with the reference are shown in the figure below. This comparison shows the need for a dedicated calibration model, especially when the sensor signal contains peaks, offsets, or drift that do not match the reference instrument.
 
 <p align="center">
-  <img src="{{ 'assets/img/raw_cal.png' | relative_url }}" alt="Low-cost sensor measurements compared with AURN reference data" width="850"/>
+  <img src="{{ 'assets/img/post_LCS/raw_cal.png' | relative_url }}" alt="Low-cost sensor measurements compared with AURN reference data" width="850"/>
 </p>
 
 <p align="center">
@@ -158,7 +160,7 @@ The model is trained separately for each pollutant. This pollutant-wise setup is
 The calibrated predictions are first evaluated using scatter plots against the reference observations. For each pollutant, the calibrated values are compared with the reference values across validation and test datasets. The figure shows the scatter plots for the various pollutants across the test sets.
 
 <p align="center">
-  <img src="{{ 'assets/img/test_cal.png' | relative_url }}" alt="Calibrated versus reference concentrations" width="900"/>
+  <img src="{{ 'assets/img/post_LCS/test_cal.png' | relative_url }}" alt="Calibrated versus reference concentrations" width="900"/>
 </p>
 
 <p align="center">
@@ -194,7 +196,7 @@ The trained model is also evaluated on unseen temporal periods that were not use
 For PM2.5 and PM10, the unseen evaluation uses data from 23 to 30 September 2021. For NO2, the unseen evaluation uses data from 23 to 30 May 2021.
 
 <p align="center">
-  <img src="{{ 'assets/img/PM2.5_cal.png' | relative_url }}" alt="PM2.5 unseen calibration results" width="850"/>
+  <img src="{{ 'assets/img/post_LCS/PM2.5_cal.png' | relative_url }}" alt="PM2.5 unseen calibration results" width="850"/>
 </p>
 
 <p align="center">
@@ -204,7 +206,7 @@ For PM2.5 and PM10, the unseen evaluation uses data from 23 to 30 September 2021
 </p>
 
 <p align="center">
-  <img src="{{ 'assets/img/PM10_cal.png' | relative_url }}" alt="PM10 unseen calibration results" width="850"/>
+  <img src="{{ 'assets/img/post_LCS/PM10_cal.png' | relative_url }}" alt="PM10 unseen calibration results" width="850"/>
 </p>
 
 <p align="center">
@@ -214,7 +216,7 @@ For PM2.5 and PM10, the unseen evaluation uses data from 23 to 30 September 2021
 </p>
 
 <p align="center">
-  <img src="{{ 'assets/img/NO_cal.png' | relative_url }}" alt="NO2 unseen calibration results" width="850"/>
+  <img src="{{ 'assets/img/post_LCS/NO_cal.png' | relative_url }}" alt="NO2 unseen calibration results" width="850"/>
 </p>
 
 <p align="center">
@@ -269,20 +271,13 @@ This calibration framework can support:
 
 ## Code and Data Availability
 
-**Code and tutorials:** coming soon.  
-**Data:**
-[http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408](http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408) 
+- **Code:** <a href="https://github.com/modelflows/notebooks/tree/main/LCS%20calibration">LCS calibration code folder</a>
 
+- **Tutorial:** <a href="{{ '/software/tutorials/urban-lcs-calibration/' | relative_url }}">Low-cost sensor calibration tutorial</a>
+
+- **Data:** <a href="http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408">OxAria low-cost air-quality sensor dataset</a>
 ---
 
 ## References
 
-Arindam Sengupta, Tony Bush, Ben Marner, Jose Miguel Pérez, and Soledad Le Clainche.  
-**A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors.**  
-arXiv:2604.21527 [cs.LG], 2026.  
-[https://doi.org/10.48550/arXiv.2604.21527](https://doi.org/10.48550/arXiv.2604.21527)
-
-Tony Bush, Nikolaos Papaioannou, Felix Leach, Francis D. Pope, Ajit Singh, G. Neil Thomas, Ben Stacey, and Sarah Bartington.  
-**Machine Learning Techniques to Improve the Field Performance of Low-Cost Air Quality Sensors.**  
-Atmospheric Measurement Techniques Discussions, 2021.  
-[https://doi.org/10.5194/amt-2021-282](https://doi.org/10.5194/amt-2021-282)
+- [*Sengupta, A., Bush, T., Marner, B., Pérez, J. M., & Le Clainche, S. (2026). A Temporal Deep Learning Framework for Calibration of Low-Cost Air Quality Sensors. arXiv:2604.21527 [cs.LG].*](https://doi.org/10.48550/arXiv.2604.21527)
