@@ -2,30 +2,28 @@
 ---
 layout: post
 title: "Template: Your Research Project Title"
-date: 2026-06-18
-category: "AI & Data-Driven Models"
-topic: "AI for Urban Flows"
+category: "AI/ML (or CFD and Simulation)"
+topic: "Urban Flows Simulation"
 tldr: "A concise 2-3 sentence overview of this research project."
-thumbnail: "/assets/img/urban-flows/streamlines_sole3.png"
+thumbnail: "assets/img/urban_flows/streamlines_sole3.png"
 ---
 
 # Introduction
 
-This is a placeholder demonstrating how students should upload their structural research pages. Simply duplicate this file, rename it with the date, for example `2026-my-project.md`, and fill in:
+This is a placeholder demonstrating how students should upload their structural research pages. Simply duplicate this file, rename it with the date (e.g. `2026-my-project.md`), and fill in:
 
 1. **Title**: Above in the header.
-2. **Category**: Choose the correct research category, for example `"AI & Data-Driven Models"` or `"CFD & High-Fidelity Simulations"`.
-3. **Topic**: Choose where it fits, for example `"AI for Urban Flows"`, `"Urban Flow Modelling"`, `"Combustion"`, `"Cardiac Pathology"`, `"Air Pollution"` or `"Adaptive Prediction"`.
-4. **TLDR**: Add a short summary that appears on the research grid.
-5. **Thumbnail**: Add a relative link to an image inside the `assets/img/` folder.
+2. **Category**: Choose either "AI/ML" or "CFD and Simulation".
+3. **Topic**: Choose where it fits (e.g. "Urban Flows Simulation", "Combustion", "Cardiac Pathology", "Air Pollution", "Adaptive Prediction"). This decides which sub-page it appears on!
+4. **TLDR**: Quick summary seen on the grids.
+5. **Thumbnail**: Add a relative link to an image in the `assets/img/` folder to be displayed on the gallery.
 
 ## Methodology
 
-Write your content here using standard Markdown. For example, equations can be included as:
+Write your content here using standard Markdown! E.g., add math equations:
 
 $$
-\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla) \mathbf{u}
-= -\frac{1}{\rho} \nabla p + \nu \nabla^2 \mathbf{u}
+\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla) \mathbf{u} = -\frac{1}{\rho} \nabla p + \nu \nabla^2 \mathbf{u}
 $$
 
 ## Results
