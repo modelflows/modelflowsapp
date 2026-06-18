@@ -163,7 +163,7 @@ The pipeline completed both adaptive iterations without errors, producing the is
 
 The cumulative energy curve $\varepsilon(r_0)$ for the cylinder exhibits an elbow at $r_0 = 5$, as it is shown in the following picture:
 
-![Pipeline architecture: config.yaml → directorpython.py → OpenFOAM + main_code.py → sim_XXX/](../_assets/img/figs/cummulative.png)
+![Pipeline architecture: config.yaml → directorpython.py → OpenFOAM + main_code.py → sim_XXX/](../assets/img/figs/cummulative.png) 
 
 <div align="center">
 
