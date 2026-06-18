@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Interactive Notebooks
+title: Notebooks & Codes
 subtitle: Browse our Python Jupyter Notebooks
 ---
 
 Welcome to our Notebooks gallery. Here group members have provided interactive codes covering a variety of fields. Choose a notebook below to see the python code and explanations.
 
 <div class="row">
-  {% assign all_notebooks = site.notebooks %}
+  {% assign all_notebooks = site.notebooks | sort: "order" %}
   {% for nb in all_notebooks %}
   <div class="col-md-12 mb-4">
     <div class="card flex-row" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; padding: 15px;">
