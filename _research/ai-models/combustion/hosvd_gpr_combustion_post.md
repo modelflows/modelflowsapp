@@ -116,6 +116,10 @@ Combining the interpolated coefficients with the core tensor and rescaling gives
 
 ![Reconstruction error per species for Re=13000, mf=0.08](/assets/img/Tutorial/Combustion/hosvd_gpr/relative_error_per_feat_Re13000_mf008.png)
 
+## Contributors
+
+Isacco Faglioni
+
 ## **References**
 
 [1] Aversano, et al., *Digital twin of a combustion furnace operating in flameless conditions: reduced-order model development from CFD simulations*, Proc. Combust. Inst. 38(4):5373–5381, 2021.
