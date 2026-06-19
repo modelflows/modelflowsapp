@@ -21,7 +21,6 @@ The applications focuse on the DLR methane/hydrogen/nitrogen turbulent diffusion
 
   * [HOSVD + GPR Parametric Interpolation](#ai-hosvd-gpr)
   * [Tutorial](#hosvd-tutorial-and-post)
-  * [Post](#hosvd-tutorial-and-post)
 * [References](#references)
 * [Contributors](#contributors)
 
@@ -67,7 +66,7 @@ The OpenFOAM workflow covers:
 
 The complete step-by-step tutorial covering geometry generation, mesh generation, combustion-model setup, solver execution, validation, and post-processing is available here:
 
-* [Tutorial: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame](/_tutorials/2026-combustion_tutorial.md)
+* [Tutorial: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame](https://modelflows.github.io/modelflowsapp/software/tutorials/2026-combustion-tutorial/)
 
 # AI & Data-Driven Models <a id="ai"></a>
 
@@ -87,7 +86,7 @@ The intuitive idea is that HOSVD decomposes data as a linear combination of basi
 ## Tutorial <a id="hosvd-tutorial-and-post"></a>
 The research post explains the mathematical aspects, while the tutorial provides all implementation details for the dataset described in the previous section.
 
-* [Tutorial: Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
+* [Tutorial: Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR](https://modelflows.github.io/modelflowsapp/software/tutorials/combustion-hosvd-gpr-tutorial/)
 
 Below a sample of the reconstruction of the temperature field for the flame used in the tutorial:
 
