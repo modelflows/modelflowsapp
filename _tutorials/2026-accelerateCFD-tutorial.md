@@ -15,6 +15,10 @@ This tutorial explains how to use the generalized **adaptive CFD–POD–LSTM pi
 
 The generalization introduced in this work replaces all scattered shell and Python configuration files from the original implementation (Zou 2025) with a single `config.yaml` file and a single Python orchestrator (`directorpython.py`), making the pipeline portable to any OpenFOAM case.
 
+# Code availability
+
+*Comming soon...*
+
 # What This Tutorial Covers
 
 - What CFD adaptive prediction is and why it is needed.
