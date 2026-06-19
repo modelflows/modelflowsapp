@@ -133,7 +133,10 @@ Further details about the work explained in this section could be found in the f
 
 <!-- The following video summarizes the developed system and shows the obtained results in the diagnosis task: -->
 
-Download the code for **Diagnosis** in Python version [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/legacy-medical-data-tutorials/Diagnosis_scripts.zip).
+**Important Note:** this diagnosis framework is different to the diagnosis introduced in our tutorial [*here*](https://modelflows.github.io/modelflowsapp/software/applications/2026-cardiac-pathology/#ai-tutorials). 
+
+The code in Python version for **Diagnosis** presented in this section could be found [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/legacy-medical-data-tutorials/Diagnosis_scripts.zip). 
+
 The pretrained weights can be downloaded [*here*](https://drive.google.com/file/d/1tO9dv1zjzObGCOOrsoJgYpPxQZYdi2BC/view?usp=drive_link). 
 
 ### Prediction <a id="prediction"></a>
@@ -152,8 +155,13 @@ Further details about the work explained in this section could be found in the f
 
 <!-- The following video summarizes the developed system with the obtained results in the prognosis task:  -->
 
+We encourage readers to follow our step-by-step tutorial introduced [*here*](https://modelflows.github.io/modelflowsapp/software/applications/2026-cardiac-pathology/#ai-tutorials). 
+
 Download the code for **Prognosis** in Python version [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/legacy-medical-data-tutorials/Prognosis_scripts.zip).
-The pretrained weights can be downloaded [*here*](https://drive.google.com/file/d/1tyi5j6bJfCB1OhXh6c36eDPT4D8E8dST/view?usp=drive_link). A fine-tuned version can be found at Hugging Face [*here*](https://huggingface.co/abellnav/heart-failure-prognosis-echo). 
+
+The pretrained weights can be downloaded [*here*](https://drive.google.com/file/d/1tyi5j6bJfCB1OhXh6c36eDPT4D8E8dST/view?usp=drive_link). 
+
+A fine-tuned version can be found at Hugging Face [*here*](https://huggingface.co/abellnav/heart-failure-prognosis-echo). 
 
 ### Diagnosis and prognosis <a id="diagnosis-and-prognosis"></a>
 #### Masked Autoencoders
