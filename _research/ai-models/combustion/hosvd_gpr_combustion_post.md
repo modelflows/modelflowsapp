@@ -8,6 +8,13 @@ thumbnail: "assets/img/Tutorial/Combustion/hosvd_gpr/Re16000_mf012.png"
 permalink: /research/ai-combustion/
 ---
 
+<script>
+  MathJax = { tex: { inlineMath: [['$', '$']] } };
+</script>
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 # Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR
 
 ## **Introduction**
@@ -74,7 +81,7 @@ The factor matrices along the parameter dimensions ($\mathbf{U}^{\mathrm{Re}}$ a
 
 The information about both the singular values and modes is contained for each dimension in teh core tensor $\mathcal{G}$. By contracting the core tensor along the species axis and mapping the resulting dominant patterns back to  physical space through the spatial factor matrices $U_x$ and $U_y$.
 The figure below shows the leading HOSVD spatial modes extracted for the temperature field.
-
+    
 ![HOSVD spatial modes for temperature](/assets/img/Tutorial/Combustion/hosvd_gpr/modes_hosvd_temperature.png)
 
 ### **Gaussian Process Regression (GPR)**
@@ -128,8 +135,3 @@ Combining the interpolated coefficients with the core tensor and rescaling gives
 [8] Isacco et al., *Cypher 3rd Meeting*, Istanbul, Turkey, Poster-Oral presentation, 2026.
 
 [9] Isacco et al., *Princeton-Combustion Institute Summer School on Combustion and the Environment*, Princeton, United States, Poster presentation, 2026.
-
-
-
-
-
