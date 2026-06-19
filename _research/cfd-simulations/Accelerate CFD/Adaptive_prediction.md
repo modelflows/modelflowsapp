@@ -254,7 +254,7 @@ This research can be organized as a reproducible workflow for adaptive predictio
 
 The tutorial for this adaptive prediction workflow is available below:
 
-- [Tutorial: Adaptive CFD–POD–LSTM Pipeline]({{ '/software/tutorials/2026-accelerateCFD-tutorial/' | relative_url }})
+- [Tutorial: Adaptive CFD–POD–LSTM Pipeline](../../../_tutorials/2026-accelerateCFD-tutorial.md)
 
 # Related Publication
 
