@@ -28,7 +28,7 @@ The page is organized as an index. Each topic below links to the corresponding t
 
 This section includes workflows related to geometry generation, meshing, boundary conditions, solver setup, OpenFOAM cases, and post-processing for high-fidelity urban flow simulations.
 
-## Urban CFD with OpenFOAM: AIJ Case C
+## Urban CFD with OpenFOAM: Simple Building Blocks (Canonical Configuration)
 
 This topic covers the canonical urban CFD workflow, including geometry preparation, OpenFOAM case setup, simulation, and post-processing.
 
@@ -74,7 +74,7 @@ The related research page is available here: <a href="{{ '/research/ai-models/ai
 - Dataset for low-cost sensor calibration: <a href="http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408">OxAria low-cost air-quality sensor dataset</a>. This link goes to the open-access dataset used for the low-cost sensor calibration study.
 - Dataset for 3D reconstruction: coming soon.
 - Dataset for temporal prediction: coming soon.
-- Dataset for AIJ Case C: coming soon.
+- Dataset for Simple Building Blocks (Canonical Configuration): coming soon.
 
 # Publications
 
