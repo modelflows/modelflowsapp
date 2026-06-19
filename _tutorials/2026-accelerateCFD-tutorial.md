@@ -5,7 +5,6 @@ application: "Urban Flows"
 category: "AI & Data-Driven Models"
 tldr: "Step-by-step tutorial to run the generalized adaptive prediction pipeline combining OpenFOAM (CFD) and a POD+LSTM surrogate model. All parameters controlled from a single config.yaml file."
 author: "Xiangrui Zou, Carlos Sainz García, Mikel Navarro Huarte"
-sphinx_repository: "https://github.com/modelflows/adaptive-cfd"
 tutorial_file: "2026-accelerateCFD-tutorial.md"
 ---
 
@@ -634,4 +633,6 @@ Then open ParaView, load your `.foam` file, and compare predicted vs CFD fields 
 
 *ModelFLOWs-UPM · Adaptive CFD-LSTM · POD/SVD + Deep Learning*  
 *pyPseudo_Adaptive_parallel/ + config.yaml*  
-*Based on: X. Zou et al. (ModelFLOWs-UPM, 2025)*
+*Based on:*
+ - Abadía-Heredia, R., Zou., X., López-Martín, M., Le Clainche, S., An Adaptive Framework for Autoregressive Forecasting in CFD Using Hybrid Modal Decomposition and Deep Learning, arXiv:2505.01531, 2025
+ - Zou, X., Zhao, Z., Barragán, G., Le Clainche, S., Divergence-aware adaptive prediction framework for accelerating CFD simulations of unsteady flows, arXiv:2605.24150 , 2026.
