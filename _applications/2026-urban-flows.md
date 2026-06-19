@@ -14,7 +14,7 @@ The page is organized as an index. Each topic below links to the corresponding t
 # Index
 
 - [CFD & High-Fidelity Simulations](#cfd--high-fidelity-simulations)
-  - [Urban CFD with OpenFOAM: 9 buildings canonical configuration](#urban-cfd-with-openfoam-aij-case-c)
+  - [Urban CFD with OpenFOAM: 9 buildings canonical configuration](#urban-cfd-with-openfoam-9-buildings-canonical-configuration)
 
 - [AI, ROM & Data-Driven Models](#ai-rom--data-driven-models)
   - [3D Reconstruction from Sparse Sensors](#1-3d-reconstruction-from-sparse-sensors)
@@ -28,9 +28,7 @@ The page is organized as an index. Each topic below links to the corresponding t
 
 This section includes workflows related to geometry generation, meshing, boundary conditions, solver setup, OpenFOAM cases, and post-processing for high-fidelity urban flow simulations.
 
-## Urban CFD with OpenFOAM: 9 buildings canonical configuration
-
-## Introduction
+## Urban CFD with OpenFOAM: 9 buildings canonical configuration 
 
 This section covers the canonical configuration of the 9 buildings in an urban CFD simulation workflow using OpenFOAM, including geometry preparation, OpenFOAM case setup, simulation, and post-processing, applied to a simplified urban flow system. The test case is a 3x3 array of square cylinders (buildings), each 0.2 m high by 0.2 m long by 0.2 m deep, with a distance between each of them of 0.2 m. This layout mimics the AIJ Case C wind tunnel benchmarks.
 
