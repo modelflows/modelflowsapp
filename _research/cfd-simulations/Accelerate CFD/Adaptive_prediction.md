@@ -198,9 +198,12 @@ This strategy provides a practical online solution when future CFD reference dat
 
 A more demanding test is performed under time-varying inlet velocity. The inlet velocity changes during prediction according to:
 
-<p style="text-align: center;">
-  <strong>U<sub>in</sub>: 1 → 2 → 0.8 → 1.5 m/s</strong>
-</p>
+<script>
+  MathJax = { tex: { inlineMath: [['$', '$']] } };
+</script>
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 
 This corresponds to a Reynolds-number range of approximately **160-400**. The case represents a realistic scenario where the operating condition changes during simulation.
 

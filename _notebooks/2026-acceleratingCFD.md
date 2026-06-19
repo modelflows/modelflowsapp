@@ -3,7 +3,7 @@ layout: post
 title: "AI-Accelerated CFD"
 topic: "Hybrid AI-CFD"
 tldr: "Accelerate computational fluid dynamics simulations using hybrid POD–Deep Learning reduced-order models."
-order: 2
+order: 4
 ---
 
 Codes available:
