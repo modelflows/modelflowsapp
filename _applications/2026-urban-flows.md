@@ -21,6 +21,7 @@ The page is organized as an index. Each topic below links to the corresponding t
   - [Temporal Prediction of Urban Flow Fields](#2-temporal-prediction-of-urban-flow-fields)
   - [Calibration of Low-Cost Air-Quality Sensors](#3-calibration-of-low-cost-air-quality-sensors)
 
+- [Resources & Databases](#resources--databases)
 - [Publications](#publications)
 - [Contributors](#contributors)
 
@@ -45,6 +46,8 @@ This section presents the tutorials combining Artificial Intelligence, Reduced-O
 
 This topic focuses on the reconstruction of full 3D urban flow and pollutant fields from a reduced number of sensor locations. Low-cost modal decomposition methods, such as lcSVD and lcHOSVD, are used to recover the original high-dimensional CFD fields while reducing the amount of data required for reconstruction.
 
+Code: 3D Reconstruction Notebook: coming soon.
+
 The complete step-by-step tutorial is available in the <a href="{{ '/software/tutorials/urban-3d-reconstruction/' | relative_url }}">Urban Sensors 3D Reconstruction</a> page. This link goes to the workflow explaining sparse-sensor selection, low-cost decomposition, field reconstruction, error evaluation and comparison with the original CFD solution.
 
 The related research page is available here: <a href="{{ '/research/ai-models/ai-urban-flows/2026-from-sensors-to-3d-reconstruction/' | relative_url }}">From Sensors to 3D Reconstruction</a>. This link goes to the research summary describing the motivation, methodology, datasets and reconstruction results for the low-cost 3D reconstruction work.
@@ -52,6 +55,8 @@ The related research page is available here: <a href="{{ '/research/ai-models/ai
 ## 2. Temporal Prediction of Urban Flow Fields
 
 This topic focuses on the prediction of future urban flow and pollutant states from time-resolved CFD databases. Multidimensional modal decomposition and deep learning models are used to learn the temporal evolution of the flow field and reconstruct the predicted snapshots.
+
+Code: Temporal Prediction Notebook: coming soon.
 
 The complete step-by-step tutorial is available in the <a href="{{ '/software/tutorials/urban-mdhodmd-forecasting/' | relative_url }}">Temporal Prediction of Urban Flow Fields</a> page. This link goes to the workflow explaining data normalization, modal decomposition, sequence preparation, temporal learning and autoregressive prediction.
 
@@ -61,17 +66,13 @@ The related research page will be added soon.
 
 This topic focuses on the calibration of low-cost air-quality sensors using temporal deep learning models. The objective is to correct raw low-cost sensor measurements by learning their relationship with reference-grade observations, meteorological variables and temporal dependencies.
 
+Code: <a href="https://github.com/modelflows/notebooks/tree/main/LCS%20calibration">Low-Cost Sensor Calibration Notebook</a>. This link goes to the notebook implementing the temporal deep learning calibration framework for low-cost air-quality sensors.
+
 The complete step-by-step tutorial is available in the <a href="{{ '/software/tutorials/urban-lcs-calibration/' | relative_url }}">Low-Cost Sensor Calibration</a> page. This link goes to the workflow explaining data cleaning, feature preparation, temporal sequence generation, LSTM model training and calibrated sensor output.
 
 The related research page is available here: <a href="{{ '/research/ai-models/air-pollution/2026-temporal-deep-learning-calibration-low-cost-sensors/' | relative_url }}">Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors</a>. This link goes to the research summary and paper information for the low-cost sensor calibration study.
 
-## Notebooks
-
-- <a href="https://github.com/modelflows/notebooks/tree/main/LCS%20calibration">Low-Cost Sensor Calibration Notebook</a>: this link goes to the notebook implementing the temporal deep learning calibration framework for low-cost air-quality sensors.
-- 3D Reconstruction Notebook: coming soon.
-- Temporal Prediction Notebook: coming soon.
-
-## Resources & Databases
+# Resources & Databases
 
 - Dataset for low-cost sensor calibration: <a href="http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408">OxAria low-cost air-quality sensor dataset</a>. This link goes to the open-access dataset used for the low-cost sensor calibration study.
 - Dataset for 3D reconstruction: coming soon.
@@ -92,4 +93,3 @@ Further publications related to urban flow reconstruction and temporal predictio
 - Guillermo Enrique Barragan Montalvo
 - Alberto Rodriguez Fernandez
 - Wentai Deng
-  
