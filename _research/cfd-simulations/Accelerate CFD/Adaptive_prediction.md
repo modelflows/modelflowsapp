@@ -3,7 +3,7 @@ layout: page
 category: "Adaptive Methodologies"
 topic: "Adaptive prediction"
 thumbnail: "assets/img/Adaptive_Framework.png"
-tldr: "A fast adaptive prediction method that uses a lightweight AI model and only calls CFD solver again when the prediction becomes unreliable."
+tldr: "A fast adaptive prediction method that uses a lightweight AI model, calls CFD solver and retrain the model again when the prediction becomes unreliable."
 title: Speed-up CFD using adaptive hybrid ROMs: unsteady solutions
 subtitle: Closed-loop OpenFOAM and POD-DL coupling for long-horizon unsteady-flow prediction
 published: true
