@@ -14,7 +14,7 @@ The page is organized as an index. Each topic below links to the corresponding t
 # Index
 
 - [CFD & High-Fidelity Simulations](#cfd--high-fidelity-simulations)
-  - [Urban CFD with OpenFOAM: AIJ Case C](#urban-cfd-with-openfoam-aij-case-c)
+  - [Urban CFD with OpenFOAM: Simple Building Blocks (Canonical Configuration)](#urban-cfd-with-openfoam-simple-building-blocks-canonical-configuration)
 
 - [AI, ROM & Data-Driven Models](#ai-rom--data-driven-models)
   - [3D Reconstruction from Sparse Sensors](#1-3d-reconstruction-from-sparse-sensors)
