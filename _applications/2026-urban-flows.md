@@ -74,6 +74,7 @@ The related research page is available here: <a href="{{ '/research/ai-models/ai
 - Dataset for low-cost sensor calibration: <a href="http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408">OxAria low-cost air-quality sensor dataset</a>. This link goes to the open-access dataset used for the low-cost sensor calibration study.
 - Dataset for 3D reconstruction: coming soon.
 - Dataset for temporal prediction: coming soon.
+- Dataset for AIJ Case C: coming soon.
 
 # Publications
 
