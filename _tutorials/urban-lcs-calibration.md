@@ -44,6 +44,7 @@ The workflow focuses on LSTM-based calibration of pollutant measurements such as
 - TensorFlow / Keras : 2.10.0
 
 
+
 # Input Data
 
 - Low-cost sensor measurements
@@ -52,15 +53,13 @@ The workflow focuses on LSTM-based calibration of pollutant measurements such as
 - Pollutant-specific sensor variables
 - Baseline-corrected sensor data
 
-  <p align="center">
-  <img src="{{ '/assets/img/met_cal.png' | relative_url }}" alt="Calibration methodology" width="850"/>
-</p>
+![Calibration methodology]({{ '/assets/img/met_cal.png' | relative_url }})
 
 <p align="center">
-  <em>
-  Methodology for the temporal calibration of low-cost air-quality sensors.
-  </em>
+  <em>Methodology for the temporal calibration of low-cost air-quality sensors.</em>
 </p>
+
+
 
 # Step-by-Step Tutorial
 

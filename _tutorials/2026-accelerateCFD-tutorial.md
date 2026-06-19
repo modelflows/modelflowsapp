@@ -6,7 +6,7 @@ category: "AI & Data-Driven Models"
 tldr: "Step-by-step tutorial to run the generalized adaptive prediction pipeline combining OpenFOAM (CFD) and a POD+LSTM surrogate model. All parameters controlled from a single config.yaml file."
 author: "Xiangrui Zou, Carlos Sainz García, Mikel Navarro Huarte"
 sphinx_repository: "https://github.com/modelflows/adaptive-cfd"
-tutorial_file: "TUTORIAL.md"
+tutorial_file: "2026-accelerateCFD-tutorial.md"
 ---
 
 # Overview

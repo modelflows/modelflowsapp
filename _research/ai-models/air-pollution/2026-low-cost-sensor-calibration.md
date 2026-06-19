@@ -3,13 +3,10 @@ layout: post
 title: "Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors"
 category: "AI & Data-Driven Models"
 topic: "Air Pollution"
-thumbnail: "/assets/img/met_cal.png"
+thumbnail: "/assets/img/meth (2).jpg"
 tldr: "LSTM-based temporal calibration of low-cost air-quality sensors for PM2.5, PM10, and NO2 using OxAria co-located reference data."
 ---
-<p class="post-meta">
-  Posted on 18 June 2026
-</p>
----
+
 
 # Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors
 
@@ -276,6 +273,7 @@ This calibration framework can support:
 - **Tutorial:** <a href="{{ '/software/tutorials/urban-lcs-calibration/' | relative_url }}">Low-cost sensor calibration tutorial</a>
 
 - **Data:** <a href="http://ora.ox.ac.uk/objects/uuid:66fbe8c1-4b63-4124-bf0d-a78cbc9e1408">OxAria low-cost air-quality sensor dataset</a>
+
 ---
 
 ## References

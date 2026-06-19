@@ -6,10 +6,7 @@ topic: "AI for Urban Flows"
 thumbnail: "/assets/img/urban-flows/Sensors.png"
 tldr: "Low-cost reconstruction of full 3D urban flow and pollutant fields from sparse sensor information using lcSVD and lcHOSVD."
 ---
-<p class="post-meta">
-  Posted on 18 June 2026
-</p>
----
+
 
 # From Sensors to 3D Reconstruction of Urban Flow and Pollutant Fields
 
