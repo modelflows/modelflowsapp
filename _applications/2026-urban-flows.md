@@ -46,7 +46,7 @@ This section presents the tutorials combining Artificial Intelligence, Reduced-O
 
 This topic focuses on the reconstruction of full 3D urban flow and pollutant fields from a reduced number of sensor locations. Low-cost modal decomposition methods, such as lcSVD and lcHOSVD, are used to recover the original high-dimensional CFD fields while reducing the amount of data required for reconstruction.
 
-Code: 3D Reconstruction Notebook: coming soon.
+Code: *Coming soon...*
 
 The complete step-by-step tutorial is available in the <a href="{{ '/software/tutorials/urban-3d-reconstruction/' | relative_url }}">Urban Sensors 3D Reconstruction</a> page. This link goes to the workflow explaining sparse-sensor selection, low-cost decomposition, field reconstruction, error evaluation and comparison with the original CFD solution.
 
@@ -56,7 +56,7 @@ The related research page is available here: <a href="{{ '/research/ai-models/ai
 
 This topic focuses on the prediction of future urban flow and pollutant states from time-resolved CFD databases. Multidimensional modal decomposition and deep learning models are used to learn the temporal evolution of the flow field and reconstruct the predicted snapshots.
 
-Code: Temporal Prediction Notebook: coming soon.
+Code: *Coming soon...*
 
 The complete step-by-step tutorial is available in the <a href="{{ '/software/tutorials/urban-mdhodmd-forecasting/' | relative_url }}">Temporal Prediction of Urban Flow Fields</a> page. This link goes to the workflow explaining data normalization, modal decomposition, sequence preparation, temporal learning and autoregressive prediction.
 
