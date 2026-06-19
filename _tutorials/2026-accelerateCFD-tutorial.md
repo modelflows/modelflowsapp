@@ -5,7 +5,6 @@ application: "Urban Flows"
 category: "AI & Data-Driven Models"
 tldr: "Step-by-step tutorial to run the generalized adaptive prediction pipeline combining OpenFOAM (CFD) and a POD+LSTM surrogate model. All parameters controlled from a single config.yaml file."
 author: "Xiangrui Zou, Carlos Sainz García, Mikel Navarro Huarte"
-sphinx_repository: "https://github.com/modelflows/adaptive-cfd"
 tutorial_file: "2026-accelerateCFD-tutorial.md"
 ---
 
@@ -27,18 +26,6 @@ The generalization introduced in this work replaces all scattered shell and Pyth
 - How to run in offline mode (`SOLO_PYTHON=true`) on pre-computed snapshots.
 - How to run the full adaptive loop (`SOLO_PYTHON=false`) with a live OpenFOAM simulation.
 - How to read the output logs and visualise results in ParaView.
-
-# Related Links
-
-- Notebook: *(to be added)*
-- Video: *(to be added)*
-- Dataset: *(to be added)*
-- Application hub: <https://modelflows.github.io/modelflowsapp/software/applications/2026-urban-flows/>
-
-# Contributors
-- Xiangrui Zou
-- Carlos Sainz García
-- Mikel Navarro Huarte
 
 ---
 
@@ -98,17 +85,17 @@ The pipeline alternates between blocks of CFD simulation and blocks of ML predic
 
 At each iteration:
 
-1. **OpenFOAM runs** from `T₀` to `T₁`, saving a snapshot of the flow field every `TIME_STEP_WRITE_OF` seconds.
+1. **OpenFOAM runs** from T₀ to T₁, saving a snapshot of the flow field every `TIME_STEP_WRITE_OF` seconds.
 2. **POD-DL reads** those snapshots, applies truncated SVD to reduce them to a low-dimensional representation, and trains an LSTM on the resulting temporal coefficients.
-3. **LSTM predicts** the coefficients from `T₁` to `T₂` in an auto-regressive loop; the full flow field is reconstructed from those coefficients.
-4. **OpenFOAM restarts** from `T₂ − TIME_AHEAD` (a small overlap ensures continuity between the CFD and ML blocks).
+3. **LSTM predicts** the coefficients from T₁ to T₂ in an auto-regressive loop; the full flow field is reconstructed from those coefficients.
+4. **OpenFOAM restarts** from T₂ − `TIME_AHEAD` (a small overlap ensures continuity between the CFD and ML blocks).
 5. Steps 1–4 repeat `NUM_ITERATIONS` times.
 
 ### Key design choices
 
 | Concept | What it means |
 |---|---|
-| `TIME_AHEAD` | A small temporal overlap (typically 5 snapshots × `dt`) so that OpenFOAM does not start from a discontinuity when it picks up after the ML block. |
+| `TIME_AHEAD` | A small temporal overlap (typically 5 snapshots × dt) so that OpenFOAM does not start from a discontinuity when it picks up after the ML block. |
 | Transfer learning | The LSTM is not retrained from scratch every iteration. If a checkpoint exists from the previous round, the model is loaded and fine-tuned on the new data — each successive round trains faster. |
 | `SOLO_PYTHON=true` | Skips OpenFOAM entirely. All snapshots must already exist in `CFD_DIR`. Useful for offline experiments, first validation, or debugging the ML module without running a full simulation. |
 
@@ -116,122 +103,71 @@ At each iteration:
 
 ## 3. Methodology: POD + LSTM
 
+### The big picture
+
+The full pipeline goes from raw CFD snapshots to predicted flow fields in five steps:
+
+![End-to-end pipeline](../assets/img/figs/diagrams/pipeline.png)
+
 ### Why dimensionality reduction?
 
 A typical CFD mesh has millions of cells and each field (velocity, pressure) is a vector at every cell. Feeding raw snapshots directly into a neural network would be computationally prohibitive. Proper Orthogonal Decomposition (POD) compresses the data: instead of predicting millions of numbers, the LSTM only needs to predict a handful of **temporal coefficients**.
 
 ### POD via truncated SVD
 
-Given a snapshot matrix $\mathbf{X} \in \mathbb{R}^{N_{\text{cells}} \times K}$ where each column is one time snapshot:
+The snapshot matrix **X** (one column per time step, one row per mesh cell) is factorised via Singular Value Decomposition (SVD). We then keep only the r₀ most energetic modes — this is the "truncation" step. The result is a small set of **temporal coefficients** that capture the essential dynamics of the flow:
 
-$$
-\mathbf{X} = \mathbf{U} \boldsymbol{\Sigma} \mathbf{V}^T \qquad \text{(full SVD)}
-$$
+![POD via truncated SVD](../assets/img/figs/diagrams/pod_svd.png)
 
-$$
-\mathbf{X}_r \approx \mathbf{U}_r \boldsymbol{\Sigma}_r \mathbf{V}_r^T \qquad \text{(truncated to } r_0 \text{ dominant modes)}
-$$
+- **U_r** — spatial POD modes (basis vectors): the "shapes" of the flow patterns
+- **Σ_r** — singular values: how much energy each mode carries
+- **C** — temporal coefficients: how much each mode contributes at each time step
 
-$$
-\mathbf{C} = \mathbf{V}_r^T \in \mathbb{R}^{r_0 \times K} \qquad \text{(temporal coefficients)}
-$$
-
-- $\mathbf{U}_r$ — spatial POD modes (basis vectors), shape: $N_{\text{cells}} \times r_0$
-- $\boldsymbol{\Sigma}_r$ — singular values ($\sigma_i^2 \propto$ energy of mode $i$)
-- $\mathbf{C}$ — temporal coefficients: how much each mode contributes at each time step
-
-The reconstruction error is measured by the **RRMSE**:
-
-$$
-RRMSE = \frac{\left\| \mathbf{X} - \mathbf{U}_r \boldsymbol{\Sigma}_r \mathbf{V}_r^T \right\|_F}{\left\| \mathbf{X} \right\|_F}
-$$
-
-A good choice of `NUM_MODES` ($r_0$) keeps this below ~5 %.
+The reconstruction error (RRMSE) tells you how much information is lost by keeping only r₀ modes. A good choice of `NUM_MODES` (r₀) keeps this below ~5 %.
 
 ### LSTM prediction
 
-The LSTM receives the last `INP_SEQ` columns of $\mathbf{C}$ (a sliding window of $L$ past coefficient vectors) and predicts the next one:
+The LSTM receives a sliding window of past temporal coefficients and predicts the next one. This prediction is then fed back as input to predict the following step — and so on, auto-regressively, for `NUM_PREDS` steps:
 
-$$
-\mathbf{c}(t-L+1),\, \ldots,\, \mathbf{c}(t) \;\xrightarrow{\text{LSTM}}\; \mathbf{c}(t+1)
-$$
+![LSTM prediction](../assets/img/figs/diagrams/lstm_prediction.png)
 
-This is repeated auto-regressively for `NUM_PREDS` steps. The full predicted field is then reconstructed as:
-
-$$
-\hat{\mathbf{X}}_{\text{pred}} \approx \mathbf{U}_r \boldsymbol{\Sigma}_r \hat{\mathbf{C}}
-$$
+Once the LSTM has predicted all the future temporal coefficients, the full flow field is reconstructed by multiplying back with the spatial modes (**U_r · Σ_r · Ĉ**).
 
 ### Training
 
-- **Loss:** Mean Squared Error (MSE) between predicted and true temporal coefficients:
+The LSTM is trained to minimise the Mean Squared Error (MSE) between its predicted coefficients and the true ones from the CFD data. Two key features make training efficient:
 
-$$
-\text{MSE} = \frac{1}{Npr} \sum_{n=1}^{N} \sum_{t=1}^{p} \sum_{k=1}^{r} \left(\hat{c}_{n,t,k} - c_{n,t,k}\right)^2 = \frac{1}{Npr} \sum_{n,t} \left\| \hat{\mathbf{c}}_{n,t} - \mathbf{c}_{n,t} \right\|_2^2
-$$
+- **Transfer learning:** if a model checkpoint exists from the previous adaptive iteration, it is loaded and fine-tuned instead of training from scratch. This makes each successive round converge much faster.
+- **Early stopping:** training halts automatically when loss drops below `LOSS_THRESHOLD`.
 
-- **Checkpoint:** if a model from the previous iteration exists, it is loaded and fine-tuned (transfer learning). If no checkpoint is found, training starts from scratch.
-- **Early stopping:** training halts when loss drops below `LOSS_THRESHOLD`.
+![Training with transfer learning](../assets/img/figs/diagrams/training.png)
 
-> **The two hyperparameters with the greatest impact on prediction quality are `NUM_MODES` ($r_0$) and `INP_SEQ` ($L$). Start with `NUM_MODES=5` and `INP_SEQ=8` and tune from there.**
+> **The two hyperparameters with the greatest impact on prediction quality are `NUM_MODES` (r₀) and `INP_SEQ` (L). Start with `NUM_MODES=5` and `INP_SEQ=8` and tune from there.**
 
 ### Divergence monitoring: CE and TE
 
-To decide when to restart the CFD solver, the pipeline monitors two scalar error metrics at each predicted time step $t$:
+As the LSTM predicts further into the future, its error grows. The pipeline monitors this error in real time using two metrics:
 
-**Consistency Estimate (CE)** — measures how far the LSTM prediction $\hat{\boldsymbol{u}}(t)$ has drifted from the POD-reconstructed reference $\boldsymbol{u}(t)$ computed on the latest CFD window:
+- **Consistency Estimate (CE)** — how far the LSTM prediction has drifted from the POD-reconstructed reference.
+- **Truncation Estimate (TE)** — how much information is lost by retaining only r₀ modes.
 
-$$
-\text{CE}(t) = \frac{\left\| \hat{\boldsymbol{u}}(t) - \boldsymbol{u}(t) \right\|}{\left\| \boldsymbol{u}(t) \right\|}
-$$
+When either metric exceeds its threshold (`CE_THRESHOLD` or `TE_THRESHOLD` in `config.yaml`), the CFD solver is automatically restarted to correct the drift:
 
-**Truncation Estimate (TE)** — measures the POD basis error: how much information is lost by retaining only $r_0$ modes from the current CFD snapshot set:
+![Divergence monitoring](../assets/img/figs/diagrams/monitoring.png)
 
-$$
-\text{TE}(t) = \frac{\left\| \hat{\boldsymbol{u}}(t) - \boldsymbol{u}(t) \right\|}{\left\| \boldsymbol{u}(t) \right\|}
-$$
-
-The CFD solver is automatically invoked when either metric exceeds its threshold (`CE_THRESHOLD` or `TE_THRESHOLD` in `config.yaml`). In fixed-interval mode both thresholds are set to $10^9$ (disabled) and the solver restarts after a fixed number of predicted snapshots.
+In fixed-interval mode both thresholds are set to 10⁹ (effectively disabled) and the solver restarts after a fixed number of predicted snapshots.
 
 ### Divergence monitoring: Mahalanobis distance and ensemble UQ
 
-Two additional criteria are available for more sophisticated adaptive triggering.
+Two additional, more sophisticated criteria are available:
 
-**Mahalanobis distance** — measures how far a predicted coefficient vector $\hat{\mathbf{c}}_t$ departs from the training distribution. First, the mean and regularised covariance of the training coefficients $\{\mathbf{c}_t\}_{t=1}^{K}$ are computed:
+**Mahalanobis distance** — measures how far a predicted coefficient vector has strayed from the training distribution. If the prediction lands in a region of the coefficient space that the model has never seen during training, the solver is recalled. This is controlled by the `mahalanobis_thr` parameter in `config.yaml`.
 
-$$
-\boldsymbol{\mu} = \frac{1}{K} \sum_{t=1}^{K} \mathbf{c}_t
-$$
+**Ensemble uncertainty quantification (UQ)** — instead of training a single LSTM, an ensemble of M models is trained. At each prediction step, each member produces a slightly different output. The spread (standard deviation) across ensemble members is a direct measure of prediction uncertainty:
 
-$$
-\mathbf{D} = \frac{1}{K-1} \sum_{t=1}^{K} \left(\mathbf{c}_t - \boldsymbol{\mu}\right)\left(\mathbf{c}_t - \boldsymbol{\mu}\right)^T + \varepsilon \mathbf{I}_r, \quad \varepsilon > 0
-$$
+![Ensemble UQ](../assets/img/figs/diagrams/ensemble_uq.png)
 
-The squared Mahalanobis distance for any coefficient vector $\mathbf{a} \in \mathbb{R}^r$ is:
-
-$$
-d^2(\mathbf{a}) = \left(\mathbf{a} - \boldsymbol{\mu}\right)^T \mathbf{D}^{-1} \left(\mathbf{a} - \boldsymbol{\mu}\right)
-$$
-
-The solver is recalled when the prediction exceeds the threshold:
-
-$$
-d^2\!\left(\hat{\mathbf{c}}_t\right) > \theta_{\text{mah}}
-$$
-
-**Ensemble uncertainty quantification (UQ)** — an ensemble of $M$ predictors $\{F_\theta\}_{m=1}^{M}$ is trained. At each step $t$, each member produces $\hat{\mathbf{c}}_t^{(m)}$. The per-mode standard deviation is:
-
-$$
-s_k(t) = \mathrm{Std}\!\left(\hat{c}_{k,t}^{(m)}\right)
-$$
-
-A scalar uncertainty weighted by modal energy ($w_k = \sigma_k^2$) is then defined as:
-
-$$
-\sigma_E(t) = \sqrt{\frac{\displaystyle\sum_{k=1}^{r} \left(w_k\, s_k(t)\right)^2}{\displaystyle\sum_{k=1}^{r} w_k^2}}
-$$
-
-The solver is recalled when $\sigma_E(t)$ exceeds a user-defined threshold (`sigma_thr` in `config.yaml`).
+When the uncertainty exceeds a user-defined threshold (`sigma_thr` in `config.yaml`), the solver is recalled.
 
 ---
 
@@ -688,6 +624,15 @@ Then open ParaView, load your `.foam` file, and compare predicted vs CFD fields 
 
 ---
 
+# Contributors
+- Xiangrui Zou
+- Carlos Sainz García
+- Mikel Navarro Huarte
+
+---
+
 *ModelFLOWs-UPM · Adaptive CFD-LSTM · POD/SVD + Deep Learning*  
 *pyPseudo_Adaptive_parallel/ + config.yaml*  
-*Based on: X. Zou et al. (ModelFLOWs-UPM, 2025)*
+*Based on:*
+ - Abadía-Heredia, R., Zou., X., López-Martín, M., Le Clainche, S., An Adaptive Framework for Autoregressive Forecasting in CFD Using Hybrid Modal Decomposition and Deep Learning, arXiv:2505.01531, 2025
+ - Zou, X., Zhao, Z., Barragán, G., Le Clainche, S., Divergence-aware adaptive prediction framework for accelerating CFD simulations of unsteady flows, arXiv:2605.24150 , 2026.
