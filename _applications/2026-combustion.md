@@ -112,8 +112,8 @@ Below a sample of the reconstruction of the temperature field for the flame used
 
 [*De Lathauwer, L., De Moor, B., & Vandewalle, J. (2000). A multilinear singular value decomposition. SIAM Journal on Matrix Analysis and Applications, 21(4), 1253–1278.*](https://doi.org/10.1137/S0895479896305696)
 
-[*Williams, C. K. I., & Rasmussen, C. E. (1995). Gaussian processes for regression. Advances in Neural Information Processing Systems, 8.*](https://proceedings.neurips.cc/paper/1995/hash/7cce53cf90577442771720a370c3c723-Abstract.html)
+[*Williams, C. K. I., & Rasmussen, C. E. (1995). Gaussian processes for regression. Advances in Neural Information Processing Systems, 8.*](https://proceedings.neurips.cc/paper/1995/hash/7cce53cf90577442771720a370c3c723-Abstract.html))
 
-[*Barragán, A., et al. (2025). HOSVD-SR: A Physics-Based Deep Learning Framework for Super-Resolution in Fluid Dynamics.*](https://arxiv.org/abs/2504.17994)
+[*Barragán, G., Hetherington, A., Abadía-Heredia, R., Garicano-Mena, J., & Le Clainche, S. (2025). HOSVD-SR: A Physics-Based Deep Learning Framework for Super-Resolution in Fluid Dynamics. arXiv:2504.17994.*](https://arxiv.org/abs/2504.17994)
 
-[*Sengupta, A., et al. (2025). Hybrid machine learning models based on physical patterns to accelerate CFD simulations: a short guide on autoregressive models.*](https://arxiv.org/abs/2504.06774)
+[*Sengupta, A., Abadía-Heredia, R., Hetherington, A., Pérez, J. M., & Le Clainche, S. (2025). Hybrid machine learning models based on physical patterns to accelerate CFD simulations: a short guide on autoregressive models. arXiv:2504.06774.*](https://arxiv.org/abs/2504.06774)
