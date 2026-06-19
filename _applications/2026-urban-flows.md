@@ -14,7 +14,7 @@ The page is organized as an index. Each topic below links to the corresponding t
 # Index
 
 - [CFD & High-Fidelity Simulations](#cfd--high-fidelity-simulations)
-  - [Urban CFD with OpenFOAM: AIJ Case C](#urban-cfd-with-openfoam-aij-case-c)
+  - [Urban CFD with OpenFOAM: 9 buildings canonical configuration](#urban-cfd-with-openfoam-aij-case-c)
 
 - [AI, ROM & Data-Driven Models](#ai-rom--data-driven-models)
   - [3D Reconstruction from Sparse Sensors](#1-3d-reconstruction-from-sparse-sensors)
@@ -28,11 +28,15 @@ The page is organized as an index. Each topic below links to the corresponding t
 
 This section includes workflows related to geometry generation, meshing, boundary conditions, solver setup, OpenFOAM cases, and post-processing for high-fidelity urban flow simulations.
 
-## Urban CFD with OpenFOAM: AIJ Case C
+## Urban CFD with OpenFOAM: 9 buildings canonical configuration
 
-This topic covers the canonical urban CFD workflow, including geometry preparation, OpenFOAM case setup, simulation, and post-processing.
+## Introduction
 
-- Tutorial: <a href="{{ '/tutorials/urban-canonical-configuration/' | relative_url }}">Urban CFD with OpenFOAM: AIJ Case C</a>
+This section covers the canonical configuration of the 9 buildings in an urban CFD simulation workflow using OpenFOAM, including geometry preparation, OpenFOAM case setup, simulation, and post-processing, applied to a simplified urban flow system. The test case is a 3x3 array of square cylinders (buildings), each 0.2 m high by 0.2 m long by 0.2 m deep, with a distance between each of them of 0.2 m. This layout mimics the AIJ Case C wind tunnel benchmarks.
+
+To allow the wind direction to be varied without re-meshing, the workflow uses a cylindrical computational domain, following the domain-sizing best practices of Blocken (2015). On this domain, a single mesh and case setup can be reused across a full range of flow conditions, from geometry generation in Blender through meshing, solving, and analysis of the resulting flow field.
+
+- Tutorial: *Coming soon...*
 
 
 # AI, ROM & Data-Driven Models
