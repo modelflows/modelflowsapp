@@ -3,8 +3,8 @@ layout: page
 category: "Adaptive Methodologies"
 topic: "Adaptive prediction"
 thumbnail: "assets/img/Adaptive_Framework.png"
-tldr: "A divergence-aware adaptive CFD-surrogate framework that alternates between fast POD-DL forecasting and targeted OpenFOAM recalls for robust long-horizon prediction of unsteady flows."
-title: Divergence-aware Adaptive Prediction Framework
+tldr: "A fast adaptive prediction method that uses a lightweight AI model and only calls CFD solver again when the prediction becomes unreliable."
+title: Speed-up CFD using adaptive hybrid ROMs: unsteady solutions
 subtitle: Closed-loop OpenFOAM and POD-DL coupling for long-horizon unsteady-flow prediction
 published: true
 ---
@@ -14,9 +14,9 @@ published: true
 
 Long-horizon prediction of unsteady flows remains a major challenge in computational fluid dynamics (CFD). Full CFD simulations are accurate, but they are expensive when many time steps, operating conditions, or design iterations are required. Data-driven reduced-order models can strongly accelerate prediction, but their autoregressive errors may gradually accumulate, especially when the forecast horizon is long or when the flow regime changes.
 
-This work develops a **divergence-aware adaptive prediction framework** that couples an OpenFOAM-based CFD solver with a **proper orthogonal decomposition-deep learning (POD-DL)** surrogate model. The central idea is straightforward:
+This work develops a **divergence-aware adaptive prediction framework** that couples an OpenFOAM-based CFD solver with a **proper orthogonal decomposition-deep learning (POD-DL)** surrogate model. 
 
-> use the fast surrogate when it is reliable, and recall CFD only when the prediction begins to diverge.
+The workflow starts with high-fidelity CFD simulation. The generated CFD snapshots are used to train a reduced-order deep learning model. After training, the surrogate model is used to predict the flow evolution much faster than full CFD. During this online prediction stage, the framework continuously monitors whether the surrogate prediction is still reliable. If the prediction remains stable, the surrogate keeps running. If divergence or loss of reliability is detected, the framework automatically recalls the CFD solver, generates new high-fidelity snapshots, updates the training database, and retrains the surrogate model.
 
 The framework is designed for realistic online prediction scenarios, where future CFD ground truth is not available during deployment. Instead of comparing the prediction with reference data, the method monitors internal reliability indicators, especially ensemble uncertainty in the POD coefficient space.
 
@@ -196,14 +196,7 @@ This strategy provides a practical online solution when future CFD reference dat
 
 # Adaptive Prediction under Varying Inlet Velocity
 
-A more demanding test is performed under time-varying inlet velocity. The inlet velocity changes during prediction according to:
-
-<script>
-  MathJax = { tex: { inlineMath: [['$', '$']] } };
-</script>
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+A more demanding test is performed under time-varying inlet velocity. The inlet velocity changes during prediction according to: 1 → 2 → 0.8 → 1.5 m/s.
 
 This corresponds to a Reynolds-number range of approximately **160-400**. The case represents a realistic scenario where the operating condition changes during simulation.
 
@@ -259,13 +252,14 @@ This research can be organized as a reproducible workflow for adaptive predictio
 
 # Tutorials
 
-The tutorial of this adaptive predicion is as follows:
-- [Tutorial: Adaptive CFD–POD–LSTM Pipeline](../../../_tutorials/2026-accelerateCFD-tutorial.md)
+The tutorial for this adaptive prediction workflow is available below:
 
+- [Tutorial: Adaptive CFD–POD–LSTM Pipeline]({{ '/software/tutorials/2026-accelerateCFD-tutorial/' | relative_url }})
 
 # Related Publication
 
-Xiangrui Zou, Zhuoqun Zhao, Guillermo Barragán, Soledad Le Clainche.  
-Divergence-aware adaptive prediction framework for accelerating CFD simulations of unsteady flows.  
-[https://doi.org/10.48550/arXiv.2605.24150](https://doi.org/10.48550/arXiv.2605.24150)
+Zou, X., Zhao, Z., Barragán, G., & Le Clainche, S. (2026). *Divergence-aware adaptive prediction framework for accelerating CFD simulations of unsteady flows*. arXiv. [https://doi.org/10.48550/arXiv.2605.24150](https://doi.org/10.48550/arXiv.2605.24150)
+
+Abadía-Heredia, R., Zou, X., Lopez-Martin, M., & Le Clainche, S. (2025). *An adaptive framework for autoregressive forecasting in CFD using hybrid modal decomposition and deep learning*. arXiv. [https://doi.org/10.48550/arXiv.2505.01531](https://doi.org/10.48550/arXiv.2505.01531)
+
 
