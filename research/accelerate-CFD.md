@@ -6,7 +6,7 @@ subtitle: Frameworks and surrogate methodologies for accelerating CFD simulation
 
 This section collects research posts related to CFD acceleration, adaptive prediction, surrogate modelling, reduced-order modelling, and data-driven workflows for high-fidelity simulations.
 
-## Adaptive Prediction
+
 
 <div class="row">
   {% assign adaptive_posts = site.research | where: "topic", "Adaptive prediction" %}
@@ -28,7 +28,7 @@ This section collects research posts related to CFD acceleration, adaptive predi
   {% endfor %}
 </div>
 
-## RANS Acceleration
+
 
 <div class="row">
   {% assign rans_posts = site.research | where: "topic", "RANS acceleration" %}

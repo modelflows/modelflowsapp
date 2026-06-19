@@ -81,7 +81,7 @@ We combine proper orthogonal decomposition (POD) with a deep neural network for 
   
  <p align="center">
    <em>
-   POD decomposition of the viscoelastic jet. The reconstruction with 25 POD modes yields $\sim$ 50$\%$ of energy, and $\sim$ 85$\%$ with 125 POD modes.
+   POD decomposition of the viscoelastic jet. The reconstruction with 25 POD modes yields 50% of energy, and 85% with 125 POD modes.
    </em>
  </p>
 
