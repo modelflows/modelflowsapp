@@ -10,7 +10,7 @@ published: true
 ---
 
 
-# Divergence-aware Adaptive CFD-Surrogate Prediction
+# Speed-up CFD using adaptive hybrid ROMs: unsteady solutions
 
 Long-horizon prediction of unsteady flows remains a major challenge in computational fluid dynamics (CFD). Full CFD simulations are accurate, but they are expensive when many time steps, operating conditions, or design iterations are required. Data-driven reduced-order models can strongly accelerate prediction, but their autoregressive errors may gradually accumulate, especially when the forecast horizon is long or when the flow regime changes.
 
