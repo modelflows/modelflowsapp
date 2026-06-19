@@ -174,7 +174,7 @@ Instead of relying on a single error metric, ROMIA uses several independent gate
 Only when all required checks are satisfied does ROMIA declare the case **READY** for restart.
 
 <div style="max-width: 500px; margin: 0 auto;">
-  <img src="{{ "/assets/images/romia-trigger-diagram.png" | relative_url }}" alt="ROMIA pipeline architecture" style="width: 100%; display: block;">
+  <img src="{{ "assets/img/user_guide_ROMIA/romia-trigger-diagram.png" | relative_url }}" alt="ROMIA pipeline architecture" style="width: 100%; display: block;">
   <p style="font-style: italic; text-align: left; margin-top: 0.5em;">
     Figure 1. Conceptual architecture of the ROMIA pipeline. Snapshots from the running CFD simulation are compressed by iPOD, modelled by HODMD, and, once the trigger is satisfied, reconstructed and reinjected into the solver.
   </p>
@@ -272,7 +272,7 @@ For the urban case, ROMIA was configured in managed mode. The pipeline monitored
 | Trigger RMSE threshold | 0.15 |
 
 <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
-  <img src="{{ "/assets/images/urban-building-geometry-and-bc.png" | relative_url }}" alt="Urban building geometry and boundary conditions" style="width: 100%; display: block;">
+  <img src="{{ "assets/img/user_guide_ROMIA/urban-building-geometry-and-bc.png" | relative_url }}" alt="Urban building geometry and boundary conditions" style="width: 100%; display: block;">
   <p style="font-style: italic; margin-top: 0.5em;">
     Figure 2. Urban flow case. Left: three-dimensional array of buildings. Right: boundary-condition patch view.
   </p>
@@ -296,8 +296,13 @@ The limited number of retained modes — bounded by a maximum rank of 30 — ind
 
 The urban case confirms that ROMIA can reproduce the dominant flow structures of the converged RANS solution. The predicted field captures the main wake topology, the inter-building recirculation regions and the global distribution of the dominant velocity component.
 
-![Urban ROMIA comparison]({{ "/assets/images/urban-romia-comparison.png" | relative_url }})
-*Figure 3. Comparison between the converged CFD reference and the ROMIA reconstructed field for the urban flow case.*
+
+<div style="max-width: 1100px; margin: 0 auto; text-align: center;">
+  <img src="{{ "assets/img/user_guide_ROMIA/urban-romia-comparison.png" | relative_url }}" alt="Urban building geometry and boundary conditions" style="width: 100%; display: block;">
+  <p style="font-style: italic; margin-top: 0.5em;">
+    Figure 3. Comparison between the converged CFD reference and the ROMIA reconstructed field for the urban flow case.
+  </p>
+</div>
 
 The main conclusion from this case is that ROMIA is able to identify the asymptotic behaviour of an urban RANS simulation before full residual convergence is reached. This makes the method suitable for workflows where many wind directions or urban configurations must be evaluated.
 
@@ -310,7 +315,7 @@ The main conclusion from this case is that ROMIA is able to identify the asympto
 The second practical case applies ROMIA to a three-dimensional Formula 1 rear wing. This case represents a more demanding industrial-scale CFD problem, with a large unstructured mesh, strong pressure gradients, wake development and separated turbulent structures.
 
 <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-  <img src="{{ "/assets/images/f1-rear-wing-geometry.png" | relative_url }}" alt="F1 rear wing geometry" style="width: 100%; display: block;">
+  <img src="{{ "assets/img/user_guide_ROMIA/f1-rear-wing-geometry.png" | relative_url }}" alt="F1 rear wing geometry" style="width: 100%; display: block;">
   <p style="font-style: italic; margin-top: 0.5em;">
     Figure 4. Three-dimensional Formula 1 rear wing geometry used as an industrial-scale validation case.
   </p>
@@ -352,7 +357,7 @@ The larger number of retained modes compared with the urban case reflects the gr
 The spectral analysis of the iPOD basis confirms that the convergence transient is extremely low-dimensional. The first five modes retain 99.989% of the modal energy, and the basis stabilises at r = 80 modes after approximately 80 snapshots.
 
 <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-  <img src="{{ "/assets/images/f1-ipod-spectral-analysis.png" | relative_url }}" alt="F1 iPOD spectral analysis" style="width: 100%; display: block;">
+  <img src="{{ "assets/img/user_guide_ROMIA/f1-ipod-spectral-analysis.png" | relative_url }}" alt="F1 iPOD spectral analysis" style="width: 100%; display: block;">
   <p style="font-style: italic; margin-top: 0.5em;">
     Figure 5. Spectral analysis of the iPOD basis for the F1 rear wing case. (a) Singular value decay. (b) Cumulative modal energy. Five modes retain 99.989% of the energy.
   </p>
@@ -363,7 +368,7 @@ The spectral analysis of the iPOD basis confirms that the convergence transient 
 The pressure field is one of the most relevant outputs in external aerodynamics, since it is directly related to the aerodynamic forces generated by the wing. ROMIA reconstructs the main pressure distribution over the rear wing while reducing the wall-clock time required to reach a validated solution.
 
 <div style="max-width: 1032px; margin: 0 auto; text-align: center;">
-  <img src="{{ "/assets/images/f1-pressure-comparison.png" | relative_url }}" alt="F1 pressure comparison" style="width: 100%; display: block;">
+  <img src="{{ "assets/img/user_guide_ROMIA/f1-pressure-comparison.png" | relative_url }}" alt="F1 pressure comparison" style="width: 100%; display: block;">
   <p style="font-style: italic; margin-top: 0.5em;">
     Figure 6. Pressure field comparison. Left: ROMIA prediction. Right: converged pure CFD reference.
   </p>
@@ -374,7 +379,7 @@ The pressure field is one of the most relevant outputs in external aerodynamics,
 The velocity magnitude comparison shows that the reconstructed field preserves the global wake structure and the main acceleration regions around the aerodynamic elements.
 
 <div style="max-width: 940px; margin: 0 auto; text-align: center;">
-  <img src="{{ "/assets/images/f1-velocity-comparison.png" | relative_url }}" alt="F1 velocity comparison" style="width: 100%; display: block;">
+  <img src="{{ "assets/img/user_guide_ROMIA/f1-velocity-comparison.png" | relative_url }}" alt="F1 velocity comparison" style="width: 100%; display: block;">
   <p style="font-style: italic; margin-top: 0.5em;">
     Figure 7. Velocity magnitude comparison. Left: ROMIA prediction. Right: converged pure CFD reference.
   </p>
@@ -385,7 +390,7 @@ The velocity magnitude comparison shows that the reconstructed field preserves t
 The ROMIA prediction at iteration 10200 is compared against a pure CFD reference run on the same mesh. The local error maps below show the pointwise discrepancy normalised by the range of the reference field. The largest deviations occur in the far wake and in regions of high gradient, where the modal reconstruction smooths small-scale structures that the solver develops in later iterations.
 
 <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-  <img src="{{ "/assets/images/f1-error-maps.png" | relative_url }}" alt="F1 error maps" style="width: 100%; display: block;">
+  <img src="{{ "assets/img/user_guide_ROMIA/f1-error-maps.png" | relative_url }}" alt="F1 error maps" style="width: 100%; display: block;">
   <p style="font-style: italic; margin-top: 0.5em;">
     Figure 8. Local error maps of ROMIA against the pure CFD reference on the plane z = 0.5 m. (a) Velocity magnitude |U|. (b) Pressure p. Errors are normalised by the range of the reference field.
   </p>
