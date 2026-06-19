@@ -21,7 +21,7 @@ This section collects research posts related to CFD acceleration, adaptive predi
         <img src="{{ post.thumbnail | relative_url }}" style="max-width: 250px; height: auto; margin-top: 10px; margin-bottom: 10px; border-radius: 5px;" alt="Miniature">
         {% endif %}
         <br>
-        <a href="{{ post.url | relative_url }}" class="btn btn-outline-primary btn-sm">Read More</a>
+        <a href="{{ _research/cfd-simulations/Accelerate CFD/Adaptive_prediction.md | relative_url }}" class="btn btn-outline-primary btn-sm">Read More</a>
       </div>
     </div>
   </div>
