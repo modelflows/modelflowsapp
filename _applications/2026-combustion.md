@@ -23,7 +23,6 @@ The applications focuse on the DLR methane/hydrogen/nitrogen turbulent diffusion
   * [HOSVD + GPR Parametric Interpolation](#ai-hosvd-gpr)
   * [Tutorial](#hosvd-tutorial-and-post)
   * [Post](#hosvd-tutorial-and-post)
-* [Tutorials](#tutorials)
 * [References](#references)
 * [Contributors](#contributors)
 
@@ -94,12 +93,6 @@ The research post explains the mathematical aspects, while the tutorial provides
 Below a sample of the reconstruction of the temperature field for the flame used in the tutorial:
 
 ![Reconstruction of Temperature field for Re=13000, mf=0.08](/assets/img/Tutorial/Combustion/hosvd_gpr/field_T.png)
-
-# Tutorials <a id="tutorials"></a>
-
-* [Tutorial: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame](/_tutorials/2026-combustion_tutorial.md)
-
-* [Tutorial: Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
 
 # Contributors <a id="contributors"></a>
 
