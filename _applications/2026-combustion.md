@@ -1,39 +1,55 @@
 ---
+
 layout: page
 title: "Combustion"
 area: "Combustion and reactive flows"
 tldr: "Physics-based CFD, reduced-order modelling, and AI-driven prediction for turbulent combustion and reactive flows"
 permalink: /software/applications/2026-combustion/
----
+--------------------------------------------------
 
 # Overview
 
 Combustion and reactive-flow modelling combines physics-based simulation, reduced-order modelling, and data-driven prediction to analyse complex reacting systems. This page collects reusable workflows for combustion applications, including OpenFOAM cases, numerical setup guidelines, post-processing scripts, validation examples, and datasets for reduced-order modelling.
 
-The application focuses on the DLR methane/hydrogen/nitrogen turbulent diffusion flame. The workflow shows how to set up and run a RANS combustion simulation with OpenFOAM `reactingFoam`, validate the temperature field against experimental data, and generate a structured CFD database for reduced-order modelling.
+The applications focuse on the DLR methane/hydrogen/nitrogen turbulent diffusion flame. The workflow shows how to set up and run a RANS combustion simulation with OpenFOAM `reactingFoam`, validate the temperature field against experimental data, and generate a structured CFD database for reduced-order modelling.
 
-# CFD & High-Fidelity Simulations
+# Index
+
+* [CFD & High-Fidelity Simulations](#cfd)
+
+  * [DLR Flame CFD Workflow](#cfd-workflow)
+  * [Tutorial](#cfd-tutorial)
+* [AI & Data-Driven Models](#ai)
+
+  * [HOSVD + GPR Parametric Interpolation](#ai-hosvd-gpr)
+  * [Tutorial](#hosvd-tutorial-and-post)
+  * [Post](#hosvd-tutorial-and-post)
+* [Tutorials](#tutorials)
+* [References](#references)
+* [Contributors](#contributors)
+
+# CFD & High-Fidelity Simulations <a id="cfd"></a>
+
+## DLR Flame CFD Workflow <a id="cfd-workflow"></a>
 
 This section provides a reproducible CFD workflow for the DLR turbulent non-premixed jet flame [1]. The burner consists of a central fuel jet containing CH4/H2/N2 and a surrounding dry-air coflow. The fuel is injected through an 8 mm nozzle, while the coflow air is supplied through a 140 mm coaxial nozzle. The geometry is given as follows. An axisymmetric wedge domain is used to reduce the computational cost while preserving the main flame structure and the external ambient region for air entrainment.
 
-<!-- IMAGES  -->
 <p style="text-align: center;">
     <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/DLR_burner_Geometry.png?raw=true" alt="DLR burner geometry" width="60%">
 </p>
 
 The simulation is performed with OpenFOAM-v10 using the `reactingFoam` solver. The case uses:
 
-- a multi-component perfect-gas thermophysical model;
-- JANAF thermodynamic data and Sutherland transport;
-- the standard `kEpsilon` RANS turbulence model;
-- the Eddy Dissipation Concept (EDC) for turbulence-chemistry interaction;
-- ODE chemistry integration with `seulex`;
-- TDAC acceleration with CH4 and H2 as initiating species;
-- blockMesh-based mesh generation and ParaView/OpenFOAM post-processing.
+* a multi-component perfect-gas thermophysical model;
+* JANAF thermodynamic data and Sutherland transport;
+* the standard `kEpsilon` RANS turbulence model;
+* the Eddy Dissipation Concept (EDC) for turbulence-chemistry interaction;
+* ODE chemistry integration with `seulex`;
+* TDAC acceleration with CH4 and H2 as initiating species;
+* blockMesh-based mesh generation and ParaView/OpenFOAM post-processing.
 
-The representive results are given as follows.
+The representative results are given as follows.
 
-<!-- IMAGES -->
 <p style="text-align: center;">
     <img src="https://github.com/modelflows/modelflowsapp/blob/dev/assets/img/DLR_burner_T_H2_H2O.png?raw=true" alt="Temperature and Mass fractions of H2O and H2" width="60%">
 </p>
@@ -50,40 +66,50 @@ The OpenFOAM workflow covers:
 6. validation through radial temperature profiles;
 7. organization of CFD outputs for reduced-order modelling.
 
-The full tutorial is available in the following section.
-  
-# AI & Data-Driven Models
+## Tutorial <a id="cfd-tutorial"></a>
 
-## Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR
+The complete step-by-step tutorial covering geometry generation, mesh generation, combustion-model setup, solver execution, validation, and post-processing is available here:
 
-Fast predictions of thermochemical variables is one of the necessary steps in making a functional digital twin for reactive flowsystems. The framework is to use Higher Order Singular Value Decomposition to reduce the dimensionality of the simulations and Gaussian Process Regression to interpolate the behaviour for new combinations of operating parameters. High fidelity CFD simulations are at the core of the study and design of combustion systems, but are often too slow and expensive to generate a full spectrum of the behaviour of the system for a wide spectrum of operating conditions. 
+* [Tutorial: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame](/_tutorials/2026-combustion_tutorial.md)
 
-The algorithm works in two stages: 
+# AI & Data-Driven Models <a id="ai"></a>
 
-1. Data is decomposed using HOSVD
-2. Gaussian Process Regression is used to interpolate
+## Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR <a id="ai-hosvd-gpr"></a>
 
-The intuitive idea is that HOSVD decomposes data as linear combination of eigenvectors. This means that instead of requiring all "pixels" the data is rewritten as a weighted sum of only a few pictures. The GPR is used to find out how much of each of these pictures is contained in new points that has not been used to build the basis.
+Fast predictions of thermochemical variables is one of the necessary steps in making a functional digital twin for reactive flow systems. The framework uses Higher Order Singular Value Decomposition (HOSVD) to reduce the dimensionality of the simulations and Gaussian Process Regression (GPR) to interpolate the behaviour for new combinations of operating parameters.
 
-The research post explain the mathematical aspects, while the tutorial provide all the details about how to implement the algorithm for the dataset described in the previous seciton. 
-- [Tutorial 2: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR]({{ '/software/tutorials/combustion-hosvd-gpr-tutorial/' | relative_url }})
-- [Post: Parametric interpolation of  DLR turbulent jet diffusion flame using HOSVD + GPR]({{ '/research/ai-combustion/' | relative_url }})
+High-fidelity CFD simulations are at the core of the study and design of combustion systems, but are often too slow and expensive to generate a complete description of the system behaviour across a broad range of operating conditions.
 
-Below a sample of the reoconstruction of the Temperature field for the flame used in the tutorial:
+The algorithm works in two stages:
+
+1. Data is decomposed using HOSVD.
+2. Gaussian Process Regression is used to interpolate the reduced coefficients.
+
+The intuitive idea is that HOSVD decomposes data as a linear combination of basis modes. Instead of requiring all spatial points of the original CFD solution, the data can be represented as a weighted combination of a limited number of dominant structures. GPR is then used to estimate the modal coefficients corresponding to unseen operating conditions.
+
+## Tutorial and Post <a id="hosvd-tutorial-and-post"></a>
+The research post explains the mathematical aspects, while the tutorial provides all implementation details for the dataset described in the previous section.
+
+* [Tutorial: Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
+* [Post: Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR](/_research/ai-models/combustion/hosvd_gpr_combustion_post.md)
+
+Below a sample of the reconstruction of the temperature field for the flame used in the tutorial:
+
 ![Reconstruction of Temperature field for Re=13000, mf=0.08](/assets/img/Tutorial/Combustion/hosvd_gpr/field_T.png)
 
+# Tutorials <a id="tutorials"></a>
 
-# Tutorials
+* [Tutorial: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame](/_tutorials/2026-combustion_tutorial.md)
 
-- [Tutorial 1: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame]({{ '/software/tutorials/2026-combustion-tutorial/' | relative_url }})
-- [Tutorial 2: Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR]({{ '/software/tutorials/combustion-hosvd-gpr-tutorial/' | relative_url }})
+* [Tutorial: Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
 
-# Contributors
-- Name: Isacco Faglioni
-- Name: Xiangrui Zou 
+# Contributors <a id="contributors"></a>
 
+* Name: Isacco Faglioni
+* Name: Xiangrui Zou
 
-<!-- REFERENCES -->
+# References <a id="references"></a>
+
 [*Bergmann, V., Meier, W., Wolff, D., & Stricker, W. (1998). Application of spontaneous Raman and Rayleigh scattering and 2D LIF for the characterization of a turbulent CH4/H2/N2 jet diffusion flame. Applied Physics B, 66(4), 489–502.*](https://doi.org/10.1007/s003400050424)
 
 [*De Lathauwer, L., De Moor, B., & Vandewalle, J. (2000). A multilinear singular value decomposition. SIAM Journal on Matrix Analysis and Applications, 21(4), 1253–1278.*](https://doi.org/10.1137/S0895479896305696)
