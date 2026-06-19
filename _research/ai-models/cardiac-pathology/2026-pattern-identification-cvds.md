@@ -40,9 +40,11 @@ Content:
 
 This data-driven application consists of two modules: **Medical data** and **CFD data**. The first one contains three blocks: *Pattern detection*, *Classification* and *Prediction*. The latter one contains one block: *Pattern detection*.
 
-## Medical data <a medical-data"></a>
+The tutorials devoted to the methods based on Artificial Intelligence (AI) for the diagnosis and prognosis of cardiovascular diseases could be found [*here*](https://modelflows.github.io/modelflowsapp/software/applications/2026-cardiac-pathology/#ai-tutorials).
+
+## Medical data <a id="medical-data"></a>
 The medical imaging datasets used for this first application are echocardiography video loops and magnetic resonance imaging (MRI): 
-1.	The echocardiography videos are taken with respect to two views: long axis and shorts axis views (LAX and SAX respectively). The images are taken from mice with different cardiac conditions including healthy, diabetic cardiomyopathy, myocardial infarction, obesity, TAC hypertrophy). Each video consists of ~120 frames (snapshots).
+1.	The echocardiography videos are taken with respect to two views: long axis and shorts axis views (LAX and SAX respectively). The images are taken from mice with different cardiac conditions including healthy, diabetic cardiomyopathy, myocardial infarction, obesity, TAC hypertrophy. Each video consists of ~120 frames (snapshots).
 2.	The MRI dataset consists of 10 MRI sequences, representing 10 different slices of the heart. In particular, 20 images (snapshots) of 128 × 128 × 1 resolution were acquired for each slice, resulting a total number of 200 snapshot per dataset. 
 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/ModelFloes_Cardiac_IMAGE00.png?raw=true)
@@ -131,7 +133,10 @@ Further details about the work explained in this section could be found in the f
 
 <!-- The following video summarizes the developed system and shows the obtained results in the diagnosis task: -->
 
-Download the code for **Diagnosis** in Python version [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/legacy-medical-data-tutorials/Diagnosis_scripts.zip).
+**Important Note:** this diagnosis framework is different to the diagnosis introduced in our tutorial [*here*](https://modelflows.github.io/modelflowsapp/software/applications/2026-cardiac-pathology/#ai-tutorials). 
+
+The code in Python version for **Diagnosis** presented in this section could be found [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/legacy-medical-data-tutorials/Diagnosis_scripts.zip). 
+
 The pretrained weights can be downloaded [*here*](https://drive.google.com/file/d/1tO9dv1zjzObGCOOrsoJgYpPxQZYdi2BC/view?usp=drive_link). 
 
 ### Prediction <a id="prediction"></a>
@@ -150,8 +155,13 @@ Further details about the work explained in this section could be found in the f
 
 <!-- The following video summarizes the developed system with the obtained results in the prognosis task:  -->
 
+We encourage readers to follow our step-by-step tutorial introduced [*here*](https://modelflows.github.io/modelflowsapp/software/applications/2026-cardiac-pathology/#ai-tutorials). 
+
 Download the code for **Prognosis** in Python version [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/legacy-medical-data-tutorials/Prognosis_scripts.zip).
-The pretrained weights can be downloaded [*here*](https://drive.google.com/file/d/1tyi5j6bJfCB1OhXh6c36eDPT4D8E8dST/view?usp=drive_link). A fine-tuned version can be found at Hugging Face [*here*](https://huggingface.co/abellnav/heart-failure-prognosis-echo). 
+
+The pretrained weights can be downloaded [*here*](https://drive.google.com/file/d/1tyi5j6bJfCB1OhXh6c36eDPT4D8E8dST/view?usp=drive_link). 
+
+A fine-tuned version can be found at Hugging Face [*here*](https://huggingface.co/abellnav/heart-failure-prognosis-echo). 
 
 ### Diagnosis and prognosis <a id="diagnosis-and-prognosis"></a>
 #### Masked Autoencoders
@@ -169,9 +179,7 @@ Further details about the work explained in this section could be found in the f
 
 [*Bell-Navas, A., Garicano-Mena, J., Ausiello, A., Clainche, S. L., Villalba-Orero, M., & Lara-Pezzi, E., CardioMOD-Net: A Modal Decomposition-Neural Network Framework for Diagnosis and Prognosis of HFpEF from Echocardiography Cine Loops. arXiv preprint arXiv:2601.01176, 2026.*](https://arxiv.org/abs/2601.01176)
 
-Code for **Diagnosis and Prognosis** in Python in progress...
-
-Pretrained weights in progress...
+Readers are invited to explore in more detail the [*tutorial*](https://modelflows.github.io/modelflowsapp/software/applications/2026-cardiac-pathology/#ai-tutorials) developed for diagnosis and prognosis, also mentioned at the beginning of this page.
 
 ## CFD Data <a id="cfd-data"></a>
 The growing impact of cardiovascular disease (CVD) requires advances in diagnosis and treatment. Recent developments in medical research have introduced innovative methods for understanding and treating complex diseases such as CVDs. Among these, Computational Fluid Dynamics (CFD) has emerged as a key tool for modeling the intricate dynamics of intracardiac blood flow. This approach not only enhances our fundamental understanding of cardiac function, but also paves the way for innovative treatment strategies.
@@ -181,9 +189,6 @@ For validation purposes, we base our study on the work of Zheng et al. and Vedul
 [*Zheng, X., Seo, J.H., Vedula, V., Abraham, T. and Mittal, R., 2012. "Computational modeling and analysis of intracardiac flows in simple models of the left ventricle." Eur. J. Mech. B Fluids, 35, pp.31-39.*](https://doi.org/10.1016/j.euromechflu.2012.03.002)
 
 [*Vedula, V., Fortini, S., Seo, J.H., Querzoli, G. and Mittal, R., 2014. "Computational modeling and validation of intraventricular flow in a simple model of the left ventricle." Theor. Comput. Fluid Dyn., 28, pp.589-604.*](https://doi.org/10.1007/s00162-014-0335-4)
-
-You can also see the explanation of this project in the following video:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XHdfQc7LLgA?si=jY4mia541q-MqgtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Pattern detection <a id="pattern-cfd"></a>
 

@@ -3,6 +3,7 @@ layout: post
 title: "Medical data"
 type: "Experimental / Cardiac"
 tldr: "Cardiac data used for cardiovascular disease research"
+order: 2
 ---
 
 ### Data index:
@@ -22,7 +23,8 @@ Database available [here](https://drive.google.com/drive/folders/1WJOnLmLEolYZcJ
 
 ## EchoNet-Dynamic <a id="cardiac-echonet-dynamic"></a>
 The EchoNet-Dynamic database is a public dataset published by Stanford University, which includes 10,030 labeled A4C echocardiogram videos and human expert annotations (measurements, tracings, and calculations) to provide a baseline to study cardiac motion and chamber sizes.
-You can find the database and the code at https://echonet.github.io/dynamic/
+
+[[Link to EchoNet-Dynamic](https://echonet.github.io/dynamic/)]
 
 ## PhysioNet - Phonocardiogram Dataset 2026 <a id="cardiac-phonocardiograms"></a>
 This dataset contains 4430 recordings from 1297 patients, 2435 recordings from 764 patients for training and 1277 recordings from 308 patients for testing.
