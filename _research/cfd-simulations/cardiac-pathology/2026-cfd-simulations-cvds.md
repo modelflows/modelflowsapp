@@ -30,19 +30,13 @@ Content:
 
   *  [Tutorials](https://modelflows.github.io/modelflowsapp/research/2026-cfd-simulations-cvds/#tutorials)
   *  [Results](https://modelflows.github.io/modelflowsapp/research/2026-cfd-simulations-cvds/#results)
+  *  [Publications](https://modelflows.github.io/modelflowsapp/research/2026-cfd-simulations-cvds/#publications)
 
 
-The steps to perform high-fidelity CFD simulations of dynamics of blood flow are explained here in this page. The module is **CFD data**, and contains the block *Tutorials*. The detailed explanations with the step-by-step videos and codes are available in these [tutorials](https://modelflows.github.io/modelflowsapp/software/applications/2026-cardiac-pathology/#cfd).
+The steps to perform high-fidelity CFD simulations of dynamics of blood flow are explained here in this page. The module is **CFD data**, and contains the block *Tutorials*. The detailed explanations with the step-by-step videos and codes are available in these [*tutorials*](https://modelflows.github.io/modelflowsapp/software/applications/2026-cardiac-pathology/#cfd).
 
 ## CFD Data <a id="cfd-data"></a>
 The growing impact of cardiovascular disease (CVD) requires advances in diagnosis and treatment. Recent developments in medical research have introduced innovative methods for understanding and treating complex diseases such as CVDs. Among these, Computational Fluid Dynamics (CFD) has emerged as a key tool for modeling the intricate dynamics of intracardiac blood flow. This approach not only enhances our fundamental understanding of cardiac function, but also paves the way for innovative treatment strategies.
-
-For validation purposes, we base our study on the work of Zheng et al. and Vedula et al:
-
-[*Zheng, X., Seo, J.H., Vedula, V., Abraham, T. and Mittal, R., 2012. "Computational modeling and analysis of intracardiac flows in simple models of the left ventricle." Eur. J. Mech. B Fluids, 35, pp.31-39.*](https://doi.org/10.1016/j.euromechflu.2012.03.002)
-
-[*Vedula, V., Fortini, S., Seo, J.H., Querzoli, G. and Mittal, R., 2014. "Computational modeling and validation of intraventricular flow in a simple model of the left ventricle." Theor. Comput. Fluid Dyn., 28, pp.589-604.*](https://doi.org/10.1007/s00162-014-0335-4)
-
 
 ### Tutorials <a id="tutorials"></a>
 The steps performed to set up CFD simulations of the left ventricle are explained here. These resources include all necessary files to replicate our results, offering a comprehensive guide for anyone aiming to deepen their understanding or reproduce our findings. 
@@ -54,33 +48,17 @@ We offer two approaches:
 * Idealized Geometry: Where the wall motion is defined analytically, and STL files are generated accordingly. 
 * Patient-Specific Geometry: Requires code adjustments since analytical expressions are unavailable. This process includes extracting the left ventricle model from cardiotomography data to ensure accurate patient-specific simulations.
 
-Download the necessary files [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/CFD_tutorial/generateSTLFiles.zip).
-
-Download the slides [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/CFD_tutorial/Slides_Tutorial_GeometryPreprocessing.pptx).
+We encourage the readers to follow our step-by-step tutorial introduced [*here*](https://modelflows.github.io/modelflowsapp/software/applications/2026-cardiac-pathology/#cfd). This geometry pre-processing stage, containing the required tools, files and the documentation, is explained [*here*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/#cfd-tutorial). 
 
 #### CFD with Star-CCM+
 This section provides a complete guide on replicating our blood flow simulations inside the left ventricle using STAR-CCM+. From loading the geometry and meshing to configuring the simulation settings, we walk you through each step to ensure accurate reproduction of our results.
 
-Download the necessary files [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/CFD_tutorial/Tutorial_Star-CCM+.zip).
-
-Download the slides [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/CFD_tutorial/Slides_Tutorial_StarccmCFD.pptx).
+We encourage the readers to follow our step-by-step tutorial introduced [*here*](https://modelflows.github.io/modelflowsapp/software/applications/2026-cardiac-pathology/#cfd). This CFD with Star-CCM+ stage, containing the required tools, files and the documentation, is explained [*here*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/#cfd-tutorial). 
 
 #### CFD with Ansys Fluent
 In this section, we outline the entire process of setting up blood flow simulations within the left ventricle using Ansys Fluent. From importing the geometry and generating the mesh to configuring the simulation parameters, this guide covers everything needed to successfully replicate our results.
 
-Download the necessary files [*here*](https://drive.upm.es/s/A8EuWtjSuMAetHc).
-
-Download the slides [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/raw/refs/heads/main/CFD_tutorial/Slides_Tutorial_FluentCFD.pptx).
-
-You can obtain the necessary tools and softwares here:
-* [Matlab](https://es.mathworks.com/products/matlab.html)
-* [Spyder](https://www.spyder-ide.org/)
-* [Star-CCM+](https://plm.sw.siemens.com/en-US/simcenter/fluids-thermal-simulation/star-ccm/?srsltid=AfmBOoqvQTHcTwcvPnM1Fc9M8LCw2NWBRd50mWwnrLL_ZBjIjw5h8dR0)
-* [Ansys Fluent](https://www.ansys.com/products/fluids/ansys-fluent)
-* [3D Slicer](https://www.slicer.org/)
-* [MeshLab](https://www.meshlab.net/)
-* [ParaView](https://www.paraview.org/)
-* [CT Scans](https://figshare.com/s/2a5de3a2b89a3fb87932?file=5011837)
+We encourage the readers to follow our step-by-step tutorial introduced [*here*](https://modelflows.github.io/modelflowsapp/software/applications/2026-cardiac-pathology/#cfd). This CFD with Ansys Fluent stage, containing the required tools, files and the documentation, is explained [*here*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/#cfd-tutorial). 
 
 ### Results <a id="results"></a>
 The ideal models of the left ventricle (LV) for our simulations are taken directly from these references and are shown in the following figure. These models essentially represent an idealization of the ventricular cavity with two tubes attached to simulate inflow and outflow through the mitral and aortic valves, respectively.
@@ -95,3 +73,11 @@ The primary objective of this study is to examine the formation and evolution of
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/Vedula_vorticity.png?raw=true)
 
 This analysis highlights the importance of CFD in advancing our understanding of intracardiac flow dynamics and developing improved diagnostic and therapeutic strategies for cardiovascular diseases.
+
+### Publications <a id="publications"></a>
+
+For validation purposes, we base our study on the work of Zheng et al. and Vedula et al:
+
+[*Zheng, X., Seo, J.H., Vedula, V., Abraham, T. and Mittal, R., 2012. "Computational modeling and analysis of intracardiac flows in simple models of the left ventricle." Eur. J. Mech. B Fluids, 35, pp.31-39.*](https://doi.org/10.1016/j.euromechflu.2012.03.002)
+
+[*Vedula, V., Fortini, S., Seo, J.H., Querzoli, G. and Mittal, R., 2014. "Computational modeling and validation of intraventricular flow in a simple model of the left ventricle." Theor. Comput. Fluid Dyn., 28, pp.589-604.*](https://doi.org/10.1007/s00162-014-0335-4)
