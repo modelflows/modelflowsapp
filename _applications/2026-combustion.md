@@ -24,7 +24,6 @@ The applications focuse on the DLR methane/hydrogen/nitrogen turbulent diffusion
   * [HOSVD + GPR Parametric Interpolation](#ai-hosvd-gpr)
   * [Tutorial](#hosvd-tutorial-and-post)
   * [Post](#hosvd-tutorial-and-post)
-* [Tutorials](#tutorials)
 * [References](#references)
 * [Contributors](#contributors)
 
@@ -87,26 +86,19 @@ The algorithm works in two stages:
 
 The intuitive idea is that HOSVD decomposes data as a linear combination of basis modes. Instead of requiring all spatial points of the original CFD solution, the data can be represented as a weighted combination of a limited number of dominant structures. GPR is then used to estimate the modal coefficients corresponding to unseen operating conditions.
 
-## Tutorial and Post <a id="hosvd-tutorial-and-post"></a>
+## Tutorial <a id="hosvd-tutorial-and-post"></a>
 The research post explains the mathematical aspects, while the tutorial provides all implementation details for the dataset described in the previous section.
 
 * [Tutorial: Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
-* [Post: Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR](/_research/ai-models/combustion/hosvd_gpr_combustion_post.md)
 
 Below a sample of the reconstruction of the temperature field for the flame used in the tutorial:
 
 ![Reconstruction of Temperature field for Re=13000, mf=0.08](/assets/img/Tutorial/Combustion/hosvd_gpr/field_T.png)
 
-# Tutorials <a id="tutorials"></a>
-
-* [Tutorial: OpenFOAM RANS simulation of the DLR CH4/H2/N2 turbulent diffusion flame](/_tutorials/2026-combustion_tutorial.md)
-
-* [Tutorial: Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
-
 # Contributors <a id="contributors"></a>
 
-* Name: Isacco Faglioni
-* Name: Xiangrui Zou
+* Isacco Faglioni
+* Xiangrui Zou
 
 # References <a id="references"></a>
 
@@ -114,8 +106,8 @@ Below a sample of the reconstruction of the temperature field for the flame used
 
 [*De Lathauwer, L., De Moor, B., & Vandewalle, J. (2000). A multilinear singular value decomposition. SIAM Journal on Matrix Analysis and Applications, 21(4), 1253–1278.*](https://doi.org/10.1137/S0895479896305696)
 
-[*Williams, C. K. I., & Rasmussen, C. E. (1995). Gaussian processes for regression. Advances in Neural Information Processing Systems, 8.*](https://proceedings.neurips.cc/paper/1995/hash/7cce53cf90577442771720a370c3c723-Abstract.html)
+[*Williams, C. K. I., & Rasmussen, C. E. (1995). Gaussian processes for regression. Advances in Neural Information Processing Systems, 8.*](https://proceedings.neurips.cc/paper/1995/hash/7cce53cf90577442771720a370c3c723-Abstract.html))
 
-[*Barragán, A., et al. (2025). HOSVD-SR: A Physics-Based Deep Learning Framework for Super-Resolution in Fluid Dynamics.*](https://arxiv.org/abs/2504.17994)
+[*Barragán, G., Hetherington, A., Abadía-Heredia, R., Garicano-Mena, J., & Le Clainche, S. (2025). HOSVD-SR: A Physics-Based Deep Learning Framework for Super-Resolution in Fluid Dynamics. arXiv:2504.17994.*](https://arxiv.org/abs/2504.17994)
 
-[*Sengupta, A., et al. (2025). Hybrid machine learning models based on physical patterns to accelerate CFD simulations: a short guide on autoregressive models.*](https://arxiv.org/abs/2504.06774)
+[*Sengupta, A., Abadía-Heredia, R., Hetherington, A., Pérez, J. M., & Le Clainche, S. (2025). Hybrid machine learning models based on physical patterns to accelerate CFD simulations: a short guide on autoregressive models. arXiv:2504.06774.*](https://arxiv.org/abs/2504.06774)
