@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Reduced-order modeling of viscoelastic flows"
+date: 2026-06-18
 category: "AI & Data-Driven Models"
 topic: "Flow Patterns in Complex Flows"
 thumbnail: "/assets/img/flow-patterns-complex-flows/thumbnail_viscoelastic-jet.png"
