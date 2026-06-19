@@ -1,11 +1,10 @@
 ---
-
 layout: page
 title: "Combustion"
 area: "Combustion and reactive flows"
 tldr: "Physics-based CFD, reduced-order modelling, and AI-driven prediction for turbulent combustion and reactive flows"
 permalink: /software/applications/2026-combustion/
---------------------------------------------------
+---
 
 # Overview
 
@@ -87,11 +86,10 @@ The algorithm works in two stages:
 
 The intuitive idea is that HOSVD decomposes data as a linear combination of basis modes. Instead of requiring all spatial points of the original CFD solution, the data can be represented as a weighted combination of a limited number of dominant structures. GPR is then used to estimate the modal coefficients corresponding to unseen operating conditions.
 
-## Tutorial and Post <a id="hosvd-tutorial-and-post"></a>
+## Tutorial <a id="hosvd-tutorial-and-post"></a>
 The research post explains the mathematical aspects, while the tutorial provides all implementation details for the dataset described in the previous section.
 
 * [Tutorial: Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR](/_tutorials/combustion-hosvd-gpr-tutorial.md)
-* [Post: Parametric interpolation of DLR turbulent jet diffusion flame using HOSVD + GPR](/_research/ai-models/combustion/hosvd_gpr_combustion_post.md)
 
 Below a sample of the reconstruction of the temperature field for the flame used in the tutorial:
 
@@ -105,8 +103,8 @@ Below a sample of the reconstruction of the temperature field for the flame used
 
 # Contributors <a id="contributors"></a>
 
-* Name: Isacco Faglioni
-* Name: Xiangrui Zou
+* Isacco Faglioni
+* Xiangrui Zou
 
 # References <a id="references"></a>
 
