@@ -6,10 +6,7 @@ topic: "Air Pollution"
 thumbnail: "/assets/img/meth (2).jpg"
 tldr: "LSTM-based temporal calibration of low-cost air-quality sensors for PM2.5, PM10, and NO2 using OxAria co-located reference data."
 ---
-<p class="post-meta">
-  Posted on 18 June 2026
-</p>
----
+
 
 # Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors
 

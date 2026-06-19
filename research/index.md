@@ -79,4 +79,13 @@ Here is a showcase of the ongoing projects by the ModelFLOWs group members. Choo
       </div>
     </div>
   </div>
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title">Flow Patterns in Complex Flows</h4>
+        <p class="card-text">Identifying flow structures in non-Newtonian and multiphase flows.</p>
+        <a href="{{ '/research/flow-patterns-complex-flows' | relative_url }}" class="btn btn-primary btn-sm">View Projects</a>
+      </div>
+    </div>
+  </div>
 </div>
