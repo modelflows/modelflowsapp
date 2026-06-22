@@ -93,7 +93,7 @@ Here is a showcase of the ongoing projects by the ModelFLOWs group members. Choo
         <div class="card-body">
           <h4 class="card-title">Reduced Order Models for Combustion</h4>
           <p class="card-text">Building ROMs for reactive flows.</p>
-          <a href="{{ '/research/combustion' | relative_url }}" class="btn btn-primary btn-sm">View Projects</a>
+          <a href="{{ '/research/ai-combustion' | relative_url }}" class="btn btn-primary btn-sm">View Projects</a>
         </div>
       </div>
     </div>
