@@ -12,7 +12,7 @@ Content:
 * [LES-hybrid ROM](#lesrom)
    * [CFD setup](#setup)
    * [Results](#results)
-* [Related Publications](#pub)
+* [Related Publications](#pubs)
 
 ## LES-hybrid ROM <a id="lesrom"></a>
 Large Eddy Simulations (LES) have been widely used in various scenarios due to their capability of capturing more detailed flow fields than those captured by Reynolds-Averaged Navier–Stokes (RANS) simulations and consuming fewer computational resources than Direct Numerical Simulations (DNS). However, for applications involving large-scale devices and combustion, huge computational resources are still required. Recent developments in machine learning have introduced innovative methods for accelerating Computational Fluid Dynamics (CFD). Among these, the method combining CFD and hybrid reduced order models (ROMs) is a promising way to accelerate the simulations [1]. This approach not only enhances our fundamental understanding of combustion patterns but also paves the way for innovative strategies to improve the combustion efficiency.
@@ -56,7 +56,7 @@ Based on the data set obtained by CFD simulations, the evolution process of flow
 Additionally, the predicted temperature and H2O mass fraction are compared with LES results along radial direction at different axial positions and time instants, shown as follows. 
 ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/JHC_Prediction-curves.png?raw=true)
 
-## Related Publications <a id="pub"></a>
+## Related Publications <a id="pubs"></a>
 Zou, X., Abadia-Heredia, R., Saavedra, L., Parente, A., Xue, R., & Clainche, S. L. (2025). Generative artificial intelligence and hybrid models to accelerate LES in reactive flows: Application to hydrogen/methane combustion. arXiv preprint arXiv:2507.08426.(https://doi.org/10.48550/arXiv.2507.08426)
 
 Zou, X., Parente, A., & Le Clainche, S. (2026). Divergence detection and flow structure analysis in POD-DL predictions of a hydrogen-methane flame. European Journal of Mechanics-B/Fluids, 204515. (https://doi.org/10.1016/j.euromechflu.2026.204515)
