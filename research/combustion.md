@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Combustion
-subtitle: Analysis of complex reactive flows and thermal dynamics
+subtitle: CFD simulations of complex reactive flows
 ---
 
-This section collects all the research done by our group regarding combustion simulations and hybrid reduced-order models.
+This section collects all the research done by our group regarding combustion simulations.
 
 <div class="row">
   {% assign current_posts = site.research | where: "topic", "Combustion-LES-ROM" %}

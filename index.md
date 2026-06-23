@@ -19,16 +19,17 @@ subtitle: Welcome to ModelFLOWs
   <div class="text-start">
     <h3>Explore Our Resources</h3>
     <ul>
-      <li><strong>Notebooks & Code:</strong> Hands-on notebooks showcasing our research methodologies.</li>
-      <li><strong>Tutorials & YouTube Channel:</strong> Step-by-step guides and video explanations of our latest advancements.</li>
-      <li><strong>ModelFLOWs-app:</strong> Our open-source software for data post-processing, pattern identification, and reduced order modeling. This tool leverages modal decomposition and deep learning architectures to analyze complex datasets efficiently.
-        <ul>
+      <li><strong>Notebooks & Codes:</strong> Reference implementations, interactive notebooks, and tutorials covering ModelFLOWs methodologies and applications.</li>
+      <li><strong>Applications:</strong> Ready-to-use software for modal decomposition, reduced-order modeling, forecasting, and data-driven analysis.</li>
+      <li><strong>Datasets:</strong> Curated datasets and benchmark cases from fluid dynamics, medicine, urban environments, and other complex dynamical systems.</li>
+      <li><strong>Tutorials & YouTube Channel:</strong> Step-by-step guides, educational material, and video demonstrations of ModelFLOWs methodologies and software.</li>
+      <li><strong>ModelFLOWs-app</strong> is an open-source ecosystem integrating software, applications, datasets, and educational resources for the analysis and modeling of complex dynamical systems.</li>
+      <!-- <ul>
           <li>Available as a <strong>desktop</strong> application and a <strong>web-browser</strong> version built with <em>Streamlit</em>.</li>
           <li>The <strong>web-browser</strong> version is designed for educational purposes, providing a demo to explore capabilities.</li>
           <li>The <strong>desktop</strong> application is fully equipped for real research and allows you to process your own datasets.</li>
         <li>Find <strong>installation & setup</strong> guides in the <strong>Software menu</strong>.</li>
-        </ul>
-      </li>
+        </ul> -->
     </ul>
   </div>
 </div>
@@ -38,3 +39,20 @@ subtitle: Welcome to ModelFLOWs
   <br><br>
   <p>Join us in pushing the boundaries of computational modeling and data-driven science!</p>
 </div>
+
+<hr class="mt-5">
+
+<section class="mt-5 mb-5">
+  <h3>Citation</h3>
+
+  <p>If you use <strong>ModelFLOWs-app</strong> in your research, please cite:</p>
+
+  <blockquote class="blockquote border-start ps-3">
+    <p class="mb-0">
+      A. Hetherington, A. Corrochano, R. Abadía-Heredia, E. Lazpita,
+      E. Muñoz, E. Díaz, E. Maiora, M. López-Martín, S. Le Clainche.
+      <em>ModelFLOWs-app: data-driven post-processing and reduced order modelling tools.</em>
+      Computer Physics Communications, 301, 109217, 2024.
+    </p>
+  </blockquote>
+</section>

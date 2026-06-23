@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Software
-subtitle: Interactive notebooks, application workflows, databases, and open-source tools 
+subtitle: An open-source ecosystem of software, applications, datasets, and tutorials for complex dynamical systems. 
 ---
 
 Welcome to the ModelFLOWs Software Hub. This is the main umbrella for all our open science engineering tools, models, and datasets.
@@ -11,8 +11,8 @@ Welcome to the ModelFLOWs Software Hub. This is the main umbrella for all our op
   <div class="col-md-4 mb-4">
     <div class="card h-100 shadow-sm">
       <div class="card-body text-center">
-        <h3 class="card-title"><i class="fas fa-laptop-code"></i> Notebooks</h3>
-        <p class="card-text text-muted">A collection of interactive Jupyter notebooks showcasing modeling code and architectures.</p>
+        <h3 class="card-title"><i class="fas fa-laptop-code"></i> Notebooks & Codes </h3>
+        <p class="card-text text-muted">Interactive notebooks and source codes for ModelFLOWs methodologies.</p>
         <hr>
         <a href="{{ '/software/notebooks' | relative_url }}" class="btn btn-primary d-block">Browse Notebooks</a>
       </div>

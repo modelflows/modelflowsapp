@@ -1,29 +1,30 @@
 ---
 layout: post
-title: "Introduction to Deep Learning for Fluids"
+title: "Reduced-Order Deep Learning"
 topic: "Deep Learning"
-tldr: "Neural Networks architectures and frameworks for data-driven modeling."
+tldr: "Hybrid POD-DL and latent-space learning approaches for complex dynamical systems."
+order: 2
 ---
 
 Codes available:
-1. [Parametric Study](https://modelflows.github.io/modelflowsapp/deeplearning/#parametric-study)
-    * [Multiparametric Tool](https://modelflows.github.io/modelflowsapp/deeplearning/#multiparametric-tool)
+1. [Parametric Study](#parametric-study)
+    * [Multiparametric Tool](#multiparametric-tool)
 
-2. [Spatial Resolution Enhancement](https://modelflows.github.io/modelflowsapp/deeplearning/#spatial-resolution-enhancement)
-    * [Superresolution Tool](https://modelflows.github.io/modelflowsapp/deeplearning/#superresolution-tool)
+2. [Spatial Resolution Enhancement](#spatial-resolution-enhancement)
+    * [Superresolution Tool](#superresolution-tool)
 
-3. [Temporal Forecasting](https://modelflows.github.io/modelflowsapp/deeplearning/#temporal-forecasting)
-    * [Hybrid Predictive Model: POD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model)
-        - [POD-DL: Fixed temporal horizon](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-fixed-h)
-        - [POD-DL: Autoregressive](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-ar)
-   * [Hybrid Predictive Model: HOSVD-DL](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model)
-        - [HOSVD-DL: Autoregressive](https://modelflows.github.io/modelflowsapp/deeplearning/#hybrid-predictive-model-ar)
-    * [Remote Sensing and DLinear](https://modelflows.github.io/modelflowsapp/deeplearning/#dlinear)
-    * [Deep Learning Models](https://modelflows.github.io/modelflowsapp/deeplearning/#full-dl-generative-model)
-        - [Residual Autoencoder (point forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-residual)
-        - [Variational Autoencoder (probabilistic forecasting)](https://modelflows.github.io/modelflowsapp/deeplearning/#full-generative-variational)
-4. [Adaptive Methodology](https://modelflows.github.io/modelflowsapp/deeplearning/#adaptive-methodology)
-5. [Control](https://modelflows.github.io/modelflowsapp/deeplearning/#control)
+3. [Temporal Forecasting](#temporal-forecasting)
+    * [Hybrid Predictive Model: POD-DL](#hybrid-predictive-model)
+        - [POD-DL: Fixed temporal horizon](#hybrid-predictive-model-fixed-h)
+        - [POD-DL: Autoregressive](#hybrid-predictive-model-ar)
+   * [Hybrid Predictive Model: HOSVD-DL](#hybrid-predictive-model)
+        - [HOSVD-DL: Autoregressive](#hybrid-predictive-model-ar)
+    * [Remote Sensing and DLinear](#dlinear)
+    * [Deep Learning Models](#full-dl-generative-model)
+        - [Residual Autoencoder (point forecasting)](#full-generative-residual)
+        - [Variational Autoencoder (probabilistic forecasting)](#full-generative-variational)
+4. [Adaptive Methodology](#adaptive-methodology)
+5. [Control](#control)
 
 ## Parametric Study <a id="parametric-study"></a>
 
@@ -49,6 +50,9 @@ This tool has been validated on datasets obtained from numerical simulations at 
 
 ![Multi-parametric tool - Methodology](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_multipar.png?raw=true)
 
+[Barragán, G., Hetherington, A., Sengupta, A., Abadía-Heredia, R., Garicano-Mena, J., Le Clainche, S., MoTIF: A Mode-Structured Tensor Framework for Multi-Parametric Approximation, Super-Resolution and Forecasting of Unsteady Systems, arXiv:2510.25625, 2025.](https://arxiv.org/abs/2510.25625)
+
+
 Download the code [*here*](https://github.com/modelflows/notebooks/raw/main/deep-learning/Multiparametric.zip) or the Jupyter notebook [*here*](https://github.com/modelflows/notebooks/raw/main/deep-learning/Multiparametric.zip)
 
 Download the databases [*here*]()
@@ -62,7 +66,10 @@ In order to overcome the limitations of conventional numerical solvers, a fully 
 
 ![Super resolution tool - Methodology ](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_Barragan_superresolution.png?raw=true)
 
-Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/SUPERRESOLUTION.zip).  -->
+[Barragán, G., Hetherington, A., Abadía-Heredia, R., Garicano-Mena, J., Le Clainche, S., HOSVD-SR: A Physics-Based Deep Learning Framework for Super-Resolution in Fluid Dynamics, arXiv:2504.17994, 2025.](https://arxiv.org/abs/2504.17994)
+
+
+Download the code [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/SRtool.zip).  -->
 
 ## Temporal Forecasting <a id="temporal-forecasting"></a>
 
@@ -106,7 +113,7 @@ LC-SVD-DLinear (and LC-HOSVD-DLinear) are two hybrid machine learning models tha
 
 ![LC-SVD-DLinear architecture summary](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/LC-SVD-DLinear.jpg?raw=true) 
 
-[Hetherington, A., Leonés, J. L., & Clainche, S. L. (2024). LC-SVD-DLinear: A low-cost physics-based hybrid machine learning model for data forecasting using sparse measurements. arXiv preprint arXiv:2411.17433.](https://arxiv.org/abs/2411.17433)
+[Hetherington, A., López-Leones, J., Le Clainche, S., LC-SVD-DLinear: A low-cost physics-based hybrid machine learning model for data forecasting using sparse measurements , Exp. Syst. Appl., 307, 131009, 2026.](https://arxiv.org/abs/2411.17433)
 
 Download the code for **SVD-DLinear** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/SVD-DLinear.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/SVD-DLinear.ipynb).  
 Download the code for **LC-SVD-DLinear** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/deep-learning/LC-SVD-DLinear.zip) or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/deep-learning/LC-SVD-DLinear.ipynb).  
