@@ -7,7 +7,7 @@ subtitle: CFD simulations of complex reactive flows
 This section collects all the research done by our group regarding combustion simulations.
 
 <div class="row">
-  {% assign current_posts = site.research | where_exp: "post", "post.topic == 'Combustion' and post.category == 'CFD & High-Fidelity Simulations'" %}
+  {% assign current_posts = site.research | where: "topic", "Combustion-LES-ROM" %}
   {% for post in current_posts %}
   <div class="col-md-12 mb-4">
     <div class="card flex-row" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; padding: 15px;">
