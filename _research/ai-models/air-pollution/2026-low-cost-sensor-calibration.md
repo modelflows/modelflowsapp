@@ -161,8 +161,7 @@ The calibrated predictions are first evaluated using scatter plots against the r
 </p>
 
 <p align="center">
-  <em>
-  Calibrated versus reference concentrations for PM2.5, PM10, and NO2 across the test sets.
+  Scatter plots PM2.5, PM10, and NO2 across the test sets.
   </em>
 </p>
 
