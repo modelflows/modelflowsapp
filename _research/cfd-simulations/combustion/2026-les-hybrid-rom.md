@@ -1,7 +1,7 @@
 ---
 layout: page
 category: "CFD & High-Fidelity Simulations"
-topic: "Combustion-LES-ROM"
+topic: "Combustion-LES-hyROM"
 thumbnail: "assets/img/JHC_burner_geometry.jpg"
 tldr: "LES and predictive hybrid ROMs based on POD combined with deep learning architectures for turbulent jet flames."
 title: LES-based POD-DL modeling for Turbulent Jet Flames
