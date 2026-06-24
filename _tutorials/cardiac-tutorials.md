@@ -30,8 +30,8 @@ Content:
 The full tutorial is available in the Sphinx repository [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/diagnosis_tutorial):
 
 - Repository: AI-Based Cardiac Diagnosis from Echocardiography
-- [*Diagnosis Tutorial*](https://github.com/modelflows/ModelFLOWs-cardiac/blob/main/diagnosis_tutorial/TUTORIAL.md)
-- [*Documentation page*](https://github.com/modelflows/ModelFLOWs-cardiac/blob/main/diagnosis_tutorial/docs/index.md)
+- [*Diagnosis Tutorial*](https://github.com/modelflows/ModelFLOWs-cardiac/blob/main/diagnosis_tutorial/TUTORIAL.md): Provides a step-by-step guide on how to use the diagnosis codes.
+- [*Documentation page*](https://github.com/modelflows/ModelFLOWs-cardiac/blob/main/diagnosis_tutorial/docs/index.md): Describes the purpose and functionality of each code and script included in the repository.
 
 ### What the tutorial covers
 
@@ -53,8 +53,8 @@ The full tutorial is available in the Sphinx repository [*here*](https://github.
 The full tutorial is available in the Sphinx repository [*here*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/prognosis_tutorial):
 
 - Repository: AI-Based Cardiac Prognosis from Echocardiography
-- [*Prognosis Tutorial*](https://github.com/modelflows/ModelFLOWs-cardiac/blob/main/prognosis_tutorial/TUTORIAL.md)
-- [*Documentation page*](https://github.com/modelflows/ModelFLOWs-cardiac/blob/main/prognosis_tutorial/docs/index.md)
+- [*Prognosis Tutorial*](https://github.com/modelflows/ModelFLOWs-cardiac/blob/main/prognosis_tutorial/TUTORIAL.md): Provides a step-by-step guide on how to use the prognosis codes.
+- [*Documentation page*](https://github.com/modelflows/ModelFLOWs-cardiac/blob/main/prognosis_tutorial/docs/index.md): Describes the purpose and functionality of each code and script included in the repository.
 
 ### What the tutorial covers
 
