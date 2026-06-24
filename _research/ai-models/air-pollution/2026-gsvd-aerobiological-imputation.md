@@ -4,7 +4,6 @@ category: "AI & Data-Driven Models"
 topic: "Air Pollution"
 thumbnail: "assets/img/Gappy.png"
 tldr: "Evaluation of Gappy Singular Value Decomposition for imputing aerobiological datasets compared with statistical methods."
-title: Air pollution [Placeholder name]
 subtitle: Our studies focused on air pollution
 ---
 
@@ -13,6 +12,9 @@ Aerobiological data (e.g. pollen and spores) are typically measured on a daily b
 In this research, a simulation study was conducted to evaluate, for the first time, the effectiveness of Gappy Singular Value Decomposition (GSVD) in imputing aerobiological datasets, comparing it with a well-known statistical method, the moving mean algorithm. The GSVD is part of [*ModelFLOWs-app*](https://github.com/modelflows/ModelFLOWs-app) and it has been adapted for the present study. See more details of this research here:
 
 [*Tagilaferro, S., Corrochano, A., Marchetti, P., Marcon, A., Le Clainche, S., A new method based on physical patterns to impute aerobiological datasets, PLoS ONE 19(11): e0314005, 2024.*](https://doi.org/10.1371/journal.pone.0314005)
+
+For further information, the GSVDcode can be found here: <a href="{{ '/software/notebooks/#spatial-resolution-enhancement' | relative_url }}">GSVD</a>. GSVD reconstructs missing or incomplete data by fitting the available measurements to a reduced basis. The estimated modal coefficients are then used to recover the full field, filling the missing regions while preserving the dominant flow structures.
+
 
 ## Aerobiological data
 Daily pollen concentrations for the period 2018-2022 were downloaded from the POLLnet Italian aerobiological monitoring network using the [*“pollnet” R package*](https://rpubs.com/gbonafe/pollnet-data-extraction). Alnus and Poaceae pollen measured at two monitoring stations in northern Italy were selected for the analysis due to their different load and seasonality. The pollen season of the year 2022 was chosen as simulation period to ensure a complete data series for the preceding years, thus guaranteeing the applicability of the data-driven method.

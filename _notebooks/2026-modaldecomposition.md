@@ -1,27 +1,29 @@
 ---
 layout: page
 topic: "Modal Decomposition"
-tldr: "Tools to identify coherent structures and patterns in fluid dynamics."
+tldr: "Modal decomposition of complex dynamical systems."
 title: Modal Decomposition
+order: 1
 <!--subtitle: GENERAL SUBTITLE -->
 ---
 
 Codes available:
-1. [Pattern Detection](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-detection)
-    * [HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hosvd)
-    * [HODMD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hodmd)
-    * [Low-cost Algorithms](https://modelflows.github.io/modelflowsapp/modaldecomposition/#pattern-hodmd)
-        - [Low-cost SVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-svd)
-        - [Low-cost HOSVD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-hosvd)
-        - [Low-cost HODMD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#low-cost-hodmd)
+1. [Pattern Detection](#pattern-detection)
+    * [HOSVD](#pattern-hosvd)
+    * [HODMD](#pattern-hodmd)
+    * [Spatio Temporal Koopman Decomposition (STKD)](#STKD)
+    * [Low-cost Algorithms](#low-cost)
+        - [Low-cost SVD](#low-cost-svd)
+        - [Low-cost HOSVD](#low-cost-hosvd)
+        - [Low-cost HODMD](#low-cost-hodmd)
 
-2. [Spatial Resolution Enhancement](https://modelflows.github.io/modelflowsapp/modaldecomposition/#spatial-resolution-enhancement)
-    * [Gap Filling Tool](https://modelflows.github.io/modelflowsapp/modaldecomposition/#gap-filling-tool)
-    * [Superresolution Tool](https://modelflows.github.io/modelflowsapp/modaldecomposition/#superresolution-tool)
+2. [Spatial Resolution Enhancement](#spatial-resolution-enhancement)
+    * [Gap Filling Tool](#gap-filling-tool)
+    * [Superresolution Tool](#superresolution-tool)
 
-3. [Control](https://modelflows.github.io/modelflowsapp/modaldecomposition/#control)
-   * [Passive Flow Control with HODMD](https://modelflows.github.io/modelflowsapp/modaldecomposition/#passive-flow-control-with-hodmd)
-   * [Passive Flow Control with Resolvent Analysis](https://modelflows.github.io/modelflowsapp/modaldecomposition/#passive-flow-control-with-resolvent-analysis)
+3. [Control](#control)
+   * [Passive Flow Control with HODMD](#passive-flow-control-with-hodmd)
+   * [Passive Flow Control with Resolvent Analysis](#passive-flow-control-with-resolvent-analysis)
 
 
 
@@ -78,6 +80,21 @@ Download the code for **multi-dimensional iterative HODMD** in MATLAB version [*
 in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/mdhodmd.zip),
 or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/3dd21666bdc0777dcfe047fadf93d46053f975f9/modal-decomposition/python/mdhodmd.ipynb).
 
+### Spatio Temporal Koopman Decomposition (STKD) <a id="STKD"></a>
+The Spatio-Temporal Koopman Decomposition (STKD) extends the High-Order Dynamic Mode Decomposition (HODMD) by enabling spatio-temporal analysis of multidimensional data. It represents spatio-temporal fields as combinations of traveling wave modes, each characterized by specific wavenumbers and spatial growth rates, forming intricate standing or propagating patterns. STKD accommodates expansions along multiple spatial dimensions, allowing complex dynamics to be captured across directions such as spanwise and streamwise.In the context of traveling waves, this decomposition allows us to describe how spatial patterns evolve over time in terms of their fundamental modes.STKD analysis helps us understand
+
+a) Dominant Wavenumbers and Frequencies: Identifying which spatial wavenumbers and temporal frequencies dominate the dynamics.
+b) Growth and Decay: Modes with positive/negative growth rates  indicate whether a wave pattern is amplifying or decaying over time.
+
+![Flowchart1](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/2025_01_30_pillai_stkd.png?raw=true)
+
+[Le Clainche, S., Vega, J.M., ‘Spatio-Temporal Koopman Decomposition’, J. of Nonlin. Sci. Vol. 28 (3), 1-50, 2018 ](https://link.springer.com/article/10.1007/s00332-018-9464-z)
+
+Application to identify flow instabilitites:
+[Le Clainche, S., Izbassarov, D., Rosti, M., Brandt, L., & Tammisola, O. (2020). Coherent structures in the turbulent channel flow of an elastoviscoplastic fluid. Journal of Fluid Mechanics, 888, A5.](https://www.researchgate.net/publication/338544827_Coherent_structures_in_the_turbulent_channel_flow_of_an_elastoviscoplastic_fluid)
+
+Download the code for **STKD** in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/stkd.zip).
+
 
 ### Low-cost Algorithms <a id="low-cost"></a>
 
@@ -91,19 +108,37 @@ Low-cost singular value decomposition (LC-SVD) is a modal decomposition-based da
 Download the code for **low-cost SVD** in Python version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/python/Low-cost-singular-value-decomposition.zip),
 or open it in [*Colab*](https://github.com/modelflows/notebooks/blob/main/modal-decomposition/python/Low-cost-singular-value-decomposition.ipynb).
 
+#### Low-cost HOSVD <a id="low-cost-hosvd"></a>
+
+Low-cost High Order Singular Value Decomposition (LC-HOSVD) extends the low-cost modal reconstruction idea to multidimensional tensor databases. Unlike standard SVD, where the dataset is reshaped into a matrix, LC-HOSVD preserves the natural tensor structure of the data. This is especially useful for flow databases arranged in several dimensions, such as spatial directions, physical variables, parameters, and time. The method first selects a reduced set of representative sensor locations from the original high-resolution database. These sparse measurements are then used to build a reduced tensor. HOSVD is applied along the relevant tensor directions, producing compact mode matrices and a core tensor. The retained modes are finally used to reconstruct the high-resolution database while keeping the multidimensional structure of the original problem. LC-HOSVD is particularly suitable for large databases, where preserving directional information is important. In urban flow applications, this allows the reconstruction of velocity, pressure, turbulence quantities, and pollutant concentration fields from a reduced number of sensor points. Compared with matrix-based LC-SVD, LC-HOSVD can better capture directional dependencies and localized three-dimensional structures.
+
+<p align="center">
+  <img src="{{ '/assets/img/LC-HOSVD.png' | relative_url }}" alt="Low-cost HOSVD methodology summary" width="850"/>
+</p>
+
+<p align="center">
+  <em>
+  Low-cost HOSVD methodology for tensor-based reconstruction from sparse sensor measurements.
+  </em>
+</p>
+
+**Code:** coming soon.
+
 #### Low-cost HODMD <a id="low-cost-hodmd"></a>
-Large and complex datasets often present computational challenges, particularly when using standard Singular Value Decomposition (SVD). As dataset sizes grow, the scalability of conventional SVD becomes a major bottleneck, especially in applications requiring repeated computations.
 
-To address this, Low-cost Higher Order Dynamic Mode Decomposition (lcHODMD) extends standard HODMD with a more efficient approach that reduces both memory usage and computational time. This method leverages either Low-cost Singular Value Decomposition (lcSVD) or Low-cost Higher Order Singular Value Decomposition (lcHOSVD) to enhance scalability and performance.
+Low-cost Higher Order Dynamic Mode Decomposition (LC-HODMD) is a dynamic reconstruction method designed for large time-resolved databases. It combines the low-cost reconstruction philosophy with Higher Order Dynamic Mode Decomposition, allowing the temporal behaviour of complex flow fields to be recovered from reduced or sparsely sampled data. The method first reduces the size of the original database using LC-SVD. This reduced representation is then used as the input for HODMD. The HODMD step requires the selection of key parameters, such as the delay dimension \(d\), the truncation tolerance \(\epsilon\), and the number of retained modes. These parameters control how much temporal memory is included and how many weak or noisy modes are discarded. These quantities are then used to reconstruct the time-resolved flow field.
 
+<p align="center">
+  <img src="{{ '/assets/img/LC-HODMD.png' | relative_url }}" alt="Low-cost HODMD methodology summary" width="850"/>
+</p>
 
-Reference us with:
+<p align="center">
+  <em>
+  Low-cost HODMD methodology for dynamic reconstruction of time-resolved flow databases.
+  </em>
+</p>
 
-ModelFLOWs (2023). *ModelFLOWs-app*. Retrieved [date], from [https://modelflows.github.io/modelflowsapp/](https://modelflows.github.io/modelflowsapp/)
-
-<!-- ![Figure text](https://github.com/modelflows/modelflowsapp/blob/master/assets/img/YOURIMAGEHERE.png?raw=true) --> 
-*Code in progress. Coming soon...*
-
+**Code:** coming soon.
 
 
 ## Spatial Resolution Enhancement <a id="spatial-resolution-enhancement"></a>
@@ -183,3 +218,4 @@ The following video explains how this algorithm is applied and the previous pape
 Download the code for **Passive Flow Control with Resolvent Analysis**  in MATLAB version [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/ra.zip), or the version including HODMD [*here*](https://github.com/modelflows/notebooks/raw/refs/heads/main/modal-decomposition/matlab/ra-hodmd.zip).
 
 For a proper usage of the algorithm, it is recommended to first calibrate the HODMD algorithm, following the [Advanced Tutorial](https://modelflows.github.io/modelflowsapp/advanced/) in our website.
+
