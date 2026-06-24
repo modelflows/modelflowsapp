@@ -65,7 +65,7 @@ The complete tutorial is available in the [*Interface tutorial*](https://modelfl
 
 The tutorial of the developed framework based on deep learning for automated left-ventricle (LV) segmentation and ejection-fraction (EF) prediction from echocardiograms is available in the [*LV Segmentation and EF estimation tutorial*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/#lv-seg-ef-tutorial) section of the [*Cardiac tutorials*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/).
 
-### Notebooks Segmentation and EF Estimation Tutorial <a id="ai-notebooks"></a>
+### Notebooks Segmentation and EF Estimation Tutorial <a id="ai-notebooks-seg-ef"></a>
 
 - [*LV segmentation and EF prediction*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/segmentation%26EFprediction_tutorial/EchoNet-dynamic/scripts): this link goes to the source files necessary to perform the left-ventricle (LV) segmentation and the ejection fraction (EF) estimation from echocardiography images.
 
