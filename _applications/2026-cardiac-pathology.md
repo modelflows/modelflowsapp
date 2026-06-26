@@ -50,6 +50,11 @@ This section presents the tutorials to use the methods combining Artificial Inte
 
 The complete step-by-step tutorials are available in the [*Diagnosis tutorial*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/#diagnosis-tutorial) and [*Prognosis tutorial*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/#prognosis-tutorial) sections of the [*Cardiac tutorials*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/) page.
 
+### Notebooks Diagnosis and Prognosis <a id="ai-notebooks"></a>
+
+- [*Diagnosis Notebooks*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/diagnosis_tutorial/notebooks): this link goes to the source files and to the guide of how to use the codes implementing the training and testing of models for the diagnosis of cardiovascular diseases (CVD).
+- [*Prognosis Notebooks*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/prognosis_tutorial/notebooks): this link goes to the source files and to the guide of how to use the codes implementing the training and testing of models for the prognosis of heart failures.
+
 ## Interface Tutorial <a id="ai-interface"></a>
 
 CardioView is a clinical desktop interface that bridges the technical modelling environment with the medical environment, letting clinicians load echocardiography videos and run the diagnosis and prognosis models directly, with no coding required. As with large-scale LLMs, the tool also supports automatic retraining on newly validated clinical cases once enough samples are collected, keeping the underlying models up to date with real-world data.
@@ -60,11 +65,8 @@ The complete tutorial is available in the [*Interface tutorial*](https://modelfl
 
 The tutorial of the developed framework based on deep learning for automated left-ventricle (LV) segmentation and ejection-fraction (EF) prediction from echocardiograms is available in the [*LV Segmentation and EF estimation tutorial*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/#lv-seg-ef-tutorial) section of the [*Cardiac tutorials*](https://modelflows.github.io/modelflowsapp/software/tutorials/cardiac-tutorials/).
 
+### Notebooks Segmentation and EF Estimation Tutorial <a id="ai-notebooks-seg-ef"></a>
 
-## Notebooks <a id="ai-notebooks"></a>
-
-- [*Diagnosis Notebooks*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/diagnosis_tutorial/notebooks): this link goes to the source files and to the guide of how to use the codes implementing the training and testing of models for the diagnosis of cardiovascular diseases (CVD).
-- [*Prognosis Notebooks*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/prognosis_tutorial/notebooks): this link goes to the source files and to the guide of how to use the codes implementing the training and testing of models for the prognosis of heart failures.
 - [*LV segmentation and EF prediction*](https://github.com/modelflows/ModelFLOWs-cardiac/tree/main/segmentation%26EFprediction_tutorial/EchoNet-dynamic/scripts): this link goes to the source files necessary to perform the left-ventricle (LV) segmentation and the ejection fraction (EF) estimation from echocardiography images.
 
 ## Resources & Databases <a id="ai-resources"></a>
