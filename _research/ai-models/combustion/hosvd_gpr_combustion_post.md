@@ -1,11 +1,12 @@
 ---
-layout: page
+layout: post
+date: 2026-06-25
 title: "HOSVD + GPR: Parametric Surrogate for Turbulent Jet Flames"
 category: "AI & Data-Driven Models"
 topic: "Combustion"
 tldr: "Parametric interpolation of the DLR turbulent jet diffusion flame using Higher-Order SVD and Gaussian Process Regression to predict full combustion fields at unseen operating conditions."
 thumbnail: "assets/img/Tutorial/Combustion/hosvd_gpr/Re16000_mf012.png"
-permalink: /research/ai-combustion/
+permalink: /research/ai-combustion/hosvd-gpr-surrogate/
 ---
 
 <script>
@@ -115,10 +116,6 @@ For each operating parameter, the corresponding HOSVD coefficients are interpola
 Combining the interpolated coefficients with the core tensor and rescaling gives the reconstructed field for the unseen condition. The bar chart below reports the relative $L_2$ reconstruction error per species for the test case Re = 13,000, $X_{\mathrm{H_2}}$ = 8%, together with the overall mean error $\bar{e}$.
 
 ![Reconstruction error per species for Re=13000, mf=0.08](/assets/img/Tutorial/Combustion/hosvd_gpr/relative_error_per_feat_Re13000_mf008.png)
-
-## Contributors
-
-Isacco Faglioni
 
 ## **References**
 
