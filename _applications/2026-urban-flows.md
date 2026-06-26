@@ -50,7 +50,7 @@ Link to notebook: *Coming soon...*
 
 The complete step-by-step tutorial is available in the <a href="{{ '/software/tutorials/urban-3d-reconstruction/' | relative_url }}">Urban Sensors 3D Reconstruction</a> page. This link goes to the workflow explaining sparse-sensor selection, low-cost decomposition, field reconstruction, error evaluation and comparison with the original CFD solution.
 
-The related research page is available here: <a href="{{ '/_research/ai-models/ai-urban-flows/2026-from-sensors-to-3d-reconstruction/' | relative_url }}">From Sensors to 3D Reconstruction</a>. This link goes to the research summary describing the motivation, methodology, datasets and reconstruction results for the low-cost 3D reconstruction work.
+The related research page is available here: <a href="{{ '/research/ai-models/ai-urban-flows/2026-from-sensors-to-3d-reconstruction/' | relative_url }}">From Sensors to 3D Reconstruction</a>. This link goes to the research summary describing the motivation, methodology, datasets and reconstruction results for the low-cost 3D reconstruction work.
 
 ## 2. Temporal Prediction of Urban Flow Fields
 
@@ -70,7 +70,7 @@ Link to notebook: <a href="https://github.com/modelflows/notebooks/tree/main/LCS
 
 The complete step-by-step tutorial is available in the <a href="{{ '/software/tutorials/urban-lcs-calibration/' | relative_url }}">Low-Cost Sensor Calibration</a> page. This link goes to the workflow explaining data cleaning, feature preparation, temporal sequence generation, LSTM model training and calibrated sensor output.
 
-The related research page is available here: <a href="{{ '/research/ai-models/air-pollution/2026-temporal-deep-learning-calibration-low-cost-sensors/' | relative_url }}">Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors</a>. This link goes to the research summary and paper information for the low-cost sensor calibration study.
+The related research page is available here: <a href="{{ '/research/ai-models/air-pollution/2026-low-cost-sensor-calibration/' | relative_url }}">Temporal Deep Learning Calibration of Low-Cost Air Quality Sensors</a>. This link goes to the research summary and paper information for the low-cost sensor calibration study.
 
 # Resources & Databases
 
