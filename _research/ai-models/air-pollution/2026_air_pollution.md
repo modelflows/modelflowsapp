@@ -75,12 +75,6 @@ This work demonstrates that Robust Data Envelopment Analysis provides a reliable
 By combining DEA and Robust Optimization, the proposed methodology reduces sensitivity to data fluctuations and offers a more realistic assessment of urban sustainability performance.
 The framework can support policy evaluation, urban planning, energy management, and sustainable development strategies in complex socio-economic systems.
 
-## Scientific Contribution
-
-This work demonstrates that Robust Data Envelopment Analysis provides a reliable framework for evaluating urban energy efficiency under uncertainty.
-By combining DEA and Robust Optimization, the proposed methodology reduces sensitivity to data fluctuations and offers a more realistic assessment of urban sustainability performance.
-The framework can support policy evaluation, urban planning, energy management, and sustainable development strategies in complex socio-economic systems.
-
 ## Relevance for ModelFLOWs
 
 This research illustrates the application of advanced data-driven methodologies to large-scale urban systems.
