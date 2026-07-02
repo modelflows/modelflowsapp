@@ -19,11 +19,14 @@ The applications focuse on the DLR methane/hydrogen/nitrogen turbulent diffusion
 
   * [DLR Flame CFD Workflow](#cfd-workflow)
   * [Tutorial](#cfd-tutorial)
+    
 * [AI & Data-Driven Models](#ai)
-
+  
   * [HOSVD + GPR Parametric Interpolation](#ai-hosvd-gpr)
   * [Tutorial](#hosvd-tutorial-and-post)
+    
 * [References](#references)
+  
 * [Contributors](#contributors)
 
 # CFD & High-Fidelity Simulations <a id="cfd"></a>
