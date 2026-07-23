@@ -9,10 +9,9 @@ order: 3
 ### Data index:
    * [9 buildings canonical configuration - Equispaced Array](#urban-9block-equispaced)
    * [9 buildings canonical configuration - Variable Height and Distance Array](#urban-9block-variable)
-   * [AIJ Case E - Niigata city district](#niigara-city-district)
-   * [AIJ Case K - Regular 9×9 cubic array](#9x9-cubic-array)
-   * [AIJ Case L - Regular 14×9 cubic array](#14x9-cubic-array)
-   * [AIJ Case M - TPU university campus](#tpu-university-campus)
+   * [AIJ - Benchmark geometris](#aij-data)
+   * [Urban wind tunnel database - EWTL Hamburg reference](#ewtl-data)
+
 
 ## 9 buildings canonical configuration - Equispaced Array<a id="urban-9block-equispaced"></a>
 This database contains data from three-dimensional CFD simulations of turbulent flow around a 3x3 array of 9 cubic buildings, each 0.2 m x 0.2 m x 0.2 m (H = 0.2 m), 
@@ -30,22 +29,12 @@ The dataset comprises 243 simulation cases, provided in .vtu (native solver mesh
 
 Database available *coming soon*.
 
-## Urban LES database — AIJ Case E (Niigata city district)<a id="niigara-city-district"></a>
-This database contains data from a three-dimensional large-eddy simulation of turbulent flow over a real urban district in Niigata (Japan), reproducing the geometry of the AIJ Case E wind tunnel benchmark at full scale (footprint of about 395 m × 395 m, tallest building H = 60 m). Unlike the benchmark, which reports time-averaged measurements at sparse probe points, the simulation was run with OpenFOAM (WALE subgrid-scale model, synthetic-turbulence inlet from the measured profile) and validated against those points, providing the full time-resolved fields. The dataset comprises 497 snapshots of pressure and the three velocity components, provided in .vtu (native solver mesh) and .npy (equispaced grid of 198 × 198 × 21 points at Δxy = 2 m, Δz = 5 m, with building mask) formats.
+## Urban LES database — AIJ benchmark geometries<a id="aij-data"></a>
+This database contains data from three-dimensional large-eddy simulations of turbulent flow over four urban configurations taken from the AIJ wind tunnel benchmark collection: two real urban layouts (a city district and a university campus, the latter including terrain elevation) and two regular arrays of cubic buildings. Specifically, it provides time-varying flow fields for the Niigata city district and for a real university campus, together with the canonical wind tunnel configurations of 9 × 9 and 14 × 9 equispaced cubic buildings. Unlike the benchmark, which reports time-averaged measurements at sparse probe points, the simulations were run with OpenFOAM using a WALE subgrid-scale model and a synthetic-turbulence inlet built from the measured wind tunnel profiles, and were validated against those measurements, so that the full time-resolved flow fields are made available. Each case provides a time series of snapshots of pressure and the three velocity components, in .vtu (native solver mesh) and .npy (interpolated onto an equispaced grid, at a common spatial resolution and accompanied by a static building occupancy mask) formats.
 
-[[Link to EchoNet-Dynamic](https://www.aij.or.jp/%20jpn/publish/cfdguide/index_e.htm)]
+[[Link to AIJ data sets](https://www.aij.or.jp/%20jpn/publish/cfdguide/index_e.htm)]
 
-## Urban LES database — AIJ Case K (regular 9×9 cubic array)<a id="9x9-cubic-array"></a>
-This database contains data from a three-dimensional large-eddy simulation of turbulent flow through a regular array of 81 cubic buildings in 9 rows × 9 columns, of side H = 0.06 m and pitch 2H, reproducing the AIJ Case K (ArraysC) wind tunnel benchmark at model scale (U_H = 2.33 m/s, Re ≈ 9800). Unlike the benchmark, which reports time-averaged velocity and turbulent kinetic energy at 203 probe points, the simulation was run with OpenFOAM (WALE subgrid-scale model, synthetic-turbulence inlet with the measured anisotropic Reynolds stresses), validated against those points, and rescaled by a factor of 400 (H = 24 m, pitch 48 m). The dataset comprises 299 snapshots of pressure and the three velocity components, provided in .vtu (native solver mesh) and .npy (equispaced grid of 205 × 205 × 21 points at Δxy = 2 m, Δz = 5 m, with building mask) formats.
+## Urban wind tunnel database — EWTL Hamburg reference data sets<a id="ewtl-data"></a>
+This collection gathers the reference data sets of the Environmental Wind Tunnel Laboratory of the University of Hamburg, comprising boundary layer wind tunnel measurements of flow and pollutant dispersion over idealized and realistic urban and industrial layouts, including the CEDVAL and CEDVAL-LES compilations, the COST Action ES1006 cases (Michelstadt and CUTE) and the COST Action 732 cases (MUST and Oklahoma City), with variations of wind direction, source location and release type. Unlike CFD databases, the data are physical measurements taken point by point with laser Doppler anemometry and fast flame ionization detectors, so the spatial coverage differs from case to case: some data sets sample a three-dimensional arrangement of measurement positions, whereas others are restricted to two-dimensional planes or to vertical profiles at selected locations, generally denser close to the ground. In all cases the flow is characterized in a statistically stationary sense, through time-averaged statistics (mean values, variances and higher moments, and in some cases point time series at individual probes). The data are distributed as tabulated measurement files and are password protected, available on request from the laboratory.
 
-[[Link to EchoNet-Dynamic](https://www.aij.or.jp/%20jpn/publish/cfdguide/index_e.htm)]
-
-## Urban LES database — AIJ Case L (regular 14×9 cubic array)<a id="14x9-cubic-array"></a>
-This database contains data from a three-dimensional large-eddy simulation of turbulent flow through a regular array of 126 cubic buildings in 14 rows × 9 columns, of side H = 0.06 m and pitch 2H, reproducing the AIJ Case L (ArraysCT) wind tunnel benchmark at model scale (U_H = 1.34 m/s). Unlike the benchmark, which was conducted under weakly non-isothermal conditions (Rib ≈ −0.04) and reports time-averaged point measurements, the simulation was run isothermally with OpenFOAM (WALE subgrid-scale model, synthetic-turbulence inlet from the measured profile), validated against the benchmark velocities, and rescaled by a factor of 400 (H = 24 m, pitch 48 m). The dataset comprises 299 snapshots of pressure and the three velocity components, provided in .vtu (native solver mesh) and .npy (equispaced grid of 325 × 205 × 21 points at Δxy = 2 m, Δz = 5 m, with building mask) formats.
-
-[[Link to EchoNet-Dynamic](https://www.aij.or.jp/%20jpn/publish/cfdguide/index_e.htm)]
-
-## Urban LES database — AIJ Case M (TPU university campus)<a id="tpu-university-campus"></a>
-This database contains data from a three-dimensional large-eddy simulation of turbulent flow over a real university campus in Atsugi (Japan), reproducing the geometry of the AIJ Case M (TPU) wind tunnel benchmark at full scale (domain of about 1080 m × 720 m, tallest building 65 m, terrain elevation included). Unlike the benchmark, which reports time-averaged measurements at sparse points for several wind directions, the simulation was run for a single direction (180°, U_R = 4.08 m/s at H_R = 41 m) with OpenFOAM (WALE subgrid-scale model, synthetic-turbulence inlet from the measured profile) and validated against those measurements. The dataset comprises 450 snapshots of pressure and the three velocity components, provided in .vtu (native solver mesh) and .npy (equispaced grid of 329 × 292 × 21 points at Δxy = 2 m, Δz = 5 m, with building mask) formats.
-
-[[Link to EchoNet-Dynamic](https://www.aij.or.jp/%20jpn/publish/cfdguide/index_e.htm)]
+[[Link to EWTL data sets](https://www.mi.uni-hamburg.de/en/arbeitsgruppen/windkanallabor/data-sets.html)]
