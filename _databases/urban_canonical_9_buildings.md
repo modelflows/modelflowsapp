@@ -15,7 +15,7 @@ order: 3
    * [Street canyon dispersion database — CODASC reference data](#codasc-exp)
 
 ## 9 buildings canonical configuration — AIJ Case C wind tunnel data<a id="aij-case-c-exp"></a>
-This entry provides reference wind-tunnel measurement data for Case C of the Architectural Institute of Japan (AIJ) benchmark collection, from the "Guidebook for Practical Applications of CFD to Pedestrian Wind Environment around Buildings" (2008/2020). The geometry is a 3×3 building-block array with 8 surrounding cubic buildings of equal height H and one central building whose height varies across three sub-cases (flush/0H, equal/1H, or double/2H), tested at three wind directions (0°, 22.5°, 45°). The experimental data include mean velocity and turbulence statistics at the pedestrian-height plane and along the vertical central plane, widely used as a standard benchmark for validating urban canopy CFD simulations.
+This entry provides reference wind-tunnel measurement data for Case C of the Architectural Institute of Japan (AIJ) benchmark collection, from the "Guidebook for Practical Applications of CFD to Pedestrian Wind Environment around Buildings". The geometry is a 3×3 building-block array with 8 surrounding cubic buildings of equal height H and one central building whose height varies across three sub-cases (flush/0H, equal/1H, or double/2H), tested at three wind directions (0°, 22.5°, 45°). The experimental data provide point-wise mean velocity measurements at a horizontal plane (pedestrian height, z≈0.02H), widely used as a standard benchmark for validating urban canopy CFD simulations.
 
 [[Link to AIJ Case C experimental data](https://www.aij.or.jp/jpn/publish/cfdguide/index_e.htm)]
 
