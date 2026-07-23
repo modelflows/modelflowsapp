@@ -30,6 +30,12 @@ The dataset comprises 243 simulation cases, provided in .vtu (native solver mesh
 
 Database available *coming soon*.
 
+## Vallecas real-urban large-scale configuration, real terrain elevation and building array
+
+This database contains data from three-dimensional CFD simulations of turbulent wind flow over the Vallecas district of Madrid, a real urban area with varying height and footprint set on real terrain elevation. The domain is a cylinder with a diameter of approximately 3 410 m and a vertical extent ranging between 317 m and 358 m. It is modelled with neutral atmospheric boundary layer conditions, computed with steady-state RANS and the $k$-$\varepsilon$ turbulence model (with simpleFoam). The ground is split into terrain, vegetation and water, each with its own surface roughness. Simulations were run varying the wind direction and reference wind speed at 5.5 m height. For each case the following fields are saved: U (mean velocity (m/s)), p (mean kinematic pressure (m²/s²)), k (turbulent kinetic energy (m²/s²)), epsilon (turbulent dissipation rate (m²/s³)), nut (turbulent eddy viscosity (m²/s)). In addition, traffic pollutants emitted from the nearby highways, with emission rates estimated from COPERT values, are transported as passive scalars, giving the concentration fields CO, NOx and PM (kg/m³). The dataset comprises 24 simulation cases, provided in .vtu format.
+
+Database available *coming soon*.
+
 ## Urban LES database — AIJ Case E (Niigata city district)<a id="niigara-city-district"></a>
 This database contains data from a three-dimensional large-eddy simulation of turbulent flow over a real urban district in Niigata (Japan), reproducing the geometry of the AIJ Case E wind tunnel benchmark at full scale (footprint of about 395 m × 395 m, tallest building H = 60 m). Unlike the benchmark, which reports time-averaged measurements at sparse probe points, the simulation was run with OpenFOAM (WALE subgrid-scale model, synthetic-turbulence inlet from the measured profile) and validated against those points, providing the full time-resolved fields. The dataset comprises 497 snapshots of pressure and the three velocity components, provided in .vtu (native solver mesh) and .npy (equispaced grid of 198 × 198 × 21 points at Δxy = 2 m, Δz = 5 m, with building mask) formats.
 
