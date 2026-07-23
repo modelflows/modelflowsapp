@@ -7,11 +7,17 @@ order: 3
 ---
 
 ### Data index:
+   * [9 buildings canonical configuration — AIJ Case C wind tunnel data](#aij-case-c-exp)
    * [9 buildings canonical configuration - Equispaced Array](#urban-9block-equispaced)
    * [9 buildings canonical configuration - Variable Height and Distance Array](#urban-9block-variable)
    * [AIJ - Benchmark geometris](#aij-data)
    * [Urban wind tunnel database - EWTL Hamburg reference](#ewtl-data)
+   * [Street canyon dispersion database — CODASC reference data](#codasc-exp)
 
+## 9 buildings canonical configuration — AIJ Case C wind tunnel data<a id="aij-case-c-exp"></a>
+This entry provides reference wind-tunnel measurement data for Case C of the Architectural Institute of Japan (AIJ) benchmark collection, from the "Guidebook for Practical Applications of CFD to Pedestrian Wind Environment around Buildings" (2008/2020). The geometry is a 3×3 building-block array with 8 surrounding cubic buildings of equal height H and one central building whose height varies across three sub-cases (flush/0H, equal/1H, or double/2H), tested at three wind directions (0°, 22.5°, 45°). The experimental data include mean velocity and turbulence statistics at the pedestrian-height plane and along the vertical central plane, widely used as a standard benchmark for validating urban canopy CFD simulations.
+
+[[Link to AIJ Case C experimental data](https://www.aij.or.jp/jpn/publish/cfdguide/index_e.htm)]
 
 ## 9 buildings canonical configuration - Equispaced Array<a id="urban-9block-equispaced"></a>
 This database contains data from three-dimensional CFD simulations of turbulent flow around a 3x3 array of 9 cubic buildings, each 0.2 m x 0.2 m x 0.2 m (H = 0.2 m), 
@@ -38,3 +44,8 @@ This database contains data from three-dimensional large-eddy simulations of tur
 This collection gathers the reference data sets of the Environmental Wind Tunnel Laboratory of the University of Hamburg, comprising boundary layer wind tunnel measurements of flow and pollutant dispersion over idealized and realistic urban and industrial layouts, including the CEDVAL and CEDVAL-LES compilations, the COST Action ES1006 cases (Michelstadt and CUTE) and the COST Action 732 cases (MUST and Oklahoma City), with variations of wind direction, source location and release type. Unlike CFD databases, the data are physical measurements taken point by point with laser Doppler anemometry and fast flame ionization detectors, so the spatial coverage differs from case to case: some data sets sample a three-dimensional arrangement of measurement positions, whereas others are restricted to two-dimensional planes or to vertical profiles at selected locations, generally denser close to the ground. In all cases the flow is characterized in a statistically stationary sense, through time-averaged statistics (mean values, variances and higher moments, and in some cases point time series at individual probes). The data are distributed as tabulated measurement files and are password protected, available on request from the laboratory.
 
 [[Link to EWTL data sets](https://www.mi.uni-hamburg.de/en/arbeitsgruppen/windkanallabor/data-sets.html)]
+
+## Street canyon dispersion database — CODASC reference data<a id="codasc-exp"></a>
+The COncentration Data of Street Canyons (CODASC) database provides atmospheric boundary layer wind-tunnel measurements of traffic-like pollutant (SF6 tracer gas) concentrations in idealized street canyons, established by the Laboratory of Building- and Environmental Aerodynamics at the Karlsruhe Institute of Technology (KIT). The dataset covers 28 street-canyon/tree-avenue configurations spanning different canyon aspect ratios (W/H), wind directions, and avenue-tree arrangements (tree stand density, crown porosity), with wall-point concentration data on the leeward (Wall A) and windward (Wall B) sides as the primary output, plus supporting inflow velocity/TKE profiles for boundary-condition setup. It is a standard experimental reference for validating urban street-canyon dispersion models.
+
+[[Link to CODASC experimental data](https://www.umweltaerodynamik.de/bilder-originale/CODA/CODASC.html)]
