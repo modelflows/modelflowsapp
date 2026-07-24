@@ -2,7 +2,7 @@
 layout: post
 title: "Combustion data"
 type: "Numerical / Combustion CFD"
-tldr: "Combustion data used for research in reactive flows
+tldr: "Combustion data used for research in reactive flows"
 order: 4
 ---
 
