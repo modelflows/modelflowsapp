@@ -10,7 +10,7 @@ order: 3
    * [9 buildings canonical configuration — AIJ Case C wind tunnel data](#aij-case-c-exp)
    * [9 buildings canonical configuration - Equispaced Array](#urban-9block-equispaced)
    * [9 buildings canonical configuration - Variable Height and Distance Array](#urban-9block-variable)
-   * [## Vallecas large-scale real-urban configuration, terrain elevation and pollutant dispersion](#urban-vallecas)
+   * [Vallecas large-scale real-urban configuration, terrain elevation and pollutant dispersion](#urban-vallecas)
    * [AIJ - Benchmark geometris](#aij-data)
    * [Urban wind tunnel database - EWTL Hamburg reference](#ewtl-data)
    * [Street canyon dispersion database — CODASC reference data](#codasc-exp)
