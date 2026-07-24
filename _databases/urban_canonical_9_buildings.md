@@ -10,6 +10,7 @@ order: 3
    * [9 buildings canonical configuration — AIJ Case C wind tunnel data](#aij-case-c-exp)
    * [9 buildings canonical configuration - Equispaced Array](#urban-9block-equispaced)
    * [9 buildings canonical configuration - Variable Height and Distance Array](#urban-9block-variable)
+   * [## Vallecas large-scale real-urban configuration, terrain elevation and pollutant dispersion](#urban-vallecas)
    * [AIJ - Benchmark geometris](#aij-data)
    * [Urban wind tunnel database - EWTL Hamburg reference](#ewtl-data)
    * [Street canyon dispersion database — CODASC reference data](#codasc-exp)
@@ -32,6 +33,12 @@ This database contains data from three-dimensional CFD simulations of turbulent 
 and building heights of 1H, 2H, and 3H, and a variable distance between buildings, unlike the equispaced layout of the first dataset.
 Simulations were run varying the Reynolds number, the wind direction, and the emission rate of a passive scalar.
 The dataset comprises 243 simulation cases, provided in .vtu (native solver mesh) and .npy (interpolated onto an equispaced grid) formats.
+
+Database available *coming soon*.
+
+## Vallecas large-scale real-urban configuration, terrain elevation and pollutant dispersion
+
+This database contains data from three-dimensional CFD simulations of turbulent wind flow over the Vallecas district of Madrid, a real urban area of buildings with varying height and footprint set on real terrain elevation. The domain is a cylinder with a diameter of approximately 3 410 m and a vertical extent ranging between 317 m and 358 m. It is modelled with neutral atmospheric boundary layer conditions, computed with steady-state RANS and the $k$-$\varepsilon$ turbulence model (with simpleFoam). The ground is split into terrain, vegetation and water, each with its own surface roughness. Simulations were run varying the wind direction and reference wind speed at 5.5 m height. For each case the following fields are saved: U (mean velocity (m/s)), p (mean kinematic pressure (m²/s²)), k (turbulent kinetic energy (m²/s²)), epsilon (turbulent dissipation rate (m²/s³)), nut (turbulent eddy viscosity (m²/s)). In addition, traffic pollutants emitted from the nearby highways, with emission rates estimated from COPERT values, are transported as passive scalars, giving the concentration fields CO, NOx and PM (kg/m³). The dataset comprises 24 simulation cases, provided in .vtu format.
 
 Database available *coming soon*.
 
